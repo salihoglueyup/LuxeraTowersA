@@ -1,0 +1,39 @@
+{
+  "name": "Luxera Towers",
+  "short_name": "Luxera",
+  "description": "İstanbul Basın Ekspres'in en lüks rezidans ve yaşam projesi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1118",
+  "theme_color": "#d4af37",
+  "orientation": "portrait",
+  "categories": ["real estate", "lifestyle", "finance"],
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Satış Ofisini Ara",
+      "short_name": "Arama Yap",
+      "description": "Satış danışmanlarımızla hemen görüşün",
+      "url": "/iletisim",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+    },
+    {
+      "name": "Kat Planlarını İncele",
+      "short_name": "Planlar",
+      "description": "Rezidans daire planlarını görüntüleyin",
+      "url": "/rezidanslar",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+    }
+  ]
+}

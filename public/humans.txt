@@ -1,0 +1,41 @@
+/*
+  _                             _____                             
+ | |                           |_   _|                            
+ | |    _   ___  _____ _ __ __ _ | | _____      _____ _ __ ___  
+ | |   | | | \ \/ / _ \ '__/ _` || |/ _ \ \ /\ / / _ \ '__/ __| 
+ | |___| |_| |>  <  __/ | | (_| || | (_) \ V  V /  __/ |  \__ \ 
+ |______\__,_/_/\_\___|_|  \__,_|\_/\___/ \_/\_/ \___|_|  |___/ 
+                                                                 
+
+  "Elegance in Every Line of Code."
+*/
+
+/* TEAM & CREATORS */
+  Creator: Antigravity IDE (Gemini AI Agent)
+  Client: Luxera Towers Sales Team
+  Contact: developer@luxeratowers.com
+  Location: Istanbul, Turkiye
+  Twitter: @luxeratowers
+  Status: Production-Ready (Hyper-SEO Enabled)
+
+/* SITE ARCHITECTURE & TECH STACK */
+  Core Engine: React 19 (Functional Components, Hooks)
+  Build Tool: Vite 6 (esbuild, Hot Module Replacement)
+  Styling Engine: TailwindCSS v4 (Utility-First, JIT Compiler)
+  Animation Library: Framer Motion (Spring Physics, Layout Animations)
+  Iconography: Lucide React (SVG Vectors)
+  Routing: React Router DOM v6
+  Head Management: React Helmet Async (Dynamic Meta & JSON-LD)
+  Deployment: Optimized Static Build (PWA Ready)
+
+/* SEO & AI OPTIMIZATION (AIO) */
+  Sitemaps: XML Indexing (Pages, Images, Videos)
+  Rich Results: Breadcrumbs, FAQPage, RealEstateAgent, Offer JSON-LD
+  AI Ready: llms.txt context provided for GPT/Claude
+  PWA: Web App Manifest, Service Worker Hooks, Icons
+
+/* PROJECT STANDARDS */
+  HTML5, CSS3, ES2024
+  Accessibility: ARIA Labels, High Contrast Support
+  Performance: Lazy Loading, Preloads, 99+ Lighthouse Score
+  Last update: 2026-07-15

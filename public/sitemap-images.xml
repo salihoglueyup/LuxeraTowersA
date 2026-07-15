@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://luxeratowers.com/galeri</loc>
+    <!-- Dış Cephe Görselleri -->
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/exterior/13_2025-12-18_02-46-35_a465ab.webp</image:loc>
+      <image:title>Luxera Towers Dış Cephe Işıklandırma</image:title>
+      <image:caption>İstanbul Basın Ekspres Yolu üzerinde yükselen 3 ikonik kule, akşam aydınlatması ile.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/exterior/10_2025-12-18_02-46-35_72a99a.webp</image:loc>
+      <image:title>Luxera Towers Peyzaj Alanı</image:title>
+      <image:caption>Sosyal yaşam ve geniş peyzaj alanları, yeşil ile iç içe yaşam.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/exterior/5_2025-12-18_02-46-35_b21c43.webp</image:loc>
+      <image:title>Luxera Towers Alışveriş Merkezi Meydanı</image:title>
+      <image:caption>87 ticari üniteli lüks açık hava alışveriş merkezinin ana meydanı.</image:caption>
+    </image:image>
+    <!-- İç Mekan Görselleri -->
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/interior/10_2025-12-18_02-42-20_2ab0c1.webp</image:loc>
+      <image:title>Luxera Towers Geniş Salon Tasarımı</image:title>
+      <image:caption>3.20m tavan yüksekliğine sahip, panoramik şehir manzaralı lüks salon.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/interior/6_2025-12-18_02-42-20_29be56.webp</image:loc>
+      <image:title>Luxera Towers Ebeveyn Yatak Odası</image:title>
+      <image:caption>Ahşap detaylar ve premium malzemelerle tasarlanmış yatak odası.</image:caption>
+    </image:image>
+    <!-- Detaylar -->
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/details/16_2025-12-18_02-53-15_18e541.webp</image:loc>
+      <image:title>Luxera Towers Lobisi</image:title>
+      <image:caption>7/24 hizmet veren lüks concierge ve karşılama lobisi.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://luxeratowers.com/rezidanslar</loc>
+    <image:image>
+      <image:loc>https://luxeratowers.com/images/interior/1_2025-12-18_02-42-20_b3ebdf.webp</image:loc>
+      <image:title>Luxera Towers Mutfak Tasarımı</image:title>
+      <image:caption>Ankastre ürünlerle donatılmış, ferah ve modern mutfak.</image:caption>
+    </image:image>
+  </url>
+</urlset>

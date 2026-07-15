@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luxera Towers | Basın Ekspres'in İkonu</title>
+    <link>https://luxeratowers.com</link>
+    <description>Luxera Towers projesinden en güncel haberler, etkinlikler ve basın bültenleri.</description>
+    <language>tr-TR</language>
+    <atom:link href="https://luxeratowers.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Luxera Towers Örnek Dairesi Ziyarete Açıldı!</title>
+      <link>https://luxeratowers.com/basinda-biz/ornek-daire-acildi</link>
+      <description>İstanbul'un en hızlı değerlenen lokasyonu Basın Ekspres'te yükselen Luxera Towers'ın 3.20m tavan yüksekliğine sahip lüks örnek dairesi ziyaretçilerini bekliyor.</description>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 +0300</pubDate>
+      <guid>https://luxeratowers.com/basinda-biz/ornek-daire-acildi</guid>
+    </item>
+    
+    <item>
+      <title>Basın Ekspres'in Yeni İncisi: %120 Değer Artışı Öngörüsü</title>
+      <link>https://luxeratowers.com/yatirim</link>
+      <description>Uzman gayrimenkul değerleme raporlarına göre, proje teslimine kadar minimum %120 değer artışı ve 12 yılda amortisman avantajı.</description>
+      <pubDate>Mon, 13 Jul 2026 10:30:00 +0300</pubDate>
+      <guid>https://luxeratowers.com/yatirim</guid>
+    </item>
+    
+    <item>
+      <title>Gökyüzü Bahçeleri ile Tanışın</title>
+      <link>https://luxeratowers.com/rezidanslar</link>
+      <description>Metropolün tam kalbinde, geniş terasları ve gökyüzü bahçeleri ile doğayla iç içe lüks rezidans deneyimi.</description>
+      <pubDate>Fri, 10 Jul 2026 15:45:00 +0300</pubDate>
+      <guid>https://luxeratowers.com/rezidanslar</guid>
+    </item>
+  </channel>
+</rss>

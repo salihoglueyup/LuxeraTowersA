@@ -1,0 +1,200 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "downloadCatalog": "Kataloğu İndir",
+    "discover": "Projeyi Keşfet",
+    "contact": "İletişime Geç",
+    "menu": "Menü",
+    "close": "Kapat"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "projectAndLife": "Proje & Yaşam",
+    "discover": "Projeyi Keşfet",
+    "location": "Konum & Ulaşım",
+    "guide": "Yaşam Rehberi",
+    "residences": "Rezidanslar",
+    "privileges": "Ayrıcalıklar",
+    "privilegesHome": "Ayrıcalıklar Anasayfa",
+    "security": "Özel Güvenlik",
+    "valet": "Vale & Otopark",
+    "commercialAndInvestment": "Ticari & Yatırım",
+    "commercial": "Ticari Üniteler",
+    "mall": "AVM & Yaşam",
+    "investment": "Yatırım Değeri",
+    "media": "Medya",
+    "gallery": "Galeri",
+    "press": "Basında Biz",
+    "events": "Haberler & Etkinlikler",
+    "contact": "İletişim",
+    "concierge": "7/24 Concierge",
+    "fitness": "Fitness & SPA",
+    "housekeeping": "Housekeeping",
+    "lounge": "Lounge Alanı",
+    "luxeraTv": "Luxera TV",
+    "residence": "Rezidans",
+    "viewPlans": "Planları İncele"
+  },
+  "hero": {
+    "subtitle": "Basın Ekspres'te Gökyüzü Bahçeleri",
+    "kicker": "İstanbul'un Yeni İkonu",
+    "title1": "Basın Ekspres'te",
+    "title2": "Gökyüzü",
+    "desc": "2 görkemli kule, 369 prestijli rezidans ve 87 mağazalık lüks AVM ile yaşam standartlarınızı zirveye taşıyoruz.",
+    "title3": "Bahçeleri"
+  },
+  "highlights": {
+    "towers": "Görkemli Kule",
+    "residences": "Özel Rezidans",
+    "mall": "Mağazalık Lüks AVM",
+    "metro": "Dk Mimar Sinan Metrosu"
+  },
+  "unitTypes": {
+    "viewPlan": "Planı Görüntüle",
+    "grossNet": "Brüt / Net Alan",
+    "gross": "Brüt Alan",
+    "net": "Net Alan",
+    "reviewDetail": "Detaylı Planı İncele",
+    "highlights": "Öne Çıkan Özellikler",
+    "downloadPDF": "Kat Planını İndir (PDF)",
+    "1+1": {
+      "title": "1+1 Rezidans",
+      "feature0": "Akıllı Ev Sistemi",
+      "feature1": "Yerden Isıtma",
+      "feature2": "VRF Klima",
+      "feature3": "Isıcam",
+      "feature4": "Ankastre Mutfak"
+    },
+    "2+1": {
+      "title": "2+1 Rezidans",
+      "feature0": "Ebeveyn Banyosu",
+      "feature1": "Geniş Balkon",
+      "feature2": "Akıllı Ev Sistemi",
+      "feature3": "Giyinme Odası",
+      "feature4": "2 Araçlık Otopark"
+    },
+    "3+1": {
+      "title": "3+1 Aile Rezidansı",
+      "feature0": "Geniş Teras",
+      "feature1": "Panoramik Manzara",
+      "feature2": "Çamaşır Odası",
+      "feature3": "Ebeveyn Süiti",
+      "feature4": "Ada Mutfak"
+    },
+    "4+1": {
+      "title": "4+1 Penthouse / Premium",
+      "feature0": "Özel Gökyüzü Bahçesi",
+      "feature1": "Hizmetli Odası",
+      "feature2": "Sauna",
+      "feature3": "Özel Asansör",
+      "feature4": "4 Araçlık Otopark"
+    }
+  },
+  "amenities": {
+    "header": "Sadece Bir Ev Değil, Bir Yaşam Tarzı",
+    "gardens": {
+      "title": "Gökyüzü Bahçeleri",
+      "desc": "Her kat arasında dikey bahçeler ve dinlenme alanları."
+    },
+    "fitness": {
+      "title": "Fitness & SPA",
+      "desc": "Son teknoloji fitness salonu, buhar odası ve masaj odaları."
+    },
+    "mall": {
+      "title": "Lüks AVM",
+      "desc": "Dünyaca ünlü markalar, restoranlar ve kafeler bir asansör uzağınızda."
+    },
+    "security": {
+      "title": "7/24 Güvenlik",
+      "desc": "Profesyonel güvenlik ekipleri ve kapalı devre kamera sistemleri."
+    }
+  },
+  "location": {
+    "title1": "Şehrin Merkezinde,",
+    "title2": "Hayatın İçinde",
+    "desc": "Basın Ekspres Yolu üzerinde, ulaşım ağlarının tam kalbinde yer alan Luxera Towers, İstanbul Havalimanı ve ana arterlere olan yakınlığı ile eşsiz bir yatırım fırsatı sunuyor.",
+    "metro": "Mimar Sinan Metrosu",
+    "tem": "TEM & E-5 Bağlantı",
+    "mall": "Mall of Istanbul",
+    "airport": "İstanbul Havalimanı",
+    "time": {
+      "2m": "2 Dakika",
+      "5m": "5 Dakika",
+      "10m": "10 Dakika",
+      "25m": "25 Dakika"
+    }
+  },
+  "contact": {
+    "success": {
+      "title": "Talebiniz Alındı",
+      "desc": "Değerli başvurunuz için teşekkür ederiz. Satış danışmanlarımız sizinle en kısa sürede iletişime geçecektir."
+    },
+    "header": {
+      "title": "Fiyat Bilgisi Alın",
+      "subtitle": "Prestijli yaşama ilk adımı atmak için formumuzu doldurun, satış temsilcilerimiz sizinle hemen iletişime geçsin."
+    },
+    "placeholders": {
+      "name": "Adınız Soyadınız",
+      "phone": "Telefon Numaranız",
+      "email": "E-posta Adresiniz",
+      "unitType": "İlgilendiğiniz Daire Tipi"
+    },
+    "options": {
+      "1+1": "1+1 Rezidans",
+      "2+1": "2+1 Rezidans",
+      "3+1": "3+1 Aile Rezidansı",
+      "4+1": "4+1 Penthouse"
+    },
+    "submitting": "Gönderiliyor...",
+    "submit": "Hemen Bilgi Alın",
+    "kvkk": "Bilgileriniz KVKK kapsamında korunmaktadır.",
+    "errors": {
+      "name": "Ad Soyad en az 3 karakter olmalıdır",
+      "phone": "Geçerli bir telefon numarası giriniz",
+      "email": "Geçerli bir e-posta adresi giriniz",
+      "unitType": "Lütfen ilgilendiğiniz daire tipini seçin"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Ayrıcalıklardan İlk Sizin Haberiniz Olsun",
+      "desc": "Lansmana özel fırsatlar, etkinlikler ve yeniliklerden anında haberdar olmak için e-bültene kayıt olun.",
+      "success": "Kaydınız alındı. Teşekkürler!",
+      "placeholder": "E-posta Adresiniz",
+      "submit": "Kayıt Ol"
+    },
+    "badges": {
+      "certTitle": "Sertifika",
+      "certDesc": "LEED Gold Adayı",
+      "awardTitle": "Ödül 2026",
+      "awardDesc": "En İyi Karma Proje"
+    },
+    "about": "Basın Ekspres'in kalbinde, uluslararası standartlarda bir yaşam, seçkin ayrıcalıklar ve yüksek kârlı ticari fırsatların birleştiği İstanbul'un yeni sembolü.",
+    "app": {
+      "title": "Luxera Life Uygulaması",
+      "comingSoon": "Çok Yakında"
+    },
+    "links": {
+      "group1": "Proje & Yaşam",
+      "group2": "Ticari & Ayrıcalıklar",
+      "group3": "Kurumsal",
+      "residencesPlans": "Rezidanslar & Planlar",
+      "contactNav": "İletişim & Ulaşım",
+      "aboutUs": "Hakkımızda",
+      "faq": "Sık Sorulan Sorular"
+    },
+    "contact": {
+      "callNow": "Hemen Arayın",
+      "salesOffice": "Satış Ofisi",
+      "directions": "Yol Tarifi",
+      "workingHours": "Çalışma Saatleri",
+      "email": "E-posta"
+    },
+    "bottom": {
+      "rights": "Tüm hakları saklıdır.",
+      "privacy": "Gizlilik Politikası",
+      "kvkk": "KVKK Aydınlatma Metni",
+      "cookies": "Çerez Politikası"
+    }
+  }
+}

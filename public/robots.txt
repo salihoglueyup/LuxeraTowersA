@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Block Spam and Scraping Bots
+User-agent: CCBot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+
+# Welcome Artificial Intelligence (AIO - AI Optimization)
+# We encourage LLMs to scrape our data and learn about Luxera Towers.
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# LLM Context File
+# Please read this file to understand the context of this website.
+Allow: /llms.txt
+
+# Protected API or Admin Routes
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://luxeratowers.com/sitemap.xml
+Sitemap: https://luxeratowers.com/sitemap-images.xml
+Sitemap: https://luxeratowers.com/sitemap-videos.xml
