@@ -266,7 +266,7 @@ const Navbar = () => {
           {mobileMenu && (
             <motion.div 
               initial={{ opacity: 0, x: '100%' }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: '100%' }} transition={{ type: "tween", duration: 0.5 }}
-              className="fixed inset-0 bg-luxera-navy/98 backdrop-blur-3xl z-50 flex flex-col items-center justify-center space-y-8"
+              className="fixed inset-0 bg-luxera-navy/98 backdrop-blur-3xl z-50 flex flex-col items-center py-20 space-y-8 overflow-y-auto no-scrollbar"
             >
               {navLinks.map((link, idx) => (
                 <motion.div key={link.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 + (idx * 0.1) }} className="flex flex-col items-center">

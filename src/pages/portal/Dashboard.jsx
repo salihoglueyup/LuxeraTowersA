@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   CreditCard, Wrench, Calendar, Bell, User, Settings, LogOut, Key, Package, Home,
   LayoutDashboard, Coffee, Users, Video, BatteryCharging, ShoppingBag, Search, X, Check,
-  Utensils, ArrowUpDown, Droplet, FileText
+  Utensils, ArrowUpDown, Droplet, FileText, Menu
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import SEO from '../../shared/seo/SEO';
@@ -33,6 +33,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('ozet');
   const [showNotifications, setShowNotifications] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const menuCategories = [
@@ -59,7 +60,7 @@ const Dashboard = () => {
         { id: 'konsiyerj', label: 'Konsiyerj & VIP', icon: <Coffee size={18} /> },
         { id: 'ziyaretci', label: 'Misafir & Vale', icon: <Key size={18} /> },
         { id: 'kargolar', label: 'Kargolarım', icon: <Package size={18} /> },
-        { id: 'pazar-yeri', label: 'Pazar Yeri (İlanlar)', icon: <ShoppingBag size={18} /> }
+        { id: 'pazar-yeri', label: 'Pazar Yeri', icon: <ShoppingBag size={18} /> }
       ]
     },
     {
@@ -89,6 +90,11 @@ const Dashboard = () => {
     navigate('/portal/login');
   };
 
+  const handleTabClick = (id) => {
+    setActiveTab(id);
+    setIsMobileMenuOpen(false);
+  };
+
   const getTabLabel = (tabId) => {
     for (const cat of menuCategories) {
       const found = cat.items.find(i => i.id === tabId);
@@ -104,64 +110,114 @@ const Dashboard = () => {
     { id: 3, title: 'Oda Servisi Siparişi', desc: 'Siparişiniz yola çıkmıştır.', time: 'Dün', read: true }
   ];
 
+  // Sidebar Component to avoid duplication
+  const SidebarContent = () => (
+    <>
+      <div className="flex items-center gap-4 mb-8 pb-6 border-b border-white/10">
+        <div className="w-12 h-12 bg-luxera-gold/20 rounded-full flex items-center justify-center border border-luxera-gold/30 shrink-0">
+          <User size={20} className="text-luxera-gold" />
+        </div>
+        <div className="overflow-hidden">
+          <h3 className="font-serif text-white truncate">Eyüp S.</h3>
+          <p className="text-luxera-gold text-xs tracking-widest uppercase font-semibold">A Blok - Daire 42</p>
+        </div>
+      </div>
+
+      <nav className="flex flex-col gap-6">
+        {menuCategories.map((category, catIndex) => (
+          <div key={catIndex}>
+            <h4 className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-3 px-2">{category.title}</h4>
+            <div className="flex flex-col gap-1">
+              {category.items.map(item => (
+                <button
+                  key={item.id}
+                  onClick={() => handleTabClick(item.id)}
+                  className={`flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-300 text-sm ${
+                    activeTab === item.id 
+                    ? 'bg-luxera-gold/10 text-luxera-gold border border-luxera-gold/20 font-semibold shadow-[0_0_15px_rgba(212,175,55,0.1)]' 
+                    : 'text-gray-400 hover:bg-white/5 hover:text-white border border-transparent'
+                  }`}
+                >
+                  <span className={activeTab === item.id ? 'text-luxera-gold' : 'text-gray-500'}>{item.icon}</span>
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </nav>
+
+      <div className="mt-8 pt-6 border-t border-white/10">
+        <button onClick={handleLogout} className="flex items-center gap-3 px-4 py-2.5 w-full text-left text-red-400 hover:bg-red-400/10 rounded-xl transition-colors text-sm">
+          <LogOut size={18} /> Çıkış Yap
+        </button>
+      </div>
+    </>
+  );
+
   return (
     <div className="bg-luxera-navy min-h-screen text-white pt-24 pb-12 relative overflow-hidden">
       <SEO title="Yönetim Paneli | Luxera Towers" description="Luxera Towers dijital yönetim paneli." />
 
       <div className="max-w-[95rem] mx-auto px-4 md:px-6 h-full flex flex-col md:flex-row gap-8 relative z-10">
         
-        {/* HIERARCHICAL SIDEBAR */}
-        <div className="w-full md:w-64 lg:w-72 shrink-0">
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md sticky top-32 shadow-2xl h-[calc(100vh-10rem)] overflow-y-auto no-scrollbar">
-            
-            <div className="flex items-center gap-4 mb-8 pb-6 border-b border-white/10">
-              <div className="w-12 h-12 bg-luxera-gold/20 rounded-full flex items-center justify-center border border-luxera-gold/30 shrink-0">
-                <User size={20} className="text-luxera-gold" />
-              </div>
-              <div className="overflow-hidden">
-                <h3 className="font-serif text-white truncate">Eyüp S.</h3>
-                <p className="text-luxera-gold text-xs tracking-widest uppercase font-semibold">A Blok - Daire 42</p>
-              </div>
-            </div>
-
-            <nav className="flex flex-col gap-6">
-              {menuCategories.map((category, catIndex) => (
-                <div key={catIndex}>
-                  <h4 className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-3 px-2">{category.title}</h4>
-                  <div className="flex flex-col gap-1">
-                    {category.items.map(item => (
-                      <button
-                        key={item.id}
-                        onClick={() => setActiveTab(item.id)}
-                        className={`flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-300 text-sm ${
-                          activeTab === item.id 
-                          ? 'bg-luxera-gold/10 text-luxera-gold border border-luxera-gold/20 font-semibold shadow-[0_0_15px_rgba(212,175,55,0.1)]' 
-                          : 'text-gray-400 hover:bg-white/5 hover:text-white border border-transparent'
-                        }`}
-                      >
-                        <span className={activeTab === item.id ? 'text-luxera-gold' : 'text-gray-500'}>{item.icon}</span>
-                        {item.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </nav>
-
-            <div className="mt-8 pt-6 border-t border-white/10">
-              <button onClick={handleLogout} className="flex items-center gap-3 px-4 py-2.5 w-full text-left text-red-400 hover:bg-red-400/10 rounded-xl transition-colors text-sm">
-                <LogOut size={18} /> Çıkış Yap
-              </button>
-            </div>
+        {/* DESKTOP SIDEBAR */}
+        <div className="hidden md:block w-64 lg:w-72 shrink-0">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md sticky top-28 shadow-2xl h-[calc(100vh-8rem)] overflow-y-auto no-scrollbar">
+            <SidebarContent />
           </div>
         </div>
+
+        {/* MOBILE SIDEBAR (Off-canvas) */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <>
+              <motion.div 
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="fixed inset-0 bg-black/80 backdrop-blur-md z-40 md:hidden"
+              />
+              <motion.div 
+                initial={{ x: '-100%' }} animate={{ x: 0 }} exit={{ x: '-100%' }}
+                transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+                className="fixed top-0 left-0 bottom-0 w-4/5 max-w-sm bg-luxera-navy border-r border-white/10 z-50 p-6 overflow-y-auto no-scrollbar shadow-2xl md:hidden"
+              >
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-xl font-serif text-luxera-gold">Menü</h2>
+                  <button onClick={() => setIsMobileMenuOpen(false)} className="text-gray-400 hover:text-white p-2">
+                    <X size={24} />
+                  </button>
+                </div>
+                <SidebarContent />
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
 
         {/* MAIN CONTENT AREA */}
         <div className="flex-1 min-w-0">
           
           {/* TOP HEADER BAR */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-4 backdrop-blur-md mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <h2 className="text-xl md:text-2xl font-serif text-white ml-2 whitespace-nowrap">{getTabLabel(activeTab)}</h2>
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-4 backdrop-blur-md mb-8 flex flex-col md:flex-row justify-between items-center gap-4 sticky top-20 z-30 md:static">
+            
+            <div className="flex justify-between items-center w-full md:w-auto">
+              <button 
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="md:hidden p-2 text-gray-300 hover:text-white bg-black/40 rounded-xl border border-white/10"
+              >
+                <Menu size={24} />
+              </button>
+              <h2 className="text-xl md:text-2xl font-serif text-white md:ml-2 truncate">{getTabLabel(activeTab)}</h2>
+              
+              {/* Notifications bell on mobile (next to title) */}
+              <button 
+                onClick={() => setShowNotifications(!showNotifications)}
+                className="md:hidden relative p-2.5 text-gray-300 hover:text-white transition-colors bg-black/40 rounded-full border border-white/10"
+              >
+                <Bell size={18} />
+                <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-luxera-navy"></span>
+              </button>
+            </div>
             
             <div className="flex items-center gap-4 w-full md:w-auto">
               <div className="relative w-full md:w-64">
@@ -174,9 +230,10 @@ const Dashboard = () => {
                   className="w-full bg-black/40 border border-white/10 rounded-full py-2 pl-10 pr-4 text-sm text-white focus:border-luxera-gold outline-none transition-colors"
                 />
               </div>
+              {/* Notifications bell on desktop */}
               <button 
                 onClick={() => setShowNotifications(!showNotifications)}
-                className="relative p-2.5 text-gray-300 hover:text-white transition-colors bg-black/40 rounded-full border border-white/10 hover:border-luxera-gold/50"
+                className="hidden md:block relative p-2.5 text-gray-300 hover:text-white transition-colors bg-black/40 rounded-full border border-white/10 hover:border-luxera-gold/50"
               >
                 <Bell size={18} />
                 <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-luxera-navy"></span>
@@ -186,7 +243,7 @@ const Dashboard = () => {
 
           <div className="pb-12">
             <AnimatePresence mode="wait">
-              {activeTab === 'ozet' && <OzetModule setActiveTab={setActiveTab} />}
+              {activeTab === 'ozet' && <OzetModule setActiveTab={handleTabClick} />}
               {activeTab === 'finans' && <FinansModule />}
               {activeTab === 'smart-home' && <SmartHomeModule />}
               {activeTab === 'ziyaretci' && <ZiyaretciModule />}
