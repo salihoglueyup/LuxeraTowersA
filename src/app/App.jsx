@@ -20,6 +20,10 @@ import Media from '../pages/Media';
 import Videos from '../pages/Videos';
 import Events from '../pages/Events';
 import Corporate from '../pages/Corporate';
+import Offices from '../pages/Offices';
+import Stores from '../pages/Stores';
+import Dining from '../pages/Dining';
+import ResidentPortal from '../pages/ResidentPortal';
 import Kvkk from '../pages/Legal/Kvkk';
 import Privacy from '../pages/Legal/Privacy';
 import Cookies from '../pages/Legal/Cookies';
@@ -110,6 +114,10 @@ export default function App() {
                 <Route path="basinda-biz" element={<Media />} />
                 <Route path="videolar" element={<Videos />} />
                 <Route path="etkinlikler" element={<Events />} />
+                <Route path="ofisler" element={<Offices />} />
+                <Route path="magazalar" element={<Stores />} />
+                <Route path="yeme-icme" element={<Dining />} />
+                <Route path="sakinler-portali" element={<ResidentPortal />} />
                 <Route path="hakkimizda" element={<Corporate />} />
                 <Route path="kvkk" element={<Kvkk />} />
                 <Route path="gizlilik" element={<Privacy />} />

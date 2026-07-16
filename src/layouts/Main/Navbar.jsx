@@ -64,6 +64,9 @@ const Navbar = () => {
       hasDropdown: true,
       subLinks: [
         { name: t('nav.commercial', 'Ticari Üniteler'), path: '/ticari' },
+        { name: t('nav.offices', 'Ofisler & Şirketler'), path: '/ofisler' },
+        { name: t('nav.stores', 'Mağazalar & Markalar'), path: '/magazalar' },
+        { name: t('nav.dining', 'Yeme & İçme'), path: '/yeme-icme' },
         { name: t('nav.mall', 'AVM & Yaşam'), path: '/yasam' },
         { name: t('nav.investment', 'Yatırım Değeri'), path: '/yatirim' }
       ]
@@ -171,13 +174,20 @@ const Navbar = () => {
             >
               {t('common.downloadCatalog', 'Katalog İndir')} <Download size={16} />
             </button>
+            <Link 
+              to="/sakinler-portali"
+              className="border border-white/20 text-white px-5 py-2 rounded-sm hover:bg-white/10 transition-all flex items-center"
+            >
+              {t('nav.residentPortal', 'Sakinler Portalı')}
+            </Link>
             <div className="border-s border-white/20 ps-4">
               <LanguageSwitcher />
             </div>
           </div>
 
-          {/* Mobile Menu Toggle & Lang */}
-          <div className="lg:hidden flex items-center gap-4 z-[60]">
+          {/* Mobile Menu Toggle & Lang & Resident */}
+          <div className="lg:hidden flex items-center gap-3 z-[60]">
+            <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded">Sakinler</Link>
             <LanguageSwitcher />
             <button className="text-white" onClick={() => setMobileMenu(!mobileMenu)}>
               {mobileMenu ? <X size={28} /> : <Menu size={28} />}
