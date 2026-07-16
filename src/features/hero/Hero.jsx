@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -11,20 +11,44 @@ const Hero = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]); // Parallax effect
   const { t } = useTranslation();
+  
+  // Mobil ekran (768px alti) kontrolu
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Ilk yuklemede kontrol et
+    checkMobile();
+    
+    // Pencere yeniden boyutlandirildiginda kontrol et
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   return (
   <section className="relative h-screen w-full overflow-hidden">
     
     {/* Tam Ekran Arka Plan Videosu */}
-    <motion.div style={{ y }} className="absolute inset-0 z-0">
+    <motion.div style={{ y }} className="absolute inset-0 z-0 bg-luxera-navy">
       <video 
+        key={isMobile ? 'mobile' : 'desktop'} // Cihaz degistiginde videonun yeniden yuklenmesini zorlar
         autoPlay 
         loop 
         muted 
         playsInline
-        className="w-full h-full object-cover"
+        /* 
+          Mobil odagi degistirmek icin:
+          - object-center (Varsayilan: Tam ortadan keser)
+          - object-left (Sol tarafi korur, sagi keser)
+          - object-right (Sag tarafi korur, solu keser)
+          - object-[25%_center] (Ozel yuzde belirleme)
+        */
+        className="w-full h-full object-cover object-center"
       >
-        <source src="/video/luxera-hero.mp4" type="video/mp4" />
+        <source src={isMobile ? "/video/luxera-hero-mobile.mp4" : "/video/luxera-hero.mp4"} type="video/mp4" />
       </video>
       
       {/* İki Katmanlı Güçlü Degrade */}
