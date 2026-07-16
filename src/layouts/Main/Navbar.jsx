@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Download, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Download, Lock, ExternalLink, CreditCard, Wrench, Calendar, LayoutDashboard } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { residences } from '../../data/residences';
@@ -176,12 +176,79 @@ const Navbar = () => {
             >
               {t('common.downloadCatalog', 'Katalog İndir')} <Download size={16} />
             </button>
-            <Link 
-              to="/sakinler-portali"
-              className="border border-white/20 text-white px-5 py-2 rounded-sm hover:bg-white/10 transition-all flex items-center"
+
+            {/* SAKİNLER PORTALI AÇILIR MENÜ (DROPDOWN) */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setActiveDropdown('residentPortal')}
+              onMouseLeave={() => setActiveDropdown(null)}
             >
-              {t('nav.residentPortal', 'Sakinler Portalı')}
-            </Link>
+              <Link 
+                to="/sakinler-portali"
+                className={`border px-5 py-2 rounded-sm transition-all flex items-center gap-2 ${
+                  (location.pathname === '/sakinler-portali' || activeDropdown === 'residentPortal')
+                  ? 'border-luxera-gold text-luxera-gold bg-luxera-gold/10'
+                  : 'border-white/20 text-white hover:bg-white/10'
+                }`}
+              >
+                {t('nav.residentPortal', 'Sakinler Portalı')}
+                <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === 'residentPortal' ? 'rotate-180' : ''}`} />
+              </Link>
+
+              <AnimatePresence>
+                {activeDropdown === 'residentPortal' && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="absolute top-full end-0 mt-4 min-w-[260px] bg-luxera-navy/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl p-4 flex flex-col gap-2 z-50 whitespace-nowrap"
+                  >
+                    <Link 
+                      to="/sakinler-portali" 
+                      className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <LayoutDashboard size={16} className="text-luxera-gold" /> Portal Anasayfa
+                    </Link>
+                    <Link 
+                      to="/portal/odemeler" 
+                      className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <CreditCard size={16} className="text-luxera-gold" /> Aidat ve Ödemeler
+                    </Link>
+                    <Link 
+                      to="/portal/teknik" 
+                      className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <Wrench size={16} className="text-luxera-gold" /> Teknik Servis
+                    </Link>
+                    <Link 
+                      to="/portal/rezervasyon" 
+                      className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <Calendar size={16} className="text-luxera-gold" /> Tesis Rezervasyonu
+                    </Link>
+                    
+                    <div className="h-px bg-white/10 my-2"></div>
+                    
+                    <a 
+                      href="https://www.apsiyon.com/giris" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/link text-white hover:text-luxera-navy hover:bg-luxera-gold px-6 py-3 rounded-lg transition-all font-serif tracking-wide flex items-center gap-3"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <Lock size={16} className="text-luxera-gold group-hover/link:text-luxera-navy transition-colors" /> Apsiyon Giriş 
+                      <ExternalLink size={14} className="ml-auto opacity-50 group-hover/link:opacity-100" />
+                    </a>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <div className="border-s border-white/20 ps-4">
               <LanguageSwitcher />
             </div>
@@ -220,6 +287,22 @@ const Navbar = () => {
                   )}
                 </motion.div>
               ))}
+
+              {/* Mobil Menü Sakinler Portalı Linkleri */}
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="flex flex-col items-center pt-8 border-t border-white/10 w-3/4">
+                <Link to="/sakinler-portali" className="text-3xl font-serif text-white hover:text-luxera-gold transition-colors text-center" onClick={() => setMobileMenu(false)}>
+                  Sakinler Portalı
+                </Link>
+                <div className="flex flex-col items-center mt-4 space-y-4">
+                  <Link to="/portal/odemeler" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Aidat ve Ödemeler</Link>
+                  <Link to="/portal/teknik" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Teknik Servis</Link>
+                  <Link to="/portal/rezervasyon" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Tesis Rezervasyonu</Link>
+                  <a href="https://www.apsiyon.com/giris" target="_blank" rel="noopener noreferrer" className="text-xl text-luxera-gold hover:text-white transition-colors flex items-center gap-2" onClick={() => setMobileMenu(false)}>
+                    - Apsiyon Giriş <ExternalLink size={16} />
+                  </a>
+                </div>
+              </motion.div>
+
               <motion.button 
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}
                 onClick={() => { setMobileMenu(false); setShowLeadModal(true); }}
