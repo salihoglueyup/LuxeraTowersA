@@ -156,7 +156,7 @@ const Dashboard = () => {
   );
 
   return (
-    <div className="bg-luxera-navy min-h-screen text-white pt-24 pb-12 relative overflow-hidden">
+    <div className="bg-luxera-navy min-h-screen text-white pt-28 md:pt-36 pb-12 relative overflow-x-hidden">
       <SEO title="Yönetim Paneli | Luxera Towers" description="Luxera Towers dijital yönetim paneli." />
 
       <div className="max-w-[95rem] mx-auto px-4 md:px-6 h-full flex flex-col md:flex-row gap-8 relative z-10">
@@ -198,7 +198,7 @@ const Dashboard = () => {
         <div className="flex-1 min-w-0">
           
           {/* TOP HEADER BAR */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-4 backdrop-blur-md mb-8 flex flex-col md:flex-row justify-between items-center gap-4 sticky top-20 z-30 md:static">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-4 backdrop-blur-md mb-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-20">
             
             <div className="flex justify-between items-center w-full md:w-auto">
               <button 

@@ -252,11 +252,11 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Toggle & Lang & Resident */}
-          <div className="lg:hidden flex items-center gap-3 z-[60]">
-            <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded">Sakinler</Link>
+          <div className={`lg:hidden flex items-center gap-3 transition-opacity duration-300 ${mobileMenu ? 'opacity-0 pointer-events-none' : 'opacity-100 z-[60]'}`}>
+            <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded hover:bg-white/10 transition-colors">Sakinler</Link>
             <LanguageSwitcher />
-            <button className="text-white" onClick={() => setMobileMenu(!mobileMenu)}>
-              {mobileMenu ? <X size={28} /> : <Menu size={28} />}
+            <button className="text-white hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(true)}>
+              <Menu size={28} />
             </button>
           </div>
         </div>
@@ -266,47 +266,84 @@ const Navbar = () => {
           {mobileMenu && (
             <motion.div 
               initial={{ opacity: 0, x: '100%' }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: '100%' }} transition={{ type: "tween", duration: 0.5 }}
-              className="fixed inset-0 bg-luxera-navy/98 backdrop-blur-3xl z-50 flex flex-col items-center py-20 space-y-8 overflow-y-auto no-scrollbar"
+              className="fixed inset-0 bg-luxera-navy/98 backdrop-blur-3xl z-[70] flex flex-col overflow-y-auto no-scrollbar"
             >
-              {navLinks.map((link, idx) => (
-                <motion.div key={link.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 + (idx * 0.1) }} className="flex flex-col items-center">
-                  <Link to={link.path !== '#' ? link.path : '#'} className="text-3xl font-serif text-white hover:text-luxera-gold transition-colors text-center" onClick={() => link.path !== '#' && setMobileMenu(false)}>
-                    {link.name}
-                  </Link>
-                  {link.hasDropdown && (
-                    <div className="flex flex-col items-center mt-4 space-y-4">
-                      {link.subLinks.map((sub, sidx) => (
-                        <Link key={sidx} to={sub.path} className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>
-                          - {sub.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </motion.div>
-              ))}
-
-              {/* Mobil Menü Sakinler Portalı Linkleri */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="flex flex-col items-center pt-8 border-t border-white/10 w-3/4">
-                <Link to="/sakinler-portali" className="text-3xl font-serif text-white hover:text-luxera-gold transition-colors text-center" onClick={() => setMobileMenu(false)}>
-                  Sakinler Portalı
+              {/* Overlay Header */}
+              <div className="flex justify-between items-center px-6 py-4 border-b border-white/10 shrink-0">
+                <Link to="/" onClick={() => setMobileMenu(false)}>
+                  <img src="/images/logo/logo.webp" alt="Luxera Towers" className="h-10 w-auto brightness-0 invert" />
                 </Link>
-                <div className="flex flex-col items-center mt-4 space-y-4">
-                  <Link to="/portal/finans" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Finans & Aidat</Link>
-                  <Link to="/portal/destek" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Konsiyerj & Destek</Link>
-                  <Link to="/portal/tesisler" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Sosyal Yaşam & SPA</Link>
-                  <Link to="/portal/login" className="text-xl text-luxera-gold hover:text-white transition-colors flex items-center gap-2" onClick={() => setMobileMenu(false)}>
-                    - Sisteme Giriş
-                  </Link>
+                <div className="flex items-center gap-4">
+                  <LanguageSwitcher />
+                  <button onClick={() => setMobileMenu(false)} className="text-gray-300 hover:text-white bg-white/5 p-2 rounded-full border border-white/10">
+                    <X size={24} />
+                  </button>
                 </div>
+              </div>
+
+              {/* Menu Links */}
+              <div className="flex-1 px-6 py-8 flex flex-col gap-6">
+                {navLinks.map((link, idx) => (
+                  <motion.div key={link.name} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 + (idx * 0.1) }} className="flex flex-col">
+                    <Link 
+                      to={link.path !== '#' ? link.path : '#'} 
+                      className="text-2xl font-serif text-white hover:text-luxera-gold transition-colors mb-2"
+                      onClick={() => link.path !== '#' && setMobileMenu(false)}
+                    >
+                      {link.name}
+                    </Link>
+                    
+                    {link.hasDropdown && (
+                      <div className="flex flex-col gap-3 pl-4 border-l border-white/10 mt-1">
+                        {link.subLinks.map((sub, sidx) => (
+                          <Link 
+                            key={sidx} 
+                            to={sub.path} 
+                            className="text-base text-gray-400 hover:text-luxera-gold transition-colors" 
+                            onClick={() => setMobileMenu(false)}
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Sakinler Portalı Card */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} 
+                className="px-6 pb-6 shrink-0"
+              >
+                <div className="bg-gradient-to-br from-luxera-gold/20 to-black/40 border border-luxera-gold/30 rounded-2xl p-6 shadow-2xl">
+                  <div className="flex items-center gap-3 mb-4 border-b border-luxera-gold/20 pb-4">
+                    <LayoutDashboard size={24} className="text-luxera-gold" />
+                    <h3 className="text-xl font-serif text-white">Sakinler Portalı</h3>
+                  </div>
+                  <div className="flex flex-col gap-3 mb-6 pl-2">
+                    <Link to="/portal/finans" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><CreditCard size={16} className="text-luxera-gold"/> Finans & Aidat</Link>
+                    <Link to="/portal/destek" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Wrench size={16} className="text-luxera-gold"/> Konsiyerj & Destek</Link>
+                    <Link to="/portal/tesisler" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Calendar size={16} className="text-luxera-gold"/> Sosyal Yaşam & SPA</Link>
+                  </div>
+                  <div className="flex gap-3">
+                    <Link to="/portal/login" className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-2.5 rounded-xl text-sm font-semibold border border-white/20 transition-colors" onClick={() => setMobileMenu(false)}>
+                      Sisteme Giriş
+                    </Link>
+                    <Link to="/sakinler-portali" className="flex-1 bg-luxera-gold hover:bg-luxera-gold/80 text-luxera-navy text-center py-2.5 rounded-xl text-sm font-bold transition-colors" onClick={() => setMobileMenu(false)}>
+                      Portal Anasayfa
+                    </Link>
+                  </div>
+                </div>
+
+                <button 
+                  onClick={() => { setMobileMenu(false); setShowLeadModal(true); }}
+                  className="w-full mt-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-sm uppercase tracking-widest transition-colors"
+                >
+                  <Download size={16} className="text-luxera-gold" /> {t('common.downloadCatalog', 'Katalog İndir')}
+                </button>
               </motion.div>
 
-              <motion.button 
-                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}
-                onClick={() => { setMobileMenu(false); setShowLeadModal(true); }}
-                className="mt-8 bg-luxera-gold text-white px-8 py-4 rounded-sm uppercase tracking-widest text-sm"
-              >
-                {t('common.downloadCatalog', 'Katalog İndir')}
-              </motion.button>
             </motion.div>
           )}
         </AnimatePresence>
