@@ -14,6 +14,9 @@ const Events = () => {
   const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
   const [activeFilter, setActiveFilter] = useState('Tümü');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const ITEMS_PER_PAGE = 9;
 
   const handleAddToCalendar = (e) => {
     e.stopPropagation();
@@ -31,9 +34,14 @@ const Events = () => {
     ? sortedEvents 
     : sortedEvents.filter(e => e.category === activeFilter);
 
-  // Extract featured event (the first one)
-  const featuredEvent = filteredEvents[0];
-  const remainingEvents = filteredEvents.slice(1);
+  // Pagination Logic
+  const totalPages = Math.ceil(filteredEvents.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginatedEvents = filteredEvents.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  // Extract featured event (only on page 1)
+  const featuredEvent = currentPage === 1 ? paginatedEvents[0] : null;
+  const remainingEvents = currentPage === 1 ? paginatedEvents.slice(1) : paginatedEvents;
 
   return (
     <div className="bg-luxera-navy min-h-screen text-white pb-32">
@@ -59,7 +67,10 @@ const Events = () => {
             {categories.map((cat, idx) => (
               <button
                 key={idx}
-                onClick={() => setActiveFilter(cat)}
+                onClick={() => {
+                  setActiveFilter(cat);
+                  setCurrentPage(1);
+                }}
                 className={`px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                   activeFilter === cat 
                   ? 'bg-luxera-gold text-luxera-navy shadow-[0_0_15px_rgba(212,175,55,0.4)]' 
@@ -173,6 +184,43 @@ const Events = () => {
             {filteredEvents.length === 0 && (
               <div className="text-center py-20 text-gray-400">
                 Bu kategoride henüz bir etkinlik bulunmamaktadır.
+              </div>
+            )}
+
+            {/* PAGINATION CONTROLS */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 md:gap-4 mt-16 md:mt-20">
+                <button 
+                  onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-white/10 transition-colors"
+                >
+                  <ChevronRight size={18} className="transform rotate-180" />
+                </button>
+                
+                <div className="flex gap-2">
+                  {Array.from({ length: totalPages }).map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentPage(i + 1)}
+                      className={`w-10 h-10 md:w-12 md:h-12 rounded-full font-serif text-sm md:text-base flex items-center justify-center transition-all ${
+                        currentPage === i + 1 
+                        ? 'bg-luxera-gold text-luxera-navy' 
+                        : 'border border-white/20 text-white hover:border-luxera-gold hover:text-luxera-gold'
+                      }`}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                </div>
+
+                <button 
+                  onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-white/10 transition-colors"
+                >
+                  <ChevronRight size={18} />
+                </button>
               </div>
             )}
           </motion.div>

@@ -108,5 +108,95 @@ export const events = [
     desc: '23 Nisan Ulusal Egemenlik ve Çocuk Bayramı kutlamaları kapsamında ücretsiz tiyatro gösterimi.',
     image: '/images/interior/4_2025-12-18_02-42-20_d1aa12.webp',
     body: 'Minik misafirlerimizin bayram coşkusuna ortak oluyoruz! Luxera Performans Sanatları Merkezi\'nde sahnelenecek olan "Masal Ormanı" çocuk müzikali ile çocuklarımız eğlenirken öğrenecekleri büyülü bir yolculuğa çıkacaklar. 23 Nisan gün boyu sürecek sosis balon katlama, yüz boyama ve pamuk şeker ikramlarımız tiyatro girişinde ücretsiz olarak sunulacaktır.'
+  },
+  {
+    id: 'kuresel-yatirim-forumu',
+    category: 'Etkinlik',
+    date: '10 Mayıs 2027',
+    isoDate: '2027-05-10',
+    title: 'Küresel Gayrimenkul Yatırım Forumu',
+    desc: 'Uluslararası yatırımcıları bir araya getiren prestijli gayrimenkul zirvesi.',
+    image: '/images/exterior/13_2025-12-18_02-46-35_3f1737.webp',
+    body: 'Luxera Towers Kongre Merkezi\'nde gerçekleşecek olan Küresel Gayrimenkul Yatırım Forumu\'nda, uluslararası fon yöneticileri, yatırımcılar ve sektör liderleri bir araya geliyor. Projemizin de ana sponsorlarından olduğu bu forumda, gayrimenkul trendleri, sürdürülebilir yaşam projeleri ve İstanbul\'un yatırım değeri tartışılacak. Tüm sakinlerimiz için özel katılım kontenjanı ayrılmıştır.'
+  },
+  {
+    id: 'yaz-merhaba-partisi',
+    category: 'Eğlence ve Organizasyon',
+    date: '15 Haziran 2027',
+    isoDate: '2027-06-15',
+    title: 'Yaza Merhaba Sunset Partisi',
+    desc: 'Teras alanımızda DJ performansı eşliğinde yaza muhteşem bir giriş.',
+    image: '/images/exterior/12_2025-12-18_02-46-35_4cee27.webp',
+    body: 'Yaz mevsimini karşılamak için eşsiz bir etkinlik hazırladık! Luxera Towers teras katında, muhteşem İstanbul manzarasına karşı gerçekleşecek Yaza Merhaba Sunset Partisi\'ne tüm sakinlerimiz davetlidir. Ünlü DJ performansları, özel kokteyl ikramları ve canlı saksafon şovu ile unutulmaz bir akşam yaşanacak. Havuz başı Lounge alanında gerçekleşecek etkinlik için kayıt yaptırmayı unutmayın.'
+  },
+  {
+    id: 'acik-hava-sinema',
+    category: 'Eğlence ve Organizasyon',
+    date: '05 Temmuz 2027',
+    isoDate: '2027-07-05',
+    title: 'Açık Hava Sinema Gecesi: Klasikler',
+    desc: 'Yıldızların altında, dev ekranda unutulmaz sinema klasikleri gösterimi.',
+    image: '/images/interior/4_2025-12-18_02-42-20_d1aa12.webp',
+    body: 'Sıcak yaz akşamlarının vazgeçilmezi açık hava sineması Luxera Meydan\'da başlıyor. Dev ekran ve surround ses sistemi eşliğinde, "Kazablanka" filminden "Baba" serisine uzanan unutulmaz sinema klasiklerini izleyeceğiz. Patlamış mısır ve soğuk içecek ikramlarımızın olacağı bu nostaljik geceye tüm sinemasever komşularımızı bekliyoruz.'
+  },
+  {
+    id: 'pilates-yoga-atolyesi',
+    category: 'Etkinlik',
+    date: '20 Ağustos 2027',
+    isoDate: '2027-08-20',
+    title: 'Açık Hava Yoga ve Pilates Atölyesi',
+    desc: 'Sağlıklı yaşama adım atmak isteyenler için uzman eğitmenler eşliğinde sabah sporu.',
+    image: '/images/amenities/d5_scene26_20240303_012656copy_2025-12-18_03-46-34_808608.webp',
+    body: 'Güne zinde başlamak ve ruhunuzu dinlendirmek için Luxera yeşil alanlarında ücretsiz Yoga ve Pilates atölyeleri düzenliyoruz. Profesyonel eğitmenlerimiz eşliğinde yapılacak bu sabah seanslarına her seviyeden sakinimiz katılabilir. Katılımcılara mat ve havlu temini sağlanacaktır. Bedensel ve zihinsel farkındalığınızı artıracağınız bu rahatlatıcı etkinliğe bekliyoruz.'
+  },
+  {
+    id: 'kahve-festivali',
+    category: 'Eğlence ve Organizasyon',
+    date: '10 Eylül 2027',
+    isoDate: '2027-09-10',
+    title: 'Güz Kahve Festivali',
+    desc: 'Farklı kahve çekirdeklerini tadabileceğiniz, baristalarla buluşabileceğiniz özel bir gün.',
+    image: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp',
+    body: 'Sonbaharın gelişini, mis gibi kahve kokularıyla karşılıyoruz! Luxera AVM iç meydanında gerçekleşecek olan Kahve Festivali\'nde, şehrin en iyi 3. nesil kahvecileri bir araya geliyor. Filtre kahve tadımları, latte art gösterileri ve espresso yapım atölyeleriyle dolu bu etkinlikte, kahve tutkunları yeni lezzetler keşfetme fırsatı bulacak.'
+  },
+  {
+    id: 'kres-acilis',
+    category: 'Haber',
+    date: '01 Ekim 2027',
+    isoDate: '2027-10-01',
+    title: 'Luxera Kids Club Kreşi Hizmete Girdi',
+    desc: 'Minik sakinlerimiz için hazırlanan modern kreş ve oyun alanımız kapılarını açtı.',
+    image: '/images/interior/3_2025-12-18_02-46-35_5e79ff.webp',
+    body: 'Ailelerimizin hayatını kolaylaştıracak harika bir haberimiz var! Luxera Towers projesi bünyesinde hayata geçirilen "Luxera Kids Club" kreşimiz hizmete açıldı. Pedagojik standartlara uygun tasarlanan renkli oyun alanları, uyku odaları ve yaratıcı sanat atölyeleri ile çocuklarınız güvende ve mutlu olacak. Profesyonel çocuk gelişim uzmanları eşliğinde hizmet verecek olan kreşimize ön kayıt yaptırmak için yönetim ofisine başvurabilirsiniz.'
+  },
+  {
+    id: 'cumhuriyet-bayrami',
+    category: 'Eğlence ve Organizasyon',
+    date: '29 Ekim 2027',
+    isoDate: '2027-10-29',
+    title: '29 Ekim Cumhuriyet Bayramı Balo Resepsiyonu',
+    desc: 'Cumhuriyetimizin yeni yılını görkemli bir resepsiyon ile kutluyoruz.',
+    image: '/images/exterior/1_2025-12-18_02-46-34_3de865.webp',
+    body: 'Cumhuriyet Bayramı coşkusunu hep birlikte yaşamak için Luxera Towers sakinleri olarak görkemli bir balo resepsiyonunda buluşuyoruz. Balo salonumuzda düzenlenecek bu özel gecede, klasik müzik dinletisi eşliğinde vals gösterileri izleyecek, ardından canlı orkestra performansıyla bayramımızı kutlayacağız. Şık kıyafetlerinizle katılacağınız bu anlamlı geceye hepinizi bekliyoruz.'
+  },
+  {
+    id: 'yilbasi-panayiri',
+    category: 'Eğlence ve Organizasyon',
+    date: '15-30 Aralık 2027',
+    isoDate: '2027-12-15',
+    title: 'Geleneksel Yeni Yıl Panayırı',
+    desc: 'El sanatları, hediye stantları ve sıcak şarap eşliğinde yeni yıl ruhunu hissedin.',
+    image: '/images/exterior/14_2025-12-18_02-46-35_78c2e7.webp',
+    body: 'Yeni yıla hazırlık heyecanı Luxera Meydan\'da başlıyor! 15-30 Aralık tarihleri arasında açık kalacak Geleneksel Yeni Yıl Panayırımızda; el yapımı hediyelik eşyalar, tasarım takılar, organik lezzetler ve çok daha fazlası sizleri bekliyor. Akşamları canlı müzik ve sıcak şarap ikramları eşliğinde, ışıl ışıl panayır alanımızda yeni yıl ruhunu komşularınızla birlikte yaşayın.'
+  },
+  {
+    id: 'site-yonetim-toplantisi',
+    category: 'Duyuru',
+    date: '15 Ocak 2028',
+    isoDate: '2028-01-15',
+    title: '2028 Yılı Olağan Site Yönetim Toplantısı',
+    desc: 'Tüm kat maliklerinin katılımı ile gerçekleştirilecek olan yıllık değerlendirme toplantısı.',
+    image: '/images/interior/1_2025-12-18_02-46-34_3de865.webp',
+    body: 'Saygıdeğer Kat Maliklerimiz, 2027 yılının genel değerlendirmesini yapmak, mali raporları sunmak ve 2028 yılı bütçe planlamasını görüşmek üzere Olağan Site Yönetim Toplantımız gerçekleştirilecektir. Luxera Towers Kongre Merkezi ana salonunda yapılacak olan toplantıya bizzat katılımınız veya vekil tayin etmeniz önemle rica olunur. Toplantı gündem maddeleri e-posta adreslerinize gönderilmiştir.'
   }
 ];
