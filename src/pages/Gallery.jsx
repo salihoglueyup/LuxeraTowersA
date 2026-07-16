@@ -5,6 +5,7 @@ import StatStrip from '../shared/ui/StatStrip';
 import Testimonials from '../shared/ui/Testimonials';
 import CtaBand from '../shared/ui/CtaBand';
 import HorizontalScroll from '../shared/ui/HorizontalScroll';
+import SEO from '../shared/seo/SEO';
 
 import { useTranslation } from 'react-i18next';
 
@@ -12,29 +13,56 @@ const Gallery = () => {
   const { t } = useTranslation();
 
   const IMAGES = [
-    { id: 1, src: '/images/exterior/13_2025-12-18_02-46-35_a465ab.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.i1', 'Genel Görünüm') },
-    { id: 2, src: '/images/interior/6_2025-12-18_02-42-20_29be56.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.i2', 'Salon Konsepti') },
-    { id: 3, src: '/images/exterior/5_2025-12-18_02-46-35_82a21a.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.i3', 'Mimari Detay') },
-    { id: 4, src: '/images/interior/7_2025-12-18_02-42-20_35374f.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.i4', 'Yatak Odası') },
-    { id: 5, src: '/images/exterior/9_2025-12-18_02-46-35_8d953d.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.i5', 'Peyzaj ve Kuleler') },
-    { id: 6, src: '/images/interior/d5_scene7_20240304_220754copy_2025-12-18_03-47-03_62285d.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.i6', 'Mutfak Tasarımı') },
-    { id: 7, src: '/images/exterior/12_2025-12-18_02-46-35_4cee27.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.i7', 'Gece Görünümü') },
-    { id: 8, src: '/images/amenities/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.i8', 'Kapalı Havuz') },
-    { id: 9, src: '/images/amenities/d5_scene13_20240303_032610copy_2025-12-18_03-46-29_1819dd.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.i9', 'Lounge') },
+    // EXTERIOR
+    { id: 'ex1', src: '/images/exterior/13_2025-12-18_02-46-35_a465ab.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.ex1', 'Genel Görünüm') },
+    { id: 'ex2', src: '/images/exterior/5_2025-12-18_02-46-35_82a21a.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.ex2', 'Kule Yakın Çekim') },
+    { id: 'ex3', src: '/images/exterior/9_2025-12-18_02-46-35_8d953d.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.ex3', 'Peyzaj ve Yaşam') },
+    { id: 'ex4', src: '/images/exterior/12_2025-12-18_02-46-35_4cee27.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.ex4', 'Gece Görünümü') },
+    { id: 'ex5', src: '/images/exterior/1_2025-12-18_02-46-35_e84e9a.webp', category: t('gallery.cat.exterior', 'Dış Mekan'), title: t('gallery.img.ex5', 'Ticari Üniteler') },
+
+    // INTERIOR
+    { id: 'in1', src: '/images/interior/6_2025-12-18_02-42-20_29be56.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.in1', 'Salon Konsepti') },
+    { id: 'in2', src: '/images/interior/7_2025-12-18_02-42-20_35374f.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.in2', 'Yatak Odası') },
+    { id: 'in3', src: '/images/interior/d5_scene7_20240304_220754copy_2025-12-18_03-47-03_62285d.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.in3', 'Mutfak Tasarımı') },
+    { id: 'in4', src: '/images/interior/4_2025-12-18_02-42-20_d1aa12.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.in4', 'Banyo Detayı') },
+    { id: 'in5', src: '/images/interior/10_2025-12-18_02-42-20_2ab0c1.webp', category: t('gallery.cat.interior', 'İç Mekan'), title: t('gallery.img.in5', 'Giyinme Odası') },
+
+    // AMENITIES
+    { id: 'am1', src: '/images/amenities/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.am1', 'Kapalı Yüzme Havuzu') },
+    { id: 'am2', src: '/images/amenities/d5_scene13_20240303_032610copy_2025-12-18_03-46-29_1819dd.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.am2', 'Lounge Alanı') },
+    { id: 'am3', src: '/images/amenities/d5_scene4_20240303_035120copy_2025-12-18_03-46-29_0346af.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.am3', 'Fitness & SPA') },
+    { id: 'am4', src: '/images/amenities/d5_scene9_20240303_024623copy_2025-12-18_03-46-29_a8b134.webp', category: t('gallery.cat.amenity', 'Sosyal Alan'), title: t('gallery.img.am4', 'Toplantı ve Çalışma Alanı') },
+    
+    // PLANS
+    { id: 'pl1', src: '/images/floor-plans/floor.plans.1+1/floor.plans.1+1.a1/floor.plans.1+1.a1.webp', category: t('gallery.cat.plans', 'Kat Planları'), title: t('gallery.img.pl1', '1+1 A1 Tipi') },
+    { id: 'pl2', src: '/images/floor-plans/floor.plans.2+1/floor.plans.2+1.b1/floor.plans.2+1.b1.webp', category: t('gallery.cat.plans', 'Kat Planları'), title: t('gallery.img.pl2', '2+1 B1 Tipi') },
+    { id: 'pl3', src: '/images/floor-plans/floor.plans.3+1/floor-plans.3+1.c1/floor-plans.3+1.c1.webp', category: t('gallery.cat.plans', 'Kat Planları'), title: t('gallery.img.pl3', '3+1 C1 Tipi') },
+    { id: 'pl4', src: '/images/floor-plans/floor.plans.4+1/floor.plans.4+1.webp', category: t('gallery.cat.plans', 'Kat Planları'), title: t('gallery.img.pl4', '4+1 Penthouse') },
   ];
 
-  const CATEGORIES = [t('gallery.cat.all', 'Tümü'), t('gallery.cat.exterior', 'Dış Mekan'), t('gallery.cat.interior', 'İç Mekan'), t('gallery.cat.amenity', 'Sosyal Alan')];
+  const CATEGORIES = [
+    t('gallery.cat.all', 'Tümü'), 
+    t('gallery.cat.exterior', 'Dış Mekan'), 
+    t('gallery.cat.interior', 'İç Mekan'), 
+    t('gallery.cat.amenity', 'Sosyal Alan'),
+    t('gallery.cat.plans', 'Kat Planları')
+  ];
 
-  const [activeCategory, setActiveCategory] = useState(t('gallery.cat.all', 'Tümü'));
+  const [activeCategory, setActiveCategory] = useState(CATEGORIES[0]);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const filteredImages = activeCategory === t('gallery.cat.all', 'Tümü') 
+  const filteredImages = activeCategory === CATEGORIES[0] 
     ? IMAGES 
     : IMAGES.filter(img => img.category === activeCategory);
 
   return (
     <div className="pt-24 bg-luxera-charcoal min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 py-16 text-center">
+      <SEO 
+        title={t('gallery.seo.title', 'Galeri ve Görseller')}
+        description={t('gallery.seo.desc', 'Luxera Towers\'ın seçkin dış mimarisi, lüks iç mekan tasarımları, kat planları ve sosyal olanaklarını galerimizde inceleyin.')}
+        canonical="https://luxeratowers.com/galeri"
+      />
+      <div className="max-w-[90rem] mx-auto px-6 py-16 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-5xl md:text-6xl font-serif text-white mb-6">{t('gallery.title', 'Galeri')}</h1>
           <div className="h-[1px] w-24 bg-luxera-gold mx-auto mb-6"></div>
@@ -42,7 +70,7 @@ const Gallery = () => {
         </motion.div>
         
         {/* Kategoriler */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
           {CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -58,40 +86,44 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Yatay Kaydırma Galerisi */}
-        <HorizontalScroll>
-          {filteredImages.map((img) => (
-            <motion.div
-              key={img.id}
-              layout
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.3 }}
-              className="group relative h-[60vh] w-[80vw] md:w-[60vw] lg:w-[40vw] shrink-0 cursor-pointer overflow-hidden rounded-2xl shadow-2xl"
-              onClick={() => setSelectedImage(img)}
-            >
-              <img 
-                src={img.src} 
-                alt={img.title} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
-                <ZoomIn className="text-luxera-gold mb-4" size={48} />
-                <h4 className="text-white font-serif text-3xl mb-2">{img.title}</h4>
-                <span className="text-luxera-gold text-lg tracking-widest uppercase">{img.category}</span>
-              </div>
-            </motion.div>
-          ))}
-        </HorizontalScroll>
+        {/* Klasik Grid Galerisi (Masonry Style) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+          <AnimatePresence mode="popLayout">
+            {filteredImages.map((img, index) => (
+              <motion.div
+                key={img.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className={`group relative w-full h-full cursor-pointer overflow-hidden rounded-2xl shadow-2xl ${
+                  index % 7 === 0 ? 'md:col-span-2 md:row-span-2' : ''
+                }`}
+                onClick={() => setSelectedImage(img)}
+              >
+                <img 
+                  src={img.src} 
+                  alt={img.title} 
+                  className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${img.category === t('gallery.cat.plans', 'Kat Planları') ? 'object-contain bg-gray-800 p-8' : ''}`}
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
+                  <ZoomIn className="text-luxera-gold mb-4" size={48} />
+                  <h4 className="text-white font-serif text-3xl mb-2">{img.title}</h4>
+                  <span className="text-luxera-gold text-lg tracking-widest uppercase">{img.category}</span>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
 
         {/* İstatistikler + Referanslar + CTA */}
-        <div className="text-left mt-24 space-y-24">
+        <div className="text-left mt-32 space-y-32">
           <StatStrip
             stats={[
-              { value: IMAGES.length, suffix: '+', label: t('gallery.stats.s1', 'Görsel & Render') },
+              { value: 43, suffix: '+', label: t('gallery.stats.s1', 'Görsel & Render') },
               { value: CATEGORIES.length - 1, suffix: '', label: t('gallery.stats.s2', 'Kategori') },
-              { value: 3, suffix: '', label: t('gallery.stats.s3', 'İkonik Kule') },
+              { value: 12, suffix: '', label: t('gallery.stats.s3', 'Daire Tipi') },
               { value: 4, suffix: 'K', label: t('gallery.stats.s4', 'Görsel Kalite') },
             ]}
           />
@@ -121,10 +153,10 @@ const Gallery = () => {
               onClick={() => setSelectedImage(null)}
             >
               <button 
-                className="absolute top-6 right-6 text-white hover:text-luxera-gold transition-colors"
+                className="absolute top-6 right-6 text-white hover:text-luxera-gold transition-colors bg-white/10 rounded-full p-2"
                 onClick={() => setSelectedImage(null)}
               >
-                <X size={32} />
+                <X size={28} />
               </button>
               <motion.img
                 initial={{ scale: 0.9 }}
@@ -132,7 +164,7 @@ const Gallery = () => {
                 exit={{ scale: 0.9 }}
                 src={selectedImage.src}
                 alt={selectedImage.title}
-                className="max-w-full max-h-full object-contain border border-luxera-gold/20 shadow-2xl"
+                className={`max-w-full max-h-full object-contain border border-luxera-gold/20 shadow-2xl rounded-lg ${selectedImage.category === t('gallery.cat.plans', 'Kat Planları') ? 'bg-black' : ''}`}
                 onClick={e => e.stopPropagation()}
               />
               <div className="absolute bottom-6 left-6 text-white">

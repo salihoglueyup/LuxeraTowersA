@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, Download, PhoneCall, CalendarCheck, FileSignature, KeyRound, ZoomIn, X } from 'lucide-react';
+import { Check, Download, PhoneCall, CalendarCheck, FileSignature, KeyRound, ZoomIn, X, ToggleLeft, ToggleRight, Layers } from 'lucide-react';
 import { residences } from '../data/residences';
 import { downloadFile, CATALOG_URL } from '../shared/utils/download';
 import PageHero from '../shared/ui/PageHero';
@@ -25,11 +25,21 @@ const Residences = () => {
   ];
 
   const [activeTab, setActiveTab] = useState(residences[0]);
+  const [activeVariant, setActiveVariant] = useState(residences[0].plans[0]);
+  const [showDimensions, setShowDimensions] = useState(true);
   const [lightboxImage, setLightboxImage] = useState(null);
+
+  useEffect(() => {
+    if (activeTab && activeTab.plans && activeTab.plans.length > 0) {
+      setActiveVariant(activeTab.plans[0]);
+    }
+  }, [activeTab]);
 
   const handlePlanDownload = () => {
     downloadFile(activeTab.planPdf || CATALOG_URL, `Luxera-${activeTab.id}-Plan.pdf`);
   };
+
+  const currentPlanImage = showDimensions ? activeVariant.withWords : activeVariant.withoutWords;
 
   return (
     <div className="min-h-screen bg-luxera-navy text-white pb-24">
@@ -88,8 +98,8 @@ const Residences = () => {
           watermark="02"
         />
 
-        {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        {/* Ana Tipler (1+1, 2+1 vs) Tabs */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
           {residences.map((res) => (
             <button
               key={res.id}
@@ -105,11 +115,30 @@ const Residences = () => {
           ))}
         </div>
 
+        {/* Alt Tipler (A1, A3 vs) Tabs */}
+        {activeTab.plans && activeTab.plans.length > 1 && (
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {activeTab.plans.map((variant) => (
+              <button
+                key={variant.name}
+                onClick={() => setActiveVariant(variant)}
+                className={`px-5 py-2 rounded-md text-xs tracking-widest transition-all ${
+                  activeVariant?.name === variant.name
+                    ? 'bg-white/10 text-luxera-gold border border-luxera-gold/50'
+                    : 'bg-transparent border border-white/10 text-gray-500 hover:border-white/30 hover:text-gray-300'
+                }`}
+              >
+                {variant.name}
+              </button>
+            ))}
+          </div>
+        )}
+
         {/* Content */}
-        <div className="bg-luxera-charcoal border border-luxera-gold/20 rounded-3xl p-8 md:p-12 overflow-hidden relative">
+        <div className="bg-luxera-charcoal border border-luxera-gold/20 rounded-3xl p-6 md:p-12 overflow-hidden relative">
           <AnimatePresence mode="wait">
             <motion.div
-              key={activeTab.id}
+              key={activeVariant?.name || activeTab.id}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
@@ -118,16 +147,12 @@ const Residences = () => {
             >
               {/* Sol: Detay */}
               <div>
-                <h2 className="text-4xl font-serif text-luxera-gold mb-4">{t(`residences.types.${activeTab.id}.title`, activeTab.title)}</h2>
-                {activeTab.variants && (
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {activeTab.variants.map((v) => (
-                      <span key={v} className="text-xs uppercase tracking-widest text-luxera-gold border border-luxera-gold/40 rounded-full px-3 py-1">
-                        {t('residences.floorPlans.type', 'Tip')} {v}
-                      </span>
-                    ))}
-                  </div>
-                )}
+                <h2 className="text-4xl font-serif text-luxera-gold mb-2">{t(`residences.types.${activeTab.id}.title`, activeTab.title)}</h2>
+                <div className="text-gray-400 font-serif text-xl mb-6 flex items-center gap-2">
+                  <Layers size={20} className="text-luxera-gold/60"/> 
+                  {activeVariant?.name}
+                </div>
+                
                 <p className="text-gray-300 text-lg mb-8">{t(`residences.types.${activeTab.id}.desc`, activeTab.desc)}</p>
 
                 <div className="space-y-4 mb-8">
@@ -143,12 +168,6 @@ const Residences = () => {
                     <span className="text-gray-500 uppercase tracking-widest text-sm">{t('residences.floorPlans.hvac', 'Isıtma/Soğutma')}</span>
                     <span className="text-white font-serif">{activeTab.hvac}</span>
                   </div>
-                  {activeTab.priceFrom && (
-                    <div className="flex justify-between border-b border-white/10 pb-3">
-                      <span className="text-gray-500 uppercase tracking-widest text-sm">{t('residences.floorPlans.startingPrice', 'Başlangıç')}</span>
-                      <span className="text-luxera-gold font-serif">{activeTab.priceFrom}</span>
-                    </div>
-                  )}
                 </div>
 
                 {/* Oda listesi */}
@@ -167,35 +186,62 @@ const Residences = () => {
                   icon={<Download size={18} />}
                   className="w-full"
                 >
-                  {t('residences.floorPlans.downloadPlan', 'Kat Planını PDF İndir')}
+                  {t('residences.floorPlans.downloadPlan', 'Kataloğu İndir')}
                 </LuxuryButton>
               </div>
 
               {/* Sağ: Plan + İç Mekan */}
               <div className="space-y-6">
-                <div 
-                  onClick={() => setLightboxImage(activeTab.planImg)}
-                  className="bg-gray-800 rounded-2xl p-4 md:p-8 flex justify-center items-center shadow-2xl relative group h-[400px] cursor-pointer"
-                >
-                  <div className="absolute inset-0 bg-luxera-gold/5 rounded-2xl blur-xl transition-all group-hover:bg-luxera-gold/10 pointer-events-none"></div>
-                  <img src={activeTab.planImg} alt={`${activeTab.title} Kat Planı`} className="w-full h-full object-contain mix-blend-screen relative z-10 transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
-                    <div className="bg-luxera-navy/80 p-3 rounded-full backdrop-blur-sm text-luxera-gold flex flex-col items-center">
-                      <ZoomIn size={28} />
-                      <span className="text-xs mt-1 uppercase tracking-widest">Büyüt</span>
+                
+                {/* Etkileşimli Kat Planı Görüntüleyici */}
+                <div className="bg-gray-800/80 rounded-2xl p-4 flex flex-col items-center border border-white/5 relative shadow-2xl group">
+                  {/* Ölçüleri Gizle/Göster Butonu (Sihirli Buton) */}
+                  <div className="absolute top-4 right-4 z-30 flex items-center gap-2 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 cursor-pointer hover:bg-black/60 transition-colors" onClick={() => setShowDimensions(!showDimensions)}>
+                    <span className="text-xs uppercase tracking-widest text-gray-300">
+                      {showDimensions ? 'Ölçüleri Gizle' : 'Ölçüleri Göster'}
+                    </span>
+                    {showDimensions ? (
+                      <ToggleRight size={24} className="text-luxera-gold" />
+                    ) : (
+                      <ToggleLeft size={24} className="text-gray-500" />
+                    )}
+                  </div>
+
+                  <div 
+                    onClick={() => setLightboxImage(currentPlanImage)}
+                    className="w-full h-[380px] relative cursor-zoom-in"
+                  >
+                    <div className="absolute inset-0 bg-luxera-gold/5 rounded-xl blur-xl transition-all group-hover:bg-luxera-gold/15 pointer-events-none"></div>
+                    <AnimatePresence mode="wait">
+                      <motion.img 
+                        key={currentPlanImage}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                        src={currentPlanImage} 
+                        alt={`${activeVariant?.name} Kat Planı`} 
+                        className="w-full h-full object-contain mix-blend-screen relative z-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
+                      />
+                    </AnimatePresence>
+                    
+                    <div className="absolute inset-0 bg-black/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20 pointer-events-none">
+                      <div className="bg-luxera-navy/80 p-3 rounded-full backdrop-blur-sm text-luxera-gold flex flex-col items-center">
+                        <ZoomIn size={28} />
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div 
                   onClick={() => setLightboxImage(activeTab.interiorImg)}
-                  className="rounded-2xl overflow-hidden h-56 border border-luxera-gold/10 cursor-pointer relative group"
+                  className="rounded-2xl overflow-hidden h-40 border border-luxera-gold/10 cursor-zoom-in relative group"
                 >
                   <img src={activeTab.interiorImg} alt={`${activeTab.title} İç Mekan`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="bg-luxera-navy/80 p-3 rounded-full backdrop-blur-sm text-luxera-gold flex flex-col items-center">
-                      <ZoomIn size={24} />
-                      <span className="text-xs mt-1 uppercase tracking-widest">{t('residences.floorPlans.zoom', 'Büyüt')}</span>
+                    <div className="bg-luxera-navy/80 p-2 px-4 rounded-full backdrop-blur-sm text-luxera-gold flex items-center gap-2">
+                      <ZoomIn size={18} />
+                      <span className="text-xs uppercase tracking-widest">{t('residences.floorPlans.zoom', 'Örnek Daireyi İncele')}</span>
                     </div>
                   </div>
                 </div>
@@ -252,7 +298,7 @@ const Residences = () => {
               exit={{ scale: 0.9 }}
               src={lightboxImage}
               alt="Büyük Görsel"
-              className="max-w-full max-h-full object-contain border border-luxera-gold/20 shadow-2xl rounded-lg"
+              className="max-w-full max-h-full object-contain border border-luxera-gold/20 shadow-2xl rounded-lg bg-black"
               onClick={e => e.stopPropagation()}
             />
           </motion.div>

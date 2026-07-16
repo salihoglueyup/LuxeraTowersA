@@ -10,7 +10,7 @@ const Highlights = () => {
   const HIGHLIGHTS = [
     { icon: Building2, value: '2', label: t('highlights.towers', 'Görkemli Kule') },
     { icon: Home, value: '369', label: t('highlights.residences', 'Özel Rezidans') },
-    { icon: ShoppingBag, value: '87', label: t('highlights.mall', 'Mağazalık Lüks AVM') },
+    { icon: ShoppingBag, value: '87', label: t('highlights.mall', 'Lüks Mağaza') },
     { icon: Train, value: '2', label: t('highlights.metro', 'Dk Mimar Sinan Metrosu') },
   ];
 
