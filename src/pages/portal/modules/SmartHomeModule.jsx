@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Thermometer, Zap, Home } from 'lucide-react';
+import { Thermometer, Zap, Home, Moon, Sun, MonitorPlay } from 'lucide-react';
 
 const SmartHomeModule = () => {
   const [states, setStates] = useState({
@@ -11,8 +11,33 @@ const SmartHomeModule = () => {
     temp: 22
   });
 
+  const handleMacro = (mode) => {
+    if (mode === 'night') {
+      setStates(s => ({ ...s, livingRoomLight: false, bedroomLight: false, curtains: true, temp: 24 }));
+    } else if (mode === 'day') {
+      setStates(s => ({ ...s, livingRoomLight: false, bedroomLight: false, curtains: false, temp: 22 }));
+    } else if (mode === 'cinema') {
+      setStates(s => ({ ...s, livingRoomLight: false, bedroomLight: false, curtains: true, ac: true, temp: 20 }));
+    }
+  };
+
   return (
     <motion.div key="smarthome" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="space-y-6">
+      
+      {/* Macro Scenarios */}
+      <div className="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-md flex flex-wrap gap-4 items-center">
+        <span className="text-gray-400 font-medium mr-4">Akıllı Senaryolar:</span>
+        <button onClick={() => handleMacro('night')} className="flex items-center gap-2 bg-black/40 hover:bg-luxera-gold hover:text-luxera-navy text-white px-5 py-2.5 rounded-xl border border-white/10 transition-colors text-sm font-medium">
+          <Moon size={16} /> Gece Modu
+        </button>
+        <button onClick={() => handleMacro('day')} className="flex items-center gap-2 bg-black/40 hover:bg-luxera-gold hover:text-luxera-navy text-white px-5 py-2.5 rounded-xl border border-white/10 transition-colors text-sm font-medium">
+          <Sun size={16} /> Gündüz Modu
+        </button>
+        <button onClick={() => handleMacro('cinema')} className="flex items-center gap-2 bg-black/40 hover:bg-luxera-gold hover:text-luxera-navy text-white px-5 py-2.5 rounded-xl border border-white/10 transition-colors text-sm font-medium">
+          <MonitorPlay size={16} /> Sinema Modu
+        </button>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md flex flex-col items-center justify-center py-12 md:col-span-1">
           <Thermometer size={48} className="text-luxera-gold mb-4" />
