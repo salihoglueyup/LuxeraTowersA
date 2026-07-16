@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   CreditCard, Wrench, Calendar, Bell, User, Settings, LogOut, Key, Package, Home,
-  LayoutDashboard, Coffee, Users, Video, BatteryCharging, ShoppingBag, Search, X, Check
+  LayoutDashboard, Coffee, Users, Video, BatteryCharging, ShoppingBag, Search, X, Check,
+  Utensils, ArrowUpDown, Droplet, FileText
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import SEO from '../../shared/seo/SEO';
@@ -22,6 +23,12 @@ import EtkinliklerModule from './modules/EtkinliklerModule';
 import MarketplaceModule from './modules/MarketplaceModule';
 import AyarlarModule from './modules/AyarlarModule';
 
+// New V3 Modules
+import OdaServisiModule from './modules/OdaServisiModule';
+import AsansorModule from './modules/AsansorModule';
+import SpaWellnessModule from './modules/SpaWellnessModule';
+import BelgelerModule from './modules/BelgelerModule';
+
 const Dashboard = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('ozet');
@@ -36,16 +43,19 @@ const Dashboard = () => {
       ]
     },
     {
-      title: 'FİNANS YÖNETİMİ',
+      title: 'FİNANS & YÖNETİM',
       items: [
         { id: 'finans', label: 'Aidat & Faturalar', icon: <CreditCard size={18} /> },
+        { id: 'belgeler', label: 'Yönetim & Belgeler', icon: <FileText size={18} /> }
       ]
     },
     {
       title: 'YAŞAM & HİZMETLER',
       items: [
         { id: 'smart-home', label: 'Akıllı Ev', icon: <Home size={18} /> },
+        { id: 'asansor', label: 'Akıllı Asansör', icon: <ArrowUpDown size={18} /> },
         { id: 'talepler', label: 'Talepler & Servis', icon: <Wrench size={18} /> },
+        { id: 'oda-servisi', label: 'Oda Servisi', icon: <Utensils size={18} /> },
         { id: 'konsiyerj', label: 'Konsiyerj & VIP', icon: <Coffee size={18} /> },
         { id: 'ziyaretci', label: 'Misafir & Vale', icon: <Key size={18} /> },
         { id: 'kargolar', label: 'Kargolarım', icon: <Package size={18} /> },
@@ -56,6 +66,7 @@ const Dashboard = () => {
       title: 'SOSYAL & TESİSLER',
       items: [
         { id: 'rezervasyonlar', label: 'Rezervasyonlarım', icon: <Calendar size={18} /> },
+        { id: 'spa-wellness', label: 'SPA & Wellness', icon: <Droplet size={18} /> },
         { id: 'etkinlikler', label: 'Etkinlik & Topluluk', icon: <Users size={18} /> }
       ]
     },
@@ -90,7 +101,7 @@ const Dashboard = () => {
   const notifications = [
     { id: 1, title: 'Kargonuz Teslim Edildi', desc: 'Amazon TR paketiniz resepsiyonda.', time: '5 dk önce', read: false },
     { id: 2, title: 'Aidat Ödemesi Yaklaşıyor', desc: 'Aralık ayı aidatınızın son ödeme tarihi yaklaşıyor.', time: '2 saat önce', read: false },
-    { id: 3, title: 'Yeni Etkinlik: Caz Gecesi', desc: 'Lobi Lounge\'da caz dinletisi var. Hemen yerinizi ayırtın.', time: 'Dün', read: true }
+    { id: 3, title: 'Oda Servisi Siparişi', desc: 'Siparişiniz yola çıkmıştır.', time: 'Dün', read: true }
   ];
 
   return (
@@ -101,7 +112,7 @@ const Dashboard = () => {
         
         {/* HIERARCHICAL SIDEBAR */}
         <div className="w-full md:w-64 lg:w-72 shrink-0">
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md sticky top-32 shadow-2xl h-[calc(100vh-10rem)] overflow-y-auto custom-scrollbar">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md sticky top-32 shadow-2xl h-[calc(100vh-10rem)] overflow-y-auto no-scrollbar">
             
             <div className="flex items-center gap-4 mb-8 pb-6 border-b border-white/10">
               <div className="w-12 h-12 bg-luxera-gold/20 rounded-full flex items-center justify-center border border-luxera-gold/30 shrink-0">
@@ -188,6 +199,11 @@ const Dashboard = () => {
               {activeTab === 'etkinlikler' && <EtkinliklerModule />}
               {activeTab === 'pazar-yeri' && <MarketplaceModule />}
               {activeTab === 'ayarlar' && <AyarlarModule />}
+              {/* V3 New Modules */}
+              {activeTab === 'oda-servisi' && <OdaServisiModule />}
+              {activeTab === 'asansor' && <AsansorModule />}
+              {activeTab === 'spa-wellness' && <SpaWellnessModule />}
+              {activeTab === 'belgeler' && <BelgelerModule />}
             </AnimatePresence>
           </div>
 
@@ -217,7 +233,7 @@ const Dashboard = () => {
                 </button>
               </div>
 
-              <div className="flex-1 overflow-y-auto space-y-4 custom-scrollbar pr-2">
+              <div className="flex-1 overflow-y-auto space-y-4 no-scrollbar">
                 {notifications.map(notif => (
                   <div key={notif.id} className={`p-4 rounded-2xl border transition-colors ${notif.read ? 'bg-white/5 border-white/5' : 'bg-luxera-gold/10 border-luxera-gold/30'}`}>
                     <div className="flex justify-between items-start mb-1">
