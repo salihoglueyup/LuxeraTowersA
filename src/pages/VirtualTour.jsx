@@ -58,9 +58,9 @@ const VirtualTour = () => {
                 centerOnInit={true}
                 wheel={{ step: 0.1 }}
                 pinch={{ step: 5 }}
-                onPanning={() => setActiveHotspot(null)} // SǬrǬklerken ak panel kapatlr
+                onPanning={() => setActiveHotspot(null)} // Sürüklerken açık panel kapatılır
               >
-                {({ zoomIn, zoomOut, resetTransform }) => (
+                {({ zoomIn, zoomOut, resetTransform, state }) => (
                   <>
                     <TransformComponent
                       wrapperClass="!w-full !h-full"
@@ -78,7 +78,11 @@ const VirtualTour = () => {
                         <div 
                           key={hotspot.id} 
                           className="absolute z-20 origin-center"
-                          style={{ left: `${hotspot.x}%`, top: `${hotspot.y}%`, transform: 'translate(-50%, -50%)' }}
+                          style={{ 
+                            left: `${hotspot.x}%`, 
+                            top: `${hotspot.y}%`, 
+                            transform: `translate(-50%, -50%) scale(${1 / (state?.scale || 1)})` 
+                          }}
                         >
                           <div className="relative group/hotspot">
                             {/* Pulsing Dot */}
@@ -104,7 +108,7 @@ const VirtualTour = () => {
                       ))}
                     </TransformComponent>
 
-                    {/* YaknlaYtrma Kontrolleri */}
+                    {/* Yakınlaştırma Kontrolleri */}
                     <div className="absolute right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-3 bg-black/60 backdrop-blur-xl p-3 rounded-full border border-white/10 shadow-lg transition-opacity opacity-0 group-hover:opacity-100">
                       <button onClick={() => zoomIn()} className="w-10 h-10 rounded-full bg-white/5 hover:bg-luxera-gold hover:text-luxera-navy flex items-center justify-center transition-colors text-white">
                         <ZoomIn size={20} />

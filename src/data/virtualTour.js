@@ -30,8 +30,8 @@ export const virtualTourScenes = [
   },
   {
     id: 'mutfak',
-    title: 'Mutfak',
-    img: '/images/interior/d5_scene7_20240304_220754copy_2025-12-18_03-47-03_62285d.webp',
+    title: 'Açık Mutfak',
+    img: '/images/interior/2_2025-12-18_02-42-20_d8b016.webp',
     hotspots: [
       {
         id: 'appliances',
@@ -85,23 +85,23 @@ export const virtualTourScenes = [
     ]
   },
   {
-    id: 'banyo',
-    title: 'Banyo',
-    img: '/images/interior/d5_scene3_20240304_221324copy_2025-12-18_03-47-03_b3ced7.webp',
+    id: 'cocuk-odasi',
+    title: 'Çocuk Odası',
+    img: '/images/interior/4_2025-12-18_02-42-20_d1aa12.webp',
     hotspots: [
       {
-        id: 'shower',
-        x: 45,
-        y: 45,
-        title: 'Walk-in Duş',
-        desc: 'Termostatik ankastre duş bataryası ve geniş cam kabin.',
+        id: 'study',
+        x: 20,
+        y: 60,
+        title: 'Çalışma ve Oyun Alanı',
+        desc: 'Çocukların gelişimi için tasarlanmış, gün ışığı alan ferah köşe.',
       },
       {
-        id: 'sink',
-        x: 75,
-        y: 60,
-        title: 'Doğal Taş & Seramik',
-        desc: 'A Kalite İtalyan seramikleri ve şık çift lavabo tasarımı.',
+        id: 'kidsbed',
+        x: 65,
+        y: 70,
+        title: 'Konforlu Yatak',
+        desc: 'Ergonomik tasarımlı, çocuklara özel sağlıklı uyku alanı.',
       }
     ]
   }
