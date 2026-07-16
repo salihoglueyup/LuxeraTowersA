@@ -36,6 +36,7 @@ const Navbar = () => {
       subLinks: [
         { name: t('nav.discover', 'Projeyi Keşfet'), path: '/kesfet' },
         { name: t('nav.location', 'Konum & Ulaşım'), path: '/konum' },
+        { name: t('nav.virtualTour', 'Sanal Tur'), path: '/sanal-tur' },
         { name: t('nav.guide', 'Yaşam Rehberi'), path: '/rehber' }
       ]
     },
@@ -78,6 +79,7 @@ const Navbar = () => {
       subLinks: [
         { name: t('nav.gallery', 'Galeri'), path: '/galeri' },
         { name: t('nav.luxeraTv', 'Luxera TV'), path: '/videolar' },
+        { name: t('nav.virtualTour', 'Sanal Tur'), path: '/sanal-tur' },
         { name: t('nav.press', 'Basında Biz'), path: '/basinda-biz' },
         { name: t('nav.events', 'Haberler & Etkinlikler'), path: '/etkinlikler' }
       ]
