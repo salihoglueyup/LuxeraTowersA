@@ -17,7 +17,7 @@ const Login = () => {
     // Fake login simulation
     setTimeout(() => {
       setIsLoading(false);
-      navigate('/sakinler-portali');
+      navigate('/portal/dashboard');
     }, 1500);
   };
 

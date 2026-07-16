@@ -29,6 +29,7 @@ import Support from '../pages/portal/Support';
 import Facilities from '../pages/portal/Facilities';
 import Guest from '../pages/portal/Guest';
 import Login from '../pages/portal/Login';
+import Dashboard from '../pages/portal/Dashboard';
 import Kvkk from '../pages/Legal/Kvkk';
 import Privacy from '../pages/Legal/Privacy';
 import Cookies from '../pages/Legal/Cookies';
@@ -128,6 +129,7 @@ export default function App() {
                 <Route path="portal/tesisler" element={<Facilities />} />
                 <Route path="portal/misafir" element={<Guest />} />
                 <Route path="portal/login" element={<Login />} />
+                <Route path="portal/dashboard" element={<Dashboard />} />
                 <Route path="hakkimizda" element={<Corporate />} />
                 <Route path="kvkk" element={<Kvkk />} />
                 <Route path="gizlilik" element={<Privacy />} />
