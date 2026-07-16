@@ -21,6 +21,11 @@ const OdaServisiModule = () => {
     icecekler: [
       { id: 'i1', name: 'Premium Şarap Seçkisi', price: 2500, desc: 'Bordeaux 2018 (Şişe)' },
       { id: 'i2', name: 'Özel Harman Türk Kahvesi', price: 180, desc: 'Lokum ve su ile.' }
+    ],
+    restoranlar: [
+      { id: 'r1', name: 'Nusr-Et Steakhouse', price: 0, desc: 'Rezervasyon ve özel loca talebi. Alt Kat VIP Giriş.' },
+      { id: 'r2', name: 'Godiva Cafe', price: 0, desc: 'Özel çikolata tadım tabağı ve sıcak içecekler siparişi.' },
+      { id: 'r3', name: 'Starbucks Reserve', price: 0, desc: 'Odanıza özel baristadan taze kahve teslimatı.' }
     ]
   };
 
@@ -43,11 +48,12 @@ const OdaServisiModule = () => {
       {/* Menu Area */}
       <div className="lg:col-span-2 bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-md">
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-xl font-serif text-white">Oda Servisi</h3>
-          <div className="flex gap-2">
-            <button onClick={() => setActiveCategory('kahvalti')} className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'kahvalti' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Kahvaltı</button>
-            <button onClick={() => setActiveCategory('aksam')} className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'aksam' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Akşam Yemeği</button>
-            <button onClick={() => setActiveCategory('icecekler')} className={`px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'icecekler' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>İçecekler</button>
+          <h3 className="text-xl font-serif text-white">Yeme & İçme</h3>
+          <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+            <button onClick={() => setActiveCategory('restoranlar')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'restoranlar' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>AVM Restoranları</button>
+            <button onClick={() => setActiveCategory('kahvalti')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'kahvalti' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Oda Kahvaltı</button>
+            <button onClick={() => setActiveCategory('aksam')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'aksam' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Akşam Yemeği</button>
+            <button onClick={() => setActiveCategory('icecekler')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'icecekler' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>İçecekler</button>
           </div>
         </div>
 
@@ -56,11 +62,11 @@ const OdaServisiModule = () => {
             <div key={item.id} className="bg-black/40 border border-white/5 p-4 rounded-2xl group hover:border-luxera-gold/30 transition-colors">
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-white font-medium">{item.name}</h4>
-                <span className="text-luxera-gold font-bold">₺{item.price}</span>
+                {item.price > 0 && <span className="text-luxera-gold font-bold">₺{item.price}</span>}
               </div>
               <p className="text-xs text-gray-400 mb-4 h-8">{item.desc}</p>
               <button onClick={() => addToCart(item)} className="w-full bg-white/5 hover:bg-luxera-gold hover:text-luxera-navy text-gray-300 py-2 rounded-xl text-sm transition-colors">
-                Sepete Ekle
+                {activeCategory === 'restoranlar' ? 'Sipariş/Rezervasyon İste' : 'Sepete Ekle'}
               </button>
             </div>
           ))}

@@ -19,15 +19,54 @@ const BelgelerModule = () => {
     { id: 4, title: 'Deprem ve Acil Durum Tahliye Planı', type: 'Güvenlik', size: '5.2 MB', icon: <ShieldCheck /> }
   ];
 
+  const boardMembers = [
+    { id: 1, name: 'Ahmet Yılmaz', role: 'Yönetim Kurulu Başkanı', contact: 'ahmet.y@luxeratowers.com' },
+    { id: 2, name: 'Ayşe Demir', role: 'Site Müdürü', contact: 'ayse.d@luxeratowers.com' },
+    { id: 3, name: 'Can Öztürk', role: 'Mali İşler & Aidat', contact: 'finans@luxeratowers.com' }
+  ];
+
   return (
-    <motion.div key="belgeler" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
+    <div className="space-y-6">
+      {/* Yönetim Kurulu & Apsiyon */}
+      <motion.div key="yonetim" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        {/* Apsiyon Card */}
+        <div className="bg-luxera-gold/10 border border-luxera-gold/30 p-8 rounded-3xl backdrop-blur-md flex flex-col justify-center items-center text-center">
+          <div className="w-16 h-16 bg-luxera-gold/20 rounded-full flex items-center justify-center text-luxera-gold mb-4">
+            <Building size={32} />
+          </div>
+          <h3 className="text-xl font-serif text-white mb-2">Apsiyon Yönetim Sistemi</h3>
+          <p className="text-sm text-gray-400 mb-6">Aidat ödemelerinizi, finansal raporlarınızı ve resmi borç durumunuzu güvenli bir şekilde takip edin.</p>
+          <a href="#" className="w-full bg-luxera-gold text-luxera-navy font-bold py-3 rounded-xl hover:bg-white transition-colors">
+            Apsiyon'a Giriş Yap
+          </a>
+        </div>
+
+        {/* Board Members */}
+        <div className="lg:col-span-2 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
+          <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">Yönetim Kurulu & İletişim</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {boardMembers.map(member => (
+              <div key={member.id} className="bg-black/40 p-4 rounded-2xl border border-white/5">
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-400 mb-3">
+                  <Users size={18} />
+                </div>
+                <h4 className="text-white font-medium text-sm">{member.name}</h4>
+                <p className="text-luxera-gold text-xs font-bold uppercase tracking-wider mt-1 mb-2">{member.role}</p>
+                <a href={`mailto:${member.contact}`} className="text-gray-400 text-xs hover:text-white transition-colors">{member.contact}</a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </motion.div>
+
+      {/* Documents */}
+      <motion.div key="belgeler" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
       <div className="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
         <div>
-          <h3 className="text-xl font-serif text-white mb-1">Yönetim ve Belgeler</h3>
+          <h3 className="text-xl font-serif text-white mb-1">Yönetim Belgeleri</h3>
           <p className="text-sm text-gray-400">Site yönetimi tarafından yayınlanan resmi evraklar ve kurallar.</p>
-        </div>
-        <div className="bg-luxera-gold/10 text-luxera-gold px-4 py-2 rounded-lg border border-luxera-gold/30 text-sm font-bold flex items-center gap-2">
-           <FileText size={18} /> Apsiyon Entegrasyonu
         </div>
       </div>
 
@@ -65,6 +104,7 @@ const BelgelerModule = () => {
         ))}
       </div>
     </motion.div>
+    </div>
   );
 };
 

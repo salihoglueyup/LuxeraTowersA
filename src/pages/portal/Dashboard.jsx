@@ -56,7 +56,7 @@ const Dashboard = () => {
         { id: 'smart-home', label: 'Akıllı Ev', icon: <Home size={18} /> },
         { id: 'asansor', label: 'Akıllı Asansör', icon: <ArrowUpDown size={18} /> },
         { id: 'talepler', label: 'Talepler & Servis', icon: <Wrench size={18} /> },
-        { id: 'oda-servisi', label: 'Oda Servisi', icon: <Utensils size={18} /> },
+        { id: 'oda-servisi', label: 'Restoranlar & Oda Servisi', icon: <Utensils size={18} /> },
         { id: 'konsiyerj', label: 'Konsiyerj & VIP', icon: <Coffee size={18} /> },
         { id: 'ziyaretci', label: 'Misafir & Vale', icon: <Key size={18} /> },
         { id: 'kargolar', label: 'Kargolarım', icon: <Package size={18} /> },

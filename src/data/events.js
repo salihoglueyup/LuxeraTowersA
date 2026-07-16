@@ -1,14 +1,5 @@
 export const events = [
   {
-    id: 'kaba-insaat',
-    category: 'Gelişme',
-    date: '24 Kasım 2026',
-    title: 'Kaba İnşaat %80 Seviyesine Ulaştı',
-    desc: 'Luxera Towers projemizde kaba inşaat hızla devam ediyor. Hedeflenen takvimin önünde ilerliyoruz.',
-    image: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp',
-    body: 'Luxera Towers şantiyesinde hummalı çalışmalar aralıksız devam ediyor. Projemizin kaba inşaat sürecinde hedeflenen planlamanın 1.5 ay ilerisindeyiz ve an itibarıyla A ve B bloklarında %80 seviyesine ulaştık. Kullanılan C50 sınıfı yüksek mukavemetli beton ve ileri teknoloji deprem izolatörleri ile, İstanbul\'un en güvenli yapılarından birini inşa ediyoruz. Cephe giydirme testlerimiz başarıyla tamamlandı ve önümüzdeki ay itibariyle dış cephe kaplamalarına başlanacak. Yatırımcılarımıza erken teslim müjdesini vermek için tüm gücümüzle çalışıyoruz.'
-  },
-  {
     id: 'ornek-daire',
     category: 'Etkinlik',
     date: '10 Ekim 2026',
