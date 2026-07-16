@@ -13,10 +13,10 @@ const ResidentPortal = () => {
   const { t } = useTranslation();
 
   const residentServices = [
-    { id: 1, title: 'Aidat ve Ödemeler', icon: <CreditCard size={24} />, img: '/images/interior/d5_scene5_20240304_220944copy_2025-12-18_03-47-03_7b5b78.webp', path: '/portal/odemeler' },
-    { id: 2, title: 'Teknik Servis', icon: <Wrench size={24} />, img: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp', path: '/portal/teknik' },
-    { id: 3, title: 'Misafir Bildirimi', icon: <Users size={24} />, img: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp', path: '/portal/misafir' },
-    { id: 4, title: 'Tesis Rezervasyonu', icon: <Calendar size={24} />, img: '/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp', path: '/portal/rezervasyon' }
+    { id: 1, title: 'Finans & Aidat Yönetimi', icon: <CreditCard size={24} />, img: '/images/interior/d5_scene5_20240304_220944copy_2025-12-18_03-47-03_7b5b78.webp', path: '/portal/finans' },
+    { id: 2, title: 'Konsiyerj & Teknik Destek', icon: <Wrench size={24} />, img: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp', path: '/portal/destek' },
+    { id: 3, title: 'Misafir & Vale Yönetimi', icon: <Users size={24} />, img: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp', path: '/portal/misafir' },
+    { id: 4, title: 'Sosyal Yaşam & SPA', icon: <Calendar size={24} />, img: '/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp', path: '/portal/tesisler' }
   ];
 
   return (

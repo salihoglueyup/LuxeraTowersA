@@ -24,6 +24,10 @@ import Offices from '../pages/Offices';
 import Stores from '../pages/Stores';
 import Dining from '../pages/Dining';
 import ResidentPortal from '../pages/ResidentPortal';
+import Finance from '../pages/portal/Finance';
+import Support from '../pages/portal/Support';
+import Facilities from '../pages/portal/Facilities';
+import Guest from '../pages/portal/Guest';
 import Kvkk from '../pages/Legal/Kvkk';
 import Privacy from '../pages/Legal/Privacy';
 import Cookies from '../pages/Legal/Cookies';
@@ -118,6 +122,10 @@ export default function App() {
                 <Route path="magazalar" element={<Stores />} />
                 <Route path="yeme-icme" element={<Dining />} />
                 <Route path="sakinler-portali" element={<ResidentPortal />} />
+                <Route path="portal/finans" element={<Finance />} />
+                <Route path="portal/destek" element={<Support />} />
+                <Route path="portal/tesisler" element={<Facilities />} />
+                <Route path="portal/misafir" element={<Guest />} />
                 <Route path="hakkimizda" element={<Corporate />} />
                 <Route path="kvkk" element={<Kvkk />} />
                 <Route path="gizlilik" element={<Privacy />} />

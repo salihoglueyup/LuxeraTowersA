@@ -211,25 +211,25 @@ const Navbar = () => {
                       <LayoutDashboard size={16} className="text-luxera-gold" /> Portal Anasayfa
                     </Link>
                     <Link 
-                      to="/portal/odemeler" 
+                      to="/portal/finans" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <CreditCard size={16} className="text-luxera-gold" /> Aidat ve Ödemeler
+                      <CreditCard size={16} className="text-luxera-gold" /> Finans & Aidat
                     </Link>
                     <Link 
-                      to="/portal/teknik" 
+                      to="/portal/destek" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <Wrench size={16} className="text-luxera-gold" /> Teknik Servis
+                      <Wrench size={16} className="text-luxera-gold" /> Konsiyerj & Destek
                     </Link>
                     <Link 
-                      to="/portal/rezervasyon" 
+                      to="/portal/tesisler" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <Calendar size={16} className="text-luxera-gold" /> Tesis Rezervasyonu
+                      <Calendar size={16} className="text-luxera-gold" /> Sosyal Yaşam & SPA
                     </Link>
                     
                     <div className="h-px bg-white/10 my-2"></div>
@@ -294,9 +294,9 @@ const Navbar = () => {
                   Sakinler Portalı
                 </Link>
                 <div className="flex flex-col items-center mt-4 space-y-4">
-                  <Link to="/portal/odemeler" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Aidat ve Ödemeler</Link>
-                  <Link to="/portal/teknik" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Teknik Servis</Link>
-                  <Link to="/portal/rezervasyon" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Tesis Rezervasyonu</Link>
+                  <Link to="/portal/finans" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Finans & Aidat</Link>
+                  <Link to="/portal/destek" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Konsiyerj & Destek</Link>
+                  <Link to="/portal/tesisler" className="text-xl text-gray-400 hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(false)}>- Sosyal Yaşam & SPA</Link>
                   <a href="https://www.apsiyon.com/giris" target="_blank" rel="noopener noreferrer" className="text-xl text-luxera-gold hover:text-white transition-colors flex items-center gap-2" onClick={() => setMobileMenu(false)}>
                     - Apsiyon Giriş <ExternalLink size={16} />
                   </a>
