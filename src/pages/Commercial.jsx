@@ -70,7 +70,7 @@ const Commercial = () => {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className="relative rounded-3xl overflow-hidden border border-luxera-gold/20 aspect-square lg:aspect-auto lg:h-[600px]">
-          <img src="/images/exterior/8_2025-12-18_02-46-35_fb63d5.webp" alt="Ticari Üniteler" className="w-full h-full object-cover" />
+          <img src="/images/exterior/5_2025-12-18_02-46-35_82a21a.webp" alt="Ticari Üniteler" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-luxera-charcoal via-transparent to-transparent"></div>
         </motion.div>
       </div>
