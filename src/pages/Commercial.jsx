@@ -40,7 +40,7 @@ const Commercial = () => {
         title={t('commercial.hero.title', 'Ticari')}
         highlight={t('commercial.hero.highlight', 'Üniteler')}
         subtitle={t('commercial.hero.subtitle', 'Basın Ekspres\'in en prestijli AVM\'sinde, markanızı zirveye taşıyacak benzersiz ticari fırsatlar.')}
-        backgroundImage="/images/exterior/6_2025-12-18_02-46-35_632c46.webp"
+        backgroundImage="/images/exterior/5_2025-12-18_02-46-35_82a21a.webp"
       />
 
       {/* Ticaretin Kalbi */}
