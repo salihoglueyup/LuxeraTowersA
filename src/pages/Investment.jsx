@@ -123,8 +123,8 @@ const Investment = () => {
                 </LuxuryButton>
               </div>
             </div>
-            <div className="h-full min-h-[400px] relative">
-              <img src="/images/exterior/8_2025-12-18_02-46-35_36bf45.webp" alt="Yatırım" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="h-full min-h-[500px] lg:min-h-full relative">
+              <img src="/images/exterior/7_2025-12-18_02-46-34_3b69d3.webp" alt="Yatırım" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-l from-transparent to-luxera-charcoal"></div>
             </div>
           </div>
