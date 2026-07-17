@@ -14,7 +14,7 @@ const Amenities = () => {
 
   const AMENITIES = [
     { icon: Trees, title: t('amenities.gardens.title', 'Gökyüzü Bahçeleri'), desc: t('amenities.gardens.desc', 'Her kat arasında dikey bahçeler ve dinlenme alanları.'), img: '/images/exterior/10_2025-12-18_02-46-35_72a99a.webp' },
-    { icon: Dumbbell, title: t('amenities.fitness.title', 'Fitness & SPA'), desc: t('amenities.fitness.desc', 'Son teknoloji fitness salonu, buhar odası ve masaj odaları.'), img: '/images/amenities/privilege_fitness_v2_1784289598172.png' },
+    { icon: Dumbbell, title: t('amenities.fitness.title', 'Fitness & SPA'), desc: t('amenities.fitness.desc', 'Son teknoloji fitness salonu, buhar odası ve masaj odaları.'), img: '/images/amenities/d5_scene4_20240303_035120copy_2025-12-18_03-46-29_0346af.webp' },
     { icon: ShoppingBag, title: t('amenities.mall.title', 'Lüks AVM'), desc: t('amenities.mall.desc', 'Dünyaca ünlü markalar, restoranlar ve kafeler bir asansör uzağınızda.'), img: '/images/exterior/9_2025-12-18_02-46-35_8d953d.webp' },
     { icon: Shield, title: t('amenities.security.title', '7/24 Güvenlik'), desc: t('amenities.security.desc', 'Profesyonel güvenlik ekipleri ve kapalı devre kamera sistemleri.'), img: '/images/amenities/privilege_security_macro_v4.png' },
   ];

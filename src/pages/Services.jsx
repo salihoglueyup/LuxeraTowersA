@@ -18,10 +18,10 @@ const Services = () => {
   const { t } = useTranslation();
 
   const serviceSteps = [
-    { icon: <Smartphone size={22} />, title: <HoverImageReveal text={t('services.steps.step1.title', 'Talebinizi İletin')} imageSrc="/images/interior/6_2025-12-18_02-42-20_29be56.webp" />, desc: t('services.steps.step1.desc', 'Mobil uygulama veya tek bir telefonla concierge ekibine talebinizi bildirin.') },
-    { icon: <MessageSquare size={22} />, title: <HoverImageReveal text={t('services.steps.step2.title', 'Planlama')} imageSrc="/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp" />, desc: t('services.steps.step2.desc', 'Ekibimiz talebinizi değerlendirir, en uygun çözümü ve zamanlamayı sizinle paylaşır.') },
-    { icon: <Sparkles size={22} />, title: <HoverImageReveal text={t('services.steps.step3.title', 'Hizmet')} imageSrc="/images/exterior/6_2025-12-18_02-46-35_632c46.webp" />, desc: t('services.steps.step3.desc', 'Vale, housekeeping, rezervasyon ya da organizasyon; hizmet titizlikle yerine getirilir.') },
-    { icon: <ThumbsUp size={22} />, title: <HoverImageReveal text={t('services.steps.step4.title', 'Memnuniyet')} imageSrc="/images/amenities/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp" />, desc: t('services.steps.step4.desc', 'Deneyiminizi değerlendirin; hizmet standartlarımızı sizin için sürekli iyileştiriyoruz.') },
+    { icon: <Smartphone size={22} />, title: <HoverImageReveal text={t('services.steps.step1.title', 'Talebinizi İletin')} imageSrc="/images/amenities/amenity-whatsapp-01.jpeg" />, desc: t('services.steps.step1.desc', 'Mobil uygulama veya tek bir telefonla concierge ekibine talebinizi bildirin.') },
+    { icon: <MessageSquare size={22} />, title: <HoverImageReveal text={t('services.steps.step2.title', 'Planlama')} imageSrc="/images/interior/d5_scene101_20240303_153337copy_2025-12-18_03-46-55_6f850e.webp" />, desc: t('services.steps.step2.desc', 'Ekibimiz talebinizi değerlendirir, en uygun çözümü ve zamanlamayı sizinle paylaşır.') },
+    { icon: <Sparkles size={22} />, title: <HoverImageReveal text={t('services.steps.step3.title', 'Hizmet')} imageSrc="/images/exterior/13_2025-12-18_02-46-35_a465ab.webp" />, desc: t('services.steps.step3.desc', 'Vale, housekeeping, rezervasyon ya da organizasyon; hizmet titizlikle yerine getirilir.') },
+    { icon: <ThumbsUp size={22} />, title: <HoverImageReveal text={t('services.steps.step4.title', 'Memnuniyet')} imageSrc="/images/interior/2_2025-12-18_02-42-20_d8b016.webp" />, desc: t('services.steps.step4.desc', 'Deneyiminizi değerlendirin; hizmet standartlarımızı sizin için sürekli iyileştiriyoruz.') },
   ];
 
   const serviceStats = [
@@ -32,12 +32,12 @@ const Services = () => {
   ];
 
   const services = [
-    { path: '/ayricaliklar/concierge', icon: <Bell size={40} />, title: t('services.list.concierge.title', '7/24 Concierge'), desc: t('services.list.concierge.desc', 'Siz sadece hayatın tadını çıkarın diye, uçak bileti rezervasyonundan özel etkinlik planlamalarına kadar her detayı profesyonel ekibimiz organize ediyor.'), image: '/images/amenities/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp' },
-    { path: '/ayricaliklar/guvenlik', icon: <ShieldCheck size={40} />, title: t('services.list.security.title', 'Özel Güvenlik'), desc: t('services.list.security.desc', 'Akıllı bina teknolojileri, kapalı devre kamera sistemleri (CCTV) ve 7/24 devriye atan profesyonel güvenlik personeli ile aileniz daima güvende.'), image: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp' },
-    { path: '/ayricaliklar/vale', icon: <Car size={40} />, title: t('services.list.valet.title', 'Vale & Otopark'), desc: t('services.list.valet.desc', 'Aracınızı güvenle teslim edebileceğiniz vale hizmeti ve sadece sakinlere özel, plaka tanıma sistemli tahsisli otopark alanları.'), image: '/images/exterior/6_2025-12-18_02-46-35_632c46.webp' },
-    { path: '/ayricaliklar/fitness', icon: <Dumbbell size={40} />, title: t('services.list.fitness.title', 'Fitness & SPA'), desc: t('services.list.fitness.desc', 'Güne enerjik başlamanız için en son teknoloji fitness ekipmanları ve günün stresini atmanız için lüks tasarım SPA merkezi.'), image: '/images/interior/10_2025-12-18_02-42-20_2ab0c1.webp' },
-    { path: '/ayricaliklar/housekeeping', icon: <Key size={40} />, title: t('services.list.housekeeping.title', 'Housekeeping'), desc: t('services.list.housekeeping.desc', '5 yıldızlı otel standartlarında temizlik, kuru temizleme ve ütü hizmetleri ile rezidansınız her zaman misafir ağırlamaya hazır.'), image: '/images/interior/6_2025-12-18_02-42-20_29be56.webp' },
-    { path: '/ayricaliklar/lounge', icon: <Coffee size={40} />, title: t('services.list.lounge.title', 'Lounge Alanı'), desc: t('services.list.lounge.desc', 'İş toplantılarınızı yapabileceğiniz, misafirlerinizi prestijli bir ortamda ağırlayabileceğiniz yüksek tavanlı özel lobi ve lounge.'), image: '/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp' }
+    { path: '/ayricaliklar/concierge', icon: <Bell size={40} />, title: t('services.list.concierge.title', '7/24 Concierge'), desc: t('services.list.concierge.desc', 'Siz sadece hayatın tadını çıkarın diye, uçak bileti rezervasyonundan özel etkinlik planlamalarına kadar her detayı profesyonel ekibimiz organize ediyor.'), image: '/images/amenities/privilege_concierge_v2_1784289560447.png' },
+    { path: '/ayricaliklar/guvenlik', icon: <ShieldCheck size={40} />, title: t('services.list.security.title', 'Özel Güvenlik'), desc: t('services.list.security.desc', 'Akıllı bina teknolojileri, kapalı devre kamera sistemleri (CCTV) ve 7/24 devriye atan profesyonel güvenlik personeli ile aileniz daima güvende.'), image: '/images/amenities/privilege_security_macro_v4.png' },
+    { path: '/ayricaliklar/vale', icon: <Car size={40} />, title: t('services.list.valet.title', 'Vale & Otopark'), desc: t('services.list.valet.desc', 'Aracınızı güvenle teslim edebileceğiniz vale hizmeti ve sadece sakinlere özel, plaka tanıma sistemli tahsisli otopark alanları.'), image: '/images/amenities/privilege_valet_v2_1784289582660.png' },
+    { path: '/ayricaliklar/fitness', icon: <Dumbbell size={40} />, title: t('services.list.fitness.title', 'Fitness & SPA'), desc: t('services.list.fitness.desc', 'Güne enerjik başlamanız için en son teknoloji fitness ekipmanları ve günün stresini atmanız için lüks tasarım SPA merkezi.'), image: '/images/amenities/privilege_fitness_v2_1784289598172.png' },
+    { path: '/ayricaliklar/housekeeping', icon: <Key size={40} />, title: t('services.list.housekeeping.title', 'Housekeeping'), desc: t('services.list.housekeeping.desc', '5 yıldızlı otel standartlarında temizlik, kuru temizleme ve ütü hizmetleri ile rezidansınız her zaman misafir ağırlamaya hazır.'), image: '/images/amenities/privilege_housekeeping_v2_1784289608856.png' },
+    { path: '/ayricaliklar/lounge', icon: <Coffee size={40} />, title: t('services.list.lounge.title', 'Lounge Alanı'), desc: t('services.list.lounge.desc', 'İş toplantılarınızı yapabileceğiniz, misafirlerinizi prestijli bir ortamda ağırlayabileceğiniz yüksek tavanlı özel lobi ve lounge.'), image: '/images/amenities/privilege_lounge_v2_1784289616886.png' }
   ];
   return (
     <div className="bg-luxera-navy min-h-screen text-white overflow-hidden pb-24">
@@ -47,7 +47,7 @@ const Services = () => {
         title={t('services.hero.title', 'Luxera')}
         highlight={t('services.hero.highlight', 'Life')}
         subtitle={t('services.hero.subtitle', 'Zamanın değerini bilenler için tasarlandı. Sadece bir metrekare değil, hayatınıza konfor katan bir yaşam tarzı satın alıyorsunuz.')}
-        backgroundImage="/images/amenities/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp"
+        backgroundImage="/images/interior/d5_scene3_20240304_221324copy_2025-12-18_03-47-03_b3ced7.webp"
       />
 
       <div className="max-w-4xl mx-auto px-6 mb-32 text-center">
@@ -107,7 +107,7 @@ const Services = () => {
         title={t('services.cta.title', 'Otel Konforunu Evinizde Yaşayın')}
         desc={t('services.cta.desc', 'Luxera Towers ayrıcalıklarını ve hizmet standartlarını yakından deneyimlemek için bizimle iletişime geçin.')}
         primary={{ label: t('services.cta.primary', 'İletişime Geçin'), href: '/iletisim' }}
-        backgroundImage="/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp"
+        backgroundImage="/images/interior/d5_scene5_20240304_220944copy_2025-12-18_03-47-03_7b5b78.webp"
       />
     </div>
   );
