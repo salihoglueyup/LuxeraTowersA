@@ -1,30 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Calendar, Droplets, Dumbbell, Coffee, ExternalLink } from 'lucide-react';
 import PageHero from '../../shared/ui/PageHero';
 import SectionHeader from '../../shared/ui/SectionHeader';
 import SEO from '../../shared/seo/SEO';
 
 const Facilities = () => {
+  const { t } = useTranslation();
   const facilities = [
     {
       id: 1,
-      title: 'Kapalı Yüzme Havuzu',
-      desc: 'Günlük stresinizden arının. Kendinize özel kulvarınızı ayırtarak kalabalıktan uzak bir yüzme deneyimi yaşayın.',
+      title: t('portal.facilities.f1title'),
+      desc: t('portal.facilities.f1desc'),
       icon: <Droplets size={32} />,
       img: '/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp'
     },
     {
       id: 2,
-      title: 'Premium Fitness Club',
-      desc: 'Son teknoloji Technogym ekipmanları ve özel eğitmen (PT) rezervasyonları ile sağlıklı bir yaşama adım atın.',
+      title: t('portal.facilities.f2title'),
+      desc: t('portal.facilities.f2desc'),
       icon: <Dumbbell size={32} />,
       img: '/images/amenities/d5_scene26_20240303_012656copy_2025-12-18_03-46-34_808608.webp'
     },
     {
       id: 3,
-      title: 'Lounge & Toplantı Odası',
-      desc: 'Misafirlerinizi ağırlamak veya iş toplantılarınızı yapmak için VIP Lounge alanını dilediğiniz saat dilimine kiralayın.',
+      title: t('portal.facilities.f3title'),
+      desc: t('portal.facilities.f3desc'),
       icon: <Coffee size={32} />,
       img: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp'
     }
@@ -32,23 +34,23 @@ const Facilities = () => {
 
   return (
     <div className="bg-luxera-navy min-h-screen text-white pb-24">
-      <SEO 
-        title="Sosyal Yaşam & SPA Rezervasyonu | Luxera Towers"
-        description="Luxera Towers tesis rezervasyon sistemi ile SPA, fitness ve kapalı havuz alanlarında yerinizi ayırtın."
+      <SEO
+        title={t('portal.facilities.seoTitle')}
+        description={t('portal.facilities.seoDesc')}
       />
-      
+
       <PageHero
-        overline="Sosyal Alanlar"
-        title="Sosyal Yaşam &"
-        highlight="SPA"
-        subtitle="Ayrıcalıklı tesislerimizde yerinizi ayırtın, anın tadını çıkarın."
+        overline={t('portal.facilities.heroOverline')}
+        title={t('portal.facilities.heroTitle')}
+        highlight={t('portal.facilities.heroHighlight')}
+        subtitle={t('portal.facilities.heroSubtitle')}
         backgroundImage="/images/amenities/d5_scene20_20240303_013151copy_2025-12-18_03-46-29_42c7ac.webp"
       />
 
       <div className="max-w-[90rem] mx-auto px-6 mt-24">
-        <SectionHeader 
-          title="Tesis Rezervasyonları"
-          subtitle="Tüm sosyal tesislerimizin doluluk oranlarını canlı izleyebilir ve kendi programınıza uygun saati rezerve edebilirsiniz."
+        <SectionHeader
+          title={t('portal.facilities.sectionTitle')}
+          subtitle={t('portal.facilities.sectionSubtitle')}
           watermark="LIFESTYLE"
         />
 
@@ -80,7 +82,7 @@ const Facilities = () => {
                   {fac.desc}
                 </p>
                 <div className="flex items-center gap-2 text-luxera-gold text-sm uppercase tracking-widest font-bold">
-                  Rezervasyon Yap <ExternalLink size={16} />
+                  {t('portal.facilities.reserveBtn')} <ExternalLink size={16} />
                 </div>
               </div>
             </motion.div>
@@ -93,9 +95,9 @@ const Facilities = () => {
             <Calendar size={28} className="text-luxera-navy" />
           </div>
           <div>
-            <h4 className="text-white font-serif text-xl mb-2">Nasıl Rezervasyon Yaparım?</h4>
+            <h4 className="text-white font-serif text-xl mb-2">{t('portal.facilities.infoTitle')}</h4>
             <p className="text-gray-400">
-              Apsiyon portalı üzerinden <strong>"Tesisler"</strong> sekmesine giderek kullanmak istediğiniz alanı ve saati seçmeniz yeterlidir. Teyit mesajınız anında cebinize gelir.
+              {t('portal.facilities.infoDesc')}
             </p>
           </div>
         </div>

@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Utensils, Coffee, Wine, Clock, CheckCircle, ChevronRight } from 'lucide-react';
 
 const OdaServisiModule = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('kahvalti');
   const [cart, setCart] = useState([]);
   const [orderStatus, setOrderStatus] = useState(null); // null, 'hazirlaniyor', 'yolda', 'teslim_edildi'
 
   const menu = {
     kahvalti: [
-      { id: 'k1', name: 'Luxera Özel Kahvaltı Tabağı', price: 450, desc: 'Organik yumurta, avokado, füme somon, artisan ekmekler.' },
-      { id: 'k2', name: 'Eggs Benedict', price: 320, desc: 'Hollandaise sos, füme et, kızarmış brioche.' },
-      { id: 'k3', name: 'Taze Sıkılmış Detoks Suyu', price: 150, desc: 'Elma, kereviz, zencefil, ıspanak.' }
+      { id: 'k1', name: t('portal.oda.k1n'), price: 450, desc: t('portal.oda.k1d') },
+      { id: 'k2', name: t('portal.oda.k2n'), price: 320, desc: t('portal.oda.k2d') },
+      { id: 'k3', name: t('portal.oda.k3n'), price: 150, desc: t('portal.oda.k3d') }
     ],
     aksam: [
-      { id: 'a1', name: 'Izgara Dana Bonfile', price: 1250, desc: 'Taze kuşkonmaz ve trüflü patates püresi ile.' },
-      { id: 'a2', name: 'Somon Izgara', price: 850, desc: 'Kinoa salatası ve limonlu tereyağı sosu.' },
-      { id: 'a3', name: 'Sezar Salata', price: 350, desc: 'Izgara tavuk göğsü, kruton ve parmesan.' }
+      { id: 'a1', name: t('portal.oda.a1n'), price: 1250, desc: t('portal.oda.a1d') },
+      { id: 'a2', name: t('portal.oda.a2n'), price: 850, desc: t('portal.oda.a2d') },
+      { id: 'a3', name: t('portal.oda.a3n'), price: 350, desc: t('portal.oda.a3d') }
     ],
     icecekler: [
-      { id: 'i1', name: 'Premium Şarap Seçkisi', price: 2500, desc: 'Bordeaux 2018 (Şişe)' },
-      { id: 'i2', name: 'Özel Harman Türk Kahvesi', price: 180, desc: 'Lokum ve su ile.' }
+      { id: 'i1', name: t('portal.oda.i1n'), price: 2500, desc: t('portal.oda.i1d') },
+      { id: 'i2', name: t('portal.oda.i2n'), price: 180, desc: t('portal.oda.i2d') }
     ],
     restoranlar: [
-      { id: 'r1', name: 'Nusr-Et Steakhouse', price: 0, desc: 'Rezervasyon ve özel loca talebi. Alt Kat VIP Giriş.' },
-      { id: 'r2', name: 'Godiva Cafe', price: 0, desc: 'Özel çikolata tadım tabağı ve sıcak içecekler siparişi.' },
-      { id: 'r3', name: 'Starbucks Reserve', price: 0, desc: 'Odanıza özel baristadan taze kahve teslimatı.' }
+      { id: 'r1', name: t('portal.oda.r1n'), price: 0, desc: t('portal.oda.r1d') },
+      { id: 'r2', name: t('portal.oda.r2n'), price: 0, desc: t('portal.oda.r2d') },
+      { id: 'r3', name: t('portal.oda.r3n'), price: 0, desc: t('portal.oda.r3d') }
     ]
   };
 
@@ -48,12 +50,12 @@ const OdaServisiModule = () => {
       {/* Menu Area */}
       <div className="lg:col-span-2 bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-md">
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-xl font-serif text-white">Yeme & İçme</h3>
+          <h3 className="text-xl font-serif text-white">{t('portal.oda.title')}</h3>
           <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-            <button onClick={() => setActiveCategory('restoranlar')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'restoranlar' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>AVM Restoranları</button>
-            <button onClick={() => setActiveCategory('kahvalti')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'kahvalti' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Oda Kahvaltı</button>
-            <button onClick={() => setActiveCategory('aksam')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'aksam' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>Akşam Yemeği</button>
-            <button onClick={() => setActiveCategory('icecekler')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'icecekler' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>İçecekler</button>
+            <button onClick={() => setActiveCategory('restoranlar')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'restoranlar' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>{t('portal.oda.catRestaurants')}</button>
+            <button onClick={() => setActiveCategory('kahvalti')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'kahvalti' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>{t('portal.oda.catBreakfast')}</button>
+            <button onClick={() => setActiveCategory('aksam')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'aksam' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>{t('portal.oda.catDinner')}</button>
+            <button onClick={() => setActiveCategory('icecekler')} className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm transition-colors ${activeCategory === 'icecekler' ? 'bg-luxera-gold text-luxera-navy font-bold' : 'bg-black/40 text-gray-400 hover:text-white'}`}>{t('portal.oda.catDrinks')}</button>
           </div>
         </div>
 
@@ -66,7 +68,7 @@ const OdaServisiModule = () => {
               </div>
               <p className="text-xs text-gray-400 mb-4 h-8">{item.desc}</p>
               <button onClick={() => addToCart(item)} className="w-full bg-white/5 hover:bg-luxera-gold hover:text-luxera-navy text-gray-300 py-2 rounded-xl text-sm transition-colors">
-                {activeCategory === 'restoranlar' ? 'Sipariş/Rezervasyon İste' : 'Sepete Ekle'}
+                {activeCategory === 'restoranlar' ? t('portal.oda.reserveBtn') : t('portal.oda.addCart')}
               </button>
             </div>
           ))}
@@ -76,10 +78,10 @@ const OdaServisiModule = () => {
       {/* Cart & Order Status */}
       <div className="space-y-6">
         <div className="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-md h-fit">
-          <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">Siparişiniz</h3>
-          
+          <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">{t('portal.oda.orderTitle')}</h3>
+
           {cart.length === 0 ? (
-            <div className="text-center py-8 text-gray-500 text-sm">Sepetiniz boş.</div>
+            <div className="text-center py-8 text-gray-500 text-sm">{t('portal.oda.emptyCart')}</div>
           ) : (
             <>
               <div className="space-y-4 mb-6 max-h-[200px] overflow-y-auto">
@@ -91,32 +93,32 @@ const OdaServisiModule = () => {
                 ))}
               </div>
               <div className="flex justify-between items-center border-t border-white/10 pt-4 mb-6">
-                <span className="text-gray-400">Toplam</span>
+                <span className="text-gray-400">{t('portal.oda.total')}</span>
                 <span className="text-xl text-luxera-gold font-bold">₺{totalAmount}</span>
               </div>
               
               {!orderStatus ? (
                 <button onClick={handleOrder} className="w-full bg-luxera-gold text-luxera-navy font-bold py-3 rounded-xl hover:bg-white transition-colors">
-                  Daireme Getir
+                  {t('portal.oda.deliverBtn')}
                 </button>
               ) : (
                 <div className="bg-black/40 rounded-xl p-4 border border-white/10 text-center">
                   {orderStatus === 'hazirlaniyor' && (
                     <div className="text-blue-400 flex flex-col items-center gap-2">
                       <div className="w-6 h-6 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
-                      <span className="text-sm font-semibold tracking-wider">HAZIRLANIYOR</span>
+                      <span className="text-sm font-semibold tracking-wider">{t('portal.oda.statusPreparing')}</span>
                     </div>
                   )}
                   {orderStatus === 'yolda' && (
                     <div className="text-luxera-gold flex flex-col items-center gap-2 animate-pulse">
                       <Utensils size={24} />
-                      <span className="text-sm font-semibold tracking-wider">YOLDA</span>
+                      <span className="text-sm font-semibold tracking-wider">{t('portal.oda.statusOnway')}</span>
                     </div>
                   )}
                   {orderStatus === 'teslim_edildi' && (
                     <div className="text-green-400 flex flex-col items-center gap-2">
                       <CheckCircle size={24} />
-                      <span className="text-sm font-semibold tracking-wider">AFİYET OLSUN</span>
+                      <span className="text-sm font-semibold tracking-wider">{t('portal.oda.statusDelivered')}</span>
                     </div>
                   )}
                 </div>
