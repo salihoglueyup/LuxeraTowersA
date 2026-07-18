@@ -1,4 +1,17 @@
 {
+  "seo": {
+    "title": "Luxera Towers | Basın Ekspres'te Gökyüzü Bahçeleri",
+    "description": "İstanbul Basın Ekspres'te 3 ikonik kule, 369 prestijli rezidans ve 87 mağazalık lüks AVM. Luxera Towers ile gökyüzü bahçeleri ve ayrıcalıklı yaşam deneyimi.",
+    "keywords": "Luxera Towers, rezidans, lüks, İstanbul, Basın Ekspres, gayrimenkul, yatırım",
+    "ogImage": "https://luxeratowers.com/images/seo/og-home.webp"
+  },
+  "company": {
+    "name": "Luxera Towers",
+    "address": "Basın Ekspres Yolu, Güneşli, İstanbul 34212, Türkiye",
+    "phone": "+90 212 000 00 00",
+    "email": "info@luxeratowers.com",
+    "url": "https://luxeratowers.com"
+  },
   "common": {
     "loading": "Yükleniyor...",
     "downloadCatalog": "Kataloğu İndir",

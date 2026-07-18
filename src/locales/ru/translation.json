@@ -1,4 +1,17 @@
 {
+  "seo": {
+    "title": "Luxera Towers | Небесные сады в Басын Экспрессе",
+    "description": "3 величественные башни, 369 престижных резиденций и роскошный торговый центр с 87 магазинами. Люксера Тауэрс предлагает жизнь класса люкс с небесными садами и исключительными привилегиями.",
+    "keywords": "Luxera Towers, резиденции, люкс, Стамбул, Басын Экспресс, недвижимость, инвестиции",
+    "ogImage": "https://luxeratowers.com/images/seo/og-home.webp"
+  },
+  "company": {
+    "name": "Luxera Towers",
+    "address": "Басын Экспресс, Гюнешли, Стамбул 34212, Турция",
+    "phone": "+90 212 000 00 00",
+    "email": "info@luxeratowers.com",
+    "url": "https://luxeratowers.com"
+  },
   "common": {
     "loading": "Загрузка...",
     "downloadCatalog": "Скачать каталог",

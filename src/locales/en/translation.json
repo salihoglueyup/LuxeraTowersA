@@ -1,4 +1,17 @@
 {
+  "seo": {
+    "title": "Luxera Towers | Sky Gardens in Basin Ekspres",
+    "description": "3 iconic towers, 369 prestigious residences, and 87-store luxury mall in Istanbul's Basin Ekspres. Experience luxury living with sky gardens and exclusive privileges at Luxera Towers.",
+    "keywords": "Luxera Towers, residences, luxury, Istanbul, Basin Ekspres, real estate, investment",
+    "ogImage": "https://luxeratowers.com/images/seo/og-home.webp"
+  },
+  "company": {
+    "name": "Luxera Towers",
+    "address": "Basin Ekspres, Gunseli, Istanbul 34212, Turkey",
+    "phone": "+90 212 000 00 00",
+    "email": "info@luxeratowers.com",
+    "url": "https://luxeratowers.com"
+  },
   "common": {
     "loading": "Loading...",
     "downloadCatalog": "Download Catalog",
