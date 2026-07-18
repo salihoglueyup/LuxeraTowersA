@@ -6,17 +6,18 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import PageTransition from '../../shared/ui/PageTransition';
 import BackToTop from '../../shared/ui/BackToTop';
-import { getPageTitle } from '../../data/seo';
+import { getPageTitleKey, DEFAULT_TITLE } from '../../data/seo';
 
 export default function MainLayout() {
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   // Rota değişiminde sayfa başlığını güncelle (SPA SEO/UX)
   useEffect(() => {
-    document.title = getPageTitle(location.pathname);
-  }, [location.pathname]);
-
-  const { i18n } = useTranslation();
+    const pathname = location.pathname.replace(/\/$/, '') || '/';
+    const pageTitleKey = getPageTitleKey(pathname);
+    document.title = t(pageTitleKey, DEFAULT_TITLE);
+  }, [location.pathname, i18n.language, t]);
 
   return (
     <div className="flex flex-col min-h-screen">

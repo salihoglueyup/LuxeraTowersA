@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../shared/seo/SEO';
 import Hero from '../features/hero/Hero';
 import Highlights from '../features/hero/Highlights';
@@ -8,9 +9,11 @@ import Location from '../features/location/Location';
 import Contact from '../features/contact/Contact';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <main>
-      <SEO />
+      <SEO title={t('pageTitles.home')} />
       <Hero />
       <Highlights />
       <UnitTypes />
