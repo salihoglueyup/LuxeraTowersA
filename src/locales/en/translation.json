@@ -2657,5 +2657,77 @@
       "title": "Basın Ekspres is on the Rise",
       "desc": "Luxera Towers takes the lead among the projects that are the locomotive of transformation in the region."
     }
+  },
+  "catalog": {
+    "title": "Project Catalog",
+    "desc": "Fill out the form for all floor plans, location and detailed project information; your catalog will download instantly.",
+    "label": {
+      "name": "Full Name *",
+      "email": "Email *",
+      "phone": "Phone *",
+      "unitType": "Unit Type of Interest",
+      "purpose": "Purpose",
+      "timeline": "Purchase Timeline",
+      "contact": "Contact Preference",
+      "source": "How Did You Hear About Us?",
+      "message": "Your Message (optional)"
+    },
+    "ph": {
+      "name": "Your Full Name",
+      "email": "example@mail.com",
+      "phone": "05XX XXX XX XX",
+      "select": "Select",
+      "message": "Anything you'd like to add..."
+    },
+    "kvkkPre": "I have read the ",
+    "kvkkLink": "Privacy (KVKK) Disclosure Text",
+    "kvkkPost": " and consent to the processing of my personal data.",
+    "submit": "Download Catalog",
+    "submitting": "Preparing...",
+    "successTitle": "Thank You!",
+    "successPre": "Your catalog is downloading. If it doesn't, ",
+    "successLink": "click here",
+    "successPost": ".",
+    "close": "Close",
+    "alt": "Luxera Towers Catalog",
+    "v": {
+      "name": "Full name must be at least 3 characters",
+      "email": "Please enter a valid email address",
+      "phone": "Please enter a valid phone number",
+      "kvkk": "You must give consent to continue"
+    },
+    "opt": {
+      "unit": {
+        "u1": "1+1",
+        "u2": "2+1",
+        "u3": "3+1",
+        "penthouse": "4+1 Penthouse",
+        "commercial": "Commercial Unit",
+        "any": "No Preference"
+      },
+      "purpose": {
+        "residence": "Residence",
+        "investment": "Investment",
+        "commercial": "Commercial"
+      },
+      "timeline": {
+        "t1": "0 - 3 Months",
+        "t2": "3 - 6 Months",
+        "t3": "6 - 12 Months",
+        "researching": "Still Researching"
+      },
+      "contact": {
+        "phone": "Phone",
+        "email": "Email",
+        "whatsapp": "WhatsApp"
+      },
+      "source": {
+        "google": "Google / Search Engine",
+        "social": "Social Media",
+        "referral": "Recommendation / Referral",
+        "ad": "Listing / Advertisement",
+        "other": "Other"
+      }
+    }
   }
 }

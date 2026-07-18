@@ -2663,5 +2663,77 @@
   },
   "luxuryCard": {
     "action": "Detaylı İncele"
+  },
+  "catalog": {
+    "title": "Proje Kataloğu",
+    "desc": "Tüm kat planları, konum ve detaylı proje bilgileri için formu doldurun; kataloğunuz hemen indirilsin.",
+    "label": {
+      "name": "Ad Soyad *",
+      "email": "E-posta *",
+      "phone": "Telefon *",
+      "unitType": "İlgilendiğiniz Tip",
+      "purpose": "Amaç",
+      "timeline": "Satın Alma Zamanı",
+      "contact": "İletişim Tercihi",
+      "source": "Bizi Nasıl Duydunuz?",
+      "message": "Mesajınız (opsiyonel)"
+    },
+    "ph": {
+      "name": "Adınız Soyadınız",
+      "email": "ornek@mail.com",
+      "phone": "05XX XXX XX XX",
+      "select": "Seçiniz",
+      "message": "Eklemek istedikleriniz..."
+    },
+    "kvkkPre": "",
+    "kvkkLink": "KVKK Aydınlatma Metni",
+    "kvkkPost": "'ni okudum, kişisel verilerimin işlenmesini onaylıyorum.",
+    "submit": "Kataloğu İndir",
+    "submitting": "Hazırlanıyor...",
+    "successTitle": "Teşekkürler!",
+    "successPre": "Kataloğunuz indiriliyor. İnmezse ",
+    "successLink": "buraya tıklayın",
+    "successPost": ".",
+    "close": "Kapat",
+    "alt": "Luxera Towers Katalog",
+    "v": {
+      "name": "Ad Soyad en az 3 karakter olmalıdır",
+      "email": "Geçerli bir e-posta adresi giriniz",
+      "phone": "Geçerli bir telefon numarası giriniz",
+      "kvkk": "Devam etmek için onay vermelisiniz"
+    },
+    "opt": {
+      "unit": {
+        "u1": "1+1",
+        "u2": "2+1",
+        "u3": "3+1",
+        "penthouse": "4+1 Penthouse",
+        "commercial": "Ticari Ünite",
+        "any": "Farketmez"
+      },
+      "purpose": {
+        "residence": "Oturum",
+        "investment": "Yatırım",
+        "commercial": "Ticari"
+      },
+      "timeline": {
+        "t1": "0 - 3 Ay",
+        "t2": "3 - 6 Ay",
+        "t3": "6 - 12 Ay",
+        "researching": "Henüz Araştırıyorum"
+      },
+      "contact": {
+        "phone": "Telefon",
+        "email": "E-posta",
+        "whatsapp": "WhatsApp"
+      },
+      "source": {
+        "google": "Google / Arama Motoru",
+        "social": "Sosyal Medya",
+        "referral": "Tavsiye / Referans",
+        "ad": "İlan / Reklam",
+        "other": "Diğer"
+      }
+    }
   }
 }

@@ -1,27 +1,42 @@
 // Katalog (lead) formu seçenek verileri — kolay düzenlenebilir.
+// value: CRM'e/backend'e gönderilen sabit kanonik değer (dilden bağımsız).
+// labelKey: kullanıcıya gösterilen etiketin i18n anahtarı.
 
 // Daire tipleri residences verisinden türetilir + ekstra seçenekler
 export const unitTypeOptions = [
-  '1+1',
-  '2+1',
-  '3+1',
-  '4+1 Penthouse',
-  'Ticari Ünite',
-  'Farketmez',
+  { value: '1+1', labelKey: 'catalog.opt.unit.u1' },
+  { value: '2+1', labelKey: 'catalog.opt.unit.u2' },
+  { value: '3+1', labelKey: 'catalog.opt.unit.u3' },
+  { value: '4+1 Penthouse', labelKey: 'catalog.opt.unit.penthouse' },
+  { value: 'Ticari Ünite', labelKey: 'catalog.opt.unit.commercial' },
+  { value: 'Farketmez', labelKey: 'catalog.opt.unit.any' },
 ];
 
-export const purposeOptions = ['Oturum', 'Yatırım', 'Ticari'];
+export const purposeOptions = [
+  { value: 'Oturum', labelKey: 'catalog.opt.purpose.residence' },
+  { value: 'Yatırım', labelKey: 'catalog.opt.purpose.investment' },
+  { value: 'Ticari', labelKey: 'catalog.opt.purpose.commercial' },
+];
 
-export const timelineOptions = ['0 - 3 Ay', '3 - 6 Ay', '6 - 12 Ay', 'Henüz Araştırıyorum'];
+export const timelineOptions = [
+  { value: '0 - 3 Ay', labelKey: 'catalog.opt.timeline.t1' },
+  { value: '3 - 6 Ay', labelKey: 'catalog.opt.timeline.t2' },
+  { value: '6 - 12 Ay', labelKey: 'catalog.opt.timeline.t3' },
+  { value: 'Henüz Araştırıyorum', labelKey: 'catalog.opt.timeline.researching' },
+];
 
-export const contactPreferenceOptions = ['Telefon', 'E-posta', 'WhatsApp'];
+export const contactPreferenceOptions = [
+  { value: 'Telefon', labelKey: 'catalog.opt.contact.phone' },
+  { value: 'E-posta', labelKey: 'catalog.opt.contact.email' },
+  { value: 'WhatsApp', labelKey: 'catalog.opt.contact.whatsapp' },
+];
 
 export const sourceOptions = [
-  'Google / Arama Motoru',
-  'Sosyal Medya',
-  'Tavsiye / Referans',
-  'İlan / Reklam',
-  'Diğer',
+  { value: 'Google / Arama Motoru', labelKey: 'catalog.opt.source.google' },
+  { value: 'Sosyal Medya', labelKey: 'catalog.opt.source.social' },
+  { value: 'Tavsiye / Referans', labelKey: 'catalog.opt.source.referral' },
+  { value: 'İlan / Reklam', labelKey: 'catalog.opt.source.ad' },
+  { value: 'Diğer', labelKey: 'catalog.opt.source.other' },
 ];
 
 // "Katalogda neler var?" — fiyat bilgisi bilinçli olarak yok.
