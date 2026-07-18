@@ -5,7 +5,8 @@
     "discover": "Projeyi Keşfet",
     "contact": "İletişime Geç",
     "menu": "Menü",
-    "close": "Kapat"
+    "close": "Kapat",
+    "discover_short": "Keşfet"
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -93,6 +94,10 @@
       "feature2": "Sauna",
       "feature3": "Özel Asansör",
       "feature4": "4 Araçlık Otopark"
+    },
+    "header": {
+      "title": "Ayrıcalıklı Yaşam Alanları",
+      "subtitle": "Her detayı özenle tasarlanmış, ferah ve lüks yaşam seçenekleri."
     }
   },
   "amenities": {
@@ -127,6 +132,73 @@
       "5m": "5 Dakika",
       "10m": "10 Dakika",
       "25m": "25 Dakika"
+    },
+    "cat1": {
+      "title": "Ulaşım",
+      "i1": {
+        "t": "Güneşli Metro İstasyonu",
+        "time": "200 m",
+        "d": "Yürüme mesafesinde metro erişimi"
+      },
+      "i2": {
+        "t": "Basın Ekspres",
+        "time": "5 Dk",
+        "d": "İş ve yaşam aksının merkezinde"
+      },
+      "i3": {
+        "t": "E-5 & TEM Otoyolları",
+        "time": "5 Dk",
+        "d": "Ana arterlere hızlı erişim"
+      },
+      "i4": {
+        "t": "İstanbul Havalimanı",
+        "time": "25 Dk",
+        "d": "Dünyaya açılan kapı"
+      }
+    },
+    "cat2": {
+      "title": "Alışveriş",
+      "i1": {
+        "t": "Mall of Istanbul",
+        "time": "5 Dk",
+        "d": "Alışverişin zirvesi"
+      },
+      "i2": {
+        "t": "212 İstanbul Power Outlet",
+        "time": "7 Dk",
+        "d": "Marka çeşitliliği"
+      },
+      "i3": {
+        "t": "Starcity AVM",
+        "time": "10 Dk",
+        "d": "Yakın çevre alışveriş"
+      }
+    },
+    "cat3": {
+      "title": "Sağlık",
+      "i1": {
+        "t": "Medipol Üniversite Hastanesi",
+        "time": "12 Dk",
+        "d": "Tam teşekküllü sağlık"
+      },
+      "i2": {
+        "t": "Çam ve Sakura Şehir Hastanesi",
+        "time": "15 Dk",
+        "d": "Avrupa'nın en büyük hastanesi"
+      }
+    },
+    "cat4": {
+      "title": "Eğitim",
+      "i1": {
+        "t": "Altınbaş Üniversitesi",
+        "time": "10 Dk",
+        "d": "Yükseköğrenim"
+      },
+      "i2": {
+        "t": "Özel Okullar & Kolejler",
+        "time": "5-10 Dk",
+        "d": "Nitelikli eğitim seçenekleri"
+      }
     }
   },
   "contact": {
@@ -251,7 +323,8 @@
     },
     "reasons": {
       "r1": {
-        "title": "Prestijli Konum"
+        "title": "Prestijli Konum",
+        "desc": "Basın Ekspres\\'in kalbinde, tüm ulaşım ağlarının kesişim noktasında eşsiz bir lokasyon."
       },
       "r2": {
         "title": "Üstün Mimari",
@@ -306,17 +379,20 @@
       }
     },
     "seo": {
-      "title": "Hakkımızda & Proje Detayları"
+      "title": "Hakkımızda & Proje Detayları",
+      "desc": "Luxera Towers; İstanbul Basın Ekspres\\'te 369 lüks rezidans ve 87 mağazalık AVM ile yükselen yepyeni bir yaşam vizyonu."
     },
     "hero": {
       "overline": "Proje Hakkında",
       "title": "Yeni Bir",
-      "highlight": "Vizyon"
+      "highlight": "Vizyon",
+      "subtitle": "Basın Ekspres\\'in kalbinde, lüksün standartlarını yeniden tanımlayan ikonik bir mimari ve ayrıcalıklı bir yaşam."
     },
     "intro": {
       "title1": "Sıradanlığa Meydan Okuyan",
       "title2": "Mimari Bir Eser",
-      "p2": "İhtiyaç duyduğunuz her şeye asansör mesafesinde ulaşabilme özgürlüğü, gökyüzü bahçelerinde nefes alma imkanı ve uluslararası markaların yer aldığı ticari alanlarıyla tam donanımlı bir dünya yaratıyoruz."
+      "p2": "İhtiyaç duyduğunuz her şeye asansör mesafesinde ulaşabilme özgürlüğü, gökyüzü bahçelerinde nefes alma imkanı ve uluslararası markaların yer aldığı ticari alanlarıyla tam donanımlı bir dünya yaratıyoruz.",
+      "p1": "Luxera Towers, salt bir konut projesi olmanın çok ötesinde; İstanbul\\'un dinamizmini estetikle harmanlayan yeni nesil bir yaşam konseptidir. Her detayı özenle düşünülmüş bu projede, lüks artık bir ayrıcalık değil, standartınız olacak."
     },
     "why": {
       "title1": "Neden",
@@ -325,11 +401,13 @@
     },
     "offersHeader": {
       "title1": "Luxera Towers",
-      "title2": "Size Ne Sunuyor?"
+      "title2": "Size Ne Sunuyor?",
+      "desc": "Luxera Towers\\'ta yaşam demek; zamanı keyifle yönettiğiniz, prestijli bir ayrıcalık demek."
     },
     "gardens": {
       "subtitle": "Gökyüzü Bahçeleri",
-      "desc": "Kuleler arasına yerleştirilen çok katlı yeşil teraslar, şehrin ortasında doğayla iç içe nefes alan bir yaşam sunar. Peyzajlı sosyal platformlar ve dinlenme alanları evinizin lüks bir uzantısıdır."
+      "desc": "Kuleler arasına yerleştirilen çok katlı yeşil teraslar, şehrin ortasında doğayla iç içe nefes alan bir yaşam sunar. Peyzajlı sosyal platformlar ve dinlenme alanları evinizin lüks bir uzantısıdır.",
+      "title": "\"Her penceresinden başarıya açılan bir manzara\""
     },
     "timelineHeader": {
       "title": "Proje Yolculuğu",
@@ -337,12 +415,14 @@
     },
     "specsHeader": "Teknik Künye",
     "testimonials": {
-      "overline": "Referanslar"
+      "overline": "Referanslar",
+      "title": "Luxera\\'da Yaşayanlar"
     },
     "cta": {
       "title": "Bu Hikâyenin Bir Parçası Olun",
       "primary": "İletişime Geçin",
-      "secondary": "Rezidansları İncele"
+      "secondary": "Rezidansları İncele",
+      "desc": "Luxera Towers\\'ı yakından tanımak, örnek dairemizi gezmek ve size özel seçenekleri keşfetmek için bizimle iletişime geçin."
     }
   },
   "commercial": {
@@ -406,7 +486,8 @@
     "hero": {
       "overline": "Ticari Fırsatlar",
       "title": "Ticari",
-      "highlight": "Üniteler"
+      "highlight": "Üniteler",
+      "subtitle": "Basın Ekspres\\'in en prestijli AVM\\'sinde, markanızı zirveye taşıyacak benzersiz ticari fırsatlar."
     },
     "intro": {
       "title": "Ticaretin Yeni Kalbi",
@@ -433,7 +514,8 @@
     },
     "process": {
       "overline": "Nasıl İşler?",
-      "title": "Kiralama Süreci"
+      "title": "Kiralama Süreci",
+      "subtitle": "Doğru üniteden açılışa; markanızı Luxera Towers\\'a taşımak dört adımda tamamlanır."
     },
     "testimonials": {
       "title": "Kiracılarımız Ne Diyor?",
@@ -452,7 +534,9 @@
       "subtitle": "Geçmişten gelen tecrübe, geleceği inşa eden vizyon."
     },
     "vision": {
-      "title": "Vizyonumuz ve Değerlerimiz"
+      "title": "Vizyonumuz ve Değerlerimiz",
+      "p1": "Gayrimenkul sektöründe yılların getirdiği tecrübe ve güvenle yola çıkan Luxera, her projesinde kalite, estetik ve sağlamlığı standart olarak benimsemiştir. Basın Ekspres\\'in en değerli lokasyonunda yükselen Luxera Towers, sadece bir konut projesi değil, aynı zamanda İstanbul\\'un yeni ikonlarından biri olma vizyonuyla hayata geçirilmektedir.",
+      "p2": "Yenilikçi mimari anlayışımız, çevreye duyarlı sürdürülebilirlik ilkelerimiz ve insan odaklı tasarım felsefemizle, projelerimizde yaşayan herkese \"premium\" bir yaşam deneyimi sunmayı hedefliyoruz."
     },
     "milestones": {
       "overline": "Yolculuğumuz",
@@ -474,12 +558,14 @@
     "cta": {
       "title": "Luxera Ailesine Katılın",
       "primary": "İletişime Geçin",
-      "secondary": "Projeyi Keşfet"
+      "secondary": "Projeyi Keşfet",
+      "desc": "Markamızın vizyonunu ve Luxera Towers\\'ın sunduğu ayrıcalıkları yakından keşfetmek için bizimle iletişime geçin."
     }
   },
   "dining": {
     "seo": {
-      "title": "Gastronomi ve Restoranlar"
+      "title": "Gastronomi ve Restoranlar",
+      "desc": "Dünya mutfağından seçkin lezzetler, premium kafeler ve fine-dining restoranlar Luxera Towers\\'ta."
     },
     "hero": {
       "overline": "Gastronomi Deneyimi",
@@ -503,14 +589,156 @@
     "hero": {
       "overline": "Gündem & Medya",
       "title2": "Etkinlikler",
-      "desc": "Luxera Towers ekosistemindeki en güncel gelişmeler, özel kampanyalar ve size özel hazırlanan sosyal etkinlik takvimi."
+      "desc": "Luxera Towers ekosistemindeki en güncel gelişmeler, özel kampanyalar ve size özel hazırlanan sosyal etkinlik takvimi.",
+      "title1": ""
     },
     "cta": {
       "title": "Etkinliklerden Haberdar Olun",
-      "primary": "İletişime Geçin"
+      "primary": "İletişime Geçin",
+      "desc": "Luxera Towers\\'ın özel lansman, kampanya ve sosyal etkinliklerinden ilk siz haberdar olmak için bizimle iletişime geçin."
     },
     "filters": {
       "all": "Tümü"
+    },
+    "ornek-daire": {
+      "category": "Etkinlik",
+      "date": "28 Ekim 2025",
+      "title": "Örnek Daire Lansmanı Gerçekleşti",
+      "desc": "A+ standartlarında tasarlanan 3+1 ve 2+1 örnek dairelerimiz ziyaretçilere açıldı. Büyük ilgi gören lansman detayları...",
+      "body": "Luxera Towers'ın \\\"Gökyüzünde Lüks\\\" mottosuyla tasarlanan örnek daireleri, yoğun bir katılımla yatırımcıların beğenisine sunuldu. Öncü iç mimarlık ofisleri tarafından hazırlanan örnek dairelerimizde, standart olarak sunulan VRF klima sistemleri, İtalyan tasarımı mutfak dolapları ve akıllı ev otomasyonları büyük beğeni topladı. Lansmana özel uygulanan %10 indirim fırsatından yararlanan yatırımcılar, projenin sunduğu premium hissini yerinde deneyimleme şansı buldular. Satış ofisimizi ziyaret ederek örnek dairemizi 7 gün boyunca gezebilirsiniz."
+    },
+    "indirim-kampanya": {
+      "category": "Kampanya",
+      "date": "10 Kasım 2025",
+      "title": "Peşin Alımlarda Özel %15 İndirim",
+      "desc": "Sınırlı sayıda rezidans için geçerli olan peşin ödeme kampanyamız başladı. Bu fırsatı kaçırmayın.",
+      "body": "Basın Ekspres'in en prestijli projesi Luxera Towers'ta, yeni bir kampanyanın startını verdik. Özellikle döviz bazlı yüksek getiri hedefleyen yatırımcılarımız için, peşin alımlarda geçerli net %15 indirim fırsatı sunuyoruz. Sınırlı sayıda (ilk 20 ünite) rezidans ve ticari ünite için geçerli olacak bu kampanya, aynı zamanda vatandaşlık programına başvuru süreçlerini de kapsıyor. 36 ay şirket bünyesinde vade farksız taksit seçeneklerimiz de alternatif olarak devam etmektedir. Detaylı ödeme planları için uzman satış ekibimizle iletişime geçebilirsiniz."
+    },
+    "metro-istasyonu": {
+      "category": "Haber",
+      "date": "23 Kasım 2025",
+      "title": "Yeni Metro İstasyonu Kapımızda",
+      "desc": "M9 Ataköy-Olimpiyat metro hattının yeni istasyonu, Luxera Towers'a yürüme mesafesinde hizmete açılıyor.",
+      "body": "Projemizin yatırım değerini katlayacak en büyük müjdelerden biri resmiyet kazandı. M9 Ataköy-Olimpiyat metro hattının güzergahında yer alan yeni istasyon çıkışının, Luxera Towers'a sadece 1 dakikalık yürüme mesafesinde açılacağı duyuruldu. Bu dev altyapı yatırımı sayesinde, rezidans sakinlerimiz ve ticari alan ziyaretçilerimiz trafik stresi yaşamadan İstanbul'un her noktasına entegre olabilecek. Özellikle AVM bölümündeki mağaza karması (brand-mix) ve yaya trafiği için devrim niteliğinde olan bu gelişme, bölgenin m² birim fiyatlarında şimdiden %20'lik bir artış beklentisi yarattı."
+    },
+    "kitap-gunleri": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "06 Aralık 2025",
+      "title": "Kış Kitap Günleri ve İmza Etkinliği",
+      "desc": "Luxera AVM etkinlik alanında seçkin yayınevleri ve yazarlar okurlarıyla buluşuyor.",
+      "body": "Sanatın ve edebiyatın kalbi Luxera Towers'ta atıyor! 12-18 Aralık tarihleri arasında AVM etkinlik alanımızda düzenlenecek olan Kış Kitap Günleri'nde, Türkiye'nin en seçkin yayınevleri stant açacak. Ayrıca hafta sonları değerli yazarlarımızın imza günleri ve söyleşileriyle dolu dolu bir edebiyat şöleni sizleri bekliyor. Tüm sakinlerimiz ve ziyaretçilerimiz davetlidir."
+    },
+    "muzik-dinletisi": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "19 Aralık 2025",
+      "title": "Lobi Lounge'da Yeni Yıl Öncesi Caz Dinletisi",
+      "desc": "Sakinlerimiz ve misafirlerimiz için özel olarak düzenlenen akustik caz konseri.",
+      "body": "Yeni yıla girerken Luxera Towers sakinleri için eşsiz bir akşam hazırladık. A Blok Lobi Lounge alanımızda gerçekleşecek olan özel caz dinletisine davetlisiniz. Şarap ve peynir tadımı eşliğinde gerçekleşecek bu akustik performansta, seçkin caz sanatçıları sahnede olacak. Hem komşularınızla tanışmak hem de yılın stresini atmak için bu prestijli geceyi ajandanıza not etmeyi unutmayın. Katılım kontenjanla sınırlı olduğundan portal üzerinden LCV yaptırmanız rica olunur."
+    },
+    "havuz-bakimi": {
+      "category": "Duyuru",
+      "date": "01 Ocak 2026",
+      "title": "Kapalı Havuz Kış Dönemi Bakımı",
+      "desc": "Rezidans sakinlerimizin dikkatine: Kapalı yüzme havuzumuz yıllık periyodik kış bakımına alınacaktır.",
+      "body": "Luxera Towers ayrıcalıklarından kesintisiz ve en yüksek standartlarda faydalanabilmeniz için tesislerimizde periyodik iyileştirmeler yapmaya devam ediyoruz. Kapalı yüzme havuzumuz ve SPA alanımızın bir bölümü, 05 - 10 Aralık tarihleri arasında yıllık kış bakımına alınacaktır. Bu süreçte havuz suyu yenilenecek, filtre sistemleri modernize edilecek ve ortam iklimlendirme ünitelerinin genel temizliği yapılacaktır. Anlayışınız için teşekkür eder, sağlıklı günler dileriz."
+    },
+    "teknoloji-zirvesi": {
+      "category": "Haber",
+      "date": "14 Ocak 2026",
+      "title": "Akıllı Ev Teknolojileri Zirvesine Ev Sahipliği Yaptık",
+      "desc": "Gayrimenkul sektörünün öncü teknoloji markaları Luxera Towers kongre merkezinde buluştu.",
+      "body": "Projemizin altyapısında kullandığımız ileri akıllı ev teknolojileri (IoT), sektörün büyük oyuncularının da dikkatini çekti. Geçtiğimiz hafta Luxera Towers Kongre Merkezi'nde düzenlenen \\\"Geleceğin Yaşam Alanları ve IoT\\\" zirvesinde, projemiz bir vaka çalışması (case study) olarak incelendi. Sürdürülebilirlik, enerji verimliliği ve otonom güvenlik sistemlerimiz katılımcılardan tam not aldı."
+    },
+    "kis-senligi-2026": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "27 Ocak 2026",
+      "title": "Kış Ortası Şenliği",
+      "desc": "Soğuk kış akşamlarında şömine başında aile boyu eğlence.",
+      "body": "Kışın en güzel günlerinde komşularınızla sıcak çikolata ve kestane eşliğinde bir araya gelin."
+    },
+    "okula-donus-2026": {
+      "category": "Kampanya",
+      "date": "09 Şubat 2026",
+      "title": "Okula Dönüş İndirimleri Başladı",
+      "desc": "AVM mağazalarında seçili markalarda net %30 indirim.",
+      "body": "Okul hazırlıkları erken başlar, Luxera ayrıcalıklarıyla avantajlı biter."
+    },
+    "sanat-sokagi-2026": {
+      "category": "Etkinlik",
+      "date": "22 Şubat 2026",
+      "title": "Açık Hava Sanat Sokağı Sergisi",
+      "desc": "Luxera Meydan, yerel sanatçıların eserlerine ev sahipliği yapıyor.",
+      "body": "Modern sanat eserlerini inceleyip satın alabileceğiniz sanat günleri."
+    },
+    "avm-konseri-2026": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "07 Mart 2026",
+      "title": "Sonbahara Merhaba Konseri",
+      "desc": "Ünlü pop sanatçılarının katılımıyla muazzam bir konser.",
+      "body": "Biletler portal üzerinden ücretsiz olarak temin edilebilir."
+    },
+    "klima-bakim-2": {
+      "category": "Duyuru",
+      "date": "20 Mart 2026",
+      "title": "VRF Sistemleri Sonbahar Bakımı",
+      "desc": "Isıtma sistemlerine geçiş öncesi rutin bakım.",
+      "body": "Teknik ekiplerimiz daire bazlı kontroller gerçekleştirecektir."
+    },
+    "gastro-fest-2026": {
+      "category": "Etkinlik",
+      "date": "02 Nisan 2026",
+      "title": "Ekim Ayı Gastronomi Festivali",
+      "desc": "Farklı mutfakların en iyi temsilcileri gurme stantlarımızda.",
+      "body": "Sokak lezzetlerinden fine-dining tadımlarına uzanan geniş bir yelpaze."
+    },
+    "bahar-senligi-2026": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "15 Nisan 2026",
+      "title": "Çocuklar İçin Bahar Şenliği Partisi",
+      "desc": "Kids Club'da bahar temalı kostümlü ve bol oyunlu eğlence.",
+      "body": "Çocuklarınız en sevdikleri bahar kostümleriyle partiye katılabilir."
+    },
+    "yatirim-semineri-2026": {
+      "category": "Haber",
+      "date": "28 Nisan 2026",
+      "title": "Gayrimenkul Yatırım Semineri",
+      "desc": "Alanında uzman analistlerden sektör değerlendirmesi.",
+      "body": "Bölgedeki değer artış beklentileri uzmanlarca masaya yatırılacak."
+    },
+    "arac-sarj-2": {
+      "category": "Haber",
+      "date": "11 Mayıs 2026",
+      "title": "Otopark Yeni Nesil EV Şarj Üniteleri",
+      "desc": "20 adet yeni elektrikli şarj istasyonu hizmete girdi.",
+      "body": "Artan talepler doğrultusunda otoparkımızın elektrikli araç kapasitesi artırıldı."
+    },
+    "bahar-kampanyasi": {
+      "category": "Kampanya",
+      "date": "24 Mayıs 2026",
+      "title": "Bahar Sezonu Spa Avantajları",
+      "desc": "Tüm SPA paketlerinde %25 bahar indirimi.",
+      "body": "Ilık bahar günlerinde yenilenme deneyimi ve yaza taze bir başlangıç."
+    },
+    "satranc-turnuvasi": {
+      "category": "Etkinlik",
+      "date": "06 Haziran 2026",
+      "title": "Sakinler Arası Satranç Turnuvası",
+      "desc": "Lobi alanında zeka dolu bir pazar günü.",
+      "body": "Turnuva birincisine sürpriz ödüllerimiz olacaktır."
+    },
+    "yaza-merhaba-hazirlik": {
+      "category": "Duyuru",
+      "date": "19 Haziran 2026",
+      "title": "Ortak Alan Yaza Merhaba Süslemeleri",
+      "desc": "Tüm sosyal alanlarımız yaza özel cıvıl cıvıl renklerle süsleniyor.",
+      "body": "Site yönetimi tarafından gerçekleştirilen peyzaj ve dekorasyon yenilemeleri başladı."
+    },
+    "yaz-balosu-2026": {
+      "category": "Eğlence ve Organizasyon",
+      "date": "02 Temmuz 2026",
+      "title": "Geleneksel Yaz Balosu 2026",
+      "desc": "Havuz başında ve terasta elit bir atmosferde yaza merhaba deyin.",
+      "body": "Buzlu kokteyl ikramı ve canlı orkestra eşliğinde unutulmaz sıcak bir gece."
     }
   },
   "faq": {
@@ -528,6 +756,127 @@
     "search": {
       "placeholder": "Merak ettiğiniz bir konuyu arayın... (örn: tapu, aidat)",
       "empty": "Aramanıza uygun sonuç bulunamadı."
+    },
+    "cat1": {
+      "title": "Proje & Satış Süreci",
+      "q1": {
+        "q": "Tapu teslimi ne zaman yapılacak?",
+        "a": "Projemizde kat irtifaklı tapularımız hazırdır ve satış işlemlerinin hemen ardından devir yapılmaktadır."
+      },
+      "q2": {
+        "q": "Proje ne zaman teslim edilecek?",
+        "a": "Projemizin teslim tarihi 2026 yılı son çeyreği olarak planlanmıştır."
+      },
+      "q3": {
+        "q": "Ödeme planı ve taksit seçenekleri nelerdir?",
+        "a": "Peşin ödemede özel indirimlerin yanı sıra, 36 aya varan şirket bünyesinde senetli ödeme ve anlaşmalı bankalarla konut kredisi seçenekleri sunulmaktadır. Size özel esnek planlar için satış ekibimizle görüşebilirsiniz."
+      },
+      "q4": {
+        "q": "Daire tipleri ve metrekare aralıkları nedir?",
+        "a": "Projemizde 1+1, 2+1 ve 3+1 daire tipleri bulunmaktadır. Metrekareler 75 m² ile 220 m² arasında değişmektedir."
+      }
+    },
+    "cat2": {
+      "title": "Yatırım & Vatandaşlık",
+      "q1": {
+        "q": "Yabancı uyruklu alıcılar satın alabilir mi?",
+        "a": "Evet. Yabancı yatırımcılarımız için tapu, vergi ve vatandaşlık süreçlerinde uçtan uca danışmanlık hizmeti sağlanmaktadır."
+      },
+      "q2": {
+        "q": "Vatandaşlık için uygun mu?",
+        "a": "Evet, projemiz 400.000 USD ve üzeri alımlarda Türk Vatandaşlığı programına %100 uygundur."
+      },
+      "q3": {
+        "q": "Ticari alanların kiralama yönetimi yapılıyor mu?",
+        "a": "Evet, profesyonel yönetim şirketimiz tarafından ticari ünitelerin (mağazalar ve ofisler) kiralama ve işletme süreçleri desteklenmektedir. AVM içindeki mağazalar için profesyonel \"brand-mix\" çalışması yürütülmektedir."
+      },
+      "q4": {
+        "q": "Bölgenin yatırım potansiyeli nasıldır?",
+        "a": "Basın Ekspres yolu, İstanbul\\'un en hızlı değerlenen iş ve finans merkezidir. Yeni metro hatları ve E-5 / TEM bağlantıları ile yüksek prim ve düzenli kira getirisi vaat etmektedir."
+      }
+    },
+    "cat3": {
+      "title": "Yaşam & Ayrıcalıklar",
+      "q1": {
+        "q": "Aidatlara neler dahil olacak?",
+        "a": "7/24 profesyonel güvenlik, kapalı otopark kullanımı, fitness ve SPA alanları (kapalı yüzme havuzu, hamam, sauna), Executive Lounge kullanımı ve ortak alan bakım-peyzaj giderleri aidata dahildir."
+      },
+      "q2": {
+        "q": "Daire teslimlerinde donanım standartları nelerdir?",
+        "a": "Tüm dairelerimiz uluslararası A+ kalite standartlarına uygun olarak inşa edilmektedir. Birinci sınıf ankastre mutfak setleri, akıllı ev altyapısı, VRF klima sistemi ve premium seramik/parke zemin kaplamaları standart olarak sunulmaktadır."
+      },
+      "q3": {
+        "q": "Vale ve Housekeeping hizmetleri ücretli mi?",
+        "a": "Vale hizmetimiz rezidans sakinlerine özel ücretsiz sunulmakta olup, Housekeeping (kuru temizleme, özel temizlik vs.) ve oda servisi gibi kişisel hizmetler kullanıma bağlı olarak ücretlendirilmektedir (Pay-per-use sistemi)."
+      },
+      "q4": {
+        "q": "Elektrikli araç şarj istasyonu bulunuyor mu?",
+        "a": "Evet, kapalı otoparkımızın her katında yeterli sayıda yüksek hızlı elektrikli araç (EV) şarj istasyonu rezidans sakinlerimizin kullanımına hazırdır."
+      }
+    },
+    "cat4": {
+      "title": "Ödeme & Teslim",
+      "q1": {
+        "q": "Peşin ödemede avantaj sağlanıyor mu?",
+        "a": "Evet. Peşin ödemelerde döneme özel indirim oranları uygulanmaktadır. Güncel kampanya koşulları için satış ekibimizle görüşebilirsiniz."
+      },
+      "q2": {
+        "q": "Senetli (vadeli) ödeme mümkün mü?",
+        "a": "Şirket bünyesinde 36 aya varan senetli ödeme seçenekleri sunulmaktadır. Ödeme planı; peşinat oranı ve vade tercihinize göre size özel olarak yapılandırılır."
+      },
+      "q3": {
+        "q": "Konut kredisi kullanabilir miyim?",
+        "a": "Evet. Anlaşmalı bankalarımız aracılığıyla konut kredisi kullanımı mümkündür. Ekspertiz ve kredi başvuru sürecinde satış danışmanlarımız size yardımcı olur."
+      },
+      "q4": {
+        "q": "Teslim tarihi ve gecikme durumu nedir?",
+        "a": "Projemizin teslimi 2026 yılı son çeyreği (Q4) olarak planlanmıştır. Teslim koşulları ve olası mücbir sebep hükümleri satış sözleşmenizde şeffaf biçimde yer alır."
+      }
+    },
+    "cat5": {
+      "title": "Garanti & Bakım",
+      "q1": {
+        "q": "Yapı ve donanım garantisi ne kadar?",
+        "a": "Yapısal imalatlar ilgili mevzuat kapsamındaki süreler boyunca; ankastre ürünler, mekanik ve elektrik sistemleri ise üretici/yüklenici garantisi kapsamında güvence altındadır."
+      },
+      "q2": {
+        "q": "Teslim sonrası bakım desteği var mı?",
+        "a": "Profesyonel tesis yönetim ekibimiz teslim sonrasında ortak alan bakımı, teknik servis ve arıza taleplerinizi 7/24 karşılar. Talepler mobil uygulama üzerinden de iletilebilir."
+      },
+      "q3": {
+        "q": "Ortak alanların işletmesini kim yürütüyor?",
+        "a": "Tüm ortak alanlar (havuz, fitness, lobi, peyzaj, güvenlik) profesyonel bir site/tesis yönetimi tarafından işletilir. Aidatlar ve hizmet kapsamı yönetim planında tanımlıdır."
+      }
+    },
+    "cat6": {
+      "title": "KVKK & Gizlilik",
+      "q1": {
+        "q": "Paylaştığım kişisel veriler nasıl korunuyor?",
+        "a": "Kişisel verileriniz 6698 sayılı KVKK’ya uygun olarak, yalnızca satış, pazarlama ve iletişim faaliyetleri kapsamında işlenir ve güvenli biçimde saklanır. Detaylar KVKK Aydınlatma Metni sayfamızda yer alır."
+      },
+      "q2": {
+        "q": "İletişim formundaki bilgilerim üçüncü taraflarla paylaşılıyor mu?",
+        "a": "Bilgileriniz yalnızca talebinizi karşılamak amacıyla ve KVKK’nın 8. ve 9. maddelerindeki şartlar çerçevesinde, gerekli olduğu ölçüde iş ortaklarımızla paylaşılır. İzinsiz üçüncü taraf pazarlaması yapılmaz."
+      },
+      "q3": {
+        "q": "Verilerimin silinmesini talep edebilir miyim?",
+        "a": "Evet. KVKK’nın 11. maddesi uyarınca verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme hakkına sahipsiniz. Taleplerinizi yazılı olarak şirket merkezimize iletebilirsiniz."
+      }
+    },
+    "cat7": {
+      "title": "Ticari Kiralama",
+      "q1": {
+        "q": "Ticari üniteler kiralık mı, satılık mı?",
+        "a": "Projede hem satılık hem de kiralanabilir ticari üniteler bulunmaktadır. Cadde üzeri dükkânlar, AVM içi mağazalar, cafe/restoran ve ofis seçenekleri için satış ekibimizden bilgi alabilirsiniz."
+      },
+      "q2": {
+        "q": "Marka-mix (kiracı kompozisyonu) nasıl belirleniyor?",
+        "a": "AVM içi ünitelerde ziyaretçi deneyimini ve ticari verimi en üst düzeyeye çıkarmak için profesyonel bir marka-mix planlaması yürütülür. Perakende, gastronomi, teknoloji ve hizmet dengeli biçimde konumlandırılır."
+      },
+      "q3": {
+        "q": "Ticari ünitelerin işletme yönetimi destekleniyor mu?",
+        "a": "Evet. Profesyonel yönetim şirketimiz, ticari ünitelerin kiralama, tanıtım ve işletme süreçlerine destek verir; yatırımcı için kira takibi ve doluluk yönetimi kolaylaşır."
+      }
     }
   },
   "gallery": {
@@ -564,7 +913,8 @@
       "plan_view": "Kat Planı"
     },
     "seo": {
-      "title": "Galeri ve Görseller"
+      "title": "Galeri ve Görseller",
+      "desc": "Luxera Towers\\'ın seçkin dış mimarisi, lüks iç mekan tasarımları, kat planları ve sosyal olanaklarını galerimizde inceleyin."
     },
     "title": "Galeri",
     "desc": "Projenin mimari detaylarını, iç mekan tasarımlarını ve sosyal alanlarını inceleyin.",
@@ -596,14 +946,16 @@
         "p1": "Mall of İstanbul (5 Dk)",
         "p2": "212 Outlet AVM (2 Dk)",
         "p3": "Starcity Outlet (10 Dk)",
-        "p4": "Güneşli Park AVM (4 Dk)"
+        "p4": "Güneşli Park AVM (4 Dk)",
+        "desc": "Bölgenin en büyük ve prestijli AVM\\'leri hemen yanınızda. Mall of İstanbul, 212 Outlet ve Starcity Outlet gibi merkezlerde dünyaca ünlü markalar, sinema ve eğlence alanları sizi bekliyor."
       },
       "health": {
         "title": "Sağlık Merkezleri",
         "p1": "Çam ve Sakura Şehir Hastanesi (12 Dk)",
         "p2": "Medipol Mega Üniversite Hastanesi (8 Dk)",
         "p3": "Acıbadem Halkalı (10 Dk)",
-        "p4": "BHT Clinic Tema (15 Dk)"
+        "p4": "BHT Clinic Tema (15 Dk)",
+        "desc": "Sağlığınız güvence altında. İstanbul\\'un en modern tıp merkezleri ve araştırma hastanelerine sadece birkaç dakika uzaklıktasınız."
       },
       "edu": {
         "title": "Eğitim & Üniversiteler",
@@ -617,7 +969,8 @@
         "title": "Sosyal Yaşam",
         "p1": "ArenaPark (10 Dk)",
         "p2": "Gourmet Restoranlar Vadisi",
-        "p3": "Kültür ve Sanat Merkezleri"
+        "p3": "Kültür ve Sanat Merkezleri",
+        "desc": "Lüks restoranlar, üçüncü nesil kahveciler ve kültürel etkinlik alanları. Basın Ekspres\\'in yükselen trendi, sosyal hayatınızı da canlandırıyor."
       }
     },
     "distances": {
@@ -645,7 +998,8 @@
     "hero": {
       "overline": "Çevre Analizi",
       "title": "Yaşam",
-      "highlight": "Rehberi"
+      "highlight": "Rehberi",
+      "subtitle": "Basın Ekspres\\'in tam kalbinde, İstanbul\\'un en hızlı değer kazanan noktasındasınız. İhtiyacınız olan her şeye dakikalar içinde ulaşın."
     },
     "stats": {
       "min": " dk",
@@ -666,15 +1020,19 @@
   },
   "investment": {
     "seo": {
-      "title": "Yatırım ve Değer Artışı"
+      "title": "Yatırım ve Değer Artışı",
+      "desc": "%120 değer artışı öngörüsü, kısa amortisman süresi ve garantili kira getirisi ile İstanbul\\'un en kârlı gayrimenkul yatırımı."
     },
     "hero": {
       "overline": "Kârlı Fırsatlar",
       "title": "Geleceğinize",
-      "highlight": "Değer Katın"
+      "highlight": "Değer Katın",
+      "subtitle": "İstanbul\\'un yeni altın aksı Basın Ekspres\\'te yükselen Luxera Towers ile yüksek yatırım getirisi, güvenli liman ve parlak bir gelecek sizi bekliyor."
     },
     "intro": {
-      "title": "Yeni Maslak: Basın Ekspres"
+      "title": "Yeni Maslak: Basın Ekspres",
+      "p1": "Uluslararası holding merkezleri, 5 yıldızlı oteller zinciri ve devasa ticaret merkezlerinin buluşma noktası olan Basın Ekspres Yolu, İstanbul\\'un en hızlı değer kazanan lokasyonu olarak kayıtlara geçmiştir. Devlet destekli mega altyapı projeleri ve planlı şehirleşme hamleleriyle bölge, salt bir ulaşım aksı olmaktan çıkarak dev bir finans ve yaşam merkezine dönüşmüştür.",
+      "p2": "E-5 ve TEM otoyollarını birbirine bağlayan, kapısından M9 metro hattının geçtiği ve İstanbul Havalimanı\\'na doğrudan entegre olan bu benzersiz konum, Luxera Towers yatırımcılarına paha biçilemez bir likidite ve talep güvencesi sunmaktadır."
     },
     "stats": {
       "title": "Neden Luxera Towers?",
@@ -695,10 +1053,12 @@
     "adv": {
       "title": "Stratejik Karar Noktası",
       "a1": {
-        "title": "Karma Konsept (Mixed-Use) Gücü"
+        "title": "Karma Konsept (Mixed-Use) Gücü",
+        "desc": "Sadece konut üreten projeler krizlerden etkilenebilir. Ancak altında kendi AVM\\'si, ofis bloğu ve ticari alanları bulunan karma projeler, kendi ekonomisini yaratarak krizlere karşı muazzam bir kalkan oluşturur."
       },
       "a2": {
-        "title": "Ulaşım Ağı Entegrasyonu"
+        "title": "Ulaşım Ağı Entegrasyonu",
+        "desc": "Kapınızdan çıktığınız an metroya binebilmek, 25 dakikada Avrupa\\'nın en büyük havalimanına ulaşmak ve E-5/TEM gişelerine dakikalar içinde bağlanabilmek; kiracı portföyünüzün her zaman üst düzey yöneticilerden oluşmasını sağlar."
       },
       "a3": {
         "title": "Uluslararası Marka Güvencesi",
@@ -751,7 +1111,10 @@
       "h1": "1. Kişisel Verilerin İşlenme Amacı",
       "p2": "Toplanan kişisel verileriniz, şirketimiz tarafından sunulan gayrimenkul projelerinin satışı, pazarlanması, sizlere özel kampanyaların oluşturulması, müşteri memnuniyeti araştırmaları ve iletişim faaliyetlerinin yürütülmesi amaçlarıyla işlenmektedir.",
       "h2": "2. İşlenen Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği",
-      "h3": "3. Kişisel Veri Sahibinin Hakları"
+      "h3": "3. Kişisel Veri Sahibinin Hakları",
+      "p1": "Luxera Gayrimenkul Yatırım A.Ş. olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekteyiz. Bu bilinçle, Şirket olarak ürün ve hizmetlerimizden faydalanan kişiler dahil, Şirket ile ilişkili tüm şahıslara ait her türlü kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\")\\'na uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.",
+      "p3": "Toplanan kişisel verileriniz; yukarıda belirtilen amaçların gerçekleştirilmesi doğrultusunda, iş ortaklarımıza, tedarikçilerimize, kanunen yetkili kamu kurumlarına ve özel kişilere KVKK\\'nın 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları çerçevesinde aktarılabilecektir.",
+      "p4": "KVKK\\'nın 11. maddesi uyarınca veri sahipleri; kişisel verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını öğrenme, eksik veya yanlış işlenmişse düzeltilmesini isteme haklarına sahiptir. Taleplerinizi yazılı olarak şirket merkezimize iletebilirsiniz."
     },
     "privacy": {
       "overline": "Yasal",
@@ -786,11 +1149,13 @@
     "hero": {
       "overline": "Sosyal Yaşam",
       "title": "Hayatın",
-      "highlight": "Tam Merkezinde"
+      "highlight": "Tam Merkezinde",
+      "subtitle": "Luxera Towers AVM ve çok katmanlı sosyal yaşam alanlarıyla, İstanbul\\'un yeni buluşma noktası tam olarak evinizin altında şekilleniyor."
     },
     "intro": {
       "title": "Sınırları Aşan Bir Yaşam Mimarisi",
-      "p1": "Şehrin ritmine ayak uydurmak yerine, şehrin ritmini kendi etrafınızda şekillendirin. Luxera Towers, sadece bir barınma alanı değil; mimarinin, doğanın ve ticari dinamizmin kusursuz bir uyum içinde dans ettiği, kendi kendine yeten devasa bir ekosistemdir."
+      "p1": "Şehrin ritmine ayak uydurmak yerine, şehrin ritmini kendi etrafınızda şekillendirin. Luxera Towers, sadece bir barınma alanı değil; mimarinin, doğanın ve ticari dinamizmin kusursuz bir uyum içinde dans ettiği, kendi kendine yeten devasa bir ekosistemdir.",
+      "p2": "Sabah kahvenizi seçkin bir kafede yudumladıktan sonra, gün ışığıyla yıkanan açık hava teraslarında yürüyüşe çıkabilir, akşam ise dünya mutfağından seçmeler sunan bir restoranda dostlarınızı ağırlayabilirsiniz. Burada \"dışarı çıkmak\", sadece evinizin dış kapısını aralamak kadar kolaydır."
     },
     "featuresSection": {
       "title": "Ayrıcalıklı Yaşam"
@@ -807,17 +1172,20 @@
     "cta": {
       "title": "Bu Yaşamı Yakından Görün",
       "primary": "Randevu Alın",
-      "secondary": "Ayrıcalıklar"
+      "secondary": "Ayrıcalıklar",
+      "desc": "Luxera Towers\\'ın sosyal yaşamını ve ayrıcalıklarını yerinde deneyimlemek için satış ofisimizden randevu alın."
     }
   },
   "pageLocation": {
     "seo": {
-      "title": "Merkezi Konum ve Ulaşım"
+      "title": "Merkezi Konum ve Ulaşım",
+      "desc": "Güneşli Metro istasyonuna 200m, Basın Ekspres yolunun kalbinde. İstanbul\\'un en stratejik ve değerli lokasyonunda yerinizi alın."
     },
     "hero": {
       "overline": "Konum & Ulaşım",
       "title": "Eşsiz",
-      "highlight": "Konum"
+      "highlight": "Konum",
+      "subtitle": "İstanbul\\'un yeni finans ve yaşam merkezi Basın Ekspres\\'te, ulaşım ağlarının tam kalbinde yerinizi alın."
     },
     "stats": {
       "m": " m",
@@ -832,12 +1200,15 @@
       "p2": "Metro, metrobüs, E-5 ve TEM bağlantılarının kesişiminde yer alan konum, hem yaşam hem de yatırım açısından bölgeyi ayrıcalıklı kılar.",
       "salesOffice": "Satış Ofisi",
       "metroTitle": "Metroya 200 Metre",
-      "metroDesc": "Güneşli Metro İstasyonu yürüme mesafesinde."
+      "metroDesc": "Güneşli Metro İstasyonu yürüme mesafesinde.",
+      "title": "İstanbul\\'un Yeni Cazibe Merkezi",
+      "p1": "\"Yeni Maslak\" olarak anılan Basın Ekspres aksı; uluslararası şirket genel merkezleri, 5 yıldızlı oteller ve devasa alışveriş merkezleriyle İstanbul\\'un en hızlı değer kazanan bölgelerinden biridir."
     },
     "cta": {
       "title": "Konumu Yerinde Deneyimleyin",
       "primary": "Randevu Alın",
-      "secondary": "Yaşam Rehberi"
+      "secondary": "Yaşam Rehberi",
+      "desc": "Luxera Towers\\'ın ulaşım avantajlarını ve çevresini yakından görmek için satış ofisimizden randevu alın."
     },
     "map": {
       "getDirections": "Yol Tarifi Al"
@@ -853,7 +1224,8 @@
     "hero": {
       "overline": "Medya",
       "title": "Basında",
-      "highlight": "Biz"
+      "highlight": "Biz",
+      "subtitle": "Ulusal ve uluslararası basında Luxera Towers\\'ın yankıları. Medyadaki yerimizi keşfedin."
     },
     "featured": "Öne Çıkan",
     "all": {
@@ -884,7 +1256,8 @@
   },
   "offices": {
     "seo": {
-      "title": "A+ Ofisler ve Şirketler"
+      "title": "A+ Ofisler ve Şirketler",
+      "desc": "Türkiye\\'nin ve dünyanın önde gelen kurumsal şirketlerinin yönetim merkezleri Luxera Towers\\'ta."
     },
     "hero": {
       "overline": "Kurumsal Yaşam",
@@ -939,13 +1312,15 @@
       "cta": {
         "title": "Zamanınızı Geri Kazanın",
         "desc": "Concierge ayrıcalığını ve Luxera Towers yaşamını yakından tanımak için bizimle iletişime geçin."
-      }
+      },
+      "desc": "Zamanınızın ne kadar değerli olduğunu biliyoruz. Luxera Towers\\'ta yaşam, size sadece keyif almak kalsın diye tasarlandı. Profesyonel concierge ekibimiz, günün her saati tüm taleplerinizi karşılamak için hazır."
     },
     "fitness": {
       "overline": "Luxera Privileges",
       "desc": "Bedeninize ve ruhunuza hak ettiği özeni gösterin. Şehrin merkezinde ama stresinden çok uzakta; son teknoloji ekipmanlarla donatılmış spor salonumuz ve arınmanızı sağlayacak lüks SPA merkezimiz sizi bekliyor.",
       "f1": {
-        "title": "Tam Donanımlı Gym"
+        "title": "Tam Donanımlı Gym",
+        "desc": "Technogym'in en yeni nesil kardiyo ve ağırlık istasyonları."
       },
       "f2": {
         "title": "Kapalı Yüzme Havuzu",
@@ -1108,7 +1483,8 @@
         "desc": "Luxera Towers’ın çok katmanlı güvenlik altyapısını ve akıllı bina sistemlerini yakından tanımak için bizimle iletişime geçin."
       },
       "title_prefix": "Özel",
-      "title_highlight": "Güvenlik"
+      "title_highlight": "Güvenlik",
+      "desc": "Sizin ve sevdiklerinizin huzuru bizim için her şeyden önemli. Luxera Towers\\'ta, en ileri güvenlik teknolojileri ve alanında uzman profesyonellerle donatılmış, 7/24 kesintisiz bir güvenlik kalkanı sunuyoruz."
     },
     "valet": {
       "overline": "Luxera Privileges",
@@ -1177,7 +1553,8 @@
     "hero": {
       "overline": "Kusursuz Yaşam",
       "title": "Rezidans",
-      "highlight": "Seçenekleri"
+      "highlight": "Seçenekleri",
+      "subtitle": "Her m²\\'sinde ince bir zevkin ve üstün mühendisliğin yansımalarını bulacağınız, sadece size özel tasarlanmış prestijli yaşam alanları."
     },
     "philosophy": {
       "overline": "Tasarım Vizyonu",
@@ -1186,7 +1563,8 @@
       "p2": "Mutfak ve ıslak zeminlerde kullanılan birinci sınıf İtalyan seramikler, antrede sizi karşılayan doğal masif ahşap detaylarla kusursuz bir tezat oluşturarak mekana sıcaklık katar. Ses yalıtımında kullanılan akustik bariyerler sayesinde, şehrin kalbinde olmanıza rağmen evinizde mutlak bir sessizlik hüküm sürer.",
       "f1": "Yerden ısıtma ve VRV soğutma sistemleri",
       "f2": "Mobil cihazlardan yönetilebilen Akıllı Ev Altyapısı",
-      "f3": "Tavandan yere kadar uzanan panoramik yalıtımlı camlar"
+      "f3": "Tavandan yere kadar uzanan panoramik yalıtımlı camlar",
+      "p1": "Luxera Towers\\'ın iç mekan tasarımı, lüksün bağırmayan, sessiz ama derinden hissedilen gücünden ilham alır. Standartları yıkan 3.20 metrelik tavan yükseklikleri, eve adım attığınız an üzerinizdeki tüm yorgunluğu alacak ferah bir atmosfer yaratır."
     },
     "floorPlans": {
       "title": "Kat Planları",
@@ -1212,6 +1590,80 @@
       "desc": "Size en uygun daire tipini ve ödeme planını belirlemek için uzman satış danışmanlarımızla görüşün.",
       "primary": "İletişime Geçin",
       "secondary": "Sanal Tur"
+    },
+    "data": {
+      "1+1": {
+        "title": "1+1 Rezidans",
+        "desc": "Genç profesyoneller ve dinamik yaşamı sevenler için modern kompakt konfor.",
+        "area": "72 - 85 m²",
+        "ceiling": "3.20 m",
+        "hvac": "VRF / Yerden Isıtma",
+        "rooms": {
+          "0": "Ferah salon + Amerikan mutfak",
+          "1": "Ebeveyn yatak odası",
+          "2": "Fransız balkon",
+          "3": "Ankastre beyaz eşya"
+        },
+        "plans": {
+          "TipA1": "Tip A1",
+          "TipA3": "Tip A3",
+          "TipA5": "Tip A5",
+          "TipA9": "Tip A9"
+        }
+      },
+      "2+1": {
+        "title": "2+1 Rezidans",
+        "desc": "Yeni evli çiftler ve küçük aileler için ideal, dengeli ve ferah yaşam.",
+        "area": "115 - 135 m²",
+        "ceiling": "3.20 m",
+        "hvac": "VRF / Yerden Isıtma",
+        "rooms": {
+          "0": "Geniş oturma alanı",
+          "1": "Ebeveyn banyolu yatak odası",
+          "2": "2. yatak / çalışma odası",
+          "3": "Geniş balkon"
+        },
+        "plans": {
+          "TipB1": "Tip B1",
+          "TipB2": "Tip B2",
+          "TipB9": "Tip B9",
+          "TipB14": "Tip B14"
+        }
+      },
+      "3+1": {
+        "title": "3+1 Rezidans",
+        "desc": "Geniş aileler için ferah, manzaralı ve prestijli yaşam alanı.",
+        "area": "165 - 190 m²",
+        "ceiling": "3.20 m",
+        "hvac": "VRF / Yerden Isıtma",
+        "rooms": {
+          "0": "Salon + ayrı yemek alanı",
+          "1": "Ebeveyn süiti (giyinme odalı)",
+          "2": "2 çocuk / misafir odası",
+          "3": "Şehir manzaralı teras"
+        },
+        "plans": {
+          "TipC1": "Tip C1",
+          "TipC1Bahçe": "Tip C1 Bahçe",
+          "TipC2": "Tip C2"
+        }
+      },
+      "4+1": {
+        "title": "4+1 Penthouse",
+        "desc": "Sınır tanımayan lüks; en üst katlarda gökyüzü ile iç içe ayrıcalıklı yaşam.",
+        "area": "240 - 280 m²",
+        "ceiling": "3.60 m",
+        "hvac": "VRF / Yerden Isıtma",
+        "rooms": {
+          "0": "Çift yönlü panoramik salon",
+          "1": "Özel ebeveyn süiti",
+          "2": "3 ayrı yatak odası",
+          "3": "Geniş gökyüzü terası"
+        },
+        "plans": {
+          "4+1TipD": "4+1 Tip D"
+        }
+      }
     }
   },
   "portal": {
@@ -1264,7 +1716,8 @@
       "vip_room": "VIP Toplantı Odası",
       "time_label": "Saat",
       "full": "(Dolu)",
-      "book_btn": "Yer Ayırt"
+      "book_btn": "Yer Ayırt",
+      "modal_desc": "{{day}} Aralık 2025 için müsaitlik arayın.', { day: selectedDay })}</p>\n              \n              <form onSubmit={handleBook} className=\"space-y-4\">\n                <div>\n                  <label className=\"block text-sm text-gray-400 mb-2\">{t('portal.reservations.facility_label', 'Tesis"
     },
     "charging": {
       "title": "EV Şarj İstasyonları",
@@ -1334,7 +1787,8 @@
       "car_arrived": "Aracınız Kapıda!",
       "thanks": "Teşekkürler",
       "modal_title": "Misafir QR Kodu",
-      "validity": "Geçerlilik: 2 Saat"
+      "validity": "Geçerlilik: 2 Saat",
+      "modal_desc": "{{name}} adlı misafiriniz bu kodu okutarak giriş yapabilir.', { name: guestName })}</p>\n              \n              <div className=\"bg-white p-4 rounded-xl inline-block mb-6 shadow-[0_0_30px_rgba(255,255,255,0.2)]\">\n                {/* Fake QR using Lucide icon scaled up for visual */}\n                <QrCode size={200} className=\"text-black\" />\n              </div>\n              \n              <p className=\"text-luxera-gold text-xs font-bold uppercase tracking-widest\">{t('portal.visitor.validity', 'Geçerlilik: 2 Saat"
     },
     "support": {
       "seo_title": "Konsiyerj & Teknik Destek | Luxera Towers",
@@ -1367,7 +1821,8 @@
     },
     "marquee": {
       "m1": "YENİ METRO İSTASYONU 1 DAKİKA MESAFEDE AÇILIYOR!",
-      "m2": "05-08 ARALIK KAPALI HAVUZ PERİYODİK KIŞ BAKIMI."
+      "m2": "05-08 ARALIK KAPALI HAVUZ PERİYODİK KIŞ BAKIMI.",
+      "m3": "25 ARALIK LOBİ LOUNGE'DA YENİ YIL CAZ DİNLETİSİ."
     },
     "apsiyon": {
       "badge": "Apsiyon Dijital Yönetim Sistemi",
@@ -1449,7 +1904,9 @@
       "subtitle": "Zamanın değerini bilenler için tasarlandı. Sadece bir metrekare değil, hayatınıza konfor katan bir yaşam tarzı satın alıyorsunuz."
     },
     "intro": {
-      "title": "Otel Konforunu Evinize Getiren Hizmetler"
+      "title": "Otel Konforunu Evinize Getiren Hizmetler",
+      "p1": "Gerçek lüksün, eşyaların parlaklığında değil, hayatı ne kadar kolaylaştırdığında gizli olduğuna inanıyoruz. Luxera Towers\\'ta, 5 yıldızlı bir otelin lobisinden içeri girdiğinizde hissettiğiniz o \"bana özel\" hissini, her gün evinize adım attığınızda yaşatmayı vaat ediyoruz.",
+      "p2": "İster yorucu bir iş gününün ardından aracınızı valeye teslim edin, ister sabahın erken saatlerinde eğitmeniniz eşliğinde güne başlayın. Tüm hizmetlerimiz, size sadece \"yaşamın tadını çıkarma\" lüksünü bırakmak için kurgulandı."
     },
     "listSection": {
       "title": "Tüm Ayrıcalıklarımız"
@@ -1467,16 +1924,19 @@
       "title": "Otel Konforunu Evinizde Yaşayın",
       "desc": "Luxera Towers ayrıcalıklarını ve hizmet standartlarını yakından deneyimlemek için bizimle iletişime geçin.",
       "primary": "İletişime Geçin"
-    }
+    },
+    "category": "Hizmet"
   },
   "stores": {
     "seo": {
-      "title": "Mağazalar ve Markalar"
+      "title": "Mağazalar ve Markalar",
+      "desc": "Luxera Towers AVM\\'de yer alan lüks markalar, seçkin butikler ve teknoloji mağazaları."
     },
     "hero": {
       "overline": "Premium Alışveriş",
       "title": "Mağazalar &",
-      "highlight": "Markalar"
+      "highlight": "Markalar",
+      "subtitle": "Dünyaca ünlü lüks moda markaları, seçkin mücevherat evleri ve teknoloji devleri, 87 mağazalık butik AVM\\'mizde sizi bekliyor."
     },
     "section": {
       "title": "Marka Karması",
@@ -1490,7 +1950,8 @@
     "hours": "Çalışma Saatleri",
     "hours_desc": "Her gün: 10:00 - 22:00",
     "contact": "İletişim",
-    "go_to_store": "Mağaza Sayfasına Git"
+    "go_to_store": "Mağaza Sayfasına Git",
+    "store_desc": "{{name}}, Luxera Towers AVM\\'de lüksün ve zarafetin en yeni koleksiyonlarını ziyaretçileriyle buluşturuyor. Özel randevulu alışveriş deneyimi ve VIP kabin hizmetleriyle ayrıcalıklı hissedin.', { name: selectedStore.name })}\n                    </p>\n                  </div>\n                </div>\n              </div>\n\n              <div className=\"p-8 border-t border-white/10 shrink-0\">\n                <button className=\"w-full bg-luxera-gold text-luxera-navy font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2\">\n                  {t('stores.go_to_store', 'Mağaza Sayfasına Git"
   },
   "videos": {
     "stats": {
@@ -1514,7 +1975,8 @@
     "cta": {
       "title": "Daireleri 360° Keşfedin",
       "primary": "Sanal Tura Başla",
-      "secondary": "Randevu Alın"
+      "secondary": "Randevu Alın",
+      "desc": "Videolarla tanıdığınız Luxera Towers\\'ı sanal turumuzla adım adım gezin veya yerinde görmek için randevu alın."
     }
   },
   "virtualTour": {
@@ -1532,6 +1994,64 @@
       "title": "İnteraktif Keşif",
       "subtitle": "Fare tekerleğiyle yakınlaşın, sürükleyerek odayı gezin ve detayları görmek için parlayan noktalara tıklayın.",
       "pan_zoom": "Yakınlaş & Gezin"
+    },
+    "scenes": {
+      "s1": {
+        "title": "Salon",
+        "h1": {
+          "title": "Panoramik Manzara",
+          "desc": "Yere kadar uzanan panaromik camlarla tüm şehir ayaklarınızın altında."
+        },
+        "h2": {
+          "title": "3.20m Tavan Yüksekliği",
+          "desc": "Ferah bir yaşam alanı sunan, basıklıktan uzak yüksek tavan mimarisi."
+        },
+        "h3": {
+          "title": "Yerden Isıtma & Lamine Parke",
+          "desc": "Birinci sınıf doğal meşe lamine parke ve akıllı yerden ısıtma sistemi."
+        }
+      },
+      "s2": {
+        "title": "Açık Mutfak",
+        "h1": {
+          "title": "Gaggenau Ankastre",
+          "desc": "Tüm mutfaklarda standart olarak sunulan ultra premium Alman teknolojisi."
+        },
+        "h2": {
+          "title": "İtalyan Tasarım Dolaplar",
+          "desc": "Geniş depolama hacmine sahip, parmak izi bırakmayan mat kapak sistemleri."
+        },
+        "h3": {
+          "title": "Porselen Tezgah",
+          "desc": "Leke tutmayan, çizilmeye ve ısıya dayanıklı geniş porselen çalışma alanı."
+        }
+      },
+      "s3": {
+        "title": "Yatak Odası",
+        "h1": {
+          "title": "Giyinme Alanı",
+          "desc": "Geniş hacimli, aydınlatmalı gömme dolap ve giyinme modülleri."
+        },
+        "h2": {
+          "title": "Master Bedroom",
+          "desc": "Huzurlu bir uyku için özel ses izolasyonlu duvarlar."
+        },
+        "h3": {
+          "title": "Geniş Cam Yüzeyler",
+          "desc": "Güneş ışığını maksimum içeri alan geniş camlar ve otomatik panjur altyapısı."
+        }
+      },
+      "s4": {
+        "title": "Çocuk Odası",
+        "h1": {
+          "title": "Çalışma ve Oyun Alanı",
+          "desc": "Çocukların gelişimi için tasarlanmış, gün ışığı alan ferah köşe."
+        },
+        "h2": {
+          "title": "Konforlu Yatak",
+          "desc": "Ergonomik tasarımlı, çocuklara özel sağlıklı uyku alanı."
+        }
+      }
     }
   },
   "amenityStrip": {
@@ -1544,7 +2064,8 @@
     "policy": "Çerez Politikası",
     "and": "ve",
     "kvkk": "KVKK Aydınlatma Metni",
-    "accept": "Kabul Et"
+    "accept": "Kabul Et",
+    "desc2": "'ni kabul etmiş olursunuz."
   },
   "whatsapp": {
     "default_message": "Merhaba, Luxera Towers projesi hakkında detaylı bilgi almak istiyorum.",
@@ -1557,5 +2078,194 @@
     "form_title": "İletişim Formu",
     "form_desc": "Size geri dönüş yapalım",
     "aria_label": "İletişim"
+  },
+  "brands": {
+    "offices": {
+      "o1": {
+        "sector": "Gayrimenkul Yatırım Fonu",
+        "floor": "10-15. Katlar",
+        "desc": "Luxera markasının uluslararası yatırımlarını ve fon yönetimini gerçekleştirdiği global yönetim merkezi."
+      },
+      "o2": {
+        "sector": "Mimari Tasarım",
+        "floor": "30. Kat",
+        "desc": "Uluslararası ödüllü mimari projeler üreten, Luxera Towers\\'ın da konsept tasarımını üstlenen stüdyo."
+      },
+      "o3": {
+        "sector": "Yapay Zeka & Yazılım",
+        "floor": "18-20. Katlar",
+        "desc": "Büyük veri analitiği ve bulut teknolojileri üzerine odaklanan, EMEA bölgesi AR-GE merkezi."
+      },
+      "o4": {
+        "sector": "Finans",
+        "floor": "25-28. Katlar",
+        "desc": "Kurumsal bankacılık ve uluslararası ticaret finansmanı süreçlerinin yönetildiği bölge müdürlüğü."
+      },
+      "o5": {
+        "sector": "Uluslararası Hukuk",
+        "floor": "12. Kat",
+        "desc": "Global ticaret ve gayrimenkul hukuku alanında uzmanlaşmış prestijli danışmanlık ofisi."
+      }
+    },
+    "stores": {
+      "s1": {
+        "category": "Saat & Mücevherat",
+        "floor": "Zemin Kat"
+      },
+      "s2": {
+        "category": "Lüks Moda",
+        "floor": "Zemin Kat"
+      },
+      "s3": {
+        "category": "Çok Katlı Mağazacılık",
+        "floor": "1. Kat"
+      },
+      "s4": {
+        "category": "Teknoloji",
+        "floor": "Zemin Kat"
+      },
+      "s5": {
+        "category": "Kozmetik",
+        "floor": "1. Kat"
+      },
+      "s6": {
+        "category": "Giyim",
+        "floor": "1. Kat"
+      },
+      "s7": {
+        "category": "Saat & Mücevherat",
+        "floor": "Zemin Kat"
+      },
+      "s8": {
+        "category": "Kozmetik",
+        "floor": "1. Kat"
+      }
+    },
+    "dining": {
+      "d1": {
+        "category": "Fine Dining",
+        "floor": "Teras Kat",
+        "desc": "Dünyaca ünlü steakhouse deneyimi ve eşsiz et lezzetleri."
+      },
+      "d2": {
+        "category": "Kafe",
+        "floor": "Zemin Kat",
+        "desc": "Premium kahve çekirdekleri, özel demleme yöntemleri ve şık atmosfer."
+      },
+      "d3": {
+        "category": "Restoran",
+        "floor": "1. Kat",
+        "desc": "Geleneksel Türk ve modern dünya mutfağının zarif buluşması."
+      },
+      "d4": {
+        "category": "Tatlı & Kafe",
+        "floor": "Zemin Kat",
+        "desc": "Orijinal Belçika çikolatası ile hazırlanan lüks tatlılar ve içecekler."
+      },
+      "d5": {
+        "category": "Uzakdoğu Mutfağı",
+        "floor": "Teras Kat",
+        "desc": "Modern Japon mutfağının en prestijli, ödüllü temsilcisi."
+      }
+    },
+    "board": {
+      "b1": {
+        "role": "Yönetim Kurulu Başkanı"
+      },
+      "b2": {
+        "role": "Genel Müdür / Başkan Yardımcısı"
+      },
+      "b3": {
+        "role": "Mali İşler Sorumlusu (Sayman)"
+      },
+      "b4": {
+        "role": "Denetim Kurulu Başkanı"
+      },
+      "b5": {
+        "role": "Halkla İlişkiler ve Genel Sekreter"
+      },
+      "b6": {
+        "role": "Yönetim Kurulu Üyesi"
+      },
+      "b7": {
+        "role": "Yönetim Kurulu Üyesi"
+      },
+      "b8": {
+        "role": "Tesis Müdürü"
+      },
+      "b9": {
+        "role": "Güvenlik Müdürü"
+      },
+      "b10": {
+        "role": "Teknik ve Operasyon Müdürü"
+      }
+    }
+  },
+  "press": {
+    "p1": {
+      "source": "Forbes Türkiye",
+      "date": "Ekim 2025",
+      "title": "Basın Ekspres'in Yeni İkonu Yükseliyor",
+      "desc": "Luxera Towers, bölgenin mimari silüetini değiştiren yenilikçi tasarımıyla dikkat çekiyor."
+    },
+    "p2": {
+      "source": "Ekonomist",
+      "date": "Eylül 2025",
+      "title": "Yatırımcıların Yeni Gözdesi",
+      "desc": "Kısa amortisman süresi ve yüksek getiri potansiyeli ile Luxera Towers öne çıkıyor."
+    },
+    "p3": {
+      "source": "Hürriyet Emlak",
+      "date": "Ağustos 2025",
+      "title": "Lüks ve Konfor Bir Arada",
+      "desc": "Geniş sosyal donatıları ve prestijli ticari alanlarıyla tam bir yaşam merkezi."
+    },
+    "p4": {
+      "source": "Milliyet",
+      "date": "Temmuz 2025",
+      "title": "Ulaşımın Kalbinde Bir Proje",
+      "desc": "Güneşli Metro İstasyonu\\'na yalnızca 200 metre mesafesi projeyi ulaşım açısından rakipsiz kılıyor."
+    },
+    "p5": {
+      "source": "Bloomberg HT",
+      "date": "Haziran 2025",
+      "title": "Karma Yaşam Projelerinde Yeni Standart",
+      "desc": "Rezidans ve AVM konseptini bir araya getiren Luxera Towers sektöre yön veriyor."
+    },
+    "p6": {
+      "source": "Emlak Kulisi",
+      "date": "Mayıs 2025",
+      "title": "Basın Ekspres Yükselişte",
+      "desc": "Bölgedeki dönüşümün lokomotifi olan projeler arasında Luxera Towers başı çekiyor."
+    }
+  },
+  "testimonials": {
+    "t1": {
+      "role": "Rezidans Sakini",
+      "quote": "Sabah spor salonundan çıkıp asansörle ofisimin bulunduğu kata inebiliyorum. Luxera Towers gerçekten \"hayatı bir adıma indiriyor\". Ailemle geçirdiğim zaman ikiye katlandı."
+    },
+    "t2": {
+      "role": "Yatırımcı",
+      "quote": "Basın Ekspres bölgesinin yükselişini yıllardır takip ediyordum. Karma konsept ve metro yakınlığı, aradığım likidite ve kira güvencesini bir arada sunuyor. Doğru zamanda doğru karar oldu."
+    },
+    "t3": {
+      "role": "Ticari Kiracı — Perakende",
+      "quote": "Cadde üzeri görünürlük ve AVM içi yaya trafiği, markamızın bilinirliğini ilk aydan itibaren artırdı. Konumun ticari potansiyeli beklentimizin üzerinde çıktı."
+    },
+    "t4": {
+      "role": "Rezidans Sakini",
+      "quote": "3.20 metrelik tavanlar ve panoramik camlar sayesinde eve girdiğim an şehrin gürültüsü geride kalıyor. Concierge ekibi her talebi bir telefonla hallediyor; otel konforu evimde."
+    },
+    "t5": {
+      "role": "Yabancı Yatırımcı",
+      "quote": "Vatandaşlık ve tapu sürecinin tamamı uçtan uca yönetildi. Süreç boyunca şeffaf ve hızlı bir iletişim vardı; İstanbul’daki ilk yatırımım için güven verici bir deneyim oldu."
+    },
+    "t6": {
+      "role": "Ticari Kiracı — Gastronomi",
+      "quote": "Teras katındaki konumumuz hem rezidans sakinleri hem de bölge misafirleri için bir buluşma noktasına dönüştü. Doğru marka-mix planlaması işimize değer kattı."
+    }
+  },
+  "luxuryCard": {
+    "action": "Detaylı İncele"
   }
 }
