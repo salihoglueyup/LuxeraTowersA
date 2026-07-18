@@ -93,6 +93,10 @@
       "feature2": "Sauna",
       "feature3": "Private Elevator",
       "feature4": "4 Parking Spaces"
+    },
+    "header": {
+      "title": "Privileged Living Spaces",
+      "subtitle": "Spacious and luxurious living options, with every detail carefully designed."
     }
   },
   "amenities": {
@@ -127,6 +131,73 @@
       "5m": "5 Mins",
       "10m": "10 Mins",
       "25m": "25 Mins"
+    },
+    "cat1": {
+      "title": "Transport",
+      "i1": {
+        "t": "Gunesli Metro Station",
+        "time": "200m",
+        "d": "Metro access within walking distance"
+      },
+      "i2": {
+        "t": "Press Express",
+        "time": "5 min",
+        "d": "At the center of the business and life axis"
+      },
+      "i3": {
+        "t": "E-5 & TEM Highways",
+        "time": "5 min",
+        "d": "Quick access to main arteries"
+      },
+      "i4": {
+        "t": "Istanbul Airport",
+        "time": "25 min",
+        "d": "Door to the world"
+      }
+    },
+    "cat2": {
+      "title": "Shopping",
+      "i1": {
+        "t": "Mall of Istanbul",
+        "time": "5 min",
+        "d": "the pinnacle of shopping"
+      },
+      "i2": {
+        "t": "212 Istanbul Power Outlet",
+        "time": "7 min",
+        "d": "Brand diversity"
+      },
+      "i3": {
+        "t": "Starcity AVM",
+        "time": "10 min",
+        "d": "Shopping nearby"
+      }
+    },
+    "cat3": {
+      "title": "Health",
+      "i1": {
+        "t": "Medipol University Hospital",
+        "time": "12 min",
+        "d": "Full-fledged health"
+      },
+      "i2": {
+        "t": "Pine and Sakura City Hospital",
+        "time": "15 min",
+        "d": "Europe's largest hospital"
+      }
+    },
+    "cat4": {
+      "title": "Education",
+      "i1": {
+        "t": "Altınbaş University",
+        "time": "10 min",
+        "d": "higher education"
+      },
+      "i2": {
+        "t": "Private Schools & Colleges",
+        "time": "5-10 Min",
+        "d": "Quality education options"
+      }
     }
   },
   "contact": {
@@ -251,7 +322,8 @@
     },
     "reasons": {
       "r1": {
-        "title": "Prestigious Location"
+        "title": "Prestigious Location",
+        "desc": "A unique location in the heart of Basın Ekspres, at the intersection of all transportation networks."
       },
       "r2": {
         "title": "Superior Architecture",
@@ -306,17 +378,20 @@
       }
     },
     "seo": {
-      "title": "About Us & Project Details"
+      "title": "About Us & Project Details",
+      "desc": "Luxera Towers; A brand new life vision rising in Istanbul Basın Ekspres with 369 luxury residences and a shopping mall with 87 stores."
     },
     "hero": {
       "overline": "About the Project",
       "title": "A New",
-      "highlight": "Vision"
+      "highlight": "Vision",
+      "subtitle": "An iconic architecture and a privileged life in the heart of Basın Ekspres, redefining the standards of luxury."
     },
     "intro": {
       "title1": "An Architectural Masterpiece",
       "title2": "Defying the Ordinary",
-      "p2": "We are creating a fully equipped world with the freedom to reach everything you need within an elevator's distance, the opportunity to breathe in sky gardens, and commercial areas featuring international brands."
+      "p2": "We are creating a fully equipped world with the freedom to reach everything you need within an elevator's distance, the opportunity to breathe in sky gardens, and commercial areas featuring international brands.",
+      "p1": "Luxera Towers is much more than just a housing project; It is a new generation living concept that blends the dynamism of Istanbul with aesthetics. In this project, where every detail has been carefully considered, luxury will no longer be a privilege, but your standard."
     },
     "why": {
       "title1": "Why",
@@ -325,11 +400,13 @@
     },
     "offersHeader": {
       "title1": "What Does",
-      "title2": "Luxera Towers Offer You?"
+      "title2": "Luxera Towers Offer You?",
+      "desc": "Life at Luxera Towers means; It means a prestigious privilege where you manage your time with pleasure."
     },
     "gardens": {
       "subtitle": "Sky Gardens",
-      "desc": "Multi-level green terraces placed between the towers offer a living breathing space in harmony with nature in the middle of the city. Landscaped social platforms and relaxation areas are a luxurious extension of your home."
+      "desc": "Multi-level green terraces placed between the towers offer a living breathing space in harmony with nature in the middle of the city. Landscaped social platforms and relaxation areas are a luxurious extension of your home.",
+      "title": "\"A view opening to success from every window\""
     },
     "timelineHeader": {
       "title": "Project Journey",
@@ -337,12 +414,14 @@
     },
     "specsHeader": "Technical Details",
     "testimonials": {
-      "overline": "Testimonials"
+      "overline": "Testimonials",
+      "title": "Living in Luxera"
     },
     "cta": {
       "title": "Be a Part of This Story",
       "primary": "Contact Us",
-      "secondary": "Explore Residences"
+      "secondary": "Explore Residences",
+      "desc": "Contact us to get to know Luxera Towers better, visit our sample flat and discover special options for you."
     }
   },
   "commercial": {
@@ -406,7 +485,8 @@
     "hero": {
       "overline": "Commercial Opportunities",
       "title": "Commercial",
-      "highlight": "Units"
+      "highlight": "Units",
+      "subtitle": "Unique commercial opportunities that will take your brand to the top, in Basın Ekspres' most prestigious shopping mall."
     },
     "intro": {
       "title": "The New Heart of Commerce",
@@ -433,7 +513,8 @@
     },
     "process": {
       "overline": "How Does It Work?",
-      "title": "Leasing Process"
+      "title": "Leasing Process",
+      "subtitle": "From the right unit to the opening; Moving your brand to Luxera Towers is completed in four steps."
     },
     "testimonials": {
       "title": "What Our Tenants Say?",
@@ -452,7 +533,9 @@
       "subtitle": "Experience from the past, vision building the future."
     },
     "vision": {
-      "title": "Our Vision and Values"
+      "title": "Our Vision and Values",
+      "p1": "Setting out with years of experience and confidence in the real estate industry, Luxera has adopted quality, aesthetics and durability as standards in every project. Rising in the most valuable location of Basın Ekspres, Luxera Towers is being implemented with the vision of becoming not only a housing project but also one of the new icons of Istanbul.",
+      "p2": "We aim to offer a \"premium\" living experience to everyone living in our projects with our innovative architectural approach, environmentally friendly sustainability principles and human-oriented design philosophy."
     },
     "milestones": {
       "overline": "Our Journey",
@@ -474,12 +557,14 @@
     "cta": {
       "title": "Join the Luxera Family",
       "primary": "Contact Us",
-      "secondary": "Explore the Project"
+      "secondary": "Explore the Project",
+      "desc": "Contact us to closely discover the vision of our brand and the privileges offered by Luxera Towers."
     }
   },
   "dining": {
     "seo": {
-      "title": "Gastronomy and Restaurants"
+      "title": "Gastronomy and Restaurants",
+      "desc": "Distinguished tastes from world cuisine, premium cafes and fine-dining restaurants are at Luxera Towers."
     },
     "hero": {
       "overline": "Gastronomy Experience",
@@ -507,10 +592,146 @@
     },
     "cta": {
       "title": "Stay Informed About Events",
-      "primary": "Contact Us"
+      "primary": "Contact Us",
+      "desc": "Contact us to be the first to be informed about Luxera Towers' special launches, campaigns and social events."
     },
     "filters": {
       "all": "All"
+    },
+    "ornek-daire": {
+      "category": "Activity",
+      "date": "October 28, 2025",
+      "title": "Sample Apartment Launch was Held",
+      "desc": "Our 3+1 and 2+1 sample flats, designed to A+ standards, were opened to visitors. Launch details that attracted great attention..."
+    },
+    "indirim-kampanya": {
+      "category": "Offer",
+      "date": "November 10, 2025",
+      "title": "Special 15% Discount for Cash Purchases",
+      "desc": "Our advance payment campaign, valid for a limited number of residences, has started. Don't miss this opportunity."
+    },
+    "metro-istasyonu": {
+      "category": "News",
+      "date": "23 November 2025",
+      "title": "New Metro Station is at Our Doorstep",
+      "desc": "The new station of the M9 Ataköy-Olimpiyat metro line is opened within walking distance of Luxera Towers."
+    },
+    "kitap-gunleri": {
+      "category": "Entertainment and Organization",
+      "date": "06 December 2025",
+      "title": "Winter Book Days and Signing Event",
+      "desc": "Distinguished publishing houses and authors meet with their readers in the Luxera AVM event area.",
+      "body": "The heart of art and literature beats at Luxera Towers! Türkiye's most distinguished publishing houses will open stands at the Winter Book Days, which will be held in our shopping mall event area between 12-18 December. Additionally, a literary feast awaits you on weekends, with autograph sessions and interviews of our valuable writers. All our residents and visitors are invited."
+    },
+    "muzik-dinletisi": {
+      "category": "Entertainment and Organization",
+      "date": "December 19, 2025",
+      "title": "Pre-New Year Jazz Concert at Lobby Lounge",
+      "desc": "Acoustic jazz concert organized exclusively for our residents and guests."
+    },
+    "havuz-bakimi": {
+      "category": "Announcement",
+      "date": "January 01, 2026",
+      "title": "Indoor Pool Winter Period Maintenance",
+      "desc": "Attention to our residence residents: Our indoor swimming pool will be subjected to annual periodic winter maintenance."
+    },
+    "teknoloji-zirvesi": {
+      "category": "News",
+      "date": "January 14, 2026",
+      "title": "We Hosted the Smart Home Technologies Summit",
+      "desc": "Leading technology brands of the real estate industry met at Luxera Towers congress center.",
+      "body": "The advanced smart home technologies (IoT) we used in the infrastructure of our project also attracted the attention of major players in the industry. Our project was examined as a case study at the \"Future Living Spaces and IoT\" summit held at Luxera Towers Congress Center last week. Our sustainability, energy efficiency and autonomous security systems received full marks from the participants."
+    },
+    "kis-senligi-2026": {
+      "category": "Entertainment and Organization",
+      "date": "January 27, 2026",
+      "title": "Midwinter Festival",
+      "desc": "Fun for the whole family by the fireplace on cold winter evenings.",
+      "body": "Get together with your neighbors over hot chocolate and chestnuts on the most beautiful days of winter."
+    },
+    "okula-donus-2026": {
+      "category": "Offer",
+      "date": "09 February 2026",
+      "title": "Back to School Discounts Have Started",
+      "desc": "Net 30% discount on selected brands in shopping mall stores.",
+      "body": "School preparations start early and end advantageously with Luxera privileges."
+    },
+    "sanat-sokagi-2026": {
+      "category": "Activity",
+      "date": "February 22, 2026",
+      "title": "Open Air Art Street Exhibition",
+      "desc": "Luxera Square hosts the works of local artists.",
+      "body": "Art days where you can examine and purchase modern works of art."
+    },
+    "avm-konseri-2026": {
+      "category": "Entertainment and Organization",
+      "date": "07 March 2026",
+      "title": "Hello Autumn Concert",
+      "desc": "An amazing concert with the participation of famous pop artists.",
+      "body": "Tickets are available free of charge through the portal."
+    },
+    "klima-bakim-2": {
+      "category": "Announcement",
+      "date": "March 20, 2026",
+      "title": "VRF Systems Autumn Maintenance",
+      "desc": "Routine maintenance before switching to heating systems.",
+      "body": "Our technical teams will carry out flat-based checks."
+    },
+    "gastro-fest-2026": {
+      "category": "Activity",
+      "date": "02 April 2026",
+      "title": "October Gastronomy Festival",
+      "desc": "The best representatives of different cuisines are at our gourmet stands.",
+      "body": "A wide range from street flavors to fine-dining tastings."
+    },
+    "bahar-senligi-2026": {
+      "category": "Entertainment and Organization",
+      "date": "April 15, 2026",
+      "title": "Spring Festival Party for Kids",
+      "desc": "Fun with spring-themed costumes and lots of games at Kids Club.",
+      "body": "Your kids can join the party in their favorite spring costumes."
+    },
+    "yatirim-semineri-2026": {
+      "category": "News",
+      "date": "April 28, 2026",
+      "title": "Real Estate Investment Seminar",
+      "desc": "Sector evaluation from experts in the field.",
+      "body": "Value increase expectations in the region will be discussed by experts."
+    },
+    "arac-sarj-2": {
+      "category": "News",
+      "date": "May 11, 2026",
+      "title": "Parking Lot New Generation EV Charging Units",
+      "desc": "20 new electric charging stations were put into service.",
+      "body": "In line with increasing demands, the electric vehicle capacity of our parking lot has been increased."
+    },
+    "bahar-kampanyasi": {
+      "category": "Offer",
+      "date": "May 24, 2026",
+      "title": "Spring Season Spa Advantages",
+      "desc": "25% spring discount on all SPA packages.",
+      "body": "A renewal experience on warm spring days and a fresh start to summer."
+    },
+    "satranc-turnuvasi": {
+      "category": "Activity",
+      "date": "06 June 2026",
+      "title": "Inter-Resident Chess Tournament",
+      "desc": "A Sunday full of intelligence in the lobby area.",
+      "body": "We will have surprise prizes for the winner of the tournament."
+    },
+    "yaza-merhaba-hazirlik": {
+      "category": "Announcement",
+      "date": "June 19, 2026",
+      "title": "Common Area Hello to Summer Decorations",
+      "desc": "All our social areas are decorated with lively colors special for summer.",
+      "body": "Landscaping and decoration renovations carried out by the site management have started."
+    },
+    "yaz-balosu-2026": {
+      "category": "Entertainment and Organization",
+      "date": "02 July 2026",
+      "title": "Traditional Summer Ball 2026",
+      "desc": "Say hello to summer in an elite atmosphere by the pool and on the terrace.",
+      "body": "An unforgettable, warm night accompanied by iced cocktails and a live orchestra."
     }
   },
   "faq": {
@@ -528,6 +749,127 @@
     "search": {
       "placeholder": "Search for a subject you are curious about... (eg: title deed, dues)",
       "empty": "No results were found matching your search."
+    },
+    "cat1": {
+      "title": "Project & Sales Process",
+      "q1": {
+        "q": "When will the title deed be delivered?",
+        "a": "In our project, our floor easement deeds are ready and the transfer is made immediately after the sales transactions."
+      },
+      "q2": {
+        "q": "When will the project be delivered?",
+        "a": "The delivery date of our project is planned as the last quarter of 2026."
+      },
+      "q3": {
+        "q": "What are the payment plan and installment options?",
+        "a": "In addition to special discounts for cash payment, promissory note payment within the company for up to 36 months and housing loan options with contracted banks are offered. You can contact our sales team for flexible plans tailored to you."
+      },
+      "q4": {
+        "q": "What are the flat types and square meter ranges?",
+        "a": "There are 1+1, 2+1 and 3+1 flat types in our project. Square meters vary between 75 m² and 220 m²."
+      }
+    },
+    "cat2": {
+      "title": "Investment & Citizenship",
+      "q1": {
+        "q": "Can foreign buyers buy?",
+        "a": "Yes. We provide end-to-end consultancy services for our foreign investors in title deed, tax and citizenship processes."
+      },
+      "q2": {
+        "q": "Is it suitable for citizenship?",
+        "a": "Yes, our project is 100% eligible for the Turkish Citizenship program for purchases of 400,000 USD and above."
+      },
+      "q3": {
+        "q": "Is rental management of commercial areas carried out?",
+        "a": "Yes, the rental and operation processes of commercial units (stores and offices) are supported by our professional management company. Professional \"brand-mix\" work is carried out for the stores in the shopping mall."
+      },
+      "q4": {
+        "q": "What is the investment potential of the region?",
+        "a": "Basın Ekspres road is the fastest appreciating business and financial center of Istanbul. It promises high premiums and regular rental income with its new metro lines and E-5 / TEM connections."
+      }
+    },
+    "cat3": {
+      "title": "Life & Privileges",
+      "q1": {
+        "q": "What will be included in the dues?",
+        "a": "24/7 professional security, use of indoor parking, fitness and SPA areas (indoor swimming pool, Turkish bath, sauna), use of Executive Lounge and common area maintenance and landscaping expenses are included in the fee."
+      },
+      "q2": {
+        "q": "What are the equipment standards for flat deliveries?",
+        "a": "All our apartments are built in accordance with international A+ quality standards. First-class built-in kitchen sets, smart home infrastructure, VRF air conditioning system and premium ceramic/parquet floor coverings are offered as standard."
+      },
+      "q3": {
+        "q": "Are valet and housekeeping services paid?",
+        "a": "Our valet service is offered free of charge to residence residents, while personal services such as Housekeeping (dry cleaning, private cleaning, etc.) and room service are charged depending on usage (Pay-per-use system)."
+      },
+      "q4": {
+        "q": "Is there an electric vehicle charging station?",
+        "a": "Yes, a sufficient number of high-speed electric vehicle (EV) charging stations are available for the use of our residence residents on each floor of our indoor car park."
+      }
+    },
+    "cat4": {
+      "title": "Payment & Delivery",
+      "q1": {
+        "q": "Are there any advantages for cash payment?",
+        "a": "Yes. Period-specific discount rates are applied for cash payments. You can contact our sales team for current campaign conditions."
+      },
+      "q2": {
+        "q": "Is payment by promissory note (deferred) possible?",
+        "a": "The company offers promissory note payment options of up to 36 months. Payment plan; It is structured specifically for you according to your down payment rate and maturity preference."
+      },
+      "q3": {
+        "q": "Can I use a housing loan?",
+        "a": "Yes. It is possible to use a housing loan through our contracted banks. Our sales consultants will assist you in the appraisal and loan application process."
+      },
+      "q4": {
+        "q": "What is the delivery date and delay?",
+        "a": "The delivery of our project is planned for the last quarter (Q4) of 2026. Delivery conditions and possible force majeure provisions are transparently included in your sales contract."
+      }
+    },
+    "cat5": {
+      "title": "Warranty & Maintenance",
+      "q1": {
+        "q": "How much is the structure and hardware warranty?",
+        "a": "Structural manufacturing works within the periods covered by the relevant legislation; Built-in products, mechanical and electrical systems are covered by the manufacturer/contractor warranty."
+      },
+      "q2": {
+        "q": "Is there post-delivery maintenance support?",
+        "a": "Our professional facility management team meets your common area maintenance, technical service and malfunction requests 24/7 after delivery. Requests can also be submitted via the mobile application."
+      },
+      "q3": {
+        "q": "Who runs the common areas?",
+        "a": "All common areas (pool, fitness, lobby, landscaping, security) are operated by a professional site/facility management. Dues and service scope are defined in the management plan."
+      }
+    },
+    "cat6": {
+      "title": "KVKK & Privacy",
+      "q1": {
+        "q": "How is the personal data I share protected?",
+        "a": "Your personal data is processed and stored securely only within the scope of sales, marketing and communication activities in accordance with KVKK No. 6698. Details are on our KVKK Information Text page."
+      },
+      "q2": {
+        "q": "Is my information in the contact form shared with third parties?",
+        "a": "Your information is shared with our business partners only to the extent necessary to meet your request and within the framework of the conditions in Articles 8 and 9 of the KVKK. No unauthorized third party marketing."
+      },
+      "q3": {
+        "q": "Can I request deletion of my data?",
+        "a": "Yes. In accordance with Article 11 of the KVKK, you have the right to learn whether your data is being processed and to request its correction or deletion. You can submit your requests in writing to our company headquarters."
+      }
+    },
+    "cat7": {
+      "title": "Commercial Rental",
+      "q1": {
+        "q": "Are commercial units for rent or sale?",
+        "a": "The project has commercial units that can be both sold and rented. You can get information from our sales team about street shops, shopping mall stores, cafe/restaurant and office options."
+      },
+      "q2": {
+        "q": "How is brand-mix (tenant composition) determined?",
+        "a": "A professional brand-mix planning is carried out in shopping mall in-house units to maximize visitor experience and commercial efficiency. Retail, gastronomy, technology and service are positioned in a balanced manner."
+      },
+      "q3": {
+        "q": "Is business management of commercial units supported?",
+        "a": "Yes. Our professional management company supports the rental, promotion and operation processes of commercial units; Rent tracking and occupancy management becomes easier for the investor."
+      }
     }
   },
   "gallery": {
@@ -564,7 +906,8 @@
       "plan_view": "Floor Plan"
     },
     "seo": {
-      "title": "Gallery and Visuals"
+      "title": "Gallery and Visuals",
+      "desc": "Check out Luxera Towers' exclusive exterior architecture, luxurious interior designs, floor plans and social facilities in our gallery."
     },
     "title": "Gallery",
     "desc": "Examine the architectural details, interior designs, and social areas of the project.",
@@ -596,14 +939,16 @@
         "p1": "Mall of Istanbul (5 Min)",
         "p2": "212 Outlet Mall (2 Min)",
         "p3": "Starcity Outlet (10 Min)",
-        "p4": "Gunesli Park Mall (4 Min)"
+        "p4": "Gunesli Park Mall (4 Min)",
+        "desc": "The largest and most prestigious shopping malls of the region are right next to you. World-famous brands, cinemas and entertainment areas are waiting for you in centers such as Mall of Istanbul, 212 Outlet and Starcity Outlet."
       },
       "health": {
         "title": "Health Centers",
         "p1": "Cam and Sakura City Hospital (12 Min)",
         "p2": "Medipol Mega University Hospital (8 Min)",
         "p3": "Acibadem Halkali (10 Min)",
-        "p4": "BHT Clinic Tema (15 Min)"
+        "p4": "BHT Clinic Tema (15 Min)",
+        "desc": "Your health is safe. You are just a few minutes away from Istanbul's most modern medical centers and research hospitals."
       },
       "edu": {
         "title": "Education & Universities",
@@ -617,7 +962,8 @@
         "title": "Social Life",
         "p1": "ArenaPark (10 Min)",
         "p2": "Gourmet Restaurants Valley",
-        "p3": "Culture and Art Centers"
+        "p3": "Culture and Art Centers",
+        "desc": "Luxury restaurants, third-generation coffee houses and cultural event areas. The rising trend of Basın Ekspres also revitalizes your social life."
       }
     },
     "distances": {
@@ -645,7 +991,8 @@
     "hero": {
       "overline": "Environment Analysis",
       "title": "Life",
-      "highlight": "Guide"
+      "highlight": "Guide",
+      "subtitle": "You are right in the heart of Basın Ekspres, at the fastest gaining value point in Istanbul. Get everything you need in minutes."
     },
     "stats": {
       "min": " min",
@@ -666,15 +1013,19 @@
   },
   "investment": {
     "seo": {
-      "title": "Investment and Value Appreciation"
+      "title": "Investment and Value Appreciation",
+      "desc": "Istanbul's most profitable real estate investment with a 120% value increase forecast, short amortization period and guaranteed rental income."
     },
     "hero": {
       "overline": "Profitable Opportunities",
       "title": "Add Value to",
-      "highlight": "Your Future"
+      "highlight": "Your Future",
+      "subtitle": "High return on investment, a safe harbor and a bright future await you with Luxera Towers rising in Basın Ekspres, the new golden axis of Istanbul."
     },
     "intro": {
-      "title": "The New Maslak: Basin Ekspres"
+      "title": "The New Maslak: Basin Ekspres",
+      "p1": "Basin Ekspres Road, the meeting point of international holding centers, 5-star hotel chains and huge trade centers, has been recorded as the fastest gaining location in Istanbul. With state-supported mega infrastructure projects and planned urbanization moves, the region has transformed from a mere transportation axis into a giant financial and living center.",
+      "p2": "This unique location, which connects the E-5 and TEM highways, passes through the M9 metro line and is directly integrated with Istanbul Airport, offers Luxera Towers investors an invaluable liquidity and demand assurance."
     },
     "stats": {
       "title": "Why Luxera Towers?",
@@ -695,10 +1046,12 @@
     "adv": {
       "title": "Strategic Decision Point",
       "a1": {
-        "title": "Power of Mixed-Use Concept"
+        "title": "Power of Mixed-Use Concept",
+        "desc": "Only projects that produce housing can be affected by crises. However, mixed projects with their own shopping malls, office blocks and commercial areas create a tremendous shield against crises by creating their own economy."
       },
       "a2": {
-        "title": "Transportation Network Integration"
+        "title": "Transportation Network Integration",
+        "desc": "Being able to take the metro the moment you leave your door, reaching Europe's largest airport in 25 minutes and connecting to E-5/TEM toll booths in minutes; It ensures that your tenant portfolio always consists of senior managers."
       },
       "a3": {
         "title": "International Brand Assurance",
@@ -751,7 +1104,10 @@
       "h1": "1. Purpose of Processing Personal Data",
       "p2": "Your collected personal data is processed by our company for the purposes of sales and marketing of our real estate projects, creating special campaigns for you, conducting customer satisfaction research, and carrying out communication activities.",
       "h2": "2. To Whom and For What Purpose Processed Personal Data Can Be Transferred",
-      "h3": "3. Rights of the Personal Data Owner"
+      "h3": "3. Rights of the Personal Data Owner",
+      "p1": "Luxera Gayrimenkul Yatırım A.Ş. We show utmost sensitivity to the security of your personal data. With this awareness, we attach great importance to the processing and preservation of all personal data of all persons associated with the Company, including those who benefit from our products and services, in accordance with the Personal Data Protection Law No. 6698 (\"KVKK\").",
+      "p3": "Your collected personal data; In line with the realization of the above-mentioned purposes, it may be transferred to our business partners, suppliers, legally authorized public institutions and private persons within the framework of the personal data processing conditions and purposes specified in Articles 8 and 9 of the KVKK.",
+      "p4": "In accordance with Article 11 of KVKK, data owners; They have the right to learn whether their personal data is being processed, to request information if they have been processed, to learn the purpose of processing, and to request correction if they have been processed incompletely or incorrectly. You can submit your requests in writing to our company headquarters."
     },
     "privacy": {
       "overline": "Legal",
@@ -786,11 +1142,13 @@
     "hero": {
       "overline": "Social Life",
       "title": "Right at the",
-      "highlight": "Center of Life"
+      "highlight": "Center of Life",
+      "subtitle": "With Luxera Towers Shopping Mall and multi-layered social living spaces, Istanbul's new meeting point is taking shape right under your home."
     },
     "intro": {
       "title": "An Architecture of Life Beyond Boundaries",
-      "p1": "Instead of keeping up with the rhythm of the city, shape the city's rhythm around yourself. Luxera Towers is not just a residential area; it's a massive, self-sustaining ecosystem where architecture, nature, and commercial dynamism dance in perfect harmony."
+      "p1": "Instead of keeping up with the rhythm of the city, shape the city's rhythm around yourself. Luxera Towers is not just a residential area; it's a massive, self-sustaining ecosystem where architecture, nature, and commercial dynamism dance in perfect harmony.",
+      "p2": "After sipping your morning coffee at a distinguished cafe, you can take a walk on the open-air terraces bathed in sunlight, and in the evening, you can host your friends at a restaurant serving a selection of world cuisine. \"Going out\" here is as easy as simply opening the front door of your home."
     },
     "featuresSection": {
       "title": "Privileged Life"
@@ -807,17 +1165,20 @@
     "cta": {
       "title": "See This Life Up Close",
       "primary": "Book an Appointment",
-      "secondary": "Privileges"
+      "secondary": "Privileges",
+      "desc": "Make an appointment at our sales office to experience the social life and privileges of Luxera Towers on site."
     }
   },
   "pageLocation": {
     "seo": {
-      "title": "Central Location and Transportation"
+      "title": "Central Location and Transportation",
+      "desc": "200m from Güneşli Metro station, in the heart of Basın Ekspres road. Take your place in Istanbul's most strategic and valuable location."
     },
     "hero": {
       "overline": "Location & Transport",
       "title": "Unique",
-      "highlight": "Location"
+      "highlight": "Location",
+      "subtitle": "Take your place at the heart of transportation networks at Basın Ekspres, the new financial and life center of Istanbul."
     },
     "stats": {
       "m": " m",
@@ -832,12 +1193,15 @@
       "p2": "The location at the intersection of metro, metrobus, E-5, and TEM connections makes the region privileged for both living and investment.",
       "salesOffice": "Sales Office",
       "metroTitle": "200 Meters to Metro",
-      "metroDesc": "Gunesli Metro Station is within walking distance."
+      "metroDesc": "Gunesli Metro Station is within walking distance.",
+      "title": "Istanbul's New Attraction Center",
+      "p1": "Basın Ekspres axis, known as \"New Maslak\"; It is one of the fastest gaining regions of Istanbul with its international company headquarters, 5-star hotels and huge shopping malls."
     },
     "cta": {
       "title": "Experience the Location On-Site",
       "primary": "Book an Appointment",
-      "secondary": "Life Guide"
+      "secondary": "Life Guide",
+      "desc": "Make an appointment with our sales office to see the transportation advantages of Luxera Towers and its surroundings closely."
     },
     "map": {
       "getDirections": "Get Directions"
@@ -853,7 +1217,8 @@
     "hero": {
       "overline": "Media",
       "title": "In the",
-      "highlight": "Press"
+      "highlight": "Press",
+      "subtitle": "Echoes of Luxera Towers in the national and international press. Discover our place in the media."
     },
     "featured": "Featured",
     "all": {
@@ -884,7 +1249,8 @@
   },
   "offices": {
     "seo": {
-      "title": "A+ Offices and Corporations"
+      "title": "A+ Offices and Corporations",
+      "desc": "The headquarters of Türkiye's and the world's leading corporate companies are in Luxera Towers."
     },
     "hero": {
       "overline": "Corporate Life",
@@ -939,13 +1305,15 @@
       "cta": {
         "title": "Get Your Time Back",
         "desc": "Contact us to get closely acquainted with the Concierge privilege and Luxera Towers lifestyle."
-      }
+      },
+      "desc": "We know how valuable your time is. Life at Luxera Towers is designed so that all you have to do is enjoy yourself. Our professional concierge team is ready to meet all your requests at any time of the day."
     },
     "fitness": {
       "overline": "Luxera Privileges",
       "desc": "Show your body and soul the care they deserve. In the center of the city but far from its stress; our gym equipped with the latest technology and our luxury SPA center to help you purify are waiting for you.",
       "f1": {
-        "title": "Fully Equipped Gym"
+        "title": "Fully Equipped Gym",
+        "desc": "Technogym's latest generation cardio and weight stations."
       },
       "f2": {
         "title": "Indoor Swimming Pool",
@@ -1165,7 +1533,8 @@
     "hero": {
       "overline": "Luxury Residences",
       "title": "Peak of",
-      "highlight": "Comfort"
+      "highlight": "Comfort",
+      "subtitle": "Prestigious living spaces designed just for you, where you will find reflections of fine taste and superior engineering in every square metre."
     },
     "intro": {
       "title": "Architecture Redefining Living Standards"
@@ -1244,12 +1613,87 @@
       "p2": "First-class Italian ceramics used in the kitchen and wet floors add warmth to the space by creating a perfect contrast with the natural solid wood details that greet you in the entrance. Thanks to the acoustic barriers used in sound insulation, absolute silence reigns in your home even though you are in the heart of the city.",
       "f1": "Underfloor heating and VRV cooling systems",
       "f2": "Smart Home Infrastructure that can be managed from mobile devices",
-      "f3": "Panoramic insulated windows extending from ceiling to floor"
+      "f3": "Panoramic insulated windows extending from ceiling to floor",
+      "p1": "Luxera Towers' interior design is inspired by the silent, yet deeply felt power of luxury. Breaking standards, ceiling heights of 3.20 meters create a spacious atmosphere that will take away all your tiredness the moment you step into the house."
     },
     "process": {
       "overline": "Step by Step",
       "title": "Purchasing Journey",
       "subtitle": "From the first meeting to key delivery, the process is managed simply and transparently for you."
+    },
+    "data": {
+      "1+1": {
+        "title": "1+1 Residence",
+        "desc": "Modern compact comfort for young professionals and those who love dynamic life.",
+        "area": "72 - 85 m²",
+        "ceiling": "3.20m",
+        "hvac": "VRF / Underfloor Heating",
+        "rooms": {
+          "0": "Spacious living room + American kitchen",
+          "1": "master bedroom",
+          "2": "french balcony",
+          "3": "Built-in white goods"
+        },
+        "plans": {
+          "TipA1": "Type A1",
+          "TipA3": "Type A3",
+          "TipA5": "Type A5",
+          "TipA9": "Type A9"
+        }
+      },
+      "2+1": {
+        "title": "2+1 Residence",
+        "desc": "Balanced and spacious living, ideal for newlywed couples and small families.",
+        "area": "115 - 135 m²",
+        "ceiling": "3.20m",
+        "hvac": "VRF / Underfloor Heating",
+        "rooms": {
+          "0": "Large seating area",
+          "1": "Bedroom with master bathroom",
+          "2": "2nd bed/study",
+          "3": "Large balcony"
+        },
+        "plans": {
+          "TipB1": "Type B1",
+          "TipB2": "Type B2",
+          "TipB9": "Type B9",
+          "TipB14": "Type B14"
+        }
+      },
+      "3+1": {
+        "title": "3+1 Residence",
+        "desc": "Spacious, scenic and prestigious living space for large families.",
+        "area": "165 - 190 m²",
+        "ceiling": "3.20m",
+        "hvac": "VRF / Underfloor Heating",
+        "rooms": {
+          "0": "Lounge + separate dining area",
+          "1": "Master suite (with dressing room)",
+          "2": "2 children's/guest rooms",
+          "3": "Terrace with city view"
+        },
+        "plans": {
+          "TipC1": "Type C1",
+          "TipC1Bahçe": "Type C1 Garden",
+          "TipC2": "Type C2"
+        }
+      },
+      "4+1": {
+        "title": "4+1 Penthouse",
+        "desc": "Luxury without limits; Privileged life intertwined with the sky on the top floors.",
+        "area": "240 - 280 m²",
+        "ceiling": "3.60m",
+        "hvac": "VRF / Underfloor Heating",
+        "rooms": {
+          "0": "Two-way panoramic lounge",
+          "1": "Private master suite",
+          "2": "3 separate bedrooms",
+          "3": "Large sky terrace"
+        },
+        "plans": {
+          "4+1TipD": "4+1 Type D"
+        }
+      }
     }
   },
   "portal": {
@@ -1416,7 +1860,8 @@
     },
     "marquee": {
       "m1": "NEW METRO STATION IS OPENING 1 MINUTES AWAY!",
-      "m2": "05-08 DECEMBER INDOOR POOL PERIODIC WINTER MAINTENANCE."
+      "m2": "05-08 DECEMBER INDOOR POOL PERIODIC WINTER MAINTENANCE.",
+      "m3": "NEW YEAR JAZZ CONCERT AT THE LOBBY LOUNGE, DECEMBER 25."
     },
     "apsiyon": {
       "badge": "Apsiyon Digital Management System",
@@ -1510,7 +1955,9 @@
       }
     },
     "intro": {
-      "title": "Services That Bring Hotel Comfort to Your Home"
+      "title": "Services That Bring Hotel Comfort to Your Home",
+      "p1": "We believe that true luxury is not hidden in the shine of things, but in how easy it makes life. At Luxera Towers, we promise to give you that \"special for me\" feeling you feel when you enter the lobby of a 5-star hotel, every day when you step into your home.",
+      "p2": "You can either hand your car over to the valet after a tiring day at work, or start your day with your instructor early in the morning. All our services are designed to leave you the luxury of simply \"enjoying life\"."
     },
     "listSection": {
       "title": "All Our Privileges"
@@ -1532,7 +1979,8 @@
   },
   "stores": {
     "seo": {
-      "title": "Stores and Brands"
+      "title": "Stores and Brands",
+      "desc": "Luxury brands, exclusive boutiques and technology stores located in Luxera Towers Shopping Mall."
     },
     "hero": {
       "overline": "Shopping Experience",
@@ -1583,7 +2031,8 @@
     "cta": {
       "title": "Explore the Apartments in 360°",
       "primary": "Start Virtual Tour",
-      "secondary": "Make an Appointment"
+      "secondary": "Make an Appointment",
+      "desc": "Tour Luxera Towers, which you know from videos, step by step with our virtual tour or make an appointment to see it on site."
     }
   },
   "virtualTour": {
@@ -1605,6 +2054,64 @@
       "title": "Interactive Discovery",
       "subtitle": "Zoom in with the mouse wheel, drag to move around the room, and click on glowing dots to see details.",
       "pan_zoom": "Zoom & Roam"
+    },
+    "scenes": {
+      "s1": {
+        "title": "Lounge",
+        "h1": {
+          "title": "Panoramic View",
+          "desc": "The whole city is at your feet with panoramic windows extending all the way to the ground."
+        },
+        "h2": {
+          "title": "3.20m Ceiling Height",
+          "desc": "High ceiling architecture that offers a spacious living space and is far from being stuffy."
+        },
+        "h3": {
+          "title": "Underfloor Heating & Laminated Flooring",
+          "desc": "First class natural oak laminated flooring and smart floor heating system."
+        }
+      },
+      "s2": {
+        "title": "Open Kitchen",
+        "h1": {
+          "title": "Gaggenau Built-in",
+          "desc": "Ultra-premium German technology offered as standard in all kitchens."
+        },
+        "h2": {
+          "title": "Italian Design Cabinets",
+          "desc": "Matte cover systems that have large storage volume and do not leave fingerprints."
+        },
+        "h3": {
+          "title": "Porcelain Countertop",
+          "desc": "Large porcelain work area that is stain-resistant, scratch- and heat-resistant."
+        }
+      },
+      "s3": {
+        "title": "Bedroom",
+        "h1": {
+          "title": "Dressing Area",
+          "desc": "Large volume, illuminated built-in wardrobe and dressing modules."
+        },
+        "h2": {
+          "title": "Master Bedroom",
+          "desc": "Special sound insulated walls for a peaceful sleep."
+        },
+        "h3": {
+          "title": "Large Glass Surfaces",
+          "desc": "Large windows and automatic blinds infrastructure that let in maximum sunlight."
+        }
+      },
+      "s4": {
+        "title": "Nursery",
+        "h1": {
+          "title": "Study and Play Area",
+          "desc": "A spacious corner with natural light designed for the development of children."
+        },
+        "h2": {
+          "title": "Comfortable Bed",
+          "desc": "Ergonomically designed, healthy sleeping area for children."
+        }
+      }
     }
   },
   "amenityStrip": {
@@ -1617,7 +2124,8 @@
     "policy": "Cookie Policy",
     "and": "and",
     "kvkk": "KVKK Information Text",
-    "accept": "Accept"
+    "accept": "Accept",
+    "desc2": "You accept the."
   },
   "whatsapp": {
     "default_message": "Hello, I would like to get detailed information about the Luxera Towers project.",
@@ -1630,5 +2138,127 @@
     "form_title": "Contact Form",
     "form_desc": "Let us get back to you",
     "aria_label": "Communication"
+  },
+  "brands": {
+    "offices": {
+      "o1": {
+        "sector": "Real Estate Investment Fund",
+        "floor": "10-15. floors",
+        "desc": "The global management center where the Luxera brand carries out its international investments and fund management."
+      },
+      "o2": {
+        "sector": "Architectural Design",
+        "floor": "30th Floor",
+        "desc": "The studio that produces internationally award-winning architectural projects and undertook the concept design of Luxera Towers."
+      },
+      "o3": {
+        "sector": "Artificial Intelligence & Software",
+        "floor": "18-20. floors",
+        "desc": "EMEA region R&D center focusing on big data analytics and cloud technologies."
+      },
+      "o4": {
+        "sector": "Finance",
+        "floor": "25-28. floors",
+        "desc": "Regional directorate where corporate banking and international trade finance processes are managed."
+      },
+      "o5": {
+        "sector": "International law",
+        "floor": "12th Floor",
+        "desc": "Prestigious consultancy office specializing in global trade and real estate law."
+      }
+    },
+    "stores": {
+      "s1": {
+        "category": "Watches & Jewelery",
+        "floor": "Ground floor"
+      },
+      "s2": {
+        "category": "Luxury Fashion",
+        "floor": "Ground floor"
+      },
+      "s3": {
+        "category": "Department Store",
+        "floor": "1st Floor"
+      },
+      "s4": {
+        "category": "Technology",
+        "floor": "Ground floor"
+      },
+      "s5": {
+        "category": "Cosmetic",
+        "floor": "1st Floor"
+      },
+      "s6": {
+        "category": "Clothes",
+        "floor": "1st Floor"
+      },
+      "s7": {
+        "category": "Watches & Jewelery",
+        "floor": "Ground floor"
+      },
+      "s8": {
+        "category": "Cosmetic",
+        "floor": "1st Floor"
+      }
+    },
+    "dining": {
+      "d1": {
+        "category": "Fine Dining",
+        "floor": "Terrace Floor",
+        "desc": "World famous steakhouse experience and unique meat flavors."
+      },
+      "d2": {
+        "category": "Cafe",
+        "floor": "Ground floor",
+        "desc": "Premium coffee beans, special brewing methods and stylish atmosphere."
+      },
+      "d3": {
+        "category": "Restaurant",
+        "floor": "1st Floor",
+        "desc": "An elegant meeting of traditional Turkish and modern world cuisine."
+      },
+      "d4": {
+        "category": "Dessert & Cafe",
+        "floor": "Ground floor",
+        "desc": "Luxury desserts and drinks made with original Belgian chocolate."
+      },
+      "d5": {
+        "category": "Far Eastern Cuisine",
+        "floor": "Terrace Floor",
+        "desc": "The most prestigious, award-winning representative of modern Japanese cuisine."
+      }
+    },
+    "board": {
+      "b1": {
+        "role": "Chairman of the Board"
+      },
+      "b2": {
+        "role": "General Manager / Vice President"
+      },
+      "b3": {
+        "role": "Financial Affairs Officer (Treasurer)"
+      },
+      "b4": {
+        "role": "Chairman of the Supervisory Board"
+      },
+      "b5": {
+        "role": "Public Relations and General Secretary"
+      },
+      "b6": {
+        "role": "Board Member"
+      },
+      "b7": {
+        "role": "Board Member"
+      },
+      "b8": {
+        "role": "Facility Manager"
+      },
+      "b9": {
+        "role": "Security Manager"
+      },
+      "b10": {
+        "role": "Technical and Operations Manager"
+      }
+    }
   }
 }

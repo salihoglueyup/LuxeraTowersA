@@ -44,7 +44,7 @@ const UnitTypes = () => {
   return (
     <section id="daireler" className="py-24 bg-luxera-navy relative">
       <div className="max-w-7xl mx-auto px-6">
-        <SectionHeader title="Ayrıcalıklı Yaşam Alanları" subtitle="Her detayı özenle tasarlanmış, ferah ve lüks yaşam seçenekleri." />
+        <SectionHeader title={t('unitTypes.header.title', 'Ayrıcalıklı Yaşam Alanları')} subtitle={t('unitTypes.header.subtitle', 'Her detayı özenle tasarlanmış, ferah ve lüks yaşam seçenekleri.')} />
         
         <div className="flex justify-center mb-12 space-x-2 md:space-x-4 overflow-x-auto">
           {Object.keys(UNIT_TYPES).map(key => (
