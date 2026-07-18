@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationTR from '../../locales/tr/translation.json';
 import translationEN from '../../locales/en/translation.json';
@@ -14,7 +13,12 @@ const resources = {
   ru: { translation: translationRU }
 };
 
-export const applyDocumentDirection = (lng = i18n.language) => {
+// Dil her zaman Arapça olsun - localStorage'daki eski tercihleri temizle
+if (typeof window !== 'undefined') {
+  localStorage.removeItem('i18nextLng');
+}
+
+export const applyDocumentDirection = (lng = 'ar') => {
   if (typeof document === 'undefined') return;
 
   const normalizedLng = (lng || 'ar').toLowerCase();
@@ -26,25 +30,19 @@ export const applyDocumentDirection = (lng = i18n.language) => {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'ar', // Set initial language to ar
-    fallbackLng: 'ar', // Default language
+    lng: 'ar',
+    fallbackLng: 'ar',
     debug: false,
 
     interpolation: {
-      escapeValue: false, // React already safes from xss
+      escapeValue: false,
     },
-
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    }
   });
 
 i18n.on('languageChanged', applyDocumentDirection);
-applyDocumentDirection(i18n.language);
+applyDocumentDirection('ar');
 
 export default i18n;

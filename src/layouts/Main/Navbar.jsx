@@ -5,7 +5,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getResidences } from '../../data/residences';
 import CatalogModal from '../../features/lead/CatalogModal';
-import LanguageSwitcher from '../../shared/ui/LanguageSwitcher';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -248,15 +247,11 @@ const Navbar = () => {
               </AnimatePresence>
             </div>
 
-            <div className="border-s border-white/20 ps-4">
-              <LanguageSwitcher />
-            </div>
           </div>
 
           {/* Mobile Menu Toggle & Lang & Resident */}
           <div className={`lg:hidden flex items-center gap-3 transition-opacity duration-300 ${mobileMenu ? 'opacity-0 pointer-events-none' : 'opacity-100 z-[60]'}`}>
             <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded hover:bg-white/10 transition-colors">Sakinler</Link>
-            <LanguageSwitcher />
             <button className="text-white hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(true)}>
               <Menu size={28} />
             </button>
@@ -276,7 +271,6 @@ const Navbar = () => {
                   <img src="/images/logo/logo.webp" alt="Luxera Towers" className="h-10 w-auto brightness-0 invert" />
                 </Link>
                 <div className="flex items-center gap-4">
-                  <LanguageSwitcher />
                   <button onClick={() => setMobileMenu(false)} className="text-gray-300 hover:text-white bg-white/5 p-2 rounded-full border border-white/10">
                     <X size={24} />
                   </button>
