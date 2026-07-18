@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Quote, Star } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { testimonials as allTestimonials, testimonialsByCategory } from '../../data/testimonials';
+import { getTestimonials, getTestimonialsByCategory } from '../../data/testimonials';
+import { useTranslation } from 'react-i18next';
 
 // İsimden baş harfleri üretir (avatar yoksa kullanılır)
 const initials = (name = '') =>
@@ -27,7 +28,8 @@ const Testimonials = ({
   watermark,
   className = '',
 }) => {
-  const source = items || (category ? testimonialsByCategory(category) : allTestimonials);
+  const { t } = useTranslation();
+  const source = items || (category ? getTestimonialsByCategory(t, category) : getTestimonials(t));
   const list = source.slice(0, limit);
 
   if (!list.length) return null;

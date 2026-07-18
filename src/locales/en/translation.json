@@ -1975,7 +1975,8 @@
       "title": "Experience Hotel Comfort in Your Home",
       "desc": "Contact us to experience Luxera Towers privileges and service standards closely.",
       "primary": "Contact Us"
-    }
+    },
+    "category": "Service"
   },
   "stores": {
     "seo": {
@@ -2260,5 +2261,34 @@
         "role": "Technical and Operations Manager"
       }
     }
+  },
+  "testimonials": {
+    "t1": {
+      "role": "Residence Resident",
+      "quote": "I can leave the gym in the morning and take the elevator down to my office floor. Luxera Towers truly \"takes life down to one step\". The time I spend with my family has doubled."
+    },
+    "t2": {
+      "role": "Investor",
+      "quote": "I have been following the rise of the Basın Ekspres district for years. The mixed concept and proximity to the metro offer together the liquidity and rental security I am looking for. It was the right decision at the right time."
+    },
+    "t3": {
+      "role": "Commercial Tenant — Retail",
+      "quote": "Visibility on the street and pedestrian traffic in the shopping mall increased the awareness of our brand from the first month. The commercial potential of the location exceeded our expectations."
+    },
+    "t4": {
+      "role": "Residence Resident",
+      "quote": "Thanks to the 3.20-meter ceilings and panoramic windows, the noise of the city is left behind as soon as I enter the house. The concierge team handles every request with one phone call; Hotel comfort at home."
+    },
+    "t5": {
+      "role": "Foreign Investor",
+      "quote": "The entire citizenship and title deed process was managed end-to-end. There was transparent and prompt communication throughout the process; It was a reassuring experience for my first investment in Istanbul."
+    },
+    "t6": {
+      "role": "Commercial Tenant — Gastronomy",
+      "quote": "Our location on the terrace floor has become a meeting point for both residence residents and local guests. Correct brand-mix planning added value to our business."
+    }
+  },
+  "luxuryCard": {
+    "action": "View in Detail"
   }
 }

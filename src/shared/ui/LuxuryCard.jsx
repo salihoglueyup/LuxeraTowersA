@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
 import LuxuryButton from './LuxuryButton';
+import { useTranslation } from 'react-i18next';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -14,10 +15,12 @@ const LuxuryCard = ({
   category, 
   date, 
   description, 
-  actionText = "Detaylı İncele",
+  actionText,
   onActionClick,
   actionHref
 }) => {
+  const { t } = useTranslation();
+  const text = actionText || t('luxuryCard.action', 'Detaylı İncele');
   return (
     <motion.div
       variants={fadeUp}
@@ -49,7 +52,7 @@ const LuxuryCard = ({
             className="!px-0 !py-0 w-full text-left justify-start"
             icon={<span>&rarr;</span>}
           >
-            {actionText}
+            {text}
           </LuxuryButton>
         </div>
       </div>

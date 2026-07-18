@@ -77,7 +77,7 @@ const Services = () => {
                 image={service.image}
                 title={service.title}
                 description={service.desc}
-                category="Hizmet"
+                category={t('services.category', 'Hizmet')}
                 actionHref={service.path}
               />
             </motion.div>
