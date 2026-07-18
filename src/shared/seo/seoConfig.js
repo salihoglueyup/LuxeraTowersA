@@ -22,7 +22,7 @@ const getLocalizedSEO = (language) => {
     }
   };
 
-  return seoData[language] || seoData.tr;
+  return seoData[language] || seoData.ar;
 };
 
 export const getDefaultSEOByLanguage = (language) => {
@@ -54,6 +54,6 @@ export const getDefaultSEOByLanguage = (language) => {
   };
 };
 
-// Varsayılan Türkçe SEO (SSR ve ilk yükleme için)
-export const defaultSEO = getDefaultSEOByLanguage('tr');
+// Varsayılan Arapça SEO (SSR ve ilk yükleme için)
+export const defaultSEO = getDefaultSEOByLanguage('ar');
 
