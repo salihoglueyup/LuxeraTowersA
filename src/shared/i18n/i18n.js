@@ -14,6 +14,17 @@ const resources = {
   ru: { translation: translationRU }
 };
 
+export const applyDocumentDirection = (lng = i18n.language) => {
+  if (typeof document === 'undefined') return;
+
+  const normalizedLng = (lng || 'ar').toLowerCase();
+  const dir = normalizedLng === 'ar' ? 'rtl' : 'ltr';
+
+  document.documentElement.dir = dir;
+  document.documentElement.lang = normalizedLng;
+  document.body?.setAttribute('dir', dir);
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -22,15 +33,18 @@ i18n
     lng: 'ar', // Set initial language to ar
     fallbackLng: 'ar', // Default language
     debug: false,
-    
+
     interpolation: {
       escapeValue: false, // React already safes from xss
     },
-    
+
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
     }
   });
+
+i18n.on('languageChanged', applyDocumentDirection);
+applyDocumentDirection(i18n.language);
 
 export default i18n;

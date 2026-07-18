@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, ChevronDown } from 'lucide-react';
+import { applyDocumentDirection } from '../i18n/i18n';
 
 const languages = [
   { code: 'tr', label: 'Türkçe', short: 'TR', dir: 'ltr' },
@@ -19,8 +20,7 @@ const LanguageSwitcher = () => {
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang.code);
-    document.documentElement.dir = lang.dir;
-    document.documentElement.lang = lang.code;
+    applyDocumentDirection(lang.code);
     setIsOpen(false);
   };
 
