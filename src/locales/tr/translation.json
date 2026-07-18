@@ -1964,6 +1964,85 @@
           "time": "Dün"
         }
       ]
+    },
+    "ozet": {
+      "currentDebt": "Güncel Borç Bakiyesi",
+      "dueDate": "Son Ödeme: 25 Aralık 2025",
+      "payNow": "Hemen Öde",
+      "activeRequests": "Aktif Talepler",
+      "openCount": "1 Açık",
+      "requestTitle": "Akıllı Ev Paneli Arızası",
+      "createdAt": "Oluşturulma: Dün 14:30",
+      "statusLabel": "Durum: Teknik ekip yönlendirildi",
+      "upcomingReservation": "Yaklaşan Rezervasyon",
+      "monthShort": "Ara",
+      "reservationTitle": "Kapalı Havuz Kullanımı",
+      "reservationTime": "18:00 - 19:30"
+    },
+    "finance": {
+      "totalDue": "Toplam Ödenecek Tutar",
+      "cardNumber": "Kart Numarası",
+      "expiry": "AA/YY",
+      "cvc": "CVC",
+      "pay3d": "3D Secure ile Öde",
+      "history": "Geçmiş İşlemler",
+      "paid": "Ödendi",
+      "downloadTitle": "Dekont İndir (PDF)",
+      "tx1": "Kasım 2025 Aidatı",
+      "tx2": "Ekim 2025 Aidatı",
+      "tx3": "Eylül 2025 Aidatı",
+      "tx4": "Havuz Rezervasyonu (Ekstra)",
+      "tx5": "Ağustos 2025 Aidatı"
+    },
+    "kargolar": {
+      "title": "Resepsiyondaki Kargolarım",
+      "trackNo": "Takip No:",
+      "waiting": "Resepsiyonda Bekliyor",
+      "received": "Teslim Alındı",
+      "date1": "Bugün 14:20",
+      "date2": "Dün 10:15",
+      "date3": "12 Aralık 16:30"
+    },
+    "kameralar": {
+      "connecting": "BAĞLANTI KURULUYOR...",
+      "noConnection": "Bağlantı Yok",
+      "cam1": "Lobi Giriş",
+      "cam2": "Kapalı Çocuk Parkı",
+      "cam3": "Otopark - Kat 1",
+      "cam4": "Otopark - Kat 2"
+    },
+    "konsiyerj": {
+      "s1t": "Kuru Temizleme",
+      "s1d": "Kapınızdan alınır",
+      "s2t": "Daire Temizliği",
+      "s2d": "Profesyonel ekip",
+      "s3t": "VIP Transfer",
+      "s3d": "Havalimanı & Şehir İçi",
+      "s4t": "Özel Asistan",
+      "s4d": "Rezervasyon & Bilet",
+      "ctaTitle": "Özel Bir İsteğiniz Mi Var?",
+      "ctaDesc": "Konsiyerj ekibimiz 7/24 hizmetinizdedir. Talebinizi iletin, biz halledelim.",
+      "ctaButton": "Danışmana Bağlan",
+      "specialRequest": "Özel İstek",
+      "requestSuffix": "Talebi",
+      "modalDesc": "Konsiyerj ekibimiz talebiniz üzerine sizinle iletişime geçecektir.",
+      "notesPlaceholder": "Ek notlar (Opsiyonel)",
+      "submit": "Talebi İlet"
+    },
+    "spa": {
+      "sp1t": "Kişisel Antrenör",
+      "sp1d": "Özel fitness programları",
+      "sp2t": "Masaj Terapisi",
+      "sp2d": "Thai, Bali ve İsveç",
+      "sp3t": "Diyetisyen",
+      "sp3d": "Sağlıklı beslenme",
+      "sp4t": "Pilates & Yoga",
+      "sp4d": "Grup ve özel dersler",
+      "teamTitle": "Uzman Kadromuz",
+      "role1": "Uzman Diyetisyen",
+      "role2": "Kıdemli Personal Trainer",
+      "role3": "Masaj Terapisti",
+      "bookBtn": "Randevu Al"
     }
   },
   "services": {

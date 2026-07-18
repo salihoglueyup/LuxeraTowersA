@@ -1958,6 +1958,85 @@
           "time": "Yesterday"
         }
       ]
+    },
+    "ozet": {
+      "currentDebt": "Current Debt Balance",
+      "dueDate": "Due Date: December 25, 2025",
+      "payNow": "Pay Now",
+      "activeRequests": "Active Requests",
+      "openCount": "1 Open",
+      "requestTitle": "Smart Home Panel Malfunction",
+      "createdAt": "Created: Yesterday 14:30",
+      "statusLabel": "Status: Technical team dispatched",
+      "upcomingReservation": "Upcoming Reservation",
+      "monthShort": "Dec",
+      "reservationTitle": "Indoor Pool Session",
+      "reservationTime": "18:00 - 19:30"
+    },
+    "finance": {
+      "totalDue": "Total Amount Due",
+      "cardNumber": "Card Number",
+      "expiry": "MM/YY",
+      "cvc": "CVC",
+      "pay3d": "Pay with 3D Secure",
+      "history": "Transaction History",
+      "paid": "Paid",
+      "downloadTitle": "Download Receipt (PDF)",
+      "tx1": "November 2025 Dues",
+      "tx2": "October 2025 Dues",
+      "tx3": "September 2025 Dues",
+      "tx4": "Pool Reservation (Extra)",
+      "tx5": "August 2025 Dues"
+    },
+    "kargolar": {
+      "title": "My Packages at Reception",
+      "trackNo": "Tracking No:",
+      "waiting": "Waiting at Reception",
+      "received": "Picked Up",
+      "date1": "Today 14:20",
+      "date2": "Yesterday 10:15",
+      "date3": "December 12, 16:30"
+    },
+    "kameralar": {
+      "connecting": "CONNECTING...",
+      "noConnection": "No Connection",
+      "cam1": "Lobby Entrance",
+      "cam2": "Indoor Playground",
+      "cam3": "Parking - Level 1",
+      "cam4": "Parking - Level 2"
+    },
+    "konsiyerj": {
+      "s1t": "Dry Cleaning",
+      "s1d": "Picked up at your door",
+      "s2t": "Apartment Cleaning",
+      "s2d": "Professional team",
+      "s3t": "VIP Transfer",
+      "s3d": "Airport & City",
+      "s4t": "Personal Assistant",
+      "s4d": "Reservations & Tickets",
+      "ctaTitle": "Have a Special Request?",
+      "ctaDesc": "Our concierge team is at your service 24/7. Send us your request and we will handle it.",
+      "ctaButton": "Connect to Advisor",
+      "specialRequest": "Special Request",
+      "requestSuffix": "Request",
+      "modalDesc": "Our concierge team will contact you regarding your request.",
+      "notesPlaceholder": "Additional notes (Optional)",
+      "submit": "Submit Request"
+    },
+    "spa": {
+      "sp1t": "Personal Trainer",
+      "sp1d": "Custom fitness programs",
+      "sp2t": "Massage Therapy",
+      "sp2d": "Thai, Bali & Swedish",
+      "sp3t": "Dietitian",
+      "sp3d": "Healthy nutrition",
+      "sp4t": "Pilates & Yoga",
+      "sp4d": "Group and private classes",
+      "teamTitle": "Our Expert Team",
+      "role1": "Expert Dietitian",
+      "role2": "Senior Personal Trainer",
+      "role3": "Massage Therapist",
+      "bookBtn": "Book Appointment"
     }
   },
   "services": {

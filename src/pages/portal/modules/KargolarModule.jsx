@@ -1,15 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Package } from 'lucide-react';
 
-const KargolarModule = () => (
+const KargolarModule = () => {
+  const { t } = useTranslation();
+  return (
   <motion.div key="kargolar" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
-    <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4 flex items-center gap-3"><Package className="text-luxera-gold"/> Resepsiyondaki Kargolarım</h3>
+    <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4 flex items-center gap-3"><Package className="text-luxera-gold"/> {t('portal.kargolar.title')}</h3>
     <div className="space-y-4">
       {[
-        { sender: 'Amazon TR', code: 'TR-1928374', date: 'Bugün 14:20', status: 'Resepsiyonda Bekliyor', active: true },
-        { sender: 'Yurtiçi Kargo', code: 'YK-554122', date: 'Dün 10:15', status: 'Teslim Alındı', active: false },
-        { sender: 'Trendyol', code: 'TY-9988221', date: '12 Aralık 16:30', status: 'Teslim Alındı', active: false }
+        { sender: 'Amazon TR', code: 'TR-1928374', date: t('portal.kargolar.date1'), status: t('portal.kargolar.waiting'), active: true },
+        { sender: 'Yurtiçi Kargo', code: 'YK-554122', date: t('portal.kargolar.date2'), status: t('portal.kargolar.received'), active: false },
+        { sender: 'Trendyol', code: 'TY-9988221', date: t('portal.kargolar.date3'), status: t('portal.kargolar.received'), active: false }
       ].map((kargo, i) => (
         <div key={i} className={`flex justify-between items-center p-5 rounded-2xl border transition-colors ${kargo.active ? 'bg-luxera-gold/10 border-luxera-gold/30' : 'bg-black/40 border-white/5'}`}>
           <div className="flex items-center gap-4">
@@ -18,7 +21,7 @@ const KargolarModule = () => (
             </div>
             <div>
               <p className="text-white font-medium text-lg">{kargo.sender}</p>
-              <p className="text-sm text-gray-400">Takip No: {kargo.code}</p>
+              <p className="text-sm text-gray-400">{t('portal.kargolar.trackNo')} {kargo.code}</p>
             </div>
           </div>
           <div className="text-right">
@@ -29,6 +32,7 @@ const KargolarModule = () => (
       ))}
     </div>
   </motion.div>
-);
+  );
+};
 
 export default KargolarModule;

@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Video } from 'lucide-react';
 
 const KameralarModule = () => {
+  const { t } = useTranslation();
   const [connecting, setConnecting] = useState(null);
-  
+
   const cameras = [
-    { id: 1, title: 'Lobi Giriş', active: true, img: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp' },
-    { id: 2, title: 'Kapalı Çocuk Parkı', active: true, img: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp' },
-    { id: 3, title: 'Otopark - Kat 1', active: false, img: '' },
-    { id: 4, title: 'Otopark - Kat 2', active: false, img: '' }
+    { id: 1, title: t('portal.kameralar.cam1'), active: true, img: '/images/interior/d5_scene21_20240303_011838copy_2025-12-18_03-46-29_26003e.webp' },
+    { id: 2, title: t('portal.kameralar.cam2'), active: true, img: '/images/exterior/4_2025-12-18_02-46-35_361a6b.webp' },
+    { id: 3, title: t('portal.kameralar.cam3'), active: false, img: '' },
+    { id: 4, title: t('portal.kameralar.cam4'), active: false, img: '' }
   ];
 
   const handleConnect = (id) => {
@@ -28,7 +30,7 @@ const KameralarModule = () => {
             connecting === cam.id ? (
               <div className="w-full h-full flex flex-col items-center justify-center text-luxera-gold bg-black/90">
                 <div className="w-8 h-8 border-4 border-luxera-gold border-t-transparent rounded-full animate-spin mb-4"></div>
-                <span className="text-sm font-semibold tracking-widest">BAĞLANTI KURULUYOR...</span>
+                <span className="text-sm font-semibold tracking-widest">{t('portal.kameralar.connecting')}</span>
               </div>
             ) : (
               <>
@@ -45,7 +47,7 @@ const KameralarModule = () => {
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center text-gray-500 bg-white/5">
               <Video size={32} className="mb-2 opacity-50" />
-              <span className="text-sm">Bağlantı Yok</span>
+              <span className="text-sm">{t('portal.kameralar.noConnection')}</span>
               <span className="text-xs mt-1">{cam.title}</span>
             </div>
           )}
