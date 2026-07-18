@@ -1197,6 +1197,60 @@
       "title": "Yönetim Kurulu",
       "subtitle": "Luxera Towers yaşam standartlarını zirvede tutmak için çalışan profesyonel yönetim kadromuz.",
       "desc": "Luxera Towers projelerinin vizyoner süreçlerini yöneten deneyimli profesyonel."
+    },
+    "dashboard": {
+      "seoTitle": "Панель управления | Luxera Towers",
+      "seoDesc": "Цифровая панель управления Luxera Towers.",
+      "menu": "Меню",
+      "searchPlaceholder": "Поиск по модулям...",
+      "moduleLabel": "Модуль",
+      "notifTitle": "Уведомления",
+      "markRead": "Отметить прочитанным",
+      "markAllRead": "Отметить все прочитанными",
+      "cat": {
+        "anaEkran": "ГЛАВНАЯ",
+        "finansYonetim": "ФИНАНСЫ И УПРАВЛЕНИЕ",
+        "yasamHizmetler": "ЖИЗНЬ И СЕРВИСЫ",
+        "sosyalTesisler": "СОЦИУМ И ОБЪЕКТЫ",
+        "guvenlikOtopark": "БЕЗОПАСНОСТЬ И ПАРКОВКА",
+        "sistem": "СИСТЕМА"
+      },
+      "item": {
+        "ozet": "Обзор (панель)",
+        "finans": "Взносы и счета",
+        "belgeler": "Управление и документы",
+        "smartHome": "Умный дом",
+        "asansor": "Умный лифт",
+        "talepler": "Заявки и сервис",
+        "odaServisi": "Рестораны и рум-сервис",
+        "konsiyerj": "Консьерж и VIP",
+        "ziyaretci": "Гости и валет",
+        "kargolar": "Мои посылки",
+        "pazarYeri": "Маркетплейс",
+        "rezervasyonlar": "Мои брони",
+        "spaWellness": "Спа и велнес",
+        "etkinlikler": "События и сообщество",
+        "kameralar": "Живые камеры",
+        "sarj": "Зарядка электромобилей",
+        "ayarlar": "Профиль и настройки"
+      },
+      "notifs": [
+        {
+          "title": "Ваша посылка доставлена",
+          "desc": "Ваша посылка Amazon TR на ресепшене.",
+          "time": "5 мин назад"
+        },
+        {
+          "title": "Приближается оплата взносов",
+          "desc": "Приближается срок оплаты декабрьских взносов.",
+          "time": "2 часа назад"
+        },
+        {
+          "title": "Заказ рум-сервиса",
+          "desc": "Ваш заказ в пути.",
+          "time": "Вчера"
+        }
+      ]
     }
   },
   "services": {

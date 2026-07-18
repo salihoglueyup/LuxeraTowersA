@@ -1904,6 +1904,60 @@
       "title": "Board of Directors",
       "subtitle": "Our professional management team works to keep Luxera Towers living standards at the top.",
       "desc": "Experienced professional who manages the visionary processes of Luxera Towers projects."
+    },
+    "dashboard": {
+      "seoTitle": "Dashboard | Luxera Towers",
+      "seoDesc": "Luxera Towers digital management dashboard.",
+      "menu": "Menu",
+      "searchPlaceholder": "Search modules...",
+      "moduleLabel": "Module",
+      "notifTitle": "Notifications",
+      "markRead": "Mark as Read",
+      "markAllRead": "Mark All as Read",
+      "cat": {
+        "anaEkran": "HOME",
+        "finansYonetim": "FINANCE & MANAGEMENT",
+        "yasamHizmetler": "LIVING & SERVICES",
+        "sosyalTesisler": "SOCIAL & FACILITIES",
+        "guvenlikOtopark": "SECURITY & PARKING",
+        "sistem": "SYSTEM"
+      },
+      "item": {
+        "ozet": "Overview (Dashboard)",
+        "finans": "Dues & Invoices",
+        "belgeler": "Management & Documents",
+        "smartHome": "Smart Home",
+        "asansor": "Smart Elevator",
+        "talepler": "Requests & Service",
+        "odaServisi": "Restaurants & Room Service",
+        "konsiyerj": "Concierge & VIP",
+        "ziyaretci": "Guests & Valet",
+        "kargolar": "My Packages",
+        "pazarYeri": "Marketplace",
+        "rezervasyonlar": "My Reservations",
+        "spaWellness": "Spa & Wellness",
+        "etkinlikler": "Events & Community",
+        "kameralar": "Live Cameras",
+        "sarj": "EV Charging Station",
+        "ayarlar": "Profile & Settings"
+      },
+      "notifs": [
+        {
+          "title": "Your Package Was Delivered",
+          "desc": "Your Amazon TR package is at reception.",
+          "time": "5 min ago"
+        },
+        {
+          "title": "Dues Payment Approaching",
+          "desc": "The due date for your December dues is approaching.",
+          "time": "2 hours ago"
+        },
+        {
+          "title": "Room Service Order",
+          "desc": "Your order is on the way.",
+          "time": "Yesterday"
+        }
+      ]
     }
   },
   "services": {

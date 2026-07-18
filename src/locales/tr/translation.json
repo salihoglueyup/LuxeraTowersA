@@ -1910,6 +1910,60 @@
       "logout": "Çıkış Yap",
       "profile": "Profilim",
       "settings": "Ayarlar"
+    },
+    "dashboard": {
+      "seoTitle": "Yönetim Paneli | Luxera Towers",
+      "seoDesc": "Luxera Towers dijital yönetim paneli.",
+      "menu": "Menü",
+      "searchPlaceholder": "Modüllerde ara...",
+      "moduleLabel": "Modül",
+      "notifTitle": "Bildirimler",
+      "markRead": "Okundu İşaretle",
+      "markAllRead": "Tümünü Okundu İşaretle",
+      "cat": {
+        "anaEkran": "ANA EKRAN",
+        "finansYonetim": "FİNANS & YÖNETİM",
+        "yasamHizmetler": "YAŞAM & HİZMETLER",
+        "sosyalTesisler": "SOSYAL & TESİSLER",
+        "guvenlikOtopark": "GÜVENLİK & OTOPARK",
+        "sistem": "SİSTEM"
+      },
+      "item": {
+        "ozet": "Özet (Pano)",
+        "finans": "Aidat & Faturalar",
+        "belgeler": "Yönetim & Belgeler",
+        "smartHome": "Akıllı Ev",
+        "asansor": "Akıllı Asansör",
+        "talepler": "Talepler & Servis",
+        "odaServisi": "Restoranlar & Oda Servisi",
+        "konsiyerj": "Konsiyerj & VIP",
+        "ziyaretci": "Misafir & Vale",
+        "kargolar": "Kargolarım",
+        "pazarYeri": "Pazar Yeri",
+        "rezervasyonlar": "Rezervasyonlarım",
+        "spaWellness": "SPA & Wellness",
+        "etkinlikler": "Etkinlik & Topluluk",
+        "kameralar": "Canlı Kameralar",
+        "sarj": "EV Şarj İstasyonu",
+        "ayarlar": "Profil ve Ayarlar"
+      },
+      "notifs": [
+        {
+          "title": "Kargonuz Teslim Edildi",
+          "desc": "Amazon TR paketiniz resepsiyonda.",
+          "time": "5 dk önce"
+        },
+        {
+          "title": "Aidat Ödemesi Yaklaşıyor",
+          "desc": "Aralık ayı aidatınızın son ödeme tarihi yaklaşıyor.",
+          "time": "2 saat önce"
+        },
+        {
+          "title": "Oda Servisi Siparişi",
+          "desc": "Siparişiniz yola çıkmıştır.",
+          "time": "Dün"
+        }
+      ]
     }
   },
   "services": {

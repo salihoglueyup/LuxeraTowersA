@@ -6,6 +6,7 @@ import {
   Utensils, ArrowUpDown, Droplet, FileText, Menu
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../shared/seo/SEO';
 
 // Import modules
@@ -31,6 +32,7 @@ import BelgelerModule from './modules/BelgelerModule';
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('ozet');
   const [showNotifications, setShowNotifications] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,50 +40,50 @@ const Dashboard = () => {
 
   const menuCategories = [
     {
-      title: 'ANA EKRAN',
+      title: t('portal.dashboard.cat.anaEkran'),
       items: [
-        { id: 'ozet', label: 'Özet (Pano)', icon: <LayoutDashboard size={18} /> }
+        { id: 'ozet', label: t('portal.dashboard.item.ozet'), icon: <LayoutDashboard size={18} /> }
       ]
     },
     {
-      title: 'FİNANS & YÖNETİM',
+      title: t('portal.dashboard.cat.finansYonetim'),
       items: [
-        { id: 'finans', label: 'Aidat & Faturalar', icon: <CreditCard size={18} /> },
-        { id: 'belgeler', label: 'Yönetim & Belgeler', icon: <FileText size={18} /> }
+        { id: 'finans', label: t('portal.dashboard.item.finans'), icon: <CreditCard size={18} /> },
+        { id: 'belgeler', label: t('portal.dashboard.item.belgeler'), icon: <FileText size={18} /> }
       ]
     },
     {
-      title: 'YAŞAM & HİZMETLER',
+      title: t('portal.dashboard.cat.yasamHizmetler'),
       items: [
-        { id: 'smart-home', label: 'Akıllı Ev', icon: <Home size={18} /> },
-        { id: 'asansor', label: 'Akıllı Asansör', icon: <ArrowUpDown size={18} /> },
-        { id: 'talepler', label: 'Talepler & Servis', icon: <Wrench size={18} /> },
-        { id: 'oda-servisi', label: 'Restoranlar & Oda Servisi', icon: <Utensils size={18} /> },
-        { id: 'konsiyerj', label: 'Konsiyerj & VIP', icon: <Coffee size={18} /> },
-        { id: 'ziyaretci', label: 'Misafir & Vale', icon: <Key size={18} /> },
-        { id: 'kargolar', label: 'Kargolarım', icon: <Package size={18} /> },
-        { id: 'pazar-yeri', label: 'Pazar Yeri', icon: <ShoppingBag size={18} /> }
+        { id: 'smart-home', label: t('portal.dashboard.item.smartHome'), icon: <Home size={18} /> },
+        { id: 'asansor', label: t('portal.dashboard.item.asansor'), icon: <ArrowUpDown size={18} /> },
+        { id: 'talepler', label: t('portal.dashboard.item.talepler'), icon: <Wrench size={18} /> },
+        { id: 'oda-servisi', label: t('portal.dashboard.item.odaServisi'), icon: <Utensils size={18} /> },
+        { id: 'konsiyerj', label: t('portal.dashboard.item.konsiyerj'), icon: <Coffee size={18} /> },
+        { id: 'ziyaretci', label: t('portal.dashboard.item.ziyaretci'), icon: <Key size={18} /> },
+        { id: 'kargolar', label: t('portal.dashboard.item.kargolar'), icon: <Package size={18} /> },
+        { id: 'pazar-yeri', label: t('portal.dashboard.item.pazarYeri'), icon: <ShoppingBag size={18} /> }
       ]
     },
     {
-      title: 'SOSYAL & TESİSLER',
+      title: t('portal.dashboard.cat.sosyalTesisler'),
       items: [
-        { id: 'rezervasyonlar', label: 'Rezervasyonlarım', icon: <Calendar size={18} /> },
-        { id: 'spa-wellness', label: 'SPA & Wellness', icon: <Droplet size={18} /> },
-        { id: 'etkinlikler', label: 'Etkinlik & Topluluk', icon: <Users size={18} /> }
+        { id: 'rezervasyonlar', label: t('portal.dashboard.item.rezervasyonlar'), icon: <Calendar size={18} /> },
+        { id: 'spa-wellness', label: t('portal.dashboard.item.spaWellness'), icon: <Droplet size={18} /> },
+        { id: 'etkinlikler', label: t('portal.dashboard.item.etkinlikler'), icon: <Users size={18} /> }
       ]
     },
     {
-      title: 'GÜVENLİK & OTOPARK',
+      title: t('portal.dashboard.cat.guvenlikOtopark'),
       items: [
-        { id: 'kameralar', label: 'Canlı Kameralar', icon: <Video size={18} /> },
-        { id: 'sarj', label: 'EV Şarj İstasyonu', icon: <BatteryCharging size={18} /> }
+        { id: 'kameralar', label: t('portal.dashboard.item.kameralar'), icon: <Video size={18} /> },
+        { id: 'sarj', label: t('portal.dashboard.item.sarj'), icon: <BatteryCharging size={18} /> }
       ]
     },
     {
-      title: 'SİSTEM',
+      title: t('portal.dashboard.cat.sistem'),
       items: [
-        { id: 'ayarlar', label: 'Profil ve Ayarlar', icon: <Settings size={18} /> }
+        { id: 'ayarlar', label: t('portal.dashboard.item.ayarlar'), icon: <Settings size={18} /> }
       ]
     }
   ];
@@ -100,14 +102,15 @@ const Dashboard = () => {
       const found = cat.items.find(i => i.id === tabId);
       if (found) return found.label;
     }
-    return 'Modül';
+    return t('portal.dashboard.moduleLabel');
   };
 
   // Mock Notifications
+  const notifs = t('portal.dashboard.notifs', { returnObjects: true });
   const notifications = [
-    { id: 1, title: 'Kargonuz Teslim Edildi', desc: 'Amazon TR paketiniz resepsiyonda.', time: '5 dk önce', read: false },
-    { id: 2, title: 'Aidat Ödemesi Yaklaşıyor', desc: 'Aralık ayı aidatınızın son ödeme tarihi yaklaşıyor.', time: '2 saat önce', read: false },
-    { id: 3, title: 'Oda Servisi Siparişi', desc: 'Siparişiniz yola çıkmıştır.', time: 'Dün', read: true }
+    { id: 1, ...notifs[0], read: false },
+    { id: 2, ...notifs[1], read: false },
+    { id: 3, ...notifs[2], read: true }
   ];
 
   // Sidebar Component to avoid duplication
@@ -149,7 +152,7 @@ const Dashboard = () => {
 
       <div className="mt-8 pt-6 border-t border-white/10">
         <button onClick={handleLogout} className="flex items-center gap-3 px-4 py-2.5 w-full text-left text-red-400 hover:bg-red-400/10 rounded-xl transition-colors text-sm">
-          <LogOut size={18} /> Çıkış Yap
+          <LogOut size={18} /> {t('portal.nav.logout')}
         </button>
       </div>
     </>
@@ -157,7 +160,7 @@ const Dashboard = () => {
 
   return (
     <div className="bg-luxera-navy min-h-screen text-white pt-28 md:pt-36 pb-12 relative overflow-x-hidden">
-      <SEO title="Yönetim Paneli | Luxera Towers" description="Luxera Towers dijital yönetim paneli." />
+      <SEO title={t('portal.dashboard.seoTitle')} description={t('portal.dashboard.seoDesc')} />
 
       <div className="max-w-[95rem] mx-auto px-4 md:px-6 h-full flex flex-col md:flex-row gap-8 relative z-10">
         
@@ -183,7 +186,7 @@ const Dashboard = () => {
                 className="fixed top-0 left-0 bottom-0 w-4/5 max-w-sm bg-luxera-navy border-r border-white/10 z-50 p-6 overflow-y-auto no-scrollbar shadow-2xl md:hidden"
               >
                 <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-xl font-serif text-luxera-gold">Menü</h2>
+                  <h2 className="text-xl font-serif text-luxera-gold">{t('portal.dashboard.menu')}</h2>
                   <button onClick={() => setIsMobileMenuOpen(false)} className="text-gray-400 hover:text-white p-2">
                     <X size={24} />
                   </button>
@@ -224,7 +227,7 @@ const Dashboard = () => {
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
                 <input 
                   type="text" 
-                  placeholder="Modüllerde ara..." 
+                  placeholder={t('portal.dashboard.searchPlaceholder')}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full bg-black/40 border border-white/10 rounded-full py-2 pl-10 pr-4 text-sm text-white focus:border-luxera-gold outline-none transition-colors"
@@ -283,7 +286,7 @@ const Dashboard = () => {
             >
               <div className="flex justify-between items-center mb-8">
                 <h3 className="text-xl font-serif text-white flex items-center gap-2">
-                  <Bell size={20} className="text-luxera-gold"/> Bildirimler
+                  <Bell size={20} className="text-luxera-gold"/> {t('portal.dashboard.notifTitle')}
                 </h3>
                 <button onClick={() => setShowNotifications(false)} className="text-gray-400 hover:text-white p-2 bg-white/5 rounded-full">
                   <X size={20} />
@@ -300,7 +303,7 @@ const Dashboard = () => {
                     <p className="text-gray-400 text-xs mb-3">{notif.desc}</p>
                     <div className="flex justify-between items-center text-[10px] text-gray-500 font-bold uppercase tracking-widest">
                       <span>{notif.time}</span>
-                      {!notif.read && <button className="text-luxera-gold hover:text-white flex items-center gap-1"><Check size={12}/> Okundu İşaretle</button>}
+                      {!notif.read && <button className="text-luxera-gold hover:text-white flex items-center gap-1"><Check size={12}/> {t('portal.dashboard.markRead')}</button>}
                     </div>
                   </div>
                 ))}
@@ -308,7 +311,7 @@ const Dashboard = () => {
 
               <div className="pt-6 mt-auto">
                 <button className="w-full py-3 text-sm text-gray-400 hover:text-white bg-white/5 rounded-xl border border-white/10 transition-colors">
-                  Tümünü Okundu İşaretle
+                  {t('portal.dashboard.markAllRead')}
                 </button>
               </div>
             </motion.div>
