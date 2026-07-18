@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { ArrowDownToLine, ArrowUpToLine, Key, QrCode, X, Clock } from 'lucide-react';
 
 const AsansorModule = () => {
+  const { t } = useTranslation();
   const [elevatorStatus, setElevatorStatus] = useState('idle'); // idle, calling, arrived
   const [showQR, setShowQR] = useState(false);
 
@@ -19,33 +21,33 @@ const AsansorModule = () => {
       <div className="bg-gradient-to-br from-black via-gray-900 to-black border border-white/10 p-8 rounded-3xl flex flex-col items-center justify-center text-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-luxera-gold/5 rounded-full blur-3xl"></div>
         
-        <h3 className="text-2xl font-serif text-white mb-2 relative z-10">Akıllı Asansör</h3>
-        <p className="text-gray-400 mb-8 relative z-10">A Blok - 42. Kat</p>
+        <h3 className="text-2xl font-serif text-white mb-2 relative z-10">{t('portal.asansor.title')}</h3>
+        <p className="text-gray-400 mb-8 relative z-10">{t('portal.asansor.floor')}</p>
 
         {elevatorStatus === 'idle' && (
           <div className="flex gap-4 relative z-10">
             <button onClick={callElevator} className="w-24 h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center text-gray-300 hover:text-luxera-gold hover:border-luxera-gold/50 transition-all group shadow-xl">
               <ArrowUpToLine size={32} className="mb-2 group-hover:-translate-y-1 transition-transform" />
-              <span className="text-xs font-bold">YUKARI</span>
+              <span className="text-xs font-bold">{t('portal.asansor.up')}</span>
             </button>
             <button onClick={callElevator} className="w-24 h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center text-gray-300 hover:text-luxera-gold hover:border-luxera-gold/50 transition-all group shadow-xl">
               <ArrowDownToLine size={32} className="mb-2 group-hover:translate-y-1 transition-transform" />
-              <span className="text-xs font-bold">AŞAĞI</span>
+              <span className="text-xs font-bold">{t('portal.asansor.down')}</span>
             </button>
           </div>
         )}
 
         {elevatorStatus === 'calling' && (
           <div className="flex flex-col items-center justify-center h-24 relative z-10">
-            <div className="text-4xl font-serif text-luxera-gold mb-2 animate-pulse">Çağrılıyor...</div>
-            <p className="text-xs text-gray-400">Lütfen bekleyin</p>
+            <div className="text-4xl font-serif text-luxera-gold mb-2 animate-pulse">{t('portal.asansor.calling')}</div>
+            <p className="text-xs text-gray-400">{t('portal.asansor.pleaseWait')}</p>
           </div>
         )}
 
         {elevatorStatus === 'arrived' && (
           <div className="flex flex-col items-center justify-center h-24 relative z-10">
-            <div className="text-4xl font-serif text-green-400 mb-2">Asansör Katta</div>
-            <p className="text-xs text-green-500/70">Kapılar açılıyor</p>
+            <div className="text-4xl font-serif text-green-400 mb-2">{t('portal.asansor.arrived')}</div>
+            <p className="text-xs text-green-500/70">{t('portal.asansor.doorsOpening')}</p>
           </div>
         )}
       </div>
@@ -55,20 +57,20 @@ const AsansorModule = () => {
         <div className="flex items-center gap-4 mb-6 border-b border-white/10 pb-4">
           <Key className="text-luxera-gold" size={28} />
           <div>
-            <h3 className="text-xl font-serif text-white">Misafir Asansör Erişimi</h3>
-            <p className="text-xs text-gray-400 mt-1">Sadece sizin katınıza çıkış izni verir.</p>
+            <h3 className="text-xl font-serif text-white">{t('portal.asansor.guestTitle')}</h3>
+            <p className="text-xs text-gray-400 mt-1">{t('portal.asansor.guestSub')}</p>
           </div>
         </div>
         
         <div className="space-y-6">
           <div className="bg-black/40 border border-white/10 rounded-2xl p-6 text-center">
-            <p className="text-gray-400 text-sm mb-2">Tek Kullanımlık PIN Kodu</p>
+            <p className="text-gray-400 text-sm mb-2">{t('portal.asansor.pinLabel')}</p>
             <p className="text-4xl font-mono text-white tracking-[0.5em] mb-4">4285</p>
-            <p className="text-xs text-luxera-gold flex items-center justify-center gap-1"><Clock size={12}/> Geçerlilik: 15 Dakika</p>
+            <p className="text-xs text-luxera-gold flex items-center justify-center gap-1"><Clock size={12}/> {t('portal.asansor.validity')}</p>
           </div>
 
           <button onClick={() => setShowQR(true)} className="w-full bg-white/10 text-white font-bold py-4 rounded-xl hover:bg-luxera-gold hover:text-luxera-navy transition-all border border-white/10 flex items-center justify-center gap-2">
-            <QrCode size={20} /> Asansör QR Kodu Göster
+            <QrCode size={20} /> {t('portal.asansor.showQr')}
           </button>
         </div>
       </div>
@@ -87,8 +89,8 @@ const AsansorModule = () => {
               <button onClick={() => setShowQR(false)} className="absolute top-4 right-4 text-gray-400 hover:text-white">
                 <X size={24} />
               </button>
-              <h3 className="text-2xl font-serif text-white mb-2">Asansör QR</h3>
-              <p className="text-gray-400 text-sm mb-6">Misafiriniz bu kodu asansördeki okuyucuya taratarak 42. kata çıkabilir.</p>
+              <h3 className="text-2xl font-serif text-white mb-2">{t('portal.asansor.qrTitle')}</h3>
+              <p className="text-gray-400 text-sm mb-6">{t('portal.asansor.qrDesc')}</p>
               
               <div className="bg-white p-4 rounded-xl inline-block mb-6 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <QrCode size={200} className="text-black" />

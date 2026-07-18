@@ -1,13 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { ShoppingBag, Tag, Search, MapPin } from 'lucide-react';
 
 const MarketplaceModule = () => {
+  const { t } = useTranslation();
+  const categories = t('portal.marketplace.categories', { returnObjects: true });
   const listings = [
-    { id: 1, title: 'Rolex Submariner Date', price: '₺450,000', seller: 'Eyüp S. (A Blok)', category: 'Saat', img: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=2000&auto=format&fit=crop' },
-    { id: 2, title: 'Özel İngilizce Dersi', price: '₺1,500 / Saat', seller: 'Ceren K. (B Blok)', category: 'Hizmet', img: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2000&auto=format&fit=crop' },
-    { id: 3, title: 'TaylorMade Golf Takımı', price: '₺45,000', seller: 'Hakan Y. (A Blok)', category: 'Spor', img: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=2000&auto=format&fit=crop' },
-    { id: 4, title: 'MacBook Pro M3 Max', price: '₺120,000', seller: 'Ayşe T. (B Blok)', category: 'Elektronik', img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2000&auto=format&fit=crop' }
+    { id: 1, title: t('portal.marketplace.l1title'), price: '₺450,000', seller: 'Eyüp S. (A Blok)', category: t('portal.marketplace.l1cat'), img: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=2000&auto=format&fit=crop' },
+    { id: 2, title: t('portal.marketplace.l2title'), price: '₺1,500 / Saat', seller: 'Ceren K. (B Blok)', category: t('portal.marketplace.l2cat'), img: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2000&auto=format&fit=crop' },
+    { id: 3, title: t('portal.marketplace.l3title'), price: '₺45,000', seller: 'Hakan Y. (A Blok)', category: t('portal.marketplace.l3cat'), img: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=2000&auto=format&fit=crop' },
+    { id: 4, title: t('portal.marketplace.l4title'), price: '₺120,000', seller: 'Ayşe T. (B Blok)', category: t('portal.marketplace.l4cat'), img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2000&auto=format&fit=crop' }
   ];
 
   return (
@@ -17,21 +20,21 @@ const MarketplaceModule = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-md">
         <div className="relative w-full md:w-96">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-          <input 
-            type="text" 
-            placeholder="İlanlarda ara..." 
+          <input
+            type="text"
+            placeholder={t('portal.marketplace.searchPlaceholder')}
             className="w-full bg-black/40 border border-white/10 rounded-xl py-2 pl-10 pr-4 text-white focus:border-luxera-gold outline-none"
           />
         </div>
         <button className="bg-luxera-gold text-luxera-navy px-6 py-2 rounded-xl font-bold hover:bg-white transition-colors w-full md:w-auto">
-          Yeni İlan Ekle
+          {t('portal.marketplace.newListing')}
         </button>
       </div>
 
       {/* Categories */}
       <div className="flex gap-4 overflow-x-auto custom-scrollbar pb-2">
-        {['Tümü', 'Saat & Takı', 'Elektronik', 'Spor & Hobi', 'Hizmet', 'Araç'].map(cat => (
-          <button key={cat} className={`whitespace-nowrap px-6 py-2 rounded-full text-sm font-medium transition-colors ${cat === 'Tümü' ? 'bg-luxera-gold text-luxera-navy' : 'bg-black/40 text-gray-400 border border-white/10 hover:text-white hover:border-white/30'}`}>
+        {categories.map((cat, idx) => (
+          <button key={idx} className={`whitespace-nowrap px-6 py-2 rounded-full text-sm font-medium transition-colors ${idx === 0 ? 'bg-luxera-gold text-luxera-navy' : 'bg-black/40 text-gray-400 border border-white/10 hover:text-white hover:border-white/30'}`}>
             {cat}
           </button>
         ))}

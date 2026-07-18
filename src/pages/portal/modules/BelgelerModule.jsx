@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FileText, Download, Users, Building, ShieldCheck } from 'lucide-react';
 
 const BelgelerModule = () => {
+  const { t } = useTranslation();
   const [downloading, setDownloading] = useState(null);
 
   const handleDownload = (id) => {
@@ -13,16 +15,16 @@ const BelgelerModule = () => {
   };
 
   const docs = [
-    { id: 1, title: '2025 Kasım Yönetim Kurulu Toplantı Tutanakları', type: 'Tutanak', size: '2.4 MB', icon: <Users /> },
-    { id: 2, title: '2025 Yılı Tahmini Bütçe ve Gider Dağılımı', type: 'Finans', size: '1.8 MB', icon: <Building /> },
-    { id: 3, title: 'Site Ortak Alan Kullanım Kuralları Manifestosu', type: 'Kurallar', size: '4.1 MB', icon: <ShieldCheck /> },
-    { id: 4, title: 'Deprem ve Acil Durum Tahliye Planı', type: 'Güvenlik', size: '5.2 MB', icon: <ShieldCheck /> }
+    { id: 1, title: t('portal.belgeler.d1title'), type: t('portal.belgeler.d1type'), size: '2.4 MB', icon: <Users /> },
+    { id: 2, title: t('portal.belgeler.d2title'), type: t('portal.belgeler.d2type'), size: '1.8 MB', icon: <Building /> },
+    { id: 3, title: t('portal.belgeler.d3title'), type: t('portal.belgeler.d3type'), size: '4.1 MB', icon: <ShieldCheck /> },
+    { id: 4, title: t('portal.belgeler.d4title'), type: t('portal.belgeler.d4type'), size: '5.2 MB', icon: <ShieldCheck /> }
   ];
 
   const boardMembers = [
-    { id: 1, name: 'Ahmet Yılmaz', role: 'Yönetim Kurulu Başkanı', contact: 'ahmet.y@luxeratowers.com' },
-    { id: 2, name: 'Ayşe Demir', role: 'Site Müdürü', contact: 'ayse.d@luxeratowers.com' },
-    { id: 3, name: 'Can Öztürk', role: 'Mali İşler & Aidat', contact: 'finans@luxeratowers.com' }
+    { id: 1, name: 'Ahmet Yılmaz', role: t('portal.belgeler.role1'), contact: 'ahmet.y@luxeratowers.com' },
+    { id: 2, name: 'Ayşe Demir', role: t('portal.belgeler.role2'), contact: 'ayse.d@luxeratowers.com' },
+    { id: 3, name: 'Can Öztürk', role: t('portal.belgeler.role3'), contact: 'finans@luxeratowers.com' }
   ];
 
   return (
@@ -35,16 +37,16 @@ const BelgelerModule = () => {
           <div className="w-16 h-16 bg-luxera-gold/20 rounded-full flex items-center justify-center text-luxera-gold mb-4">
             <Building size={32} />
           </div>
-          <h3 className="text-xl font-serif text-white mb-2">Apsiyon Yönetim Sistemi</h3>
-          <p className="text-sm text-gray-400 mb-6">Aidat ödemelerinizi, finansal raporlarınızı ve resmi borç durumunuzu güvenli bir şekilde takip edin.</p>
+          <h3 className="text-xl font-serif text-white mb-2">{t('portal.belgeler.apsiyonTitle')}</h3>
+          <p className="text-sm text-gray-400 mb-6">{t('portal.belgeler.apsiyonDesc')}</p>
           <a href="#" className="w-full bg-luxera-gold text-luxera-navy font-bold py-3 rounded-xl hover:bg-white transition-colors">
-            Apsiyon'a Giriş Yap
+            {t('portal.belgeler.apsiyonLogin')}
           </a>
         </div>
 
         {/* Board Members */}
         <div className="lg:col-span-2 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
-          <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">Yönetim Kurulu & İletişim</h3>
+          <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">{t('portal.belgeler.boardTitle')}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {boardMembers.map(member => (
               <div key={member.id} className="bg-black/40 p-4 rounded-2xl border border-white/5">
@@ -65,8 +67,8 @@ const BelgelerModule = () => {
       <motion.div key="belgeler" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
       <div className="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
         <div>
-          <h3 className="text-xl font-serif text-white mb-1">Yönetim Belgeleri</h3>
-          <p className="text-sm text-gray-400">Site yönetimi tarafından yayınlanan resmi evraklar ve kurallar.</p>
+          <h3 className="text-xl font-serif text-white mb-1">{t('portal.belgeler.docsTitle')}</h3>
+          <p className="text-sm text-gray-400">{t('portal.belgeler.docsDesc')}</p>
         </div>
       </div>
 
@@ -82,7 +84,7 @@ const BelgelerModule = () => {
                 <div className="flex items-center gap-3 mt-1 text-xs">
                   <span className="text-luxera-gold font-semibold uppercase tracking-wider">{doc.type}</span>
                   <span className="text-gray-500">•</span>
-                  <span className="text-gray-400">PDF Document</span>
+                  <span className="text-gray-400">{t('portal.belgeler.pdfDoc')}</span>
                   <span className="text-gray-500">•</span>
                   <span className="text-gray-400">{doc.size}</span>
                 </div>
@@ -92,7 +94,7 @@ const BelgelerModule = () => {
             <button 
               onClick={() => handleDownload(doc.id)}
               className="w-12 h-12 rounded-xl bg-white/5 hover:bg-luxera-gold hover:text-luxera-navy text-gray-300 flex items-center justify-center transition-colors border border-white/10 shrink-0"
-              title="İndir"
+              title={t('portal.belgeler.downloadTitle')}
             >
               {downloading === doc.id ? (
                 <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin"></div>
