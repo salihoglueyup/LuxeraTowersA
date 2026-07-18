@@ -490,6 +490,9 @@
     "section": {
       "title": "Кулинарные остановки",
       "subtitle": "Рестораны для гурманов и концептуальные кафе на любой вкус."
+    },
+    "filters": {
+      "all": "Все"
     }
   },
   "events": {
@@ -505,6 +508,9 @@
     "cta": {
       "title": "Будьте в курсе событий",
       "primary": "Связаться с нами"
+    },
+    "filters": {
+      "all": "Все"
     }
   },
   "faq": {
@@ -518,6 +524,10 @@
       "title": "Вашего вопроса нет в списке?",
       "desc": "Свяжитесь с нашими специалистами, чтобы получить подробную информацию или создать индивидуальный план платежей.",
       "btn": "Проконсультироваться со специалистом"
+    },
+    "search": {
+      "placeholder": "Найдите интересующую вас тему... (например: свидетельство о праве собственности, взносы)",
+      "empty": "Ничего не найдено по вашему запросу."
     }
   },
   "gallery": {
@@ -526,7 +536,8 @@
       "interior": "Интерьер",
       "amenity": "Инфраструктура",
       "plans": "Планировки",
-      "all": "Все"
+      "all": "Все",
+      "videos": "Видео"
     },
     "img": {
       "ex1": "Общий вид",
@@ -572,6 +583,10 @@
       "desc": "Запишитесь на прием, чтобы испытать пространства, которые вы видели на визуализациях.",
       "primary": "Записаться на прием",
       "secondary": "Виртуальный тур"
+    },
+    "cursor": {
+      "play": "СМОТРЕТЬ",
+      "view": "УВЕЛИЧИТЬ"
     }
   },
   "guide": {
@@ -880,6 +895,9 @@
     "section": {
       "title": "Центр делового мира",
       "subtitle": "Мы принимаем ведущие бренды."
+    },
+    "filters": {
+      "all": "Все"
     }
   },
   "residences": {
@@ -897,7 +915,14 @@
     },
     "floorPlans": {
       "overline": "Опции",
-      "title": "Планировки"
+      "title": "Планировки",
+      "grossArea": "Общая площадь",
+      "ceiling": "Высота потолка",
+      "hvac": "Отопление/Охлаждение",
+      "downloadPlan": "Скачать каталог",
+      "hideDimensions": "Скрыть размеры",
+      "showDimensions": "Показать размеры",
+      "zoom": "Осмотрите образец квартиры"
     },
     "features": {
       "overline": "Особенности",
@@ -926,7 +951,44 @@
     "cta": {
       "title": "Найдите дом своей мечты",
       "primary": "Смотреть планировки",
-      "secondary": "Виртуальный тур"
+      "secondary": "Виртуальный тур",
+      "desc": "Свяжитесь с нашими опытными консультантами по продажам, чтобы определить тип квартиры и план оплаты, который лучше всего подходит вам."
+    },
+    "buySteps": {
+      "step1": {
+        "title": "Контакт",
+        "desc": "Свяжитесь с нашим продавцом-консультантом и поделитесь своими потребностями и ожиданиями."
+      },
+      "step2": {
+        "title": "Пример плоского тура",
+        "desc": "Посетите наш образец квартиры на месте и ознакомьтесь с материалами и видами."
+      },
+      "step3": {
+        "title": "Планирование и контракт",
+        "desc": "Определите подходящую вам квартиру и план оплаты и заключите договор."
+      },
+      "step4": {
+        "title": "Доставка",
+        "desc": "Начните свою жизнь с процесса «под ключ» и не только."
+      }
+    },
+    "seo": {
+      "title": "Планы резиденций и этажей",
+      "desc": "Роскошные варианты квартир в резиденции с высотой потолков 3,20 м и детальной планировкой этажей, подходящей для разных стилей жизни."
+    },
+    "philosophy": {
+      "overline": "Видение дизайна",
+      "title": "Наша внутренняя философия",
+      "heading": "Элегантность от традиций к будущему",
+      "p2": "Первоклассная итальянская керамика, использованная на кухне, и мокрые полы придают пространству теплоту, создавая идеальный контраст с деталями из натурального массива дерева, приветствующими вас у входа. Благодаря акустическим барьерам, используемым в звукоизоляции, в вашем доме царит абсолютная тишина, даже если вы находитесь в самом центре города.",
+      "f1": "Системы напольного отопления и охлаждения VRV",
+      "f2": "Инфраструктура умного дома, которой можно управлять с мобильных устройств",
+      "f3": "Панорамные изолированные окна от потолка до пола."
+    },
+    "process": {
+      "overline": "Шаг за шагом",
+      "title": "Закупочное путешествие",
+      "subtitle": "От первой встречи до вручения ключей — процесс проходит для вас просто и прозрачно."
     }
   },
   "portal": {
@@ -945,6 +1007,181 @@
       "logout": "Выйти",
       "profile": "Мой профиль",
       "settings": "Настройки"
+    },
+    "events": {
+      "view_details": "См. детали"
+    },
+    "reservations": {
+      "spa_session": "Сеанс СПА-массажа",
+      "spa": "СПА и массаж",
+      "new_res": "Новая бронь",
+      "pool": "Крытый бассейн",
+      "days": {
+        "mon": "понедельник",
+        "tue": "плот",
+        "wed": "ср.",
+        "thu": "четверг",
+        "fri": "сперма",
+        "sat": "Суббота",
+        "sun": "солнце"
+      },
+      "month": "декабрь 2025 г.",
+      "facilities": "Удобства",
+      "upcoming": "Предстоящие бронирования",
+      "dec_short": "Поиск",
+      "modal_title": "Бронирование объектов",
+      "facility_label": "объект",
+      "vip_room": "VIP-конференц-зал",
+      "time_label": "часы",
+      "full": "(Полный)",
+      "book_btn": "Забронировать"
+    },
+    "charging": {
+      "title": "Зарядные станции для электромобилей",
+      "desc": "Парковка -1. Наличие 4-х зарядных станций переменного тока по 22кВт, расположенных на этаже.",
+      "empty_stations": "Пустая станция",
+      "empty": "НОЛЬ"
+    },
+    "smarthome": {
+      "scenarios": "Умные сценарии:",
+      "night_mode": "Ночной режим",
+      "day_mode": "Дневной режим",
+      "cinema_mode": "Режим кино",
+      "living_room_temp": "Температура в зале",
+      "living_room_light": "Освещение зала",
+      "bedroom": "Спальня",
+      "ac": "Центральное кондиционирование",
+      "curtains": "Умные шторы",
+      "on": "ВКЛ.",
+      "off": "ВЫКЛ."
+    },
+    "requests": {
+      "tech_service": "Техническая служба",
+      "req1": {
+        "title": "Отказ панели умного дома",
+        "desc": "Сенсорная панель в гостиной иногда не реагирует."
+      },
+      "yesterday": "Вчера 14:30",
+      "plumbing": "сантехника",
+      "req2": {
+        "title": "Течет кухонный кран",
+        "desc": "Вода скапливается на кухонной стойке."
+      },
+      "cleaning": "уборка",
+      "req3": {
+        "title": "Прочистка канализации на балконе",
+        "desc": "Слив на балконе засорен."
+      },
+      "just_now": "только что",
+      "description": "Вы можете следить за всеми вашими запросами по технической поддержке и поддержке здесь.",
+      "new_request": "Новый спрос",
+      "pending": "Ожидается",
+      "no_request": "Нет запроса",
+      "in_progress": "в процессе",
+      "resolved": "решено",
+      "modal_title": "Создать новый запрос",
+      "type_label": "Тип запроса",
+      "tech_service_desc": "Техническая служба (электричество, вода и т. д.)",
+      "cleaning_desc": "Уборка мест общего пользования",
+      "security": "Безопасность",
+      "security_desc": "Уведомление о безопасности",
+      "other": "Другое",
+      "title_label": "Название",
+      "desc_label": "Описание",
+      "submit": "Отправить запрос"
+    },
+    "visitor": {
+      "qr_title": "QR-регистрация посетителей",
+      "qr_desc": "Создайте одноразовый QR-код, который ваш гость сможет использовать для быстрого прохождения через точку безопасности, введя свое имя.",
+      "guest_name_ph": "Имя и фамилия гостя",
+      "plate_ph": "Номерной знак автомобиля (дополнительно)",
+      "generate_qr": "Создать QR-код",
+      "call_valet": "Призвать Джека",
+      "valet_desc": "Доставка вашего автомобиля до выездных ворот занимает примерно 5-7 минут.",
+      "prepare_car": "Подготовьте мой автомобиль",
+      "car_bringing": "Ваш автомобиль подъезжают к двери...",
+      "cancel": "Отмена",
+      "car_arrived": "Ваш автомобиль у дверей!",
+      "thanks": "Спасибо",
+      "modal_title": "Гостевой QR-код",
+      "validity": "Срок действия: 2 часа"
+    },
+    "support": {
+      "seo_title": "Консьерж и техническая поддержка | Люксера Тауэрс",
+      "seo_desc": "Круглосуточные технические и консьерж-услуги исключительно для жителей Luxera Towers.",
+      "hero_overline": "Премиум-поддержка",
+      "hero_title": "Консьерж и",
+      "hero_highlight": "технический",
+      "hero_subtitle": "Профессиональная команда поддержки готова круглосуточно и без выходных удовлетворить все ваши потребности в вашем жилом пространстве.",
+      "section_title": "Привилегированный сервис",
+      "section_subtitle": "Есть техническая неисправность? Или это ваш запрос на химчистку? Наша команда находится на расстоянии одного клика.",
+      "s1": {
+        "title": "Мгновенное техническое обслуживание",
+        "desc": "В случае возникновения каких-либо неисправностей в системах электричества, сантехники, кондиционирования или умного дома создайте заявку за считанные секунды, добавив фотографию через цифровой портал.",
+        "b1": "Мгновенное отслеживание статуса",
+        "b2": "Отзыв и рейтинг",
+        "b3": "Архив прошлых запросов"
+      },
+      "s2": {
+        "title": "24/7 консьерж",
+        "desc": "Все детали, которые облегчают вашу жизнь: от вызова такси до химчистки, от уборки дома до бронирования мест, — находятся на одной панели.",
+        "b1": "Вызов парковщика",
+        "b2": "Отслеживание почты и грузов",
+        "b3": "Управление VIP-трансфером"
+      },
+      "cta": {
+        "title": "Создать новый запрос",
+        "desc": "Вы можете мгновенно добавить всю свою техническую поддержку, отчеты о неисправностях и запросы консьержей в очередь работы нашей технической команды, войдя в систему через Apsiyon.",
+        "btn": "Вход в систему"
+      }
+    },
+    "services": {
+      "finance": "Finans & Aidat Yönetimi",
+      "support": "Konsiyerj & Teknik Destek",
+      "guests": "Misafir & Vale Yönetimi",
+      "social": "Sosyal Yaşam & SPA",
+      "title": "Site İçi Hizmetler",
+      "subtitle": "Yaşamınızı kolaylaştırmak için sunulan ayrıcalıklı dijital hizmetler."
+    },
+    "seo": {
+      "title": "Sakinler Portalı",
+      "desc": "Luxera Towers sakinlerine özel dijital yönetim sistemi, duyurular ve site içi hizmetler."
+    },
+    "hero": {
+      "overline": "Özel Dijital Asistan",
+      "title": "Sakinler",
+      "highlight": "Portalı",
+      "subtitle": "Rezidans yaşamınızı kolaylaştıran dijital yönetim sistemi ile tüm işlemleriniz parmaklarınızın ucunda."
+    },
+    "marquee": {
+      "m1": "YENİ METRO İSTASYONU 1 DAKİKA MESAFEDE AÇILIYOR!",
+      "m2": "05-08 ARALIK KAPALI HAVUZ PERİYODİK KIŞ BAKIMI."
+    },
+    "apsiyon": {
+      "badge": "Apsiyon Dijital Yönetim Sistemi",
+      "title1": "Rezidans Yönetimi",
+      "title2": "Cebinizde.",
+      "desc": "Aidat ödemelerinizi güvenle yapın, anlık bakiye durumunuzu kontrol edin, teknik servis taleplerinizi saniyeler içinde iletin ve lüks SPA/Havuz alanlarımız için anında rezervasyon oluşturun.",
+      "login": "Sisteme Giriş Yap"
+    },
+    "stats": {
+      "stat1": {
+        "title": "Tek Tıkla Ödeme",
+        "desc": "3D Secure Güvencesiyle"
+      },
+      "stat2": {
+        "title": "7/24 Teknik Servis",
+        "desc": "Anında Müdahale Ekibi"
+      },
+      "stat3": {
+        "title": "Tesis Rezervasyonu",
+        "desc": "SPA & Kapalı Havuz"
+      }
+    },
+    "board": {
+      "title": "Yönetim Kurulu",
+      "subtitle": "Luxera Towers yaşam standartlarını zirvede tutmak için çalışan profesyonel yönetim kadromuz.",
+      "desc": "Luxera Towers projelerinin vizyoner süreçlerini yöneten deneyimli profesyonel."
     }
   },
   "services": {
@@ -960,6 +1197,76 @@
     "section": {
       "title": "Все услуги",
       "subtitle": "Созданы для вашего комфорта."
+    },
+    "steps": {
+      "step1": {
+        "title": "Talebinizi İletin",
+        "desc": "Mobil uygulama veya tek bir telefonla concierge ekibine talebinizi bildirin."
+      },
+      "step2": {
+        "title": "Planlama",
+        "desc": "Ekibimiz talebinizi değerlendirir, en uygun çözümü ve zamanlamayı sizinle paylaşır."
+      },
+      "step3": {
+        "title": "Hizmet",
+        "desc": "Vale, housekeeping, rezervasyon ya da organizasyon; hizmet titizlikle yerine getirilir."
+      },
+      "step4": {
+        "title": "Memnuniyet",
+        "desc": "Deneyiminizi değerlendirin; hizmet standartlarımızı sizin için sürekli iyileştiriyoruz."
+      }
+    },
+    "stats": {
+      "s1": "Kesintisiz Hizmet",
+      "s2": "Ayrıcalık Alanı",
+      "s3": "Otel Standardı",
+      "s4": "Kişiye Özel"
+    },
+    "list": {
+      "concierge": {
+        "title": "7/24 Concierge",
+        "desc": "Siz sadece hayatın tadını çıkarın diye, uçak bileti rezervasyonundan özel etkinlik planlamalarına kadar her detayı profesyonel ekibimiz organize ediyor."
+      },
+      "security": {
+        "title": "Özel Güvenlik",
+        "desc": "Akıllı bina teknolojileri, kapalı devre kamera sistemleri (CCTV) ve 7/24 devriye atan profesyonel güvenlik personeli ile aileniz daima güvende."
+      },
+      "valet": {
+        "title": "Vale & Otopark",
+        "desc": "Aracınızı güvenle teslim edebileceğiniz vale hizmeti ve sadece sakinlere özel, plaka tanıma sistemli tahsisli otopark alanları."
+      },
+      "fitness": {
+        "title": "Fitness & SPA",
+        "desc": "Güne enerjik başlamanız için en son teknoloji fitness ekipmanları ve günün stresini atmanız için lüks tasarım SPA merkezi."
+      },
+      "housekeeping": {
+        "title": "Housekeeping",
+        "desc": "5 yıldızlı otel standartlarında temizlik, kuru temizleme ve ütü hizmetleri ile rezidansınız her zaman misafir ağırlamaya hazır."
+      },
+      "lounge": {
+        "title": "Lounge Alanı",
+        "desc": "İş toplantılarınızı yapabileceğiniz, misafirlerinizi prestijli bir ortamda ağırlayabileceğiniz yüksek tavanlı özel lobi ve lounge."
+      }
+    },
+    "intro": {
+      "title": "Otel Konforunu Evinize Getiren Hizmetler"
+    },
+    "listSection": {
+      "title": "Tüm Ayrıcalıklarımız"
+    },
+    "process": {
+      "overline": "Nasıl İşler?",
+      "title": "Hizmete Ulaşmak Çok Kolay",
+      "subtitle": "Tek bir talep, kusursuz bir deneyime dönüşür. Gerisini Luxera ekibine bırakın."
+    },
+    "testimonials": {
+      "title": "Sakinlerimiz Ne Diyor?",
+      "overline": "Referanslar"
+    },
+    "cta": {
+      "title": "Otel Konforunu Evinizde Yaşayın",
+      "desc": "Luxera Towers ayrıcalıklarını ve hizmet standartlarını yakından deneyimlemek için bizimle iletişime geçin.",
+      "primary": "İletişime Geçin"
     }
   },
   "stores": {
@@ -975,7 +1282,16 @@
     "section": {
       "title": "Каталог магазинов",
       "subtitle": "От моды до технологий."
-    }
+    },
+    "filters": {
+      "all": "Tümü"
+    },
+    "floor_plan": "Kat Planı",
+    "inspect": "İncele",
+    "hours": "Çalışma Saatleri",
+    "hours_desc": "Her gün: 10:00 - 22:00",
+    "contact": "İletişim",
+    "go_to_store": "Mağaza Sayfasına Git"
   },
   "videos": {
     "seo": {
@@ -990,11 +1306,29 @@
     "section": {
       "title": "Видео проекта",
       "subtitle": "Взгляните поближе."
+    },
+    "stats": {
+      "s1": "Video İçerik",
+      "s2": "Görüntü Kalitesi",
+      "s3": "Sanal Deneyim",
+      "s4": "Erişim"
+    },
+    "featured": "Öne Çıkan",
+    "archive": {
+      "overline": "Video Arşivi",
+      "title": "Tüm İçerikler",
+      "subtitle": "Tanıtım filmleri, bölge rehberi, yaşam ve iç mimari videolarıyla projeyi her yönüyle keşfedin."
+    },
+    "cta": {
+      "title": "Daireleri 360° Keşfedin",
+      "primary": "Sanal Tura Başla",
+      "secondary": "Randevu Alın"
     }
   },
   "virtualTour": {
     "seo": {
-      "title": "Виртуальный тур"
+      "title": "Виртуальный тур",
+      "desc": "Luxera Towers örnek dairelerini interaktif sanal tur ile 360 derece detaylarıyla keşfedin."
     },
     "hero": {
       "overline": "Цифровой опыт",
@@ -1005,6 +1339,11 @@
     "section": {
       "title": "Начать тур",
       "subtitle": "Выберите зону для исследования."
+    },
+    "explorer": {
+      "title": "İnteraktif Keşif",
+      "subtitle": "Fare tekerleğiyle yakınlaşın, sürükleyerek odayı gezin ve detayları görmek için parlayan noktalara tıklayın.",
+      "pan_zoom": "Yakınlaş & Gezin"
     }
   },
   "privileges": {
@@ -1202,6 +1541,29 @@
       "cta": {
         "title": "Живите в спокойствии",
         "desc": "Свяжитесь с нами."
+      },
+      "title_prefix": "частный",
+      "title_highlight": "Безопасность",
+      "structural": {
+        "title": "Структурная безопасность",
+        "s1": {
+          "title": "Сейсмическая безопасность",
+          "desc": "Полностью совместим с последними нормами по землетрясениям; Он был построен по высоким инженерным стандартам, усилен буронабивными сваями и системой плотного фундамента."
+        },
+        "s2": {
+          "title": "Защита от пожара и утечек",
+          "desc": "Полная защита с помощью детекторов утечек воды и газа, автоматических систем пожаротушения и дымоудаления."
+        }
+      },
+      "smart": {
+        "title": "Умные строительные системы",
+        "s1": {
+          "title": "Система домашней автоматизации",
+          "desc": "Управляйте системами кондиционирования, освещения, безопасности и штор с одной панели или со своего смартфона, где бы вы ни находились.",
+          "b1": "Умный замок и пароль для входа",
+          "b2": "Детекторы утечек воды и газа",
+          "b3": "Умный кондиционер (VRF)"
+        }
       }
     },
     "valet": {
@@ -1244,5 +1606,29 @@
         "desc": "Запишитесь на прием."
       }
     }
+  },
+  "amenityStrip": {
+    "title": "Luxera Yaşamından Kareler"
+  },
+  "cookie": {
+    "close_aria": "Kapat",
+    "title": "Çerez Kullanımı",
+    "desc1": "Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek",
+    "policy": "Çerez Politikası",
+    "and": "ve",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "accept": "Kabul Et"
+  },
+  "whatsapp": {
+    "default_message": "Merhaba, Luxera Towers projesi hakkında detaylı bilgi almak istiyorum.",
+    "title": "Satış Danışmanı",
+    "subtitle": "Size nasıl yardımcı olabiliriz?",
+    "wa_title": "WhatsApp",
+    "wa_desc": "Anında yanıt alın",
+    "call_title": "Bizi Arayın",
+    "call_desc": "Satış ofisine bağlanın",
+    "form_title": "İletişim Formu",
+    "form_desc": "Size geri dönüş yapalım",
+    "aria_label": "İletişim"
   }
 }

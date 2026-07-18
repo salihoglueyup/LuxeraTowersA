@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Phone, Mail, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const WhatsAppWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   // WhatsApp Numarası (Uluslararası formatta, + olmadan)
   const whatsappNumber = "905550000000"; 
-  const whatsappMessage = encodeURIComponent("Merhaba, Luxera Towers projesi hakkında detaylı bilgi almak istiyorum.");
+  const whatsappMessage = encodeURIComponent(t('whatsapp.default_message', 'Merhaba, Luxera Towers projesi hakkında detaylı bilgi almak istiyorum.'));
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
@@ -25,8 +27,8 @@ const WhatsAppWidget = () => {
           >
             <div className="bg-gradient-to-r from-luxera-navy to-luxera-charcoal p-4 border-b border-luxera-gold/20 flex items-center justify-between">
               <div>
-                <h4 className="text-luxera-gold font-serif text-lg">Satış Danışmanı</h4>
-                <p className="text-gray-400 text-xs mt-1">Size nasıl yardımcı olabiliriz?</p>
+                <h4 className="text-luxera-gold font-serif text-lg">{t('whatsapp.title', 'Satış Danışmanı')}</h4>
+                <p className="text-gray-400 text-xs mt-1">{t('whatsapp.subtitle', 'Size nasıl yardımcı olabiliriz?')}</p>
               </div>
               <button 
                 onClick={toggleOpen}
@@ -46,8 +48,8 @@ const WhatsAppWidget = () => {
                   <MessageCircle size={20} />
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">WhatsApp</div>
-                  <div className="text-gray-400 text-xs">Anında yanıt alın</div>
+                  <div className="text-white text-sm font-medium">{t('whatsapp.wa_title', 'WhatsApp')}</div>
+                  <div className="text-gray-400 text-xs">{t('whatsapp.wa_desc', 'Anında yanıt alın')}</div>
                 </div>
               </a>
 
@@ -59,8 +61,8 @@ const WhatsAppWidget = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">Bizi Arayın</div>
-                  <div className="text-gray-400 text-xs">Satış ofisine bağlanın</div>
+                  <div className="text-white text-sm font-medium">{t('whatsapp.call_title', 'Bizi Arayın')}</div>
+                  <div className="text-gray-400 text-xs">{t('whatsapp.call_desc', 'Satış ofisine bağlanın')}</div>
                 </div>
               </a>
 
@@ -73,8 +75,8 @@ const WhatsAppWidget = () => {
                   <Mail size={20} />
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">İletişim Formu</div>
-                  <div className="text-gray-400 text-xs">Size geri dönüş yapalım</div>
+                  <div className="text-white text-sm font-medium">{t('whatsapp.form_title', 'İletişim Formu')}</div>
+                  <div className="text-gray-400 text-xs">{t('whatsapp.form_desc', 'Size geri dönüş yapalım')}</div>
                 </div>
               </Link>
             </div>
@@ -87,7 +89,7 @@ const WhatsAppWidget = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="w-14 h-14 bg-luxera-gold text-white rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.6)] transition-shadow relative"
-        aria-label="İletişim"
+        aria-label={t('whatsapp.aria_label', 'İletişim')}
       >
         {/* Dalga efekti (ping) */}
         {!isOpen && (

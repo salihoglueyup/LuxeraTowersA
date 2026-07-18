@@ -22,7 +22,7 @@ const EtkinliklerModule = () => {
             <span className="flex items-center gap-2"><Calendar size={14} className="text-luxera-gold shrink-0"/> {evt.date}</span>
             <span className="text-xs leading-relaxed line-clamp-2">{evt.desc}</span>
           </div>
-          <button className="w-full bg-white/10 text-white font-bold py-3 rounded-xl hover:bg-luxera-gold hover:text-luxera-navy transition-colors mt-auto">Detayları Gör</button>
+          <button className="w-full bg-white/10 text-white font-bold py-3 rounded-xl hover:bg-luxera-gold hover:text-luxera-navy transition-colors mt-auto">{t('portal.events.view_details', 'Detayları Gör')}</button>
         </div>
       </div>
       ))}

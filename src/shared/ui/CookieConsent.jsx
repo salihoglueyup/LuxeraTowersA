@@ -2,19 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const STORAGE_KEY = 'luxera_cookie_consent';
 
 // İlk ziyarette çıkan, localStorage ile bir kez kabul edilince gizlenen çerez şeridi.
 const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Preloader'ın (2.5sn) ardından yumuşakça göster
     try {
       if (!localStorage.getItem(STORAGE_KEY)) {
-        const t = setTimeout(() => setVisible(true), 3200);
-        return () => clearTimeout(t);
+        const timer = setTimeout(() => setVisible(true), 3200);
+        return () => clearTimeout(timer);
       }
     } catch (e) {
       // localStorage erişilemezse sessizce geç
@@ -41,7 +43,7 @@ const CookieConsent = () => {
           <div className="relative bg-luxera-charcoal/95 backdrop-blur-md border border-luxera-gold/25 rounded-2xl p-6 shadow-2xl">
             <button
               onClick={accept}
-              aria-label="Kapat"
+              aria-label={t('cookie.close_aria', 'Kapat')}
               className="absolute top-3 right-3 text-gray-500 hover:text-luxera-gold transition-colors"
             >
               <X size={18} />
@@ -51,17 +53,17 @@ const CookieConsent = () => {
                 <Cookie size={20} />
               </div>
               <div>
-                <h4 className="text-white font-serif text-lg mb-2">Çerez Kullanımı</h4>
+                <h4 className="text-white font-serif text-lg mb-2">{t('cookie.title', 'Çerez Kullanımı')}</h4>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek{' '}
-                  <Link to="/cerez" className="text-luxera-gold hover:underline">Çerez Politikası</Link> ve{' '}
-                  <Link to="/kvkk" className="text-luxera-gold hover:underline">KVKK Aydınlatma Metni</Link>'ni kabul etmiş olursunuz.
+                  {t('cookie.desc1', 'Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek')}{' '}
+                  <Link to="/cerez" className="text-luxera-gold hover:underline">{t('cookie.policy', 'Çerez Politikası')}</Link> {t('cookie.and', 've')}{' '}
+                  <Link to="/kvkk" className="text-luxera-gold hover:underline">{t('cookie.kvkk', 'KVKK Aydınlatma Metni')}</Link>{t('cookie.desc2', "'ni kabul etmiş olursunuz.")}
                 </p>
                 <button
                   onClick={accept}
                   className="bg-luxera-gold text-luxera-navy px-6 py-2.5 rounded-sm uppercase tracking-widest text-xs font-bold hover:bg-white transition-colors"
                 >
-                  Kabul Et
+                  {t('cookie.accept', 'Kabul Et')}
                 </button>
               </div>
             </div>

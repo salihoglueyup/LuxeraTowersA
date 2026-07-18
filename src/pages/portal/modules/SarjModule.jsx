@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BatteryCharging, Zap, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const SarjModule = () => {
+  const { t } = useTranslation();
   const [stations, setStations] = useState([
     { id: 1, status: 'available', kw: '22kW', progress: 0, timeLeft: '-' },
     { id: 2, status: 'charging', kw: '22kW', progress: 65, timeLeft: '1s 45dk' },
@@ -27,10 +29,10 @@ const SarjModule = () => {
     <motion.div key="sarj" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="md:col-span-1 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md flex flex-col items-center justify-center text-center">
         <BatteryCharging size={64} className="text-luxera-gold mb-6" />
-        <h3 className="text-2xl font-serif text-white mb-2">EV Şarj İstasyonları</h3>
-        <p className="text-gray-400 mb-6">Otopark -1. Katta bulunan 4 adet 22kW AC şarj istasyonu durumu.</p>
+        <h3 className="text-2xl font-serif text-white mb-2">{t('portal.charging.title', 'EV Şarj İstasyonları')}</h3>
+        <p className="text-gray-400 mb-6">{t('portal.charging.desc', 'Otopark -1. Katta bulunan 4 adet 22kW AC şarj istasyonu durumu.')}</p>
         <div className="w-full bg-black/40 p-4 rounded-xl border border-white/5 flex justify-between items-center">
-          <span className="text-gray-300">Boş İstasyon</span>
+          <span className="text-gray-300">{t('portal.charging.empty_stations', 'Boş İstasyon')}</span>
           <span className="text-2xl font-bold text-green-400">2<span className="text-sm text-gray-500 font-normal">/4</span></span>
         </div>
       </div>
@@ -52,13 +54,13 @@ const SarjModule = () => {
                   <Zap size={24} />
                 </div>
                 <span className={`text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider ${st.status === 'available' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>
-                  {st.status === 'available' ? 'BOŞ' : `%${st.progress} ŞARJ`}
+                  {st.status === 'available' ? t('portal.charging.empty', 'BOŞ') : t('portal.charging.charging_progress', '%{{progress}} ŞARJ', { progress: st.progress })}
                 </span>
               </div>
-              <h4 className="text-white font-medium mb-1">İstasyon {st.id}</h4>
+              <h4 className="text-white font-medium mb-1">{t('portal.charging.station', 'İstasyon {{id}}', { id: st.id })}</h4>
               <div className="flex justify-between text-xs text-gray-400 mt-4 border-t border-white/5 pt-4">
                 <span className="flex items-center gap-1"><Zap size={12}/> {st.kw}</span>
-                <span className="flex items-center gap-1"><Clock size={12}/> {st.status === 'available' ? '-' : `${st.timeLeft} kaldı`}</span>
+                <span className="flex items-center gap-1"><Clock size={12}/> {st.status === 'available' ? '-' : t('portal.charging.time_left', '{{time}} kaldı', { time: st.timeLeft })}</span>
               </div>
             </div>
           </div>

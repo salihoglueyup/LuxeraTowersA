@@ -490,6 +490,9 @@
     "section": {
       "title": "Culinary Stops",
       "subtitle": "Gourmet restaurants and concept cafes appealing to diverse palates."
+    },
+    "filters": {
+      "all": "All"
     }
   },
   "events": {
@@ -505,6 +508,9 @@
     "cta": {
       "title": "Stay Informed About Events",
       "primary": "Contact Us"
+    },
+    "filters": {
+      "all": "All"
     }
   },
   "faq": {
@@ -518,6 +524,10 @@
       "title": "Your question not listed?",
       "desc": "To get more detailed information about the project, visit our sample apartment, or create custom payment plans, please contact our expert sales consultants immediately.",
       "btn": "Consult an Expert"
+    },
+    "search": {
+      "placeholder": "Search for a subject you are curious about... (eg: title deed, dues)",
+      "empty": "No results were found matching your search."
     }
   },
   "gallery": {
@@ -526,7 +536,8 @@
       "interior": "Interior",
       "amenity": "Amenities",
       "plans": "Floor Plans",
-      "all": "All"
+      "all": "All",
+      "videos": "Videos"
     },
     "img": {
       "ex1": "General View",
@@ -572,6 +583,10 @@
       "desc": "Schedule an appointment with our sales office to experience the spaces you admire in the visuals in our sample apartment.",
       "primary": "Book an Appointment",
       "secondary": "Virtual Tour"
+    },
+    "cursor": {
+      "play": "WATCH",
+      "view": "ENLARGE"
     }
   },
   "guide": {
@@ -880,6 +895,9 @@
     "section": {
       "title": "Center of the Business World",
       "subtitle": "We host valuable brands that are pioneers in their sectors."
+    },
+    "filters": {
+      "all": "All"
     }
   },
   "privileges": {
@@ -1077,6 +1095,29 @@
       "cta": {
         "title": "Live in Peace",
         "desc": "Contact us to get closely acquainted with our Security privileges and the Luxera Towers lifestyle."
+      },
+      "title_prefix": "private",
+      "title_highlight": "Security",
+      "structural": {
+        "title": "Structural Security",
+        "s1": {
+          "title": "Earthquake Safety",
+          "desc": "Fully compatible with the latest earthquake regulations; It was built to high engineering standards, reinforced with bored pile and raft foundation system."
+        },
+        "s2": {
+          "title": "Fire & Leak Protection",
+          "desc": "Full protection with water and gas leak detectors, automatic fire extinguishing and smoke evacuation systems."
+        }
+      },
+      "smart": {
+        "title": "Smart Building Systems",
+        "s1": {
+          "title": "Home Automation System",
+          "desc": "Manage your air conditioning, lighting, security and curtain systems from a single panel or from your smartphone wherever you are in the world.",
+          "b1": "Smart Lock and Password Login",
+          "b2": "Water and Gas Leak Detectors",
+          "b3": "Smart Air Conditioning (VRF)"
+        }
       }
     },
     "valet": {
@@ -1135,7 +1176,14 @@
     },
     "floorPlans": {
       "overline": "Options",
-      "title": "Floor Plans"
+      "title": "Floor Plans",
+      "grossArea": "Gross Area",
+      "ceiling": "Ceiling Height",
+      "hvac": "Heating/Cooling",
+      "downloadPlan": "Download Catalog",
+      "hideDimensions": "Hide Dimensions",
+      "showDimensions": "Show Dimensions",
+      "zoom": "Examine the Sample Flat"
     },
     "features": {
       "overline": "Features",
@@ -1164,7 +1212,44 @@
     "cta": {
       "title": "Find Your Dream Home",
       "primary": "Review Floor Plans",
-      "secondary": "Virtual Tour"
+      "secondary": "Virtual Tour",
+      "desc": "Contact our expert sales consultants to determine the flat type and payment plan that best suits you."
+    },
+    "buySteps": {
+      "step1": {
+        "title": "Contact",
+        "desc": "Contact our sales consultant and share your needs and expectations."
+      },
+      "step2": {
+        "title": "Sample Flat Tour",
+        "desc": "Tour our sample flat on site and experience the materials and view."
+      },
+      "step3": {
+        "title": "Planning & Contract",
+        "desc": "Determine the apartment and payment plan that suits you and complete the contract."
+      },
+      "step4": {
+        "title": "Delivery",
+        "desc": "Start your life with the turnkey process and beyond."
+      }
+    },
+    "seo": {
+      "title": "Residence and Floor Plans",
+      "desc": "Luxury residence flat options with 3.20m ceiling height and detailed floor plans that appeal to different lifestyles."
+    },
+    "philosophy": {
+      "overline": "Design Vision",
+      "title": "Our Interior Philosophy",
+      "heading": "Elegance from Tradition to the Future",
+      "p2": "First-class Italian ceramics used in the kitchen and wet floors add warmth to the space by creating a perfect contrast with the natural solid wood details that greet you in the entrance. Thanks to the acoustic barriers used in sound insulation, absolute silence reigns in your home even though you are in the heart of the city.",
+      "f1": "Underfloor heating and VRV cooling systems",
+      "f2": "Smart Home Infrastructure that can be managed from mobile devices",
+      "f3": "Panoramic insulated windows extending from ceiling to floor"
+    },
+    "process": {
+      "overline": "Step by Step",
+      "title": "Purchasing Journey",
+      "subtitle": "From the first meeting to key delivery, the process is managed simply and transparently for you."
     }
   },
   "portal": {
@@ -1183,6 +1268,181 @@
       "logout": "Logout",
       "profile": "My Profile",
       "settings": "Settings"
+    },
+    "events": {
+      "view_details": "See Details"
+    },
+    "reservations": {
+      "spa_session": "SPA Massage Session",
+      "spa": "SPA & Massage",
+      "new_res": "New Reservation",
+      "pool": "Indoor Pool",
+      "days": {
+        "mon": "mon",
+        "tue": "raft",
+        "wed": "Wed",
+        "thu": "thu",
+        "fri": "cum",
+        "sat": "Sat",
+        "sun": "sun"
+      },
+      "month": "December 2025",
+      "facilities": "Facilities",
+      "upcoming": "Upcoming Reservations",
+      "dec_short": "Search",
+      "modal_title": "Facility Reservation",
+      "facility_label": "facility",
+      "vip_room": "VIP Meeting Room",
+      "time_label": "clock",
+      "full": "(Full)",
+      "book_btn": "Book"
+    },
+    "charging": {
+      "title": "EV Charging Stations",
+      "desc": "Parking -1. The availability of 4 22kW AC charging stations located on the floor.",
+      "empty_stations": "Empty Station",
+      "empty": "NULL"
+    },
+    "smarthome": {
+      "scenarios": "Smart Scenarios:",
+      "night_mode": "Night Mode",
+      "day_mode": "Day Mode",
+      "cinema_mode": "Cinema Mode",
+      "living_room_temp": "Hall Temperature",
+      "living_room_light": "Hall Lighting",
+      "bedroom": "Bedroom",
+      "ac": "Central Air Conditioning",
+      "curtains": "Smart Curtains",
+      "on": "ON",
+      "off": "OFF"
+    },
+    "requests": {
+      "tech_service": "Technical Service",
+      "req1": {
+        "title": "Smart Home Panel Failure",
+        "desc": "The touch panel on the living room sometimes does not respond."
+      },
+      "yesterday": "Yesterday 14:30",
+      "plumbing": "plumbing",
+      "req2": {
+        "title": "Kitchen Faucet Leaking",
+        "desc": "Water accumulates on the kitchen counter."
+      },
+      "cleaning": "cleaning",
+      "req3": {
+        "title": "Balcony Drain Cleaning",
+        "desc": "Balcony drain is clogged."
+      },
+      "just_now": "just now",
+      "description": "You can follow all your technical and support requests here.",
+      "new_request": "New Demand",
+      "pending": "Pending",
+      "no_request": "There is no request",
+      "in_progress": "in process",
+      "resolved": "resolved",
+      "modal_title": "Create New Request",
+      "type_label": "Request Type",
+      "tech_service_desc": "Technical Service (Electricity, Water, etc.)",
+      "cleaning_desc": "Common Area Cleaning",
+      "security": "Security",
+      "security_desc": "Security Notice",
+      "other": "Other",
+      "title_label": "Title",
+      "desc_label": "Description",
+      "submit": "Submit Request"
+    },
+    "visitor": {
+      "qr_title": "QR Visitor Registration",
+      "qr_desc": "Create a disposable QR code that your guest can use to quickly pass through the security point by entering their name.",
+      "guest_name_ph": "Guest Name and Surname",
+      "plate_ph": "Vehicle License Plate (Optional)",
+      "generate_qr": "Generate QR Code",
+      "call_valet": "Summon Jack",
+      "valet_desc": "It takes approximately 5-7 minutes to bring your vehicle to the exit gate.",
+      "prepare_car": "Prepare My Vehicle",
+      "car_bringing": "Your vehicle is brought to the door...",
+      "cancel": "Cancel",
+      "car_arrived": "Your Vehicle is at the Door!",
+      "thanks": "Thank you",
+      "modal_title": "Guest QR Code",
+      "validity": "Validity: 2 Hours"
+    },
+    "support": {
+      "seo_title": "Concierge & Technical Support | Luxera Towers",
+      "seo_desc": "24/7 technical and concierge services exclusively for Luxera Towers residents.",
+      "hero_overline": "Premium Support",
+      "hero_title": "Concierge &",
+      "hero_highlight": "technical",
+      "hero_subtitle": "Professional support team ready 24/7 for all your needs in your living space.",
+      "section_title": "Privileged Service",
+      "section_subtitle": "Is there a technical malfunction? Or is it your dry cleaning request? Our team is just a click away.",
+      "s1": {
+        "title": "Instant Technical Service",
+        "desc": "In case of any malfunction in electricity, plumbing, air conditioning or smart home systems, create your request in seconds by adding a photo via the digital portal.",
+        "b1": "Instant status tracking",
+        "b2": "Feedback and rating",
+        "b3": "Archive of past requests"
+      },
+      "s2": {
+        "title": "24/7 Concierge",
+        "desc": "All the details that make your life easier, from taxi calls to dry cleaning, from house cleaning to reservations, are on a single panel.",
+        "b1": "Valet car calling",
+        "b2": "Mail and cargo tracking",
+        "b3": "VIP transfer management"
+      },
+      "cta": {
+        "title": "Create New Request",
+        "desc": "You can instantly add all your technical support, fault reporting and concierge requests to our technical team's work queue by logging in via Apsiyon.",
+        "btn": "Login to the System"
+      }
+    },
+    "services": {
+      "finance": "Finance & Dues Management",
+      "support": "Concierge & Technical Support",
+      "guests": "Guest & Valet Management",
+      "social": "Social Life & SPA",
+      "title": "On-Site Services",
+      "subtitle": "Privileged digital services offered to make your life easier."
+    },
+    "seo": {
+      "title": "Residents Portal",
+      "desc": "Digital management system, announcements and on-site services special for Luxera Towers residents."
+    },
+    "hero": {
+      "overline": "Private Digital Assistant",
+      "title": "residents",
+      "highlight": "portal",
+      "subtitle": "All your transactions are at your fingertips with the digital management system that makes your residence life easier."
+    },
+    "marquee": {
+      "m1": "NEW METRO STATION IS OPENING 1 MINUTES AWAY!",
+      "m2": "05-08 DECEMBER INDOOR POOL PERIODIC WINTER MAINTENANCE."
+    },
+    "apsiyon": {
+      "badge": "Apsiyon Digital Management System",
+      "title1": "Residence Management",
+      "title2": "In your pocket.",
+      "desc": "Make your dues payments safely, check your current balance status, submit your technical service requests in seconds and create instant reservations for our luxury SPA/Pool areas.",
+      "login": "Login to the System"
+    },
+    "stats": {
+      "stat1": {
+        "title": "One Click Payment",
+        "desc": "With 3D Secure Assurance"
+      },
+      "stat2": {
+        "title": "24/7 Technical Service",
+        "desc": "Immediate Response Team"
+      },
+      "stat3": {
+        "title": "Facility Reservation",
+        "desc": "SPA & Indoor Pool"
+      }
+    },
+    "board": {
+      "title": "Board of Directors",
+      "subtitle": "Our professional management team works to keep Luxera Towers living standards at the top.",
+      "desc": "Experienced professional who manages the visionary processes of Luxera Towers projects."
     }
   },
   "services": {
@@ -1198,6 +1458,76 @@
     "section": {
       "title": "All Services",
       "subtitle": "Designed to simplify your life and maximize your comfort."
+    },
+    "steps": {
+      "step1": {
+        "title": "Submit Your Request",
+        "desc": "Submit your request to the concierge team via the mobile application or a single phone call."
+      },
+      "step2": {
+        "title": "Planning",
+        "desc": "Our team evaluates your request and shares the most appropriate solution and timing with you."
+      },
+      "step3": {
+        "title": "Service",
+        "desc": "Valet, housekeeping, reservation or organization; The service is carried out meticulously."
+      },
+      "step4": {
+        "title": "satisfaction",
+        "desc": "Rate your experience; We constantly improve our service standards for you."
+      }
+    },
+    "stats": {
+      "s1": "Uninterrupted Service",
+      "s2": "Privilege Area",
+      "s3": "Hotel Standard",
+      "s4": "Personalized"
+    },
+    "list": {
+      "concierge": {
+        "title": "24/7 Concierge",
+        "desc": "Our professional team organizes every detail, from flight ticket reservations to special event planning, just so you can enjoy life."
+      },
+      "security": {
+        "title": "Private Security",
+        "desc": "Your family is always safe with smart building technologies, closed circuit camera systems (CCTV) and professional security personnel on patrol 24/7."
+      },
+      "valet": {
+        "title": "Valet & Parking",
+        "desc": "Valet service where you can safely deliver your car and dedicated parking areas with license plate recognition system, only for residents."
+      },
+      "fitness": {
+        "title": "Fitness & SPA",
+        "desc": "State-of-the-art fitness equipment to start the day energetically and a luxuriously designed SPA center to relieve the stress of the day."
+      },
+      "housekeeping": {
+        "title": "housekeeping",
+        "desc": "Your residence is always ready to welcome guests with cleaning, dry cleaning and ironing services at 5-star hotel standards."
+      },
+      "lounge": {
+        "title": "Lounge Area",
+        "desc": "Private lobby and lounge with high ceilings where you can hold your business meetings and host your guests in a prestigious environment."
+      }
+    },
+    "intro": {
+      "title": "Services That Bring Hotel Comfort to Your Home"
+    },
+    "listSection": {
+      "title": "All Our Privileges"
+    },
+    "process": {
+      "overline": "How Does It Work?",
+      "title": "It is Very Easy to Access the Service",
+      "subtitle": "A single request turns into a seamless experience. Leave the rest to the Luxera team."
+    },
+    "testimonials": {
+      "title": "What Do Our Residents Say?",
+      "overline": "References"
+    },
+    "cta": {
+      "title": "Experience Hotel Comfort in Your Home",
+      "desc": "Contact us to experience Luxera Towers privileges and service standards closely.",
+      "primary": "Contact Us"
     }
   },
   "stores": {
@@ -1213,7 +1543,16 @@
     "section": {
       "title": "Store Directory",
       "subtitle": "A diverse shopping mix from fashion to technology, cosmetics to home decoration."
-    }
+    },
+    "filters": {
+      "all": "All"
+    },
+    "floor_plan": "Floor Plan",
+    "inspect": "Review",
+    "hours": "Working Hours",
+    "hours_desc": "Every day: 10:00 - 22:00",
+    "contact": "Contact",
+    "go_to_store": "Go to Store Page"
   },
   "videos": {
     "seo": {
@@ -1228,11 +1567,29 @@
     "section": {
       "title": "Project Videos",
       "subtitle": "Get a closer look at the privileged world of our project."
+    },
+    "stats": {
+      "s1": "Video Content",
+      "s2": "Image Quality",
+      "s3": "Virtual Experience",
+      "s4": "Access"
+    },
+    "featured": "Featured",
+    "archive": {
+      "overline": "Video Archive",
+      "title": "All Content",
+      "subtitle": "Discover every aspect of the project with promotional films, regional guide, life and interior design videos."
+    },
+    "cta": {
+      "title": "Explore the Apartments in 360°",
+      "primary": "Start Virtual Tour",
+      "secondary": "Make an Appointment"
     }
   },
   "virtualTour": {
     "seo": {
-      "title": "360° Virtual Tour"
+      "title": "360° Virtual Tour",
+      "desc": "Explore Luxera Towers sample flats in 360-degree detail with an interactive virtual tour."
     },
     "hero": {
       "overline": "Digital Experience",
@@ -1243,6 +1600,35 @@
     "section": {
       "title": "Start the Tour",
       "subtitle": "Select a space to interactively explore."
+    },
+    "explorer": {
+      "title": "Interactive Discovery",
+      "subtitle": "Zoom in with the mouse wheel, drag to move around the room, and click on glowing dots to see details.",
+      "pan_zoom": "Zoom & Roam"
     }
+  },
+  "amenityStrip": {
+    "title": "Scenes from Luxera Life"
+  },
+  "cookie": {
+    "close_aria": "close",
+    "title": "Use of Cookies",
+    "desc1": "We use cookies to improve your experience. By continuing to use the site",
+    "policy": "Cookie Policy",
+    "and": "and",
+    "kvkk": "KVKK Information Text",
+    "accept": "Accept"
+  },
+  "whatsapp": {
+    "default_message": "Hello, I would like to get detailed information about the Luxera Towers project.",
+    "title": "Sales Consultant",
+    "subtitle": "How can we help you?",
+    "wa_title": "WhatsApp",
+    "wa_desc": "Get instant answers",
+    "call_title": "Call Us",
+    "call_desc": "Connect to sales office",
+    "form_title": "Contact Form",
+    "form_desc": "Let us get back to you",
+    "aria_label": "Communication"
   }
 }

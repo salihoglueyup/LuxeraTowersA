@@ -490,6 +490,9 @@
     "section": {
       "title": "Lezzet Durakları",
       "subtitle": "Farklı damak tatlarına hitap eden, gurme restoranlar ve konsept kafeler."
+    },
+    "filters": {
+      "all": "Tümü"
     }
   },
   "events": {
@@ -505,6 +508,9 @@
     "cta": {
       "title": "Etkinliklerden Haberdar Olun",
       "primary": "İletişime Geçin"
+    },
+    "filters": {
+      "all": "Tümü"
     }
   },
   "faq": {
@@ -518,6 +524,10 @@
       "title": "Sorunuz listede yok mu?",
       "desc": "Projeyle ilgili daha detaylı bilgi almak, örnek dairemizi gezmek veya size özel ödeme planları oluşturmak için uzman satış danışmanlarımızla hemen iletişime geçin.",
       "btn": "Uzmana Danışın"
+    },
+    "search": {
+      "placeholder": "Merak ettiğiniz bir konuyu arayın... (örn: tapu, aidat)",
+      "empty": "Aramanıza uygun sonuç bulunamadı."
     }
   },
   "gallery": {
@@ -526,7 +536,8 @@
       "interior": "İç Mekan",
       "amenity": "Sosyal Alan",
       "plans": "Kat Planları",
-      "all": "Tümü"
+      "all": "Tümü",
+      "videos": "Videolar"
     },
     "img": {
       "ex1": "Genel Görünüm",
@@ -572,6 +583,10 @@
       "desc": "Görsellerde beğendiğiniz mekânları örnek dairemizde deneyimlemek için satış ofisimizden randevu alın.",
       "primary": "Randevu Alın",
       "secondary": "Sanal Tur"
+    },
+    "cursor": {
+      "play": "İZLE",
+      "view": "BÜYÜT"
     }
   },
   "guide": {
@@ -880,6 +895,9 @@
     "section": {
       "title": "İş Dünyasının Merkezi",
       "subtitle": "Sektörünün öncüsü olan değerli markalara ev sahipliği yapıyoruz."
+    },
+    "filters": {
+      "all": "Tümü"
     }
   },
   "privileges": {
@@ -1088,7 +1106,9 @@
       "cta": {
         "title": "Huzurunuz Güvence Altında",
         "desc": "Luxera Towers’ın çok katmanlı güvenlik altyapısını ve akıllı bina sistemlerini yakından tanımak için bizimle iletişime geçin."
-      }
+      },
+      "title_prefix": "Özel",
+      "title_highlight": "Güvenlik"
     },
     "valet": {
       "overline": "Luxera Privileges",
@@ -1174,7 +1194,9 @@
       "ceiling": "Tavan Yüksekliği",
       "hvac": "Isıtma/Soğutma",
       "downloadPlan": "Kataloğu İndir",
-      "zoom": "Örnek Daireyi İncele"
+      "zoom": "Örnek Daireyi İncele",
+      "hideDimensions": "Ölçüleri Gizle",
+      "showDimensions": "Ölçüleri Göster"
     },
     "process": {
       "overline": "Adım Adım",
@@ -1205,11 +1227,168 @@
     },
     "services": {
       "title": "Site İçi Hizmetler",
-      "subtitle": "Yaşamınızı kolaylaştırmak için sunulan ayrıcalıklı dijital hizmetler."
+      "subtitle": "Yaşamınızı kolaylaştırmak için sunulan ayrıcalıklı dijital hizmetler.",
+      "finance": "Finans & Aidat Yönetimi",
+      "support": "Konsiyerj & Teknik Destek",
+      "guests": "Misafir & Vale Yönetimi",
+      "social": "Sosyal Yaşam & SPA"
     },
     "board": {
       "title": "Yönetim Kurulu",
-      "subtitle": "Luxera Towers yaşam standartlarını zirvede tutmak için çalışan profesyonel yönetim kadromuz."
+      "subtitle": "Luxera Towers yaşam standartlarını zirvede tutmak için çalışan profesyonel yönetim kadromuz.",
+      "desc": "Luxera Towers projelerinin vizyoner süreçlerini yöneten deneyimli profesyonel."
+    },
+    "events": {
+      "view_details": "Detayları Gör"
+    },
+    "reservations": {
+      "spa_session": "SPA Masaj Seansı",
+      "spa": "SPA & Masaj",
+      "new_res": "Yeni Rezervasyon",
+      "pool": "Kapalı Havuz",
+      "days": {
+        "mon": "Pzt",
+        "tue": "Sal",
+        "wed": "Çar",
+        "thu": "Per",
+        "fri": "Cum",
+        "sat": "Cmt",
+        "sun": "Paz"
+      },
+      "month": "Aralık 2025",
+      "facilities": "Tesisler",
+      "upcoming": "Yaklaşan Rezervasyonlar",
+      "dec_short": "Ara",
+      "modal_title": "Tesis Rezervasyonu",
+      "facility_label": "Tesis",
+      "vip_room": "VIP Toplantı Odası",
+      "time_label": "Saat",
+      "full": "(Dolu)",
+      "book_btn": "Yer Ayırt"
+    },
+    "charging": {
+      "title": "EV Şarj İstasyonları",
+      "desc": "Otopark -1. Katta bulunan 4 adet 22kW AC şarj istasyonu durumu.",
+      "empty_stations": "Boş İstasyon",
+      "empty": "BOŞ"
+    },
+    "smarthome": {
+      "scenarios": "Akıllı Senaryolar:",
+      "night_mode": "Gece Modu",
+      "day_mode": "Gündüz Modu",
+      "cinema_mode": "Sinema Modu",
+      "living_room_temp": "Salon Sıcaklığı",
+      "living_room_light": "Salon Aydınlatma",
+      "bedroom": "Yatak Odası",
+      "ac": "Merkezi Klima",
+      "curtains": "Akıllı Perdeler",
+      "on": "AÇIK",
+      "off": "KAPALI"
+    },
+    "requests": {
+      "tech_service": "Teknik Servis",
+      "req1": {
+        "title": "Akıllı Ev Paneli Arızası",
+        "desc": "Salondaki panelin dokunmatiği bazen tepki vermiyor."
+      },
+      "yesterday": "Dün 14:30",
+      "plumbing": "Tesisat",
+      "req2": {
+        "title": "Mutfak Bataryası Sızıntısı",
+        "desc": "Mutfak tezgahında su birikiyor."
+      },
+      "cleaning": "Temizlik",
+      "req3": {
+        "title": "Balkon Gideri Temizliği",
+        "desc": "Balkon gideri tıkanmış."
+      },
+      "just_now": "Az Önce",
+      "description": "Tüm teknik ve destek taleplerinizi buradan takip edebilirsiniz.",
+      "new_request": "Yeni Talep",
+      "pending": "Beklemede",
+      "no_request": "Talep bulunmuyor",
+      "in_progress": "İşlemde",
+      "resolved": "Çözüldü",
+      "modal_title": "Yeni Talep Oluştur",
+      "type_label": "Talep Tipi",
+      "tech_service_desc": "Teknik Servis (Elektrik, Su vb.)",
+      "cleaning_desc": "Ortak Alan Temizliği",
+      "security": "Güvenlik",
+      "security_desc": "Güvenlik Bildirimi",
+      "other": "Diğer",
+      "title_label": "Başlık",
+      "desc_label": "Açıklama",
+      "submit": "Talebi Gönder"
+    },
+    "visitor": {
+      "qr_title": "QR Ziyaretçi Kaydı",
+      "qr_desc": "Misafirinizin adını girerek güvenlik noktasından hızlı geçiş yapabileceği tek kullanımlık bir QR kod oluşturun.",
+      "guest_name_ph": "Misafir Adı Soyadı",
+      "plate_ph": "Araç Plakası (Opsiyonel)",
+      "generate_qr": "QR Kod Üret",
+      "call_valet": "Vale Çağır",
+      "valet_desc": "Aracınızın çıkış kapısına getirilmesi yaklaşık 5-7 dakika sürmektedir.",
+      "prepare_car": "Aracımı Hazırla",
+      "car_bringing": "Aracınız kapıya getiriliyor...",
+      "cancel": "İptal Et",
+      "car_arrived": "Aracınız Kapıda!",
+      "thanks": "Teşekkürler",
+      "modal_title": "Misafir QR Kodu",
+      "validity": "Geçerlilik: 2 Saat"
+    },
+    "support": {
+      "seo_title": "Konsiyerj & Teknik Destek | Luxera Towers",
+      "seo_desc": "Luxera Towers sakinlerine özel 7/24 teknik servis ve konsiyerj hizmetleri.",
+      "hero_overline": "Premium Destek",
+      "hero_title": "Konsiyerj &",
+      "hero_highlight": "Teknik",
+      "hero_subtitle": "Yaşam alanınızdaki her türlü ihtiyacınız için 7/24 hazır profesyonel destek ekibi.",
+      "section_title": "Ayrıcalıklı Hizmet",
+      "section_subtitle": "Teknik bir arıza mı var? Yoksa kuru temizleme talebiniz mi? Ekibimiz bir tık uzağınızda.",
+      "s1": {
+        "title": "Anında Teknik Servis",
+        "desc": "Elektrik, tesisat, iklimlendirme veya akıllı ev sistemlerindeki herhangi bir arıza durumunda, dijital portal üzerinden fotoğraf ekleyerek talebinizi saniyeler içinde oluşturun.",
+        "b1": "Anlık durum takibi",
+        "b2": "Geri bildirim ve puanlama",
+        "b3": "Geçmiş taleplerin arşivi"
+      },
+      "s2": {
+        "title": "7/24 Konsiyerj",
+        "desc": "Taksi çağrısından kuru temizlemeye, ev temizliğinden rezervasyon işlemlerine kadar hayatınızı kolaylaştıran tüm detaylar tek bir panelde.",
+        "b1": "Vale araç çağırma",
+        "b2": "Posta ve kargo takibi",
+        "b3": "VIP transfer yönetimi"
+      },
+      "cta": {
+        "title": "Yeni Talep Oluştur",
+        "desc": "Tüm teknik destek, arıza bildirimi ve konsiyerj taleplerinizi Apsiyon üzerinden giriş yaparak teknik ekibimizin iş sırasına anında ekleyebilirsiniz.",
+        "btn": "Sisteme Giriş"
+      }
+    },
+    "marquee": {
+      "m1": "YENİ METRO İSTASYONU 1 DAKİKA MESAFEDE AÇILIYOR!",
+      "m2": "05-08 ARALIK KAPALI HAVUZ PERİYODİK KIŞ BAKIMI."
+    },
+    "apsiyon": {
+      "badge": "Apsiyon Dijital Yönetim Sistemi",
+      "title1": "Rezidans Yönetimi",
+      "title2": "Cebinizde.",
+      "desc": "Aidat ödemelerinizi güvenle yapın, anlık bakiye durumunuzu kontrol edin, teknik servis taleplerinizi saniyeler içinde iletin ve lüks SPA/Havuz alanlarımız için anında rezervasyon oluşturun.",
+      "login": "Sisteme Giriş Yap"
+    },
+    "stats": {
+      "stat1": {
+        "title": "Tek Tıkla Ödeme",
+        "desc": "3D Secure Güvencesiyle"
+      },
+      "stat2": {
+        "title": "7/24 Teknik Servis",
+        "desc": "Anında Müdahale Ekibi"
+      },
+      "stat3": {
+        "title": "Tesis Rezervasyonu",
+        "desc": "SPA & Kapalı Havuz"
+      }
     }
   },
   "services": {
@@ -1302,7 +1481,16 @@
     "section": {
       "title": "Marka Karması",
       "subtitle": "Ayrıcalıklı bir alışveriş deneyimi için özenle seçilmiş markalar."
-    }
+    },
+    "filters": {
+      "all": "Tümü"
+    },
+    "floor_plan": "Kat Planı",
+    "inspect": "İncele",
+    "hours": "Çalışma Saatleri",
+    "hours_desc": "Her gün: 10:00 - 22:00",
+    "contact": "İletişim",
+    "go_to_store": "Mağaza Sayfasına Git"
   },
   "videos": {
     "stats": {
@@ -1342,7 +1530,32 @@
     },
     "explorer": {
       "title": "İnteraktif Keşif",
-      "subtitle": "Fare tekerleğiyle yakınlaşın, sürükleyerek odayı gezin ve detayları görmek için parlayan noktalara tıklayın."
+      "subtitle": "Fare tekerleğiyle yakınlaşın, sürükleyerek odayı gezin ve detayları görmek için parlayan noktalara tıklayın.",
+      "pan_zoom": "Yakınlaş & Gezin"
     }
+  },
+  "amenityStrip": {
+    "title": "Luxera Yaşamından Kareler"
+  },
+  "cookie": {
+    "close_aria": "Kapat",
+    "title": "Çerez Kullanımı",
+    "desc1": "Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek",
+    "policy": "Çerez Politikası",
+    "and": "ve",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "accept": "Kabul Et"
+  },
+  "whatsapp": {
+    "default_message": "Merhaba, Luxera Towers projesi hakkında detaylı bilgi almak istiyorum.",
+    "title": "Satış Danışmanı",
+    "subtitle": "Size nasıl yardımcı olabiliriz?",
+    "wa_title": "WhatsApp",
+    "wa_desc": "Anında yanıt alın",
+    "call_title": "Bizi Arayın",
+    "call_desc": "Satış ofisine bağlanın",
+    "form_title": "İletişim Formu",
+    "form_desc": "Size geri dönüş yapalım",
+    "aria_label": "İletişim"
   }
 }

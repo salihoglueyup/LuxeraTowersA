@@ -61,9 +61,14 @@ export const getDining = (t) => [
 ];
 
 export const getBoardMembers = (t) => [
-  { id: 1, name: 'Eyüp Salihoğlu', role: t('brands.board.b1.role', 'Yönetim Kurulu Başkanı') },
-  { id: 2, name: 'Halil Çetinöz', role: t('brands.board.b2.role', 'Genel Müdür / Başkan Yardımcısı') },
-  { id: 3, name: 'Ahmet Yılmaz', role: t('brands.board.b3.role', 'Mali İşler Sorumlusu (Sayman)') },
-  { id: 4, name: 'Mehmet Kaya', role: t('brands.board.b4.role', 'Denetim Kurulu Başkanı') },
-  { id: 5, name: 'Zeynep Çelik', role: t('brands.board.b5.role', 'Halkla İlişkiler ve Genel Sekreter') }
+  { id: 1, name: '', role: t('brands.board.b1.role', 'Yönetim Kurulu Başkanı') },
+  { id: 2, name: '', role: t('brands.board.b2.role', 'Genel Müdür / Başkan Yardımcısı') },
+  { id: 3, name: '', role: t('brands.board.b3.role', 'Mali İşler Sorumlusu (Sayman)') },
+  { id: 4, name: '', role: t('brands.board.b4.role', 'Denetim Kurulu Başkanı') },
+  { id: 5, name: '', role: t('brands.board.b5.role', 'Halkla İlişkiler ve Genel Sekreter') },
+  { id: 6, name: '', role: t('brands.board.b6.role', 'Yönetim Kurulu Üyesi') },
+  { id: 7, name: '', role: t('brands.board.b7.role', 'Yönetim Kurulu Üyesi') },
+  { id: 8, name: '', role: t('brands.board.b8.role', 'Tesis Müdürü') },
+  { id: 9, name: '', role: t('brands.board.b9.role', 'Güvenlik Müdürü') },
+  { id: 10, name: '', role: t('brands.board.b10.role', 'Teknik ve Operasyon Müdürü') }
 ];

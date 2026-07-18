@@ -25,7 +25,7 @@ const Security = () => {
               <p className="text-luxera-gold uppercase tracking-[0.3em] text-sm font-semibold">{t('privileges.security.overline', 'Luxera Privileges')}</p>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-serif text-white mb-8">Özel <span className="text-luxera-gold italic">Güvenlik</span></h1>
+            <h1 className="text-5xl md:text-6xl font-serif text-white mb-8">{t('privileges.security.title_prefix', 'Özel')} <span className="text-luxera-gold italic">{t('privileges.security.title_highlight', 'Güvenlik')}</span></h1>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
               {t('privileges.security.desc', 'Sizin ve sevdiklerinizin huzuru bizim için her şeyden önemli. Luxera Towers\'ta, en ileri güvenlik teknolojileri ve alanında uzman profesyonellerle donatılmış, 7/24 kesintisiz bir güvenlik kalkanı sunuyoruz.')}

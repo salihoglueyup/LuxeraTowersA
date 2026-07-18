@@ -4,12 +4,13 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Map, Camera, MousePointerClick, Info, X, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
 import PageHero from '../shared/ui/PageHero';
 import SectionHeader from '../shared/ui/SectionHeader';
-import { virtualTourScenes } from '../data/virtualTour';
+import { getVirtualTourScenes } from '../data/virtualTour';
 import { useTranslation } from 'react-i18next';
 import SEO from '../shared/seo/SEO';
 
 const VirtualTour = () => {
   const { t } = useTranslation();
+  const virtualTourScenes = getVirtualTourScenes(t);
   const [activeScene, setActiveScene] = useState(virtualTourScenes[0]);
   const [activeHotspot, setActiveHotspot] = useState(null);
 
@@ -156,7 +157,7 @@ const VirtualTour = () => {
           {/* st Ynergeler */}
           <div className="absolute top-6 left-6 z-30 flex items-center gap-3 bg-black/50 backdrop-blur-md px-5 py-3 rounded-full border border-white/10 pointer-events-none shadow-lg">
             <MousePointerClick className="text-luxera-gold" size={20} />
-            <span className="text-sm font-medium tracking-wide">Yakınlaş & Gezin</span>
+            <span className="text-sm font-medium tracking-wide">{t('virtualTour.explorer.pan_zoom', 'Yakınlaş & Gezin')}</span>
           </div>
 
           <div className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-luxera-gold text-luxera-navy px-5 py-3 rounded-full font-bold shadow-[0_0_20px_rgba(212,175,55,0.4)] pointer-events-none uppercase tracking-widest text-xs">
