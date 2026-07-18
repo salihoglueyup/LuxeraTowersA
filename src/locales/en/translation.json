@@ -1699,15 +1699,28 @@
   },
   "portal": {
     "login": {
-      "title": "Resident Portal",
-      "subtitle": "Welcome, please login.",
+      "title": "Portal Login",
+      "subtitle": "Welcome to the digital residence management system.",
       "emailLabel": "Email Address",
       "emailPlaceholder": "name@example.com",
       "passwordLabel": "Password",
-      "passwordPlaceholder": "••••••••",
+      "passwordPlaceholder": "Your password",
       "submit": "Login",
       "forgot": "Forgot Password?",
-      "back": "Back to Homepage"
+      "back": "Back to Homepage",
+      "tabPhone": "Phone",
+      "tabTckn": "National ID",
+      "tabEmail": "Email",
+      "phoneLabel": "Mobile Phone",
+      "tcknLabel": "National ID No",
+      "phonePlaceholder": "0(5XX) XXX XX XX",
+      "tcknPlaceholder": "11-digit National ID",
+      "remember": "Remember Me",
+      "submitting": "Logging in...",
+      "supportQuestion": "Can't access the system?",
+      "supportCall": "Call the Support Line",
+      "seoTitle": "Login | Luxera Towers Resident Portal",
+      "seoDesc": "Log in to the digital management system exclusive to Luxera Towers residents."
     },
     "nav": {
       "logout": "Logout",
@@ -1740,7 +1753,8 @@
       "vip_room": "VIP Meeting Room",
       "time_label": "clock",
       "full": "(Full)",
-      "book_btn": "Book"
+      "book_btn": "Book",
+      "modal_desc": "Search availability for December {{day}}, 2025."
     },
     "charging": {
       "title": "EV Charging Stations",
@@ -1810,7 +1824,8 @@
       "car_arrived": "Your Vehicle is at the Door!",
       "thanks": "Thank you",
       "modal_title": "Guest QR Code",
-      "validity": "Validity: 2 Hours"
+      "validity": "Validity: 2 Hours",
+      "modal_desc": "Your guest {{name}} can enter by scanning this code."
     },
     "support": {
       "seo_title": "Concierge & Technical Support | Luxera Towers",
@@ -2002,7 +2017,8 @@
     "hours": "Working Hours",
     "hours_desc": "Every day: 10:00 - 22:00",
     "contact": "Contact",
-    "go_to_store": "Go to Store Page"
+    "go_to_store": "Go to Store Page",
+    "store_desc": "{{name}} brings the newest collections of luxury and elegance to its visitors at Luxera Towers Mall. Feel privileged with a private appointment shopping experience and VIP fitting room services."
   },
   "videos": {
     "seo": {

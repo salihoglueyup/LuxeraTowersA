@@ -993,15 +993,28 @@
   },
   "portal": {
     "login": {
-      "title": "Портал резидентов",
-      "subtitle": "Добро пожаловать, пожалуйста, войдите.",
-      "emailLabel": "Email",
+      "title": "Вход в портал",
+      "subtitle": "Добро пожаловать в цифровую систему управления резиденцией.",
+      "emailLabel": "Электронная почта",
       "emailPlaceholder": "name@example.com",
       "passwordLabel": "Пароль",
-      "passwordPlaceholder": "••••••••",
+      "passwordPlaceholder": "Ваш пароль",
       "submit": "Войти",
       "forgot": "Забыли пароль?",
-      "back": "На главную"
+      "back": "На главную",
+      "tabPhone": "Телефон",
+      "tabTckn": "ИНН",
+      "tabEmail": "E-mail",
+      "phoneLabel": "Мобильный телефон",
+      "tcknLabel": "Идент. номер",
+      "phonePlaceholder": "0(5XX) XXX XX XX",
+      "tcknPlaceholder": "11-значный ид. номер",
+      "remember": "Запомнить меня",
+      "submitting": "Вход...",
+      "supportQuestion": "Не можете войти в систему?",
+      "supportCall": "Позвонить в поддержку",
+      "seoTitle": "Вход | Портал жителей Luxera Towers",
+      "seoDesc": "Войдите в цифровую систему управления, доступную только жителям Luxera Towers."
     },
     "nav": {
       "logout": "Выйти",
@@ -1034,7 +1047,8 @@
       "vip_room": "VIP-конференц-зал",
       "time_label": "часы",
       "full": "(Полный)",
-      "book_btn": "Забронировать"
+      "book_btn": "Забронировать",
+      "modal_desc": "Проверьте наличие на {{day}} декабря 2025 г."
     },
     "charging": {
       "title": "Зарядные станции для электромобилей",
@@ -1104,7 +1118,8 @@
       "car_arrived": "Ваш автомобиль у дверей!",
       "thanks": "Спасибо",
       "modal_title": "Гостевой QR-код",
-      "validity": "Срок действия: 2 часа"
+      "validity": "Срок действия: 2 часа",
+      "modal_desc": "Ваш гость {{name}} может войти, отсканировав этот код."
     },
     "support": {
       "seo_title": "Консьерж и техническая поддержка | Люксера Тауэрс",
@@ -1291,7 +1306,8 @@
     "hours": "Çalışma Saatleri",
     "hours_desc": "Her gün: 10:00 - 22:00",
     "contact": "İletişim",
-    "go_to_store": "Mağaza Sayfasına Git"
+    "go_to_store": "Mağaza Sayfasına Git",
+    "store_desc": "{{name}} представляет новейшие коллекции роскоши и элегантности в торговом центре Luxera Towers. Почувствуйте себя привилегированно с индивидуальным шопингом по записи и VIP-примерочными."
   },
   "videos": {
     "seo": {

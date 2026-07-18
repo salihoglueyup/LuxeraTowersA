@@ -1484,7 +1484,16 @@
       },
       "title_prefix": "Özel",
       "title_highlight": "Güvenlik",
-      "desc": "Sizin ve sevdiklerinizin huzuru bizim için her şeyden önemli. Luxera Towers\\'ta, en ileri güvenlik teknolojileri ve alanında uzman profesyonellerle donatılmış, 7/24 kesintisiz bir güvenlik kalkanı sunuyoruz."
+      "desc": "Sizin ve sevdiklerinizin huzuru bizim için her şeyden önemli. Luxera Towers\\'ta, en ileri güvenlik teknolojileri ve alanında uzman profesyonellerle donatılmış, 7/24 kesintisiz bir güvenlik kalkanı sunuyoruz.",
+      "extras": {
+        "title": "Görünmez Kalkan, Mutlak Huzur",
+        "p1": "Güvenlik sistemlerimiz konforunuzu ve mahremiyetinizi bozmadan arka planda kusursuzca çalışır.",
+        "p2": "Akıllı ev altyapımız sayesinde evinizin güvenliğini cep telefonunuzdan yönetebilir, misafirleriniz için geçici erişim kodları tanımlayabilir ve her şeyi anlık takip edebilirsiniz.",
+        "b1": "Profesyonel 7/24 aktif güvenlik ekibi",
+        "b2": "Kapsamlı CCTV izleme ve kayıt sistemi",
+        "b3": "Çok katmanlı akıllı geçiş kontrolü (Biyometrik/Kart)",
+        "b4": "Mobil entegre misafir ve teslimat takibi"
+      }
     },
     "valet": {
       "overline": "Luxera Privileges",
@@ -1574,7 +1583,8 @@
       "downloadPlan": "Kataloğu İndir",
       "zoom": "Örnek Daireyi İncele",
       "hideDimensions": "Ölçüleri Gizle",
-      "showDimensions": "Ölçüleri Göster"
+      "showDimensions": "Ölçüleri Göster",
+      "overline": "Seçenekler"
     },
     "process": {
       "overline": "Adım Adım",
@@ -1664,6 +1674,33 @@
           "4+1TipD": "4+1 Tip D"
         }
       }
+    },
+    "intro": {
+      "title": "Yaşam Standartlarını Yeniden Tanımlayan Mimari"
+    },
+    "gallery": {
+      "overline": "Galeri",
+      "title": "Yaşam Alanları"
+    },
+    "features": {
+      "overline": "Özellikler",
+      "title": "Fark Yaratan Detaylar",
+      "f1": {
+        "title": "Akıllı Ev Teknolojileri",
+        "desc": "Aydınlatma, iklimlendirme ve güvenliği tabletiniz veya akıllı telefonunuzdan tek dokunuşla kontrol edin."
+      },
+      "f2": {
+        "title": "Premium Malzemeler",
+        "desc": "Birinci sınıf doğal taş, ithal parke ve özel tasarım mutfak dolapları."
+      },
+      "f3": {
+        "title": "Panoramik Manzara",
+        "desc": "Tavandan tabana pencereler, 3.20m tavan yüksekliği ve kesintisiz şehir manzarası."
+      },
+      "f4": {
+        "title": "Geniş Balkon & Teraslar",
+        "desc": "Şehirle nefes alan, gökyüzü bahçeleriyle bütünleşen geniş balkonlar."
+      }
     }
   },
   "portal": {
@@ -1717,7 +1754,7 @@
       "time_label": "Saat",
       "full": "(Dolu)",
       "book_btn": "Yer Ayırt",
-      "modal_desc": "{{day}} Aralık 2025 için müsaitlik arayın.', { day: selectedDay })}</p>\n              \n              <form onSubmit={handleBook} className=\"space-y-4\">\n                <div>\n                  <label className=\"block text-sm text-gray-400 mb-2\">{t('portal.reservations.facility_label', 'Tesis"
+      "modal_desc": "{{day}} Aralık 2025 için müsaitlik arayın."
     },
     "charging": {
       "title": "EV Şarj İstasyonları",
@@ -1788,7 +1825,7 @@
       "thanks": "Teşekkürler",
       "modal_title": "Misafir QR Kodu",
       "validity": "Geçerlilik: 2 Saat",
-      "modal_desc": "{{name}} adlı misafiriniz bu kodu okutarak giriş yapabilir.', { name: guestName })}</p>\n              \n              <div className=\"bg-white p-4 rounded-xl inline-block mb-6 shadow-[0_0_30px_rgba(255,255,255,0.2)]\">\n                {/* Fake QR using Lucide icon scaled up for visual */}\n                <QrCode size={200} className=\"text-black\" />\n              </div>\n              \n              <p className=\"text-luxera-gold text-xs font-bold uppercase tracking-widest\">{t('portal.visitor.validity', 'Geçerlilik: 2 Saat"
+      "modal_desc": "{{name}} adlı misafiriniz bu kodu okutarak giriş yapabilir."
     },
     "support": {
       "seo_title": "Konsiyerj & Teknik Destek | Luxera Towers",
@@ -1844,6 +1881,35 @@
         "title": "Tesis Rezervasyonu",
         "desc": "SPA & Kapalı Havuz"
       }
+    },
+    "login": {
+      "title": "Portal Girişi",
+      "subtitle": "Dijital rezidans yönetimi sistemine hoş geldiniz.",
+      "emailLabel": "E-Posta Adresi",
+      "emailPlaceholder": "ornek@email.com",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "Şifreniz",
+      "submit": "Giriş Yap",
+      "forgot": "Şifremi Unuttum",
+      "back": "Ana Sayfaya Dön",
+      "tabPhone": "Telefon",
+      "tabTckn": "TCKN",
+      "tabEmail": "E-Posta",
+      "phoneLabel": "Cep Telefonu",
+      "tcknLabel": "TC Kimlik No",
+      "phonePlaceholder": "0(5XX) XXX XX XX",
+      "tcknPlaceholder": "11 Haneli TCKN",
+      "remember": "Beni Hatırla",
+      "submitting": "Giriş Yapılıyor...",
+      "supportQuestion": "Sisteme giriş yapamıyor musunuz?",
+      "supportCall": "Destek Hattını Arayın",
+      "seoTitle": "Giriş Yap | Luxera Towers Sakinler Portalı",
+      "seoDesc": "Luxera Towers sakinlerine özel dijital yönetim sistemine giriş yapın."
+    },
+    "nav": {
+      "logout": "Çıkış Yap",
+      "profile": "Profilim",
+      "settings": "Ayarlar"
     }
   },
   "services": {
@@ -1925,7 +1991,14 @@
       "desc": "Luxera Towers ayrıcalıklarını ve hizmet standartlarını yakından deneyimlemek için bizimle iletişime geçin.",
       "primary": "İletişime Geçin"
     },
-    "category": "Hizmet"
+    "category": "Hizmet",
+    "seo": {
+      "title": "Hizmetler ve Olanaklar"
+    },
+    "section": {
+      "title": "Tüm Hizmetler",
+      "subtitle": "Hayatınızı kolaylaştırmak ve konforunuzu en üst düzeye çıkarmak için tasarlandı."
+    }
   },
   "stores": {
     "seo": {
@@ -1951,7 +2024,7 @@
     "hours_desc": "Her gün: 10:00 - 22:00",
     "contact": "İletişim",
     "go_to_store": "Mağaza Sayfasına Git",
-    "store_desc": "{{name}}, Luxera Towers AVM\\'de lüksün ve zarafetin en yeni koleksiyonlarını ziyaretçileriyle buluşturuyor. Özel randevulu alışveriş deneyimi ve VIP kabin hizmetleriyle ayrıcalıklı hissedin.', { name: selectedStore.name })}\n                    </p>\n                  </div>\n                </div>\n              </div>\n\n              <div className=\"p-8 border-t border-white/10 shrink-0\">\n                <button className=\"w-full bg-luxera-gold text-luxera-navy font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2\">\n                  {t('stores.go_to_store', 'Mağaza Sayfasına Git"
+    "store_desc": "{{name}}, Luxera Towers AVM'de lüksün ve zarafetin en yeni koleksiyonlarını ziyaretçileriyle buluşturuyor. Özel randevulu alışveriş deneyimi ve VIP kabin hizmetleriyle ayrıcalıklı hissedin."
   },
   "videos": {
     "stats": {
@@ -1977,6 +2050,13 @@
       "primary": "Sanal Tura Başla",
       "secondary": "Randevu Alın",
       "desc": "Videolarla tanıdığınız Luxera Towers\\'ı sanal turumuzla adım adım gezin veya yerinde görmek için randevu alın."
+    },
+    "seo": {
+      "title": "Videolar ve Tanıtım Filmleri"
+    },
+    "section": {
+      "title": "Proje Videoları",
+      "subtitle": "Projemizin ayrıcalıklı dünyasına daha yakından bakın."
     }
   },
   "virtualTour": {
@@ -2052,6 +2132,10 @@
           "desc": "Ergonomik tasarımlı, çocuklara özel sağlıklı uyku alanı."
         }
       }
+    },
+    "section": {
+      "title": "Tura Başla",
+      "subtitle": "İnteraktif olarak keşfetmek için bir alan seçin."
     }
   },
   "amenityStrip": {

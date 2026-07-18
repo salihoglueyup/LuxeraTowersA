@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Phone, Mail, CreditCard, Lock, ChevronRight, User, Eye, EyeOff, Loader2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SEO from '../../shared/seo/SEO';
 
 const Login = () => {
+  const { t } = useTranslation();
   const [loginMethod, setLoginMethod] = useState('phone'); // phone, email, tckn
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -23,9 +25,9 @@ const Login = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-luxera-navy pt-20 pb-12">
-      <SEO 
-        title="Giriş Yap | Luxera Towers Sakinler Portalı"
-        description="Luxera Towers sakinlerine özel dijital yönetim sistemine giriş yapın."
+      <SEO
+        title={t('portal.login.seoTitle')}
+        description={t('portal.login.seoDesc')}
       />
 
       {/* Background with parallax effect */}
@@ -52,8 +54,8 @@ const Login = () => {
             <Link to="/" className="inline-block mb-6">
               <img src="/images/logo/logo.webp" alt="Luxera Logo" className="h-10 mx-auto brightness-0 invert" />
             </Link>
-            <h1 className="text-2xl font-serif text-white mb-2">Portal Girişi</h1>
-            <p className="text-gray-400 text-sm">Dijital rezidans yönetimi sistemine hoş geldiniz.</p>
+            <h1 className="text-2xl font-serif text-white mb-2">{t('portal.login.title')}</h1>
+            <p className="text-gray-400 text-sm">{t('portal.login.subtitle')}</p>
           </div>
 
           {/* Login Method Selector */}
@@ -63,21 +65,21 @@ const Login = () => {
               onClick={() => setLoginMethod('phone')}
               className={`flex-1 flex items-center justify-center gap-2 py-2 text-sm font-semibold rounded-lg transition-all ${loginMethod === 'phone' ? 'bg-luxera-gold text-luxera-navy shadow-md' : 'text-gray-400 hover:text-white'}`}
             >
-              <Phone size={14} /> Telefon
+              <Phone size={14} /> {t('portal.login.tabPhone')}
             </button>
             <button 
               type="button"
               onClick={() => setLoginMethod('tckn')}
               className={`flex-1 flex items-center justify-center gap-2 py-2 text-sm font-semibold rounded-lg transition-all ${loginMethod === 'tckn' ? 'bg-luxera-gold text-luxera-navy shadow-md' : 'text-gray-400 hover:text-white'}`}
             >
-              <CreditCard size={14} /> TCKN
+              <CreditCard size={14} /> {t('portal.login.tabTckn')}
             </button>
             <button 
               type="button"
               onClick={() => setLoginMethod('email')}
               className={`flex-1 flex items-center justify-center gap-2 py-2 text-sm font-semibold rounded-lg transition-all ${loginMethod === 'email' ? 'bg-luxera-gold text-luxera-navy shadow-md' : 'text-gray-400 hover:text-white'}`}
             >
-              <Mail size={14} /> E-Posta
+              <Mail size={14} /> {t('portal.login.tabEmail')}
             </button>
           </div>
 
@@ -85,7 +87,7 @@ const Login = () => {
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="block text-xs font-semibold text-gray-300 uppercase tracking-widest mb-2">
-                {loginMethod === 'phone' ? 'Cep Telefonu' : loginMethod === 'tckn' ? 'TC Kimlik No' : 'E-Posta Adresi'}
+                {loginMethod === 'phone' ? t('portal.login.phoneLabel') : loginMethod === 'tckn' ? t('portal.login.tcknLabel') : t('portal.login.emailLabel')}
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
@@ -93,7 +95,7 @@ const Login = () => {
                 </div>
                 <input 
                   type={loginMethod === 'email' ? 'email' : 'text'}
-                  placeholder={loginMethod === 'phone' ? '0(5XX) XXX XX XX' : loginMethod === 'tckn' ? '11 Haneli TCKN' : 'ornek@email.com'}
+                  placeholder={loginMethod === 'phone' ? t('portal.login.phonePlaceholder') : loginMethod === 'tckn' ? t('portal.login.tcknPlaceholder') : t('portal.login.emailPlaceholder')}
                   className="w-full bg-black/40 border border-white/10 text-white pl-12 pr-4 py-3 rounded-xl focus:outline-none focus:border-luxera-gold focus:ring-1 focus:ring-luxera-gold transition-all"
                   required
                 />
@@ -102,7 +104,7 @@ const Login = () => {
 
             <div>
               <label className="block text-xs font-semibold text-gray-300 uppercase tracking-widest mb-2">
-                Şifre
+                {t('portal.login.passwordLabel')}
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
@@ -110,7 +112,7 @@ const Login = () => {
                 </div>
                 <input 
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Şifreniz"
+                  placeholder={t('portal.login.passwordPlaceholder')}
                   className="w-full bg-black/40 border border-white/10 text-white pl-12 pr-12 py-3 rounded-xl focus:outline-none focus:border-luxera-gold focus:ring-1 focus:ring-luxera-gold transition-all"
                   required
                 />
@@ -127,10 +129,10 @@ const Login = () => {
             <div className="flex items-center justify-between mt-2 mb-6">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input type="checkbox" className="form-checkbox bg-black/40 border-white/10 text-luxera-gold focus:ring-luxera-gold rounded" />
-                <span className="text-sm text-gray-300">Beni Hatırla</span>
+                <span className="text-sm text-gray-300">{t('portal.login.remember')}</span>
               </label>
               <button type="button" className="text-sm text-luxera-gold hover:text-white transition-colors">
-                Şifremi Unuttum
+                {t('portal.login.forgot')}
               </button>
             </div>
 
@@ -140,18 +142,18 @@ const Login = () => {
               className="w-full bg-luxera-gold text-luxera-navy font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {isLoading ? (
-                <><Loader2 size={20} className="animate-spin" /> Giriş Yapılıyor...</>
+                <><Loader2 size={20} className="animate-spin" /> {t('portal.login.submitting')}</>
               ) : (
-                <>Giriş Yap <ChevronRight size={18} /></>
+                <>{t('portal.login.submit')} <ChevronRight size={18} /></>
               )}
             </button>
           </form>
 
           <div className="mt-8 text-center border-t border-white/10 pt-6">
             <p className="text-sm text-gray-400">
-              Sisteme giriş yapamıyor musunuz? <br/>
+              {t('portal.login.supportQuestion')} <br/>
               <a href="tel:+902120000000" className="text-luxera-gold hover:text-white transition-colors font-semibold">
-                Destek Hattını Arayın
+                {t('portal.login.supportCall')}
               </a>
             </p>
           </div>
