@@ -1,6 +1,7 @@
 export const getEvents = (t) => [
   {
     id: "ornek-daire",
+    type: "event",
     category: t('events.ornek-daire.category', "Etkinlik"),
     date: t('events.ornek-daire.date', "28 Ekim 2025"),
     isoDate: "2025-10-28",
@@ -11,6 +12,7 @@ export const getEvents = (t) => [
   },
   {
     id: "indirim-kampanya",
+    type: "campaign",
     category: t('events.indirim-kampanya.category', "Kampanya"),
     date: t('events.indirim-kampanya.date', "10 Kasım 2025"),
     isoDate: "2025-11-10",
@@ -21,6 +23,7 @@ export const getEvents = (t) => [
   },
   {
     id: "metro-istasyonu",
+    type: "news",
     category: t('events.metro-istasyonu.category', "Haber"),
     date: t('events.metro-istasyonu.date', "23 Kasım 2025"),
     isoDate: "2025-11-23",
@@ -31,6 +34,7 @@ export const getEvents = (t) => [
   },
   {
     id: "kitap-gunleri",
+    type: "event",
     category: t('events.kitap-gunleri.category', "Eğlence ve Organizasyon"),
     date: t('events.kitap-gunleri.date', "06 Aralık 2025"),
     isoDate: "2025-12-06",
@@ -41,6 +45,7 @@ export const getEvents = (t) => [
   },
   {
     id: "muzik-dinletisi",
+    type: "event",
     category: t('events.muzik-dinletisi.category', "Eğlence ve Organizasyon"),
     date: t('events.muzik-dinletisi.date', "19 Aralık 2025"),
     isoDate: "2025-12-19",
@@ -51,6 +56,7 @@ export const getEvents = (t) => [
   },
   {
     id: "havuz-bakimi",
+    type: "announcement",
     category: t('events.havuz-bakimi.category', "Duyuru"),
     date: t('events.havuz-bakimi.date', "01 Ocak 2026"),
     isoDate: "2026-01-01",
@@ -61,6 +67,7 @@ export const getEvents = (t) => [
   },
   {
     id: "teknoloji-zirvesi",
+    type: "news",
     category: t('events.teknoloji-zirvesi.category', "Haber"),
     date: t('events.teknoloji-zirvesi.date', "14 Ocak 2026"),
     isoDate: "2026-01-14",
@@ -71,6 +78,7 @@ export const getEvents = (t) => [
   },
   {
     id: "kis-senligi-2026",
+    type: "event",
     category: t('events.kis-senligi-2026.category', "Eğlence ve Organizasyon"),
     date: t('events.kis-senligi-2026.date', "27 Ocak 2026"),
     isoDate: "2026-01-27",
@@ -81,6 +89,7 @@ export const getEvents = (t) => [
   },
   {
     id: "okula-donus-2026",
+    type: "campaign",
     category: t('events.okula-donus-2026.category', "Kampanya"),
     date: t('events.okula-donus-2026.date', "09 Şubat 2026"),
     isoDate: "2026-02-09",
@@ -91,6 +100,7 @@ export const getEvents = (t) => [
   },
   {
     id: "sanat-sokagi-2026",
+    type: "event",
     category: t('events.sanat-sokagi-2026.category', "Etkinlik"),
     date: t('events.sanat-sokagi-2026.date', "22 Şubat 2026"),
     isoDate: "2026-02-22",
@@ -101,6 +111,7 @@ export const getEvents = (t) => [
   },
   {
     id: "avm-konseri-2026",
+    type: "event",
     category: t('events.avm-konseri-2026.category', "Eğlence ve Organizasyon"),
     date: t('events.avm-konseri-2026.date', "07 Mart 2026"),
     isoDate: "2026-03-07",
@@ -111,6 +122,7 @@ export const getEvents = (t) => [
   },
   {
     id: "klima-bakim-2",
+    type: "announcement",
     category: t('events.klima-bakim-2.category', "Duyuru"),
     date: t('events.klima-bakim-2.date', "20 Mart 2026"),
     isoDate: "2026-03-20",
@@ -121,6 +133,7 @@ export const getEvents = (t) => [
   },
   {
     id: "gastro-fest-2026",
+    type: "event",
     category: t('events.gastro-fest-2026.category', "Etkinlik"),
     date: t('events.gastro-fest-2026.date', "02 Nisan 2026"),
     isoDate: "2026-04-02",
@@ -131,6 +144,7 @@ export const getEvents = (t) => [
   },
   {
     id: "bahar-senligi-2026",
+    type: "event",
     category: t('events.bahar-senligi-2026.category', "Eğlence ve Organizasyon"),
     date: t('events.bahar-senligi-2026.date', "15 Nisan 2026"),
     isoDate: "2026-04-15",
@@ -141,6 +155,7 @@ export const getEvents = (t) => [
   },
   {
     id: "yatirim-semineri-2026",
+    type: "news",
     category: t('events.yatirim-semineri-2026.category', "Haber"),
     date: t('events.yatirim-semineri-2026.date', "28 Nisan 2026"),
     isoDate: "2026-04-28",
@@ -151,6 +166,7 @@ export const getEvents = (t) => [
   },
   {
     id: "arac-sarj-2",
+    type: "news",
     category: t('events.arac-sarj-2.category', "Haber"),
     date: t('events.arac-sarj-2.date', "11 Mayıs 2026"),
     isoDate: "2026-05-11",
@@ -161,6 +177,7 @@ export const getEvents = (t) => [
   },
   {
     id: "bahar-kampanyasi",
+    type: "campaign",
     category: t('events.bahar-kampanyasi.category', "Kampanya"),
     date: t('events.bahar-kampanyasi.date', "24 Mayıs 2026"),
     isoDate: "2026-05-24",
@@ -171,6 +188,7 @@ export const getEvents = (t) => [
   },
   {
     id: "satranc-turnuvasi",
+    type: "event",
     category: t('events.satranc-turnuvasi.category', "Etkinlik"),
     date: t('events.satranc-turnuvasi.date', "06 Haziran 2026"),
     isoDate: "2026-06-06",
@@ -181,6 +199,7 @@ export const getEvents = (t) => [
   },
   {
     id: "yaza-merhaba-hazirlik",
+    type: "announcement",
     category: t('events.yaza-merhaba-hazirlik.category', "Duyuru"),
     date: t('events.yaza-merhaba-hazirlik.date', "19 Haziran 2026"),
     isoDate: "2026-06-19",
@@ -191,6 +210,7 @@ export const getEvents = (t) => [
   },
   {
     id: "yaz-balosu-2026",
+    type: "event",
     category: t('events.yaz-balosu-2026.category', "Eğlence ve Organizasyon"),
     date: t('events.yaz-balosu-2026.date', "02 Temmuz 2026"),
     isoDate: "2026-07-02",

@@ -292,7 +292,7 @@ const Events = () => {
                   </p>
                 </div>
 
-                {(selected.category.includes('Eğlence') || selected.category.includes('Etkinlik')) && (
+                {selected.type === 'event' && (
                   <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/10">
                     <div className="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 md:gap-6 text-center sm:text-left">
                       <div>
