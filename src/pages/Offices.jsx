@@ -58,7 +58,7 @@ const Offices = () => {
           <div className="w-full lg:w-1/4 xl:w-1/5 shrink-0">
             <div className="sticky top-32 bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md">
               <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">
-                <Building size={20} className="inline-block mr-2 text-luxera-gold" /> Sektörler
+                <Building size={20} className="inline-block mr-2 text-luxera-gold" /> {t('offices.ui.sectors', 'Sektörler')}
               </h3>
               <div className="flex flex-col gap-3">
                 {sectors.map((sector, idx) => (
@@ -129,7 +129,7 @@ const Offices = () => {
                           </div>
                           
                           <span className="text-luxera-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold tracking-wide">
-                            İncele &rarr;
+                            {t('offices.ui.explore', 'İncele')} &rarr;
                           </span>
                         </div>
                       </div>
@@ -184,22 +184,22 @@ const Offices = () => {
                 <div className="space-y-6">
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                     <div className="flex items-center gap-3 text-white mb-2 font-semibold">
-                      <Phone size={18} className="text-luxera-gold" /> Santral
+                      <Phone size={18} className="text-luxera-gold" /> {t('offices.ui.switchboard', 'Santral')}
                     </div>
                     <p className="text-gray-400 text-sm ml-7">+90 212 000 00 00</p>
                   </div>
 
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                     <div className="flex items-center gap-3 text-white mb-2 font-semibold">
-                      <Globe size={18} className="text-luxera-gold" /> Web Sitesi
+                      <Globe size={18} className="text-luxera-gold" /> {t('offices.ui.website', 'Web Sitesi')}
                     </div>
                     <p className="text-gray-400 text-sm ml-7">www.{selectedOffice.name.toLowerCase().replace(/[^a-z0-9]/g, '')}.com</p>
                   </div>
                   
                   <div className="pt-8 border-t border-white/10">
-                    <h4 className="text-white font-serif text-xl mb-4">Şirket Profili</h4>
+                    <h4 className="text-white font-serif text-xl mb-4">{t('offices.ui.companyProfile', 'Şirket Profili')}</h4>
                     <p className="text-gray-400 leading-relaxed text-sm">
-                      {selectedOffice.description} Luxera Towers'ın akıllı bina altyapısı ve prestijli lokasyonu, global vizyona sahip şirketler için ideal bir çalışma ortamı sunuyor. LEED sertifikalı çevre dostu ofis alanlarımız, çalışan verimliliğini maksimuma çıkaracak şekilde tasarlandı.
+                      {selectedOffice.description} {t('offices.ui.aboutSuffix', "Luxera Towers'ın akıllı bina altyapısı ve prestijli lokasyonu, global vizyona sahip şirketler için ideal bir çalışma ortamı sunuyor. LEED sertifikalı çevre dostu ofis alanlarımız, çalışan verimliliğini maksimuma çıkaracak şekilde tasarlandı.")}
                     </p>
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const Offices = () => {
 
               <div className="p-8 border-t border-white/10 shrink-0">
                 <button className="w-full bg-luxera-gold text-luxera-navy font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2">
-                  İletişime Geç <ExternalLink size={16} />
+                  {t('offices.ui.contact', 'İletişime Geç')} <ExternalLink size={16} />
                 </button>
               </div>
             </motion.div>

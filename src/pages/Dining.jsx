@@ -58,7 +58,7 @@ const Dining = () => {
           <div className="w-full lg:w-1/4 xl:w-1/5 shrink-0">
             <div className="sticky top-32 bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md">
               <h3 className="text-xl font-serif text-white mb-6 border-b border-white/10 pb-4">
-                <MapPin size={20} className="inline-block mr-2 text-luxera-gold" /> Kat Planı
+                <MapPin size={20} className="inline-block mr-2 text-luxera-gold" /> {t('dining.ui.floorPlan', 'Kat Planı')}
               </h3>
               <div className="flex flex-col gap-3">
                 {floors.map((floor, idx) => (
@@ -129,7 +129,7 @@ const Dining = () => {
                           </div>
                           
                           <span className="text-luxera-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold tracking-wide">
-                            İncele &rarr;
+                            {t('dining.ui.explore', 'İncele')} &rarr;
                           </span>
                         </div>
                       </div>
@@ -184,22 +184,22 @@ const Dining = () => {
                 <div className="space-y-6">
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                     <div className="flex items-center gap-3 text-white mb-2 font-semibold">
-                      <Clock size={18} className="text-luxera-gold" /> Çalışma Saatleri
+                      <Clock size={18} className="text-luxera-gold" /> {t('dining.ui.hours', 'Çalışma Saatleri')}
                     </div>
-                    <p className="text-gray-400 text-sm ml-7">Her gün: 12:00 - 00:00 (Mutfak kapanış: 23:30)</p>
+                    <p className="text-gray-400 text-sm ml-7">{t('dining.ui.hoursValue', 'Her gün: 12:00 - 00:00 (Mutfak kapanış: 23:30)')}</p>
                   </div>
 
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                     <div className="flex items-center gap-3 text-white mb-2 font-semibold">
-                      <Phone size={18} className="text-luxera-gold" /> Rezervasyon
+                      <Phone size={18} className="text-luxera-gold" /> {t('dining.ui.reservation', 'Rezervasyon')}
                     </div>
                     <p className="text-gray-400 text-sm ml-7">+90 212 000 00 00</p>
                   </div>
                   
                   <div className="pt-8 border-t border-white/10">
-                    <h4 className="text-white font-serif text-xl mb-4">Mekan Hakkında</h4>
+                    <h4 className="text-white font-serif text-xl mb-4">{t('dining.ui.about', 'Mekan Hakkında')}</h4>
                     <p className="text-gray-400 leading-relaxed text-sm">
-                      {selectedDining.description} Luxera Towers'ın eşsiz atmosferinde, dünya standartlarında servis kalitesiyle misafirlerimizi ağırlıyoruz. Özel iş yemekleri, kutlamalar ve romantik akşam yemekleri için mükemmel bir tercih.
+                      {selectedDining.description} {t('dining.ui.aboutSuffix', "Luxera Towers'ın eşsiz atmosferinde, dünya standartlarında servis kalitesiyle misafirlerimizi ağırlıyoruz. Özel iş yemekleri, kutlamalar ve romantik akşam yemekleri için mükemmel bir tercih.")}
                     </p>
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const Dining = () => {
 
               <div className="p-8 border-t border-white/10 shrink-0">
                 <button className="w-full bg-luxera-gold text-luxera-navy font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2">
-                  Menüyü İncele <ExternalLink size={16} />
+                  {t('dining.ui.menu', 'Menüyü İncele')} <ExternalLink size={16} />
                 </button>
               </div>
             </motion.div>

@@ -52,7 +52,13 @@
     "offices": "Ofisler & Şirketler",
     "stores": "Mağazalar & Markalar",
     "dining": "Yeme & İçme",
-    "residentPortal": "Sakinler Portalı"
+    "residentPortal": "Sakinler Portalı",
+    "portalHome": "Portal Anasayfa",
+    "financeDues": "Finans & Aidat",
+    "conciergeSupport": "Konsiyerj & Destek",
+    "socialLifeSpa": "Sosyal Yaşam & SPA",
+    "systemLogin": "Sisteme Giriş",
+    "residents": "Sakinler"
   },
   "pageTitles": {
     "default": "Luxera Towers | Basın Ekspres'te Gökyüzü Bahçeleri",
@@ -316,6 +322,9 @@
       "phone": "İletişim",
       "email": "E-posta",
       "hours": "Çalışma Saatleri"
+    },
+    "ui": {
+      "salesOffice": "Satış Ofisi"
     }
   },
   "footer": {
@@ -625,6 +634,16 @@
     },
     "filters": {
       "all": "Tümü"
+    },
+    "ui": {
+      "floorPlan": "Kat Planı",
+      "explore": "İncele",
+      "hours": "Çalışma Saatleri",
+      "hoursValue": "Her gün: 12:00 - 00:00 (Mutfak kapanış: 23:30)",
+      "reservation": "Rezervasyon",
+      "about": "Mekan Hakkında",
+      "aboutSuffix": "Luxera Towers'ın eşsiz atmosferinde, dünya standartlarında servis kalitesiyle misafirlerimizi ağırlıyoruz. Özel iş yemekleri, kutlamalar ve romantik akşam yemekleri için mükemmel bir tercih.",
+      "menu": "Menüyü İncele"
     }
   },
   "events": {
@@ -785,6 +804,15 @@
       "title": "Geleneksel Yaz Balosu 2026",
       "desc": "Havuz başında ve terasta elit bir atmosferde yaza merhaba deyin.",
       "body": "Buzlu kokteyl ikramı ve canlı orkestra eşliğinde unutulmaz sıcak bir gece."
+    },
+    "ui": {
+      "viewDetails": "Detayları İncele",
+      "readMore": "Devamını Oku",
+      "empty": "Bu kategoride henüz bir etkinlik bulunmamaktadır.",
+      "magazine": "Luxera Gündem",
+      "markCalendar": "Takviminizi İşaretleyin",
+      "markCalendarDesc": "Bu özel etkinliği kaçırmamak için ajandanıza ekleyin.",
+      "addToCalendar": "Takvime Ekle"
     }
   },
   "faq": {
@@ -983,6 +1011,14 @@
     "cursor": {
       "play": "İZLE",
       "view": "BÜYÜT"
+    },
+    "ui": {
+      "downloadPdf": "PDF İndir",
+      "loadMore": "Daha Fazla Göster",
+      "autoplaying": "Otomatik Oynatılıyor",
+      "shareWhatsapp": "WhatsApp'ta Paylaş",
+      "askRep": "Temsilciye Sor",
+      "downloadCatalog": "E-Katalog İndir"
     }
   },
   "guide": {
@@ -1317,6 +1353,15 @@
     },
     "filters": {
       "all": "Tümü"
+    },
+    "ui": {
+      "sectors": "Sektörler",
+      "explore": "İncele",
+      "switchboard": "Santral",
+      "website": "Web Sitesi",
+      "companyProfile": "Şirket Profili",
+      "aboutSuffix": "Luxera Towers'ın akıllı bina altyapısı ve prestijli lokasyonu, global vizyona sahip şirketler için ideal bir çalışma ortamı sunuyor. LEED sertifikalı çevre dostu ofis alanlarımız, çalışan verimliliğini maksimuma çıkaracak şekilde tasarlandı.",
+      "contact": "İletişime Geç"
     }
   },
   "privileges": {

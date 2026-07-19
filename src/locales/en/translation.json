@@ -52,7 +52,13 @@
     "offices": "Offices & Corporations",
     "stores": "Stores & Brands",
     "dining": "Dining & Cafes",
-    "residentPortal": "Resident Portal"
+    "residentPortal": "Resident Portal",
+    "portalHome": "Portal Home",
+    "financeDues": "Finance & Dues",
+    "conciergeSupport": "Concierge & Support",
+    "socialLifeSpa": "Social Life & SPA",
+    "systemLogin": "System Login",
+    "residents": "Residents"
   },
   "pageTitles": {
     "default": "Luxera Towers | Sky Gardens in Basin Ekspres",
@@ -316,6 +322,9 @@
       "phone": "Contact",
       "email": "Email",
       "hours": "Working Hours"
+    },
+    "ui": {
+      "salesOffice": "Sales Office"
     }
   },
   "footer": {
@@ -625,6 +634,16 @@
     },
     "filters": {
       "all": "All"
+    },
+    "ui": {
+      "floorPlan": "Floor Plan",
+      "explore": "Explore",
+      "hours": "Working Hours",
+      "hoursValue": "Daily: 12:00 - 00:00 (Kitchen closes: 23:30)",
+      "reservation": "Reservation",
+      "about": "About the Venue",
+      "aboutSuffix": "In the unique atmosphere of Luxera Towers, we host our guests with world-class service quality. A perfect choice for special business dinners, celebrations and romantic evenings.",
+      "menu": "View Menu"
     }
   },
   "events": {
@@ -779,6 +798,15 @@
       "title": "Traditional Summer Ball 2026",
       "desc": "Say hello to summer in an elite atmosphere by the pool and on the terrace.",
       "body": "An unforgettable, warm night accompanied by iced cocktails and a live orchestra."
+    },
+    "ui": {
+      "viewDetails": "View Details",
+      "readMore": "Read More",
+      "empty": "There are no events in this category yet.",
+      "magazine": "Luxera Agenda",
+      "markCalendar": "Mark Your Calendar",
+      "markCalendarDesc": "Add it to your calendar so you don't miss this special event.",
+      "addToCalendar": "Add to Calendar"
     }
   },
   "faq": {
@@ -977,6 +1005,14 @@
     "cursor": {
       "play": "WATCH",
       "view": "ENLARGE"
+    },
+    "ui": {
+      "downloadPdf": "Download PDF",
+      "loadMore": "Show More",
+      "autoplaying": "Autoplaying",
+      "shareWhatsapp": "Share on WhatsApp",
+      "askRep": "Ask a Representative",
+      "downloadCatalog": "Download E-Catalog"
     }
   },
   "guide": {
@@ -1311,6 +1347,15 @@
     },
     "filters": {
       "all": "All"
+    },
+    "ui": {
+      "sectors": "Sectors",
+      "explore": "Explore",
+      "switchboard": "Switchboard",
+      "website": "Website",
+      "companyProfile": "Company Profile",
+      "aboutSuffix": "Luxera Towers' smart building infrastructure and prestigious location offer an ideal working environment for companies with a global vision. Our LEED-certified eco-friendly office spaces are designed to maximize employee productivity.",
+      "contact": "Get in Touch"
     }
   },
   "privileges": {

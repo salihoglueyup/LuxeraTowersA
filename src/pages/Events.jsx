@@ -135,7 +135,7 @@ const Events = () => {
                       <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-luxera-gold/10 flex items-center justify-center group-hover:bg-luxera-gold text-luxera-gold group-hover:text-luxera-navy transition-colors">
                         <ChevronRight size={18} className="md:w-5 md:h-5" />
                       </div>
-                      <span className="text-xs md:text-sm font-semibold tracking-widest uppercase text-luxera-gold">Detayları İncele</span>
+                      <span className="text-xs md:text-sm font-semibold tracking-widest uppercase text-luxera-gold">{t('events.ui.viewDetails', 'Detayları İncele')}</span>
                     </div>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ const Events = () => {
                       </p>
                       
                       <div className="mt-auto flex justify-between items-center border-t border-white/10 pt-4 md:pt-6">
-                        <span className="text-[10px] md:text-xs font-medium text-gray-500 uppercase tracking-widest group-hover:text-white transition-colors">Devamını Oku</span>
+                        <span className="text-[10px] md:text-xs font-medium text-gray-500 uppercase tracking-widest group-hover:text-white transition-colors">{t('events.ui.readMore', 'Devamını Oku')}</span>
                         <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-luxera-gold text-gray-400 group-hover:text-luxera-gold transition-colors">
                           <ChevronRight size={14} />
                         </div>
@@ -187,7 +187,7 @@ const Events = () => {
             
             {filteredEvents.length === 0 && (
               <div className="text-center py-20 text-gray-400">
-                Bu kategoride henüz bir etkinlik bulunmamaktadır.
+                {t('events.ui.empty', 'Bu kategoride henüz bir etkinlik bulunmamaktadır.')}
               </div>
             )}
 
@@ -269,7 +269,7 @@ const Events = () => {
                 <img src={selected.image} alt={selected.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0f141e] via-transparent to-transparent opacity-80" />
                 <div className="hidden md:block absolute bottom-8 left-8 md:bottom-auto md:top-8 right-8 text-white/50 font-serif italic text-sm">
-                  Luxera Gündem
+                  {t('events.ui.magazine', 'Luxera Gündem')}
                 </div>
               </div>
               
@@ -296,15 +296,15 @@ const Events = () => {
                   <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/10">
                     <div className="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 md:gap-6 text-center sm:text-left">
                       <div>
-                        <h4 className="text-white font-serif text-base md:text-lg mb-1">Takviminizi İşaretleyin</h4>
-                        <p className="text-xs md:text-sm text-gray-400">Bu özel etkinliği kaçırmamak için ajandanıza ekleyin.</p>
+                        <h4 className="text-white font-serif text-base md:text-lg mb-1">{t('events.ui.markCalendar', 'Takviminizi İşaretleyin')}</h4>
+                        <p className="text-xs md:text-sm text-gray-400">{t('events.ui.markCalendarDesc', 'Bu özel etkinliği kaçırmamak için ajandanıza ekleyin.')}</p>
                       </div>
                       <button 
                         onClick={handleAddToCalendar}
                         className="w-full sm:w-auto flex items-center justify-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-luxera-navy hover:text-white bg-luxera-gold hover:bg-transparent px-6 md:px-8 py-3 md:py-4 rounded-xl transition-all duration-300 border border-luxera-gold shrink-0"
                       >
-                        <CalendarPlus size={16} className="md:w-4 md:h-4" /> 
-                        Takvime Ekle
+                        <CalendarPlus size={16} className="md:w-4 md:h-4" />
+                        {t('events.ui.addToCalendar', 'Takvime Ekle')}
                       </button>
                     </div>
                   </div>

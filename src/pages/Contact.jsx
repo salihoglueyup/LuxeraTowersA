@@ -186,7 +186,7 @@ const Contact = () => {
             <div className="w-full flex-1 min-h-[400px] rounded-3xl overflow-hidden border border-luxera-gold/20 shadow-2xl relative">
               <ProjectMap />
               <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-5 py-2 rounded-full border border-luxera-gold/40 pointer-events-none z-[400]">
-                <span className="text-luxera-gold font-serif tracking-widest text-sm uppercase">Satış Ofisi</span>
+                <span className="text-luxera-gold font-serif tracking-widest text-sm uppercase">{t('contact.ui.salesOffice', 'Satış Ofisi')}</span>
               </div>
             </div>
           </motion.div>

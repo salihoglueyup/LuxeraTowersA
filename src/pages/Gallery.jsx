@@ -211,7 +211,7 @@ const Gallery = () => {
                   {/* Kat Planları için ekstra buton */}
                   {img.categoryKey === 'gallery.cat.plans' && (
                     <a href={img.src} download onClick={e => e.stopPropagation()} className="mt-6 flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-luxera-gold text-white rounded-full transition-colors text-xs tracking-widest uppercase transform translate-y-4 group-hover:translate-y-0 delay-200">
-                      <FileText size={14} /> PDF İndir
+                      <FileText size={14} /> {t('gallery.ui.downloadPdf', 'PDF İndir')}
                     </a>
                   )}
                 </div>
@@ -231,7 +231,7 @@ const Gallery = () => {
               onClick={handleLoadMore}
               className="px-10 py-4 border border-luxera-gold/50 text-luxera-gold hover:bg-luxera-gold hover:text-white transition-all duration-300 uppercase tracking-widest text-sm rounded-full"
             >
-              Daha Fazla Göster
+              {t('gallery.ui.loadMore', 'Daha Fazla Göster')}
             </button>
           </motion.div>
         )}
@@ -280,17 +280,17 @@ const Gallery = () => {
                   </h3>
                   <p className="text-gray-400 text-sm tracking-wider uppercase mt-1 flex items-center">
                     {t(filteredImages[selectedImageIndex].categoryKey, filteredImages[selectedImageIndex].defaultCategory)}
-                    {isPlaying && <span className="ml-3 text-luxera-gold animate-pulse text-xs">● Otomatik Oynatılıyor</span>}
+                    {isPlaying && <span className="ml-3 text-luxera-gold animate-pulse text-xs">● {t('gallery.ui.autoplaying', 'Otomatik Oynatılıyor')}</span>}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
                   <button 
                     className="text-white hover:text-green-400 transition-colors bg-white/5 hover:bg-white/10 rounded-full p-3 flex items-center gap-2"
                     onClick={(e) => handleShareWhatsApp(filteredImages[selectedImageIndex], e)}
-                    title="WhatsApp'ta Paylaş"
+                    title={t('gallery.ui.shareWhatsapp', "WhatsApp'ta Paylaş")}
                   >
                     <MessageCircle size={20} />
-                    <span className="text-xs uppercase tracking-widest hidden lg:block">Temsilciye Sor</span>
+                    <span className="text-xs uppercase tracking-widest hidden lg:block">{t('gallery.ui.askRep', 'Temsilciye Sor')}</span>
                   </button>
                   <div className="w-[1px] h-8 bg-white/20 mx-2"></div>
                   <button 
@@ -375,7 +375,7 @@ const Gallery = () => {
         className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[90] bg-luxera-gold hover:bg-white text-white hover:text-luxera-gold px-6 py-4 rounded-full shadow-[0_10px_40px_rgba(212,175,55,0.4)] flex items-center gap-3 transition-colors duration-300 group"
       >
         <DownloadCloud size={24} className="group-hover:-translate-y-1 transition-transform" />
-        <span className="font-serif tracking-wider uppercase text-sm hidden md:block">E-Katalog İndir</span>
+        <span className="font-serif tracking-wider uppercase text-sm hidden md:block">{t('gallery.ui.downloadCatalog', 'E-Katalog İndir')}</span>
       </motion.a>
 
       {/* Video Modal Component */}

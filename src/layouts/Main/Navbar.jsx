@@ -209,28 +209,28 @@ const Navbar = () => {
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <LayoutDashboard size={16} className="text-luxera-gold" /> Portal Anasayfa
+                      <LayoutDashboard size={16} className="text-luxera-gold" /> {t('nav.portalHome', 'Portal Anasayfa')}
                     </Link>
                     <Link 
                       to="/portal/finans" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <CreditCard size={16} className="text-luxera-gold" /> Finans & Aidat
+                      <CreditCard size={16} className="text-luxera-gold" /> {t('nav.financeDues', 'Finans & Aidat')}
                     </Link>
                     <Link 
                       to="/portal/destek" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <Wrench size={16} className="text-luxera-gold" /> Konsiyerj & Destek
+                      <Wrench size={16} className="text-luxera-gold" /> {t('nav.conciergeSupport', 'Konsiyerj & Destek')}
                     </Link>
                     <Link 
                       to="/portal/tesisler" 
                       className="group/link text-white hover:text-luxera-gold hover:bg-white/5 px-6 py-3 rounded-lg transition-colors font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <Calendar size={16} className="text-luxera-gold" /> Sosyal Yaşam & SPA
+                      <Calendar size={16} className="text-luxera-gold" /> {t('nav.socialLifeSpa', 'Sosyal Yaşam & SPA')}
                     </Link>
                     
                     <div className="h-px bg-white/10 my-2"></div>
@@ -240,7 +240,7 @@ const Navbar = () => {
                       className="group/link text-white hover:text-luxera-navy hover:bg-luxera-gold px-6 py-3 rounded-lg transition-all font-serif tracking-wide flex items-center gap-3"
                       onClick={() => setActiveDropdown(null)}
                     >
-                      <Lock size={16} className="text-luxera-gold group-hover/link:text-luxera-navy transition-colors" /> Sisteme Giriş 
+                      <Lock size={16} className="text-luxera-gold group-hover/link:text-luxera-navy transition-colors" /> {t('nav.systemLogin', 'Sisteme Giriş')}
                     </Link>
                   </motion.div>
                 )}
@@ -251,7 +251,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle & Lang & Resident */}
           <div className={`lg:hidden flex items-center gap-3 transition-opacity duration-300 ${mobileMenu ? 'opacity-0 pointer-events-none' : 'opacity-100 z-[60]'}`}>
-            <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded hover:bg-white/10 transition-colors">Sakinler</Link>
+            <Link to="/sakinler-portali" className="text-white text-xs border border-white/20 px-2 py-1 rounded hover:bg-white/10 transition-colors">{t('nav.residents', 'Sakinler')}</Link>
             <button className="text-white hover:text-luxera-gold transition-colors" onClick={() => setMobileMenu(true)}>
               <Menu size={28} />
             </button>
@@ -315,19 +315,19 @@ const Navbar = () => {
                 <div className="bg-gradient-to-br from-luxera-gold/20 to-black/40 border border-luxera-gold/30 rounded-2xl p-6 shadow-2xl">
                   <div className="flex items-center gap-3 mb-4 border-b border-luxera-gold/20 pb-4">
                     <LayoutDashboard size={24} className="text-luxera-gold" />
-                    <h3 className="text-xl font-serif text-white">Sakinler Portalı</h3>
+                    <h3 className="text-xl font-serif text-white">{t('nav.residentPortal', 'Sakinler Portalı')}</h3>
                   </div>
                   <div className="flex flex-col gap-3 mb-6 pl-2">
-                    <Link to="/portal/finans" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><CreditCard size={16} className="text-luxera-gold"/> Finans & Aidat</Link>
-                    <Link to="/portal/destek" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Wrench size={16} className="text-luxera-gold"/> Konsiyerj & Destek</Link>
-                    <Link to="/portal/tesisler" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Calendar size={16} className="text-luxera-gold"/> Sosyal Yaşam & SPA</Link>
+                    <Link to="/portal/finans" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><CreditCard size={16} className="text-luxera-gold"/> {t('nav.financeDues', 'Finans & Aidat')}</Link>
+                    <Link to="/portal/destek" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Wrench size={16} className="text-luxera-gold"/> {t('nav.conciergeSupport', 'Konsiyerj & Destek')}</Link>
+                    <Link to="/portal/tesisler" className="flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenu(false)}><Calendar size={16} className="text-luxera-gold"/> {t('nav.socialLifeSpa', 'Sosyal Yaşam & SPA')}</Link>
                   </div>
                   <div className="flex gap-3">
                     <Link to="/portal/login" className="flex-1 bg-white/10 hover:bg-white/20 text-white text-center py-2.5 rounded-xl text-sm font-semibold border border-white/20 transition-colors" onClick={() => setMobileMenu(false)}>
-                      Sisteme Giriş
+                      {t('nav.systemLogin', 'Sisteme Giriş')}
                     </Link>
                     <Link to="/sakinler-portali" className="flex-1 bg-luxera-gold hover:bg-luxera-gold/80 text-luxera-navy text-center py-2.5 rounded-xl text-sm font-bold transition-colors" onClick={() => setMobileMenu(false)}>
-                      Portal Anasayfa
+                      {t('nav.portalHome', 'Portal Anasayfa')}
                     </Link>
                   </div>
                 </div>
