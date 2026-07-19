@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationTR from '../../locales/tr/translation.json';
 import translationEN from '../../locales/en/translation.json';
@@ -13,11 +14,6 @@ const resources = {
   ru: { translation: translationRU }
 };
 
-// Dil her zaman Arapça olsun - localStorage'daki eski tercihleri temizle
-if (typeof window !== 'undefined') {
-  localStorage.removeItem('i18nextLng');
-}
-
 export const applyDocumentDirection = (lng = 'ar') => {
   if (typeof document === 'undefined') return;
 
@@ -30,12 +26,20 @@ export const applyDocumentDirection = (lng = 'ar') => {
 };
 
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'ar',
+    // İlk ziyarette dil seçilmemişse Arapça'ya düşer (fallbackLng).
+    // Kullanıcının seçimi localStorage'da saklanır ve sonraki ziyaretlerde gelir.
     fallbackLng: 'ar',
     debug: false,
+
+    detection: {
+      order: ['localStorage'],
+      caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng',
+    },
 
     interpolation: {
       escapeValue: false,
@@ -43,6 +47,6 @@ i18n
   });
 
 i18n.on('languageChanged', applyDocumentDirection);
-applyDocumentDirection('ar');
+applyDocumentDirection(i18n.language);
 
 export default i18n;
