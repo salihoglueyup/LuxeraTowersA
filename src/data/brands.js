@@ -53,11 +53,11 @@ export const getStores = (t) => [
 ];
 
 export const getDining = (t) => [
-  { id: 1, name: 'Nusr-Et Steakhouse', category: t('brands.dining.d1.category', 'Fine Dining'), floor: t('brands.dining.d1.floor', 'Teras Kat'), description: t('brands.dining.d1.desc', 'Dünyaca ünlü steakhouse deneyimi ve eşsiz et lezzetleri.'), image: '/images/interior/d5_scene5_20240304_220944copy_2025-12-18_03-47-03_7b5b78.webp' },
-  { id: 2, name: 'Starbucks Reserve', category: t('brands.dining.d2.category', 'Kafe'), floor: t('brands.dining.d2.floor', 'Zemin Kat'), description: t('brands.dining.d2.desc', 'Premium kahve çekirdekleri, özel demleme yöntemleri ve şık atmosfer.'), image: '/images/interior/d5_scene10_20240304_220213copy_2025-12-18_03-47-03_de61ba.webp' },
-  { id: 3, name: 'Divan Brasserie', category: t('brands.dining.d3.category', 'Restoran'), floor: t('brands.dining.d3.floor', '1. Kat'), description: t('brands.dining.d3.desc', 'Geleneksel Türk ve modern dünya mutfağının zarif buluşması.'), image: '/images/interior/d5_scene3_20240304_221324copy_2025-12-18_03-47-03_b3ced7.webp' },
+  { id: 1, name: 'Nusr-Et Steakhouse', category: t('brands.dining.d1.category', 'Fine Dining'), floor: t('brands.dining.d1.floor', 'Teras Kat'), description: t('brands.dining.d1.desc', 'Dünyaca ünlü steakhouse deneyimi ve eşsiz et lezzetleri.'), image: '/images/exterior/11_2025-12-18_02-46-35_736f9b.webp' },
+  { id: 2, name: 'Show Market', category: t('brands.dining.d2.category', 'Market'), floor: t('brands.dining.d2.floor', 'Zemin Kat'), description: t('brands.dining.d2.desc', 'Günlük ihtiyaçlarınız için taze ürünler, ithal lezzetler ve premium market konsepti.'), image: '/images/exterior/11_2025-12-18_02-46-35_736f9b.webp' },
+  { id: 3, name: 'Divan Brasserie', category: t('brands.dining.d3.category', 'Restoran'), floor: t('brands.dining.d3.floor', '1. Kat'), description: t('brands.dining.d3.desc', 'Geleneksel Türk ve modern dünya mutfağının zarif buluşması.'), image: '/images/exterior/11_2025-12-18_02-46-35_736f9b.webp' },
   { id: 4, name: 'Godiva Cafe', category: t('brands.dining.d4.category', 'Tatlı & Kafe'), floor: t('brands.dining.d4.floor', 'Zemin Kat'), description: t('brands.dining.d4.desc', 'Orijinal Belçika çikolatası ile hazırlanan lüks tatlılar ve içecekler.'), image: '/images/exterior/11_2025-12-18_02-46-35_736f9b.webp' },
-  { id: 5, name: 'Zuma', category: t('brands.dining.d5.category', 'Uzakdoğu Mutfağı'), floor: t('brands.dining.d5.floor', 'Teras Kat'), description: t('brands.dining.d5.desc', 'Modern Japon mutfağının en prestijli, ödüllü temsilcisi.'), image: '/images/interior/d5_scene7_20240304_220754copy_2025-12-18_03-47-03_62285d.webp' }
+  { id: 5, name: 'Zuma', category: t('brands.dining.d5.category', 'Uzakdoğu Mutfağı'), floor: t('brands.dining.d5.floor', 'Teras Kat'), description: t('brands.dining.d5.desc', 'Modern Japon mutfağının en prestijli, ödüllü temsilcisi.'), image: '/images/exterior/11_2025-12-18_02-46-35_736f9b.webp' }
 ];
 
 export const getBoardMembers = (t) => [
